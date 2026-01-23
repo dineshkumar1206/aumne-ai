@@ -8,6 +8,7 @@ import Solution from "./Solutions/Solution";
 import Benefits from "./Benefits/Benefits";
 import StatisticsSection from "./Home/StatisticsSection";
 import ROICalculator from "./RoiCalculator/ROICalculator";
+import GSIPartnership from "./Partnership/GSIPartnership";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/benefits" element={<Benefits />} />
         <Route path="/industry-trends" element={<StatisticsSection/>}/>
         <Route path="/roi-calculator" element={<ROICalculator/>}/>
+        <Route path="/gst-partnership" element={<GSIPartnership/>} />
 
       </Routes>
       <Footer />

@@ -9,6 +9,8 @@ import { IoEyeOutline } from "react-icons/io5";
 import { MdDeviceHub } from "react-icons/md";
 import { PiGlobeSimpleLight } from "react-icons/pi";
 import { RiRobot2Line } from "react-icons/ri";
+import { FiEye, FiMessageCircle, FiHeart } from "react-icons/fi";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -203,14 +205,14 @@ export default function BenefitsActs() {
               onMouseEnter={(e) => handleMouseEnter(e, index)}
               onMouseMove={(e) => handleMouseMove(e, index)}
               onMouseLeave={() => handleMouseLeave(index)}
-              className="relative bg-[#0f0f0f] border border-white/5 rounded-2xl p-10 flex flex-col items-center text-center transition-colors duration-500 cursor-default overflow-hidden"
+              className="relative bg-[#0f0f0f] border border-white/5 rounded-2xl p-10 flex flex-col items-start text-left transition-colors duration-500 cursor-default overflow-hidden"
               style={{ transformStyle: "preserve-3d" }}
             >
               {/* Background Glow Effect */}
               <div className="absolute -inset-1 bg-linear-to-r from-blue-600 to-cyan-500 opacity-0 group-hover:opacity-10 blur-xl transition-opacity duration-500" />
 
               {/* Icon Section */}
-              <div className="icon-box text-2xl text-[#0D7EB6] mb-6 bg-blue-500/10 p-4 rounded-full transition-colors duration-300">
+              <div className="icon-box text-2xl text-[#0D7EB6] mb-6 bg-blue-500/10 p-4 rounded-full transition-colors duration-300 self-center">
                 {item.icon}
               </div>
 
@@ -232,6 +234,25 @@ export default function BenefitsActs() {
               <p className="text-neutral-400 text-lg mb-6 leading-relaxed">
                 {item.value}
               </p>
+              {/* Card Footer (Wix-style) */}
+<div className="w-full mt-8 pt-4 border-t border-white/10 flex items-center justify-between text-neutral-400 text-sm">
+  {/* Left side */}
+  <div className="flex items-center gap-6">
+    <div className="flex items-center gap-1">
+      <FiEye className="text-base" />
+      <span>0</span>
+    </div>
+
+    <div className="flex items-center gap-1">
+      <FiMessageCircle className="text-base" />
+      <span>0</span>
+    </div>
+  </div>
+
+  {/* Right side */}
+  <FiHeart className="text-lg text-red-500 cursor-pointer hover:scale-110 transition-transform duration-200" />
+</div>
+
             </div>
           ))}
         </div>
