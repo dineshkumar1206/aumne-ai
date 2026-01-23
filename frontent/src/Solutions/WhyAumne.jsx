@@ -65,9 +65,9 @@ export default function WhyAymne() {
   ];
 
   return (
-    <section
+   <section
       ref={sectionRef}
-      className="relative min-h-screen text-white pb-40 overflow-visible"
+      className="relative min-h-screen text-white pb-40 overflow-visible bg-gradient-to-r from-[#02060d] via-[#071827] via-[#0b2a3d] to-[#0e3b4e]"
     >
       <section className="w-full bg-transparent py-10">
         <div className="max-w-7xl mx-auto px-4">

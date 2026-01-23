@@ -25,7 +25,7 @@ export default function HorizontalScrollVideo() {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full h-[400px] md:h-[600px] mt-5  overflow-hidden flex items-center justify-center bg-black"
+      className="relative w-full h-[400px] md:h-[600px] overflow-hidden flex items-center justify-center bg-black"
     >
       {/* 1. Video Background Wrapper */}
       <div

@@ -76,11 +76,11 @@ export default function HowActs() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen text-white py-40 mb-20 overflow-visible"
+      className="relative text-white bg-gradient-to-r from-[#02060d] via-[#071827] via-[#0b2a3d] to-[#0e3b4e] py-40 pb-32 overflow-visible"
     >
       <div className="relative z-10 max-w-[1550px] mx-auto px-6 md:px-16">
         {/* Main Container with Border */}
-        <div className="border border-white/20 grid grid-cols-1 lg:grid-cols-12 min-h-[650px] relative ">
+        <div className="border border-white/20 grid grid-cols-1 lg:grid-cols-12 min-h-[900px] lg:min-h-[800px] relative ">
           {/* LEFT CONTENT BLOCK */}
           <div className="lg:col-span-5 relative overflow-hidden border-r border-white/10 p-12 lg:p-13 flex flex-col justify-center">
             <div
