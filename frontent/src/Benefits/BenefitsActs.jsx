@@ -10,6 +10,7 @@ import { MdDeviceHub } from "react-icons/md";
 import { PiGlobeSimpleLight } from "react-icons/pi";
 import { RiRobot2Line } from "react-icons/ri";
 import { FiEye, FiMessageCircle, FiHeart } from "react-icons/fi";
+import bgImage from "../assets/Befefits of Act.png";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -178,8 +179,12 @@ export default function BenefitsActs() {
   return (
     <section
       ref={sectionRef}
-      className="pt-10 text-white px-6 bg-gradient-to-r from-[#02060d] via-[#071827] via-[#0b2a3d] to-[#0e3b4e] overflow-hidden"
+       className="pt-10 pb-10 text-white px-6 overflow-hidden bg-cover bg-center bg-no-repeat"
+       style={{
+        backgroundImage: `url(${bgImage})`,
+       }} 
     >
+
       <div className="max-w-[1550px] mx-auto text-center">
         <h2 className="text-4xl md:text-6xl text-[#0D7EB6] font-semibold mb-6 tracking-tight">
           Benefits of ACT
@@ -256,14 +261,7 @@ export default function BenefitsActs() {
             </div>
           ))}
         </div>
-        <h2 className="text-4xl md:text-6xl py-5 md:pb-7 md:pt-24 text-[#0D7EB6] font-semibold  tracking-tight">
-          How Act Works
-        </h2>
-        <p className="mb-20 text-white text-[20px]  max-w-4xl mx-auto leading-relaxed">
-          ACT follows a continuous lifecycle — ensuring services are not only
-          modernized but also transparent, governed, and continuously evolving
-          alongside products.
-        </p>
+       
       </div>
     </section>
   );

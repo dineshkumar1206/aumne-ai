@@ -9,6 +9,7 @@ import {
   LuRocket,
   LuRefreshCw,
 } from "react-icons/lu";
+import bgImage from "../assets/2151618523.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -75,10 +76,31 @@ export default function HowActs() {
 
   return (
     <section
-      ref={sectionRef}
-      className="relative text-white bg-gradient-to-r from-[#02060d] via-[#071827] via-[#0b2a3d] to-[#0e3b4e] py-40 pb-32 overflow-visible"
-    >
-      <div className="relative z-10 max-w-[1550px] mx-auto px-6 md:px-16">
+  ref={sectionRef}
+  className="relative text-white py-20 pb-24 overflow-visible"
+>
+  {/* Background Image */}
+  <div
+    className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
+    style={{ backgroundImage: `url(${bgImage})` }}
+  />
+
+  {/* Dark overlay for readability */}
+  <div className="absolute inset-0 bg-black/60 z-0" />
+
+      <div className="relative z-10 text-center max-w-5xl mx-auto mb-28">
+  <h2 className="text-4xl md:text-6xl text-[#0D7EB6] font-semibold tracking-tight mb-6">
+    How Act Works
+  </h2>
+  <p className="text-white/90 text-[20px] leading-relaxed">
+    ACT follows a continuous lifecycle — ensuring services are not only
+    modernized but also transparent, governed, and continuously evolving
+    alongside products.
+  </p>
+</div>
+
+
+      <div className="relative z-10 max-w-[1550px] mx-auto px-6 md:px-16 pt-[120px]">
         {/* Main Container with Border */}
         <div className="border border-white/20 grid grid-cols-1 lg:grid-cols-12 min-h-[900px] lg:min-h-[800px] relative ">
           {/* LEFT CONTENT BLOCK */}
@@ -148,7 +170,7 @@ export default function HowActs() {
                     </h3>
 
                     {/* Description */}
-                    <p className="text-neutral-400 text-sm leading-relaxed font-medium group-hover:text-slate-200 transition-colors duration-300">
+                    <p className="text-white/80 text-sm leading-relaxed font-medium group-hover:text-slate-200 transition-colors duration-300">
                       {card.desc}
                     </p>
                   </div>

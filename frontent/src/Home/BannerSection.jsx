@@ -109,7 +109,7 @@ export default function BannerSection() {
         <VelocityReliabilitySection />
       </section>
       <section className="">
-        <StatisticsSection />
+        {/* <StatisticsSection /> */}
         <section className="">
           <HorizontalScrollVideo />
         </section>

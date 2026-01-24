@@ -1,28 +1,24 @@
 import React from "react";
-import {
-  FiCloud,
-  FiLayers,
-  FiUsers,
-} from "react-icons/fi";
+import agnoshinLogo from "../assets/partnership1.png";
+import visnetLogo from "../assets/partnership2.png";
 
 const partners = [
   {
-    icon: <FiCloud />,
-    title: "Cloud Analytics For Beginners",
-    duration: "14 Days",
-    price: "$80.00",
+    name: "AgnoShin",
+    logo: agnoshinLogo,
+    description:
+      "Technology-agnostic customer experience management solutions with deep vertical expertise across US, Asia-Pacific, Middle East and Africa.",
+    employees: "200+",
+    presence: "US, Asia-Pacific, Middle East, Africa",
   },
   {
-    icon: <FiLayers />,
-    title: "Data Analytics Tools",
-    duration: "28 Days",
-    price: "$120.00",
-  },
-  {
-    icon: <FiUsers />,
-    title: "Data-driven Decision Making",
-    duration: "56 Days",
-    price: "$150.00",
+    name: "Visnet",
+    logo: visnetLogo,
+    description:
+      "Strategic partner in communication systems integration and customer experience optimization across global markets including UK, USA, UAE, and Asia-Pacific.",
+    employees: "200+",
+    presence:
+      "UK, USA, UAE, Oman, Singapore, Philippines, Malaysia, Australia, China, Europe, Africa",
   },
 ];
 
@@ -42,38 +38,56 @@ export default function GSIPartnership() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {partners.map((item, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          {partners.map((partner, index) => (
             <div
               key={index}
-              className="bg-[#0f0f0f] border border-white/10 rounded-2xl p-10 flex flex-col justify-between transition-all duration-300 hover:border-[#0D7EB6]/50 hover:-translate-y-2"
+              className="bg-[#0b2a3d]/60 backdrop-blur-xl border border-white/10 rounded-3xl p-10 transition-all duration-300 hover:border-[#0D7EB6]/40"
             >
-              {/* Icon */}
-             <div className="mb-10 flex justify-center">
-                 <div className="w-20 h-20 rounded-full bg-[#0D7EB6]/10 flex items-center justify-center text-[#0D7EB6] text-4xl">
-                   {item.icon}
-                 </div>
+              {/* Logo */}
+              <div className="bg-[#0a2238] rounded-xl p-6 mb-8 flex items-center justify-center">
+                <img
+                  src={partner.logo}
+                  alt={partner.name}
+                  className="h-12 object-contain"
+                />
               </div>
 
-              {/* Content */}
-              <div>
-                <h3 className="text-2xl font-medium mb-3 leading-snug">
-                  {item.title}
-                </h3>
-                <p className="text-neutral-400 mb-6">
-                  {item.duration}
+              {/* Title */}
+              <h3 className="text-3xl font-semibold text-white mb-4">
+                {partner.name}
+              </h3>
+
+              {/* Description */}
+              <p className="text-neutral-300 leading-relaxed mb-10">
+                {partner.description}
+              </p>
+
+              {/* Meta */}
+              <div className="space-y-3 mb-8">
+                <p className="text-white font-medium">
+                  Employee Strength:{" "}
+                  <span className="text-neutral-300 font-normal">
+                    {partner.employees}
+                  </span>
                 </p>
 
-                <div className="border-t border-white/10 my-6" />
-
-                <p className="text-xl font-semibold mb-6">
-                  {item.price}
+                <p className="text-white font-medium">
+                  Global Presence:{" "}
+                  <span className="text-neutral-300 font-normal">
+                    {partner.presence}
+                  </span>
                 </p>
-
-                <button className="bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1] hover:to-[#5187b4] px-6 py-3 rounded-md font-medium hover:opacity-90 transition cursor-pointer">
-                  View Details
-                </button>
               </div>
+
+              {/* Learn More */}
+              <a
+                href="#"
+                className="inline-flex items-center gap-2 text-[#0D7EB6] font-medium hover:underline"
+              >
+                Learn More
+                <span className="text-lg">↗</span>
+              </a>
             </div>
           ))}
         </div>
