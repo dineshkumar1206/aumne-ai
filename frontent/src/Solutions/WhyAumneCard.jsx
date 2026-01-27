@@ -79,7 +79,7 @@ export default function WhyAumneCard() {
   return (
     <section
       ref={sectionRef}
-      className="relative pb-20 bg-linear-to-r from-[#02060d] via-[#071827]  to-[#0e3b4e] text-white overflow-hidden pt-20"
+      className="relative pb-20 bg-#0c2f41 text-white overflow-hidden pt-20"
     >
       <div className="max-w-6xl mx-auto  ">
         <div className="flex flex-col md:flex-row items-center gap-10 border border-white/10 rounded-xl overflow-hidden">
@@ -100,7 +100,7 @@ export default function WhyAumneCard() {
           {/* RIGHT TEXT BLOCK */}
           <div className="flex-1 flex flex-col py-10 px-5 justify-center  space-y-8 ">
             <h2 className="text-white text-3xl font-normal mb-5 ml-2">
-              Why Aumne
+              From Legacy IVR to Conversational AI—Automatically
             </h2>
             {/* <div className="h-0.5 w-[53%] bg-linear-to-r from-[#036ffd] to-[#42a5f5] rounded-full" /> */}
 
@@ -115,9 +115,8 @@ export default function WhyAumneCard() {
               className="group py-3 rounded-2xl  backdrop-blur-sm transition-all  "
             >
               <p className="text-base text-center lg:text-start w-full ml-2 lg:w-[600px] mb-7 text-white/50 ">
-                Most platforms focus only on automating parts of the customer
-                service stack. Aumne takes a different approach-we treat service
-                as a product experience and manage its entire lifecycle with AI.
+              Aumne is purpose-built to modernize what already exists, not force enterprises to start from scratch. 
+              Our agentic, AI-native platform turns IVR modernization from a one-time, high-risk project into a continuous platform capability.
               </p>
             </div>
 
@@ -125,6 +124,7 @@ export default function WhyAumneCard() {
           </div>
         </div>
       </div>
+      
     </section>
   );
 }

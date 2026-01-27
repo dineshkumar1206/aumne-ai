@@ -29,37 +29,37 @@ export default function WhyAymne() {
 
   const services = [
     {
-      title: "Category Leadership",
+      title: "Understand Legacy First",
       description:
-        "The first AI Native Service Lifecycle Platform purpose built for enterprises. Leverage cutting-edge technology to stay ahead of the curve.",
+        "Auto-discovery of IVR code, flows, configurations, APIs, , call recordings, and transcripts—revealing what exists, what works, and what must change.",
       icon: <Crown className="w-10 h-10 text-black" />,
       bgColor: "bg-[#95a9e6]", // Light blue-purple
     },
     {
-      title: "Faster Transformation",
+      title: "Automate Conversational Transformation",
       description:
-        "Cut modernization timelines from years to months. Accelerate your digital journey with our streamlined agentic service workflows.",
+        "AI-driven design and build converts legacy logic into conversational experiences—reducing time and effort by up to 70%.",
       icon: <Zap className="w-10 h-10 text-black" />,
       bgColor: "bg-[#ff6b6b]", // Reddish-pink
     },
     {
-      title: "Enterprise Grade Control",
+      title: "Human-in-the-Loop Governance ",
       description:
-        "Compliance, governance, and human in the loop validation at every step. Maintain full authority over your AI-driven services.",
+        "Built-in review, approvals, versioning, rollback, and compliance controls. Enterprises stay firmly in control.",
       icon: <ShieldCheck className="w-10 h-10 text-black" />,
       bgColor: "bg-[#95a9e6]",
     },
     {
-      title: "Future Proof Design",
+      title: "Build Once. Deploy Everywhere",
       description:
-        "Services evolve in sync with your products and customer expectations. Adapt quickly to market changes without rebuilding from scratch.",
+        "Deploy consistently across voice, chat, web, and messaging—without duplicating logic or redesigning journeys.",
       icon: <TrendingUp className="w-10 h-10 text-black" />,
       bgColor: "bg-[#ff6b6b]",
     },
     {
-      title: "Proven Outcomes",
+      title: "Continuously Evolve Services",
       description:
-        "5x faster delivery and higher customer satisfaction. Realize tangible business value with measurable impact on your ROI.",
+        "Rapid prototyping, recommendations, and controlled iteration keep customer service aligned with changing products and policies.",
       icon: <Target className="w-10 h-10 text-black" />,
       bgColor: "bg-[#95a9e6]",
     },
@@ -107,6 +107,163 @@ export default function WhyAymne() {
           </div>
         </div>
       </section>
+      {/* ===== WHY SERVICES-LED TRANSFORMATION FAILS ===== */}
+<div className="max-w-6xl mx-auto mt-24 px-4">
+  {/* Heading */}
+  <h2 className="text-3xl md:text-4xl font-semibold text-[#159ce0] mb-12">
+    Why Services-Led Transformation No Longer Works
+  </h2>
+
+  {/* Comparison Box */}
+  <div className="grid grid-cols-1 md:grid-cols-2 rounded-2xl overflow-hidden border border-white/10 ">
+
+    {/* LEFT COLUMN */}
+    <div className="p-8 border-b md:border-b-0 md:border-r border-white/10">
+      <h3 className="text-xl font-semibold text-white mb-6">
+      Services-Led: Yesterday’s Approach
+      </h3>
+
+      <ul className="space-y-4 text-white/60">
+        <li>• Manual discovery</li>
+        <li>• Custom redesign every time</li>
+        <li>• Knowledge locked in people</li>
+        <li>• Long timelines</li>
+        <li>• One-off projects</li>
+        <li>• Risky production changes</li>
+        <li>• ROI uncertain</li>
+      </ul>
+    </div>
+
+    {/* RIGHT COLUMN */}
+    <div className="p-8 ">
+      <h3 className="text-xl font-semibold text-white mb-6">
+       Platform-Led with Aumne: Today’s Advantage
+      </h3>
+
+      <ul className="space-y-4 text-white/60">
+        <li>• Automated discovery</li>
+        <li>• Reusable patterns & intelligence</li>
+        <li>• Design intelligence in software</li>
+        <li>• Fast, repeatable delivery</li>
+        <li>• Continuous evolution</li>
+        <li>• Safe prototyping</li>
+        <li>• Predictable ROI</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<div class="max-w-6xl mx-auto mt-24 px-4">
+  <h2 class="text-3xl md:text-4xl font-semibold text-[#159ce0] mb-12">
+    Built for the Ecosystem That Delivers Customer Service
+  </h2>
+
+  <div class="space-y-8">
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-1">
+        Enterprises
+      </h3>
+      <p class="text-white/60 leading-relaxed">
+        Modernize complex legacy IVRs without ripping and replacing existing platforms.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-1">
+        Global System Integrators (GSIs)
+      </h3>
+      <p class="text-white/60 leading-relaxed">
+        Deliver AI-driven CX transformation faster, at scale, while protecting margins.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-1">
+        BPOs & CX Providers
+      </h3>
+      <p class="text-white/60 leading-relaxed">
+        Enable <span class="font-semibold text-white/60">Human + Voice AI</span> service models that
+        improve productivity, margins, and deal competitiveness.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="max-w-6xl mx-auto mt-24 px-4">
+  <h2 class="text-3xl md:text-4xl font-semibold text-[#159ce0] mb-12">
+    Outcomes That Matter
+  </h2>
+
+  <ul class="space-y-4">
+    <li class="text-white text-base leading-relaxed">
+      • 5× faster time to value
+    </li>
+    <li class="text-white text-base leading-relaxed">
+      • 70%+ automation across the lifecycle
+    </li>
+    <li class="text-white text-base leading-relaxed">
+      • 3× ROI on transformation
+    </li>
+    <li class="text-white text-base leading-relaxed">
+      • Reduced abandonment and agent load
+    </li>
+    <li class="text-white text-base leading-relaxed">
+      • Predictable modernization economics
+    </li>
+    <li class="text-white text-base leading-relaxed">
+      • Continuous CX improvement
+    </li>
+  </ul>
+</div>
+
+<div class="max-w-6xl mx-auto mt-24 px-4">
+  <h2 class="text-3xl md:text-4xl font-semibold text-[#159ce0] mb-12">
+    The Window for Platform-Led CX Transformation Is Open
+  </h2>
+
+  <ul class="space-y-4 ">
+    <li class="text-white leading-relaxed">
+      • Customers now expect conversational experiences—especially on voice
+    </li>
+    <li class="text-white leading-relaxed">
+      • Enterprises are already spending $53B+ annually on CX modernization
+    </li>
+    <li class="text-white leading-relaxed">
+      • Legacy IVR remains the biggest blocker
+    </li>
+    <li class="text-white leading-relaxed">
+      • AI has reached a point where legacy systems can be understood and transformed programmatically
+    </li>
+    <li class="text-white leading-relaxed">
+      • Enterprises no longer accept multi-year, million-dollar projects with uncertain ROI
+    </li>
+  </ul>
+</div>
+
+<div class="max-w-6xl mx-auto mt-24 px-4">
+  <h2 class="text-3xl md:text-4xl font-semibold text-[#159ce0] mb-12">
+    Built by People Who've Lived the Problem
+  </h2>
+
+  <ul class="space-y-4">
+    <li class="text-white leading-relaxed">
+      • 100+ years of combined experience in IVR, contact centers, enterprise CX, and platform engineering
+    </li>
+    <li class="text-white leading-relaxed">
+      • First-hand experience delivering large, services-heavy transformations
+    </li>
+    <li class="text-white leading-relaxed">
+      • Deep legacy fluency combined with AI-native platform thinking
+    </li>
+    <li class="text-white leading-relaxed">
+      • Defining a new category: <span class="font-semibold">Agentic Service Lifecycle Management</span>
+    </li>
+  </ul>
+</div>
+
+
+
     </section>
   );
 }

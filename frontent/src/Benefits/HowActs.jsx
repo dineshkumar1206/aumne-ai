@@ -90,7 +90,7 @@ export default function HowActs() {
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover z-0"
       >
         <source src="/video/bg-video.mp4" type="video/mp4" />
       </video>
@@ -98,7 +98,7 @@ export default function HowActs() {
       {/* Dark overlay for readability */}
       <div className="absolute inset-0 bg-black/60 z-0" />
 
-      <div className="relative z-10 text-center max-w-5xl mx-auto mb-28">
+      <div className="relative z-20 text-center max-w-5xl mx-auto mb-28">
         <h2 className="text-4xl md:text-6xl text-[#0D7EB6] font-semibold tracking-tight mb-6">
           How Act Works
         </h2>
@@ -116,7 +116,7 @@ export default function HowActs() {
           <div className="lg:col-span-5 relative overflow-hidden border-r border-white/10 p-12 lg:p-13 flex flex-col justify-center">
             <div
               ref={bgRef}
-              className="absolute inset-0 w-[140%] h-full opacity-50 bg-cover bg-center pointer-events-none z-0"
+              className="absolute inset-0 w-[140%] h-full opacity-100 bg-cover bg-center pointer-events-none z-0"
               style={{
                 backgroundImage: "url('/image/acts.jpg')",
                 left: "-20%",
@@ -197,7 +197,7 @@ export default function HowActs() {
                     </div>
 
                     <span className="absolute -top-6 right-0 text-[10px] font-mono text-white/20 tracking-widest group-hover:text-[#0D7EB6] transition-colors">
-                      PHASE_0{i + 1}
+                      
                     </span>
                   </div>
                 </div>

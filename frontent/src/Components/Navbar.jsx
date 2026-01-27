@@ -1,40 +1,22 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import { motion } from "framer-motion";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {
-  const [hidden, setHidden] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Active link style
   const activeStyle = ({ isActive }) =>
     isActive
       ? "text-[#0D7EB6] font-bold transition"
       : "hover:text-gray-400 transition";
 
-  const { scrollY } = useScroll();
-
-  useMotionValueEvent(scrollY, "change", (latest) => {
-    const previous = scrollY.getPrevious();
-    if (latest > previous && latest > 150) {
-      setHidden(true);
-      setMenuOpen(false); // auto-close mobile menu on scroll
-    } else {
-      setHidden(false);
-    }
-  });
-
   return (
     <header className="sticky top-0 z-50 w-full">
       {/* ================= NAVBAR ================= */}
       <motion.nav
-        variants={{
-          visible: { y: 0, opacity: 1 },
-          hidden: { y: "-100%", opacity: 0 },
-        }}
-        animate={hidden ? "hidden" : "visible"}
-        transition={{ duration: 0.4, ease: [0.23, 1, 0.32, 1] }}
+        initial={{ y: 0, opacity: 1 }}
+        animate={{ y: 0, opacity: 1 }}
         className="bg-[#0a0a0a] text-white px-6 md:px-16 py-5 flex items-center justify-between shadow-xl"
       >
         {/* Logo */}

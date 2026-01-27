@@ -178,7 +178,7 @@ export default function BenefitsActs() {
   return (
     <section
       ref={sectionRef}
-      className="pt-10 pb-10 text-white px-6 overflow-hidden bg-cover bg-center bg-no-repeat"
+      className="pt-10 pb-10 text-white px-6 overflow-hidden bg-cover bg-top bg-no-repeat"
       style={{
         backgroundImage: `url(${bgImage})`,
       }}

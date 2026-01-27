@@ -9,10 +9,12 @@ import Benefits from "./Benefits/Benefits";
 import StatisticsSection from "./Home/StatisticsSection";
 import ROICalculator from "./RoiCalculator/ROICalculator";
 import GSIPartnership from "./Partnership/GSIPartnership";
+import ScrollToTop from "./Components/ScrollToTop";
 
 const App = () => {
   return (
     <>
+      <ScrollToTop/>
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />

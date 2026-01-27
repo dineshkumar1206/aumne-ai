@@ -73,29 +73,52 @@ export default function BannerSection() {
         {/* Overlay to make text readable */}
         <div className="absolute inset-0 bg-black/50" />
 
-        <div
-          ref={contentRef}
-          className="relative z-20 flex space-y-8 flex-col justify-start pt-20 h-full w-full lg:w-[1100px] px-6 md:px-16 text-white"
-        >
-          <h1 className="text-2xl md:text-4xl lg:text-7xl text-center lg:text-start font-semibold">
-            The First Agentic Service <br />
-            <span className="py-3 inline-block">Lifecycle Platform</span>
-          </h1>
-          <p className="text-xl md:text-xl text-center lg:text-start w-full lg:w-[600px] text-white/80 ">
-            Aumne revolutionizes Service Lifecycle Management with Agentic
-            systems, transforming legacy IVRs, chatbots, fragmented workflows,
-            and siloed support into Agentic conversational services.{" "}
-            <span className="font-extrabold text-[#0D7EB6] ">
-              Achieve 5x faster modernization.
-            </span>
-          </p>
+   <div
+  ref={contentRef}
+  className="relative z-20 flex flex-col justify-start pt-20 h-full w-full lg:w-[1100px] px-6 md:px-16"
+>
+  {/* Top headline */}
+  <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+   Transform Legacy IVR into AI-Native Customer Service </h2>
 
-          <div className="text-center lg:text-start">
-            <button className="w-fit rounded-lg bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1] hover:to-[#5187b4] px-8 py-2">
-              Lets's ACT
-            </button>
-          </div>
-        </div>
+  {/* Main headline */}
+  <h2 className="mt-3 text-[#159ce0] text-4xl md:text-3xl lg:text-5xl font-extrabold leading-tight">
+    At 5× Speed and 3x ROI  <br />
+    on modernization
+  </h2>
+
+  {/* Description */}
+  <p className="mt-8 max-w-2xl text-lg md:text-xl text-white/90 leading-relaxed">
+  Aumne is an AI-native, agentic Service Lifecycle Management platform that automatically transforms legacy IVR into modern, conversational, omnichannel experiences—fast, governed, and built to continuously evolve.
+  </p>
+
+  {/* Metrics */}
+  <div className="mt-14 flex flex-col md:flex-row gap-10 text-white">
+    <div className="text-center md:text-left">
+      <p className="text-4xl font-extrabold">5X</p>
+      <p className="text-lg text-white/80 mt-1">Faster Transformation</p>
+    </div>
+
+    <div className="hidden md:block w-[2px] bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
+
+    <div className="text-center md:text-left">
+      <p className="text-4xl font-bold">70%+</p>
+      <p className="text-lg text-white/80 mt-1">
+        Automation Across the Lifecycle
+      </p>
+    </div>
+
+    <div className="hidden md:block w-[2px] bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
+
+    <div className="text-center md:text-left">
+      <p className="text-4xl font-extrabold">3x</p>
+      <p className="text-lg text-white/80 mt-1">
+        ROI on Modernization
+      </p>
+    </div>
+  </div>
+</div>
+
       </section>
 
       {/* SECTION 2 */}
@@ -109,9 +132,20 @@ export default function BannerSection() {
       <section className="">
         {/* <StatisticsSection /> */}
         <section className="">
-          <HorizontalScrollVideo />
+          <HorizontalScrollVideo className="w-full h-32" />
         </section>
       </section>
     </main>
   );
 }
+ {/* <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover opacity-70"
+        >
+          <source src="/video/bg-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+         */}

@@ -1,5 +1,6 @@
 import React from "react";
 import { FaLinkedinIn, FaFacebookF, FaTwitter } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -22,29 +23,25 @@ export default function Footer() {
           <div className=" space-y-2 text-sm md:text-md leading-relaxed">
             <p>123-456-7890</p>
             <p>Info@aumneai.com</p>
-            <p>India</p>
             <p>Bangalore</p>
+            <p>India</p>
           </div>
         </div>
 
         {/* NAVIGATION LINKS */}
         <div className="flex flex-col md:text-md   gap-3">
-          <a href="#" className=" hover:text-white transition-colors">
-            Solutions
-          </a>
-          <a href="#" className=" hover:text-white transition-colors">
-            Vision
-          </a>
-          <a href="#" className=" hover:text-white transition-colors">
-            Programs
-          </a>
-          <a href="#" className=" hover:text-white transition-colors">
-            Blog
-          </a>
+
+        <NavLink to="/solutions" className={({isActive}) => `hover:text-white transition-colors ${isActive ? "text-white/80 font-medium" : "" }` }>Solutions</NavLink>
+        <NavLink to="/benefits" className={({isActive}) => `hover:text-white transition-colors ${isActive ? "text-white/80 font-medium" : "" }` }>Benefits</NavLink>
+        <NavLink to="/industry-trends" className={({isActive}) => `hover:text-white transition-colors ${isActive ? "text-white/80 font-medium" : "" }` }>Industry Trends</NavLink>
+        <NavLink to="/roi-calculator" className={({isActive}) => `hover:text-white transition-colors ${isActive ? "text-white/80 font-medium" : "" }` }>ROI Calculator</NavLink>
+        <NavLink to="/gst-partnership" className={({isActive}) => `hover:text-white transition-colors ${isActive ? "text-white/80 font-medium" : "" }` }>GSI Partnership</NavLink>
+
           <div className="mt-4">
-            <button className="bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1] hover:to-[#5187b4] text-white px-8 py-3 rounded-md font-medium transition-all transform active:scale-95">
+            {/* <button className="bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1] hover:to-[#5187b4] text-white px-8 py-3 rounded-md font-medium transition-all transform active:scale-95">
               Get Started
-            </button>
+            </button>             <Route path="/solutions" element={<Solution />} />   
+                    */}
           </div>
         </div>
 

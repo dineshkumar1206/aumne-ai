@@ -115,22 +115,10 @@ export default function VelocityReliabilitySection() {
               className="group py-3 rounded-2xl  backdrop-blur-sm transition-all  "
             >
               <h3 className="text-[#0D7EB6] text-md md:text-xl font-bold mb-4 leading-tight">
-                No Proactive, End to End Service Lifecycle Management
+                Legacy IVR Is the Bottleneck to AI-Native Customer Service
               </h3>
               <p className="text-gray-300 text-md leading-relaxed">
-                Service today runs on{" "}
-                <span className="text-white font-bold">
-                  outdated IVRs, disconnected chatbots, siloed workflows.
-                </span>{" "}
-                Unlike products,{" "}
-                <span className="text-white font-bold">
-                  services don't evolve continuously
-                </span>
-                , leaving enterprises with{" "}
-                <span className="text-white font-bold">
-                  slow, manual, and costly
-                </span>{" "}
-                transformations and no visibility or learning from usage.
+               Nearly 75% of enterprises still rely on legacy, menu-driven IVR, even as customer expectations have shifted decisively toward natural, conversational experiences. Voice remains the front door of customer service—yet it's the weakest link.
               </p>
             </div>
 
@@ -146,17 +134,35 @@ export default function VelocityReliabilitySection() {
               // className="group p-8 rounded-2xl border border-[#1e3a8a] bg-[#112240]/40 backdrop-blur-sm transition-all hover:border-[#ef4444]/30 "
               className="group  rounded-2xl   backdrop-blur-sm transition-all "
             >
-              <h3 className="text-[#e11d48] text-md md:text-xl font-bold mb-4">
-                Customer Impact
-              </h3>
-              <p className="text-gray-300 text-md leading-relaxed">
-                Customers feel the impact too with{" "}
-                <span className="text-white font-bold">
-                  broken journeys, repeated frustrations
-                </span>
-                , and <span className="text-white font-bold">poor</span>{" "}
-                omnichannel experiences that erode trust and loyalty.
-              </p>
+                <div className="mt-14 flex flex-col md:flex-row gap-7 text-white">
+    <div className="text-center md:text-left">
+      <p className="text-4xl font-medium">Slow</p>
+      <p className="text-lg text-white/80 mt-1">9-18 Months timelines</p>
+    </div>
+
+    <div className="hidden md:block w-[2px] bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
+
+    <div className="text-center md:text-left">
+      <p className="text-4xl font-bold">70%+</p>
+      <p className="text-lg text-white/80 mt-1">
+        Automation Across the Lifecycle
+      </p>
+    </div>
+
+    <div className="hidden md:block w-[2px] bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
+
+    <div className="text-center md:text-left">
+      <p className="text-4xl font-extrabold">3x</p>
+      <p className="text-lg text-white/80 mt-1">
+        ROI on Modernization
+      </p>
+    </div>
+  </div>
+
+                  
+                 
+                
+             
             </div>
           </div>
         </div>
