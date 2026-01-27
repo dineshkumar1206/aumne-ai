@@ -68,8 +68,6 @@ export default function BannerSection() {
           className="absolute inset-0 w-full h-[120%] object-cover"
         >
           <source src="/video/bg-video.mp4" type="video/mp4" />
-          {/* Replace "/your-video-file.mp4" with your actual video path */}
-          Your browser does not support the video tag.
         </video>
 
         {/* Overlay to make text readable */}

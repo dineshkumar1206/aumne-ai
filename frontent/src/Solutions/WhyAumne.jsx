@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { Crown, Zap, ShieldCheck, TrendingUp, Target } from "lucide-react";
+import WhyAumneCard from "./WhyAumneCard";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function WhyAymne() {
@@ -65,22 +66,15 @@ export default function WhyAymne() {
   ];
 
   return (
-   <section
+    <section
       ref={sectionRef}
-      className="relative min-h-screen text-white pb-40 overflow-visible bg-gradient-to-r from-[#02060d] via-[#071827] via-[#0b2a3d] to-[#0e3b4e]"
+      className="relative min-h-screen text-white pb-40 overflow-visible bg-linear-to-r from-[#02060d] via-[#071827]  to-[#0e3b4e]"
     >
-      <section className="w-full bg-transparent py-10">
+      <section className="w-full bg-transparent pb-10">
         <div className="max-w-7xl mx-auto px-4">
-          {/* Title */}
-          <h2 className="text-white text-3xl font-normal mb-5 ml-2">
-            Why Aumne
-          </h2>
-          <p className="text-base text-center lg:text-start w-full ml-2 lg:w-[600px] mb-7 text-white/50 ">
-            Most platforms focus only on automating parts of the customer
-            service stack. Aumne takes a different approach-we treat service as
-            a product experience and manage its entire lifecycle with AI.
-          </p>
-
+          <div>
+            <WhyAumneCard />
+          </div>
           {/* Main Grid Container with Top & Left Border */}
           <div className="border-t border-l border-white/20 ml-2">
             {services.map((service, index) => (

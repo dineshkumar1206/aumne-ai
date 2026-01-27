@@ -10,8 +10,7 @@ import { MdDeviceHub } from "react-icons/md";
 import { PiGlobeSimpleLight } from "react-icons/pi";
 import { RiRobot2Line } from "react-icons/ri";
 import { FiEye, FiMessageCircle, FiHeart } from "react-icons/fi";
-import bgImage from "../assets/Befefits of Act.png";
-
+import bgImage from "../assets/BenefitsofACT _ BG.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -179,21 +178,20 @@ export default function BenefitsActs() {
   return (
     <section
       ref={sectionRef}
-       className="pt-10 pb-10 text-white px-6 overflow-hidden bg-cover bg-center bg-no-repeat"
-       style={{
+      className="pt-10 pb-10 text-white px-6 overflow-hidden bg-cover bg-center bg-no-repeat"
+      style={{
         backgroundImage: `url(${bgImage})`,
-       }} 
+      }}
     >
-
       <div className="max-w-[1550px] mx-auto text-center">
-        <h2 className="text-4xl md:text-6xl text-[#0D7EB6] font-semibold mb-6 tracking-tight">
+        <h2 className="text-4xl md:text-6xl text-[#159ce0] font-semibold mb-6 tracking-tight">
           Benefits of ACT
         </h2>
         <p className="mb-5 text-white text-[20px]  max-w-4xl mx-auto leading-relaxed">
           ACT bridges speed, savings, and customer delight with enterprise-grade
           control.
         </p>
-        <p className="mb-20 text-neutral-400  text-base max-w-2xl mx-auto leading-relaxed">
+        <p className="mb-20 text-white/80  text-base max-w-2xl mx-auto leading-relaxed">
           With ACT, enterprises gain the ability to modernize faster, reduce
           costs, and deliver seamless experiences — while staying in control of
           how services are built and evolved.
@@ -217,9 +215,9 @@ export default function BenefitsActs() {
               <div className="absolute -inset-1 bg-linear-to-r from-blue-600 to-cyan-500 opacity-0 group-hover:opacity-10 blur-xl transition-opacity duration-500" />
 
               {/* Icon Section */}
-              <div className="icon-box text-2xl text-[#0D7EB6] mb-6 bg-blue-500/10 p-4 rounded-full transition-colors duration-300 self-center">
+              {/* <div className="icon-box text-2xl text-[#0D7EB6] mb-6 bg-blue-500/10 p-4 rounded-full transition-colors duration-300 self-center">
                 {item.icon}
-              </div>
+              </div> */}
 
               {/* Number */}
               {/* <div className="text-5xl md:text-6xl font-bold text-[#0D7EB6] mb-4">
@@ -233,15 +231,17 @@ export default function BenefitsActs() {
                 </span>
               </div> */}
 
-              <p className="text-[#0D7EB6] font-bold text-lg md:text-[22px] mb-6 leading-relaxed">
+              <p className="text-[#0D7EB6] font-bold text-lg md:text-[22px] mb-3 leading-relaxed">
                 {item.label}
               </p>
-              <p className="text-neutral-400 text-lg mb-6 leading-relaxed">
+              <div className="w-full h-px bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
+
+              <p className="text-neutral-400 text-lg mb-6 mt-6 leading-relaxed">
                 {item.value}
               </p>
               {/* Card Footer (Wix-style) */}
-<div className="w-full mt-8 pt-4 border-t border-white/10 flex items-center justify-between text-neutral-400 text-sm">
-  {/* Left side */}
+              {/* <div className="w-full mt-8 pt-4 border-t border-white/10 flex items-center justify-between text-neutral-400 text-sm">
+ 
   <div className="flex items-center gap-6">
     <div className="flex items-center gap-1">
       <FiEye className="text-base" />
@@ -254,14 +254,12 @@ export default function BenefitsActs() {
     </div>
   </div>
 
-  {/* Right side */}
+  
   <FiHeart className="text-lg text-red-500 cursor-pointer hover:scale-110 transition-transform duration-200" />
-</div>
-
+</div> */}
             </div>
           ))}
         </div>
-       
       </div>
     </section>
   );

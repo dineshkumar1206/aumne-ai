@@ -76,29 +76,38 @@ export default function HowActs() {
 
   return (
     <section
-  ref={sectionRef}
-  className="relative text-white py-20 pb-24 overflow-visible"
->
-  {/* Background Image */}
-  <div
-    className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
-    style={{ backgroundImage: `url(${bgImage})` }}
-  />
+      ref={sectionRef}
+      className="relative text-white py-20 pb-24 overflow-visible"
+    >
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
+        // style={{ backgroundImage: `url(${bgImage})` }}
+      />
 
-  {/* Dark overlay for readability */}
-  <div className="absolute inset-0 bg-black/60 z-0" />
+      {/* <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-[40%] object-cover"
+      >
+        <source src="/video/bg-video.mp4" type="video/mp4" />
+      </video> */}
+
+      {/* Dark overlay for readability */}
+      <div className="absolute inset-0 bg-black/60 z-0" />
 
       <div className="relative z-10 text-center max-w-5xl mx-auto mb-28">
-  <h2 className="text-4xl md:text-6xl text-[#0D7EB6] font-semibold tracking-tight mb-6">
-    How Act Works
-  </h2>
-  <p className="text-white/90 text-[20px] leading-relaxed">
-    ACT follows a continuous lifecycle — ensuring services are not only
-    modernized but also transparent, governed, and continuously evolving
-    alongside products.
-  </p>
-</div>
-
+        <h2 className="text-4xl md:text-6xl text-[#0D7EB6] font-semibold tracking-tight mb-6">
+          How Act Works
+        </h2>
+        <p className="text-white/90 text-[20px] leading-relaxed">
+          ACT follows a continuous lifecycle — ensuring services are not only
+          modernized but also transparent, governed, and continuously evolving
+          alongside products.
+        </p>
+      </div>
 
       <div className="relative z-10 max-w-[1550px] mx-auto px-6 md:px-16 pt-[120px]">
         {/* Main Container with Border */}
@@ -107,19 +116,25 @@ export default function HowActs() {
           <div className="lg:col-span-5 relative overflow-hidden border-r border-white/10 p-12 lg:p-13 flex flex-col justify-center">
             <div
               ref={bgRef}
-              className="absolute inset-0 w-[140%] h-full opacity-30 bg-cover bg-center pointer-events-none z-0"
-              style={{ backgroundImage: "url('/para2.avif')", left: "-20%" }}
+              className="absolute inset-0 w-[140%] h-full opacity-50 bg-cover bg-center pointer-events-none z-0"
+              style={{
+                backgroundImage: "url('/image/acts.jpg')",
+                left: "-20%",
+              }}
             />
             <div className="relative z-10">
-              <h2 className="text-xl md:text-3xl  tracking-[3px] font-bold text-white">
-                The Act Lifecycle
-                {/* <span
-                  //  className="font-semibold bg-linear-to-r from-[#036ffd] via-[#1e88e5] to-[#42a5f5] bg-clip-text text-transparent"
-                  className="font-semibold bg-linear-to-r text-[#0D7EB6]"
-                >
-                  with enterprise-grade control.
-                </span> */}
-              </h2>
+              {/* <div className="relative flex-1   overflow-hidden group border-r border-white/10">
+                <div
+                  ref={imageRef}
+                  className="absolute inset-0 bg-cover bg-center scale-125"
+                  style={{
+                    backgroundImage: "url('/image/acts.jpg')",
+                    height: "100%",
+                    top: "-10%",
+                  }}
+                />
+                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500" />
+              </div> */}
               {/* <p className="mt-8 text-neutral-400 text-lg leading-relaxed max-w-xs">
                 Empower your enterprise with seamless AI integration and
                 data-driven decision making.
@@ -165,7 +180,7 @@ export default function HowActs() {
                     </div>
 
                     {/* Title with Gradient */}
-                    <h3 className="text-lg font-semibold bg-clip-text bg-linear-to-r text-[#0D7EB6] mb-4 leading-tight">
+                    <h3 className="text-lg font-semibold  bg-clip-text bg-linear-to-r text-[#0D7EB6] mb-4 leading-tight">
                       {card.title}
                     </h3>
 
@@ -180,7 +195,7 @@ export default function HowActs() {
                     <div className="w-full h-0.5 bg-white/10 rounded-full overflow-hidden">
                       <div className="w-0 group-hover:w-full h-full bg-linear-to-r from-[#1E4EAD] via-[#0D7EB6] to-[#1CC2D1] transition-all duration-700 ease-in-out" />
                     </div>
-                    {/* Subtle Number/Index Indicator */}
+
                     <span className="absolute -top-6 right-0 text-[10px] font-mono text-white/20 tracking-widest group-hover:text-[#0D7EB6] transition-colors">
                       PHASE_0{i + 1}
                     </span>
