@@ -8,7 +8,6 @@ const Benefits = () => {
     <div className="bg-linear-to-r from-[#02060d] via-[#071827]  to-[#0e3b4e]">
       <BenefitsActs />
       <HowActs />
-      <HorizontalScrollVideo/>
     </div>
   );
 };

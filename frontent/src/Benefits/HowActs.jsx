@@ -77,7 +77,7 @@ export default function HowActs() {
   return (
     <section
       ref={sectionRef}
-      className="relative text-white py-20 pb-24 overflow-visible"
+      className="relative text-white py-20 pb-24 overflow-visible min-height-screen"
     >
       {/* Background Image */}
       <div
@@ -85,15 +85,15 @@ export default function HowActs() {
         // style={{ backgroundImage: `url(${bgImage})` }}
       />
 
-      {/* <video
+      <video
         autoPlay
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-[40%] object-cover"
+        className="absolute inset-0 w-full h-full object-cover"
       >
         <source src="/video/bg-video.mp4" type="video/mp4" />
-      </video> */}
+      </video>
 
       {/* Dark overlay for readability */}
       <div className="absolute inset-0 bg-black/60 z-0" />
