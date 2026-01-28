@@ -11,6 +11,12 @@ import ROICalculator from "./RoiCalculator/ROICalculator";
 import GSIPartnership from "./Partnership/GSIPartnership";
 import ScrollToTop from "./Components/ScrollToTop";
 import VideoBackground from "./Components/VideoBackground";
+import TransformationComparison from "./Solutions/TransformationComparison";
+import EcosystemAudience from "./Solutions/EcosystemAudience";
+import BenefitsActs from "./Benefits/BenefitsActs";
+import OutcomesSection from "./Solutions/OutcomesSection";
+import TransformationWindow from "./Solutions/TransformationWindow";
+import LivedExperienceSection from "./Solutions/LivedExperienceSection";
 
 const App = () => {
   return (

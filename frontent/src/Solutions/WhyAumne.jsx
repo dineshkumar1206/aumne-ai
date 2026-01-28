@@ -4,6 +4,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { Crown, Zap, ShieldCheck, TrendingUp, Target } from "lucide-react";
 import WhyAumneCard from "./WhyAumneCard";
+import TransformationComparison from "./TransformationComparison";
+import EcosystemAudience from "./EcosystemAudience";
+import OutcomesSection from "./OutcomesSection";
+import TransformationWindow from "./TransformationWindow";
+import LivedExperienceSection from "./LivedExperienceSection";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function WhyAymne() {
@@ -107,18 +112,19 @@ export default function WhyAymne() {
           </div>
         </div>
       </section>
+
       {/* ===== WHY SERVICES-LED TRANSFORMATION FAILS ===== */}
-<div className="max-w-6xl mx-auto mt-24 px-4">
+  {/* <div className="max-w-6xl mx-auto mt-24 px-4"> */}
   {/* Heading */}
-  <h2 className="text-3xl md:text-4xl font-semibold text-[#159ce0] mb-12">
+  {/* <h2 className="text-3xl md:text-4xl font-semibold text-[#159ce0] mb-12">
     Why Services-Led Transformation No Longer Works
-  </h2>
+  </h2> */}
 
   {/* Comparison Box */}
-  <div className="grid grid-cols-1 md:grid-cols-2 rounded-2xl overflow-hidden border border-white/10 ">
+  {/* <div className="grid grid-cols-1 md:grid-cols-2 rounded-2xl overflow-hidden border border-white/10 "> */}
 
     {/* LEFT COLUMN */}
-    <div className="p-8 border-b md:border-b-0 md:border-r border-white/10">
+    {/* <div className="p-8 border-b md:border-b-0 md:border-r border-white/10">
       <h3 className="text-xl font-semibold text-white mb-6">
       Services-Led: Yesterday’s Approach
       </h3>
@@ -132,11 +138,11 @@ export default function WhyAymne() {
         <li>• Risky production changes</li>
         <li>• ROI uncertain</li>
       </ul>
-    </div>
+    </div> */}
 
     {/* RIGHT COLUMN */}
-    <div className="p-8 ">
-      <h3 className="text-xl font-semibold text-white mb-6">
+    {/* <div className="p-8 "> */}
+      {/* <h3 className="text-xl font-semibold text-white mb-6">
        Platform-Led with Aumne: Today’s Advantage
       </h3>
 
@@ -152,9 +158,9 @@ export default function WhyAymne() {
     </div>
 
   </div>
-</div>
-
-<div class="max-w-6xl mx-auto mt-24 px-4">
+</div> */}
+                  {/* -------------------- */}
+ {/* <div class="max-w-6xl mx-auto mt-24 px-4">
   <h2 class="text-3xl md:text-4xl font-semibold text-[#159ce0] mb-12">
     Built for the Ecosystem That Delivers Customer Service
   </h2>
@@ -188,9 +194,9 @@ export default function WhyAymne() {
       </p>
     </div>
   </div>
-</div>
-
-<div class="max-w-6xl mx-auto mt-24 px-4">
+</div> */}
+            {/* ----------------------------------- */}
+{/* <div class="max-w-6xl mx-auto mt-24 px-4">
   <h2 class="text-3xl md:text-4xl font-semibold text-[#159ce0] mb-12">
     Outcomes That Matter
   </h2>
@@ -215,9 +221,12 @@ export default function WhyAymne() {
       • Continuous CX improvement
     </li>
   </ul>
-</div>
+</div> */}
 
-<div class="max-w-6xl mx-auto mt-24 px-4">
+
+                {/*-----------------------------------  */}
+
+ {/* <div class="max-w-6xl mx-auto mt-24 px-4">
   <h2 class="text-3xl md:text-4xl font-semibold text-[#159ce0] mb-12">
     The Window for Platform-Led CX Transformation Is Open
   </h2>
@@ -239,9 +248,9 @@ export default function WhyAymne() {
       • Enterprises no longer accept multi-year, million-dollar projects with uncertain ROI
     </li>
   </ul>
-</div>
-
-<div class="max-w-6xl mx-auto mt-24 px-4">
+</div> */}
+                     {/* ----------- ---------------------- */}
+  {/* <div class="max-w-6xl mx-auto mt-24 px-4">
   <h2 class="text-3xl md:text-4xl font-semibold text-[#159ce0] mb-12">
     Built by People Who've Lived the Problem
   </h2>
@@ -260,7 +269,13 @@ export default function WhyAymne() {
       • Defining a new category: <span class="font-semibold">Agentic Service Lifecycle Management</span>
     </li>
   </ul>
-</div>
+</div> */}
+
+<TransformationComparison/>
+<EcosystemAudience/>
+<OutcomesSection/>
+<TransformationWindow/>
+<LivedExperienceSection/>
 
 
 
