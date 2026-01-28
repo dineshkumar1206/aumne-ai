@@ -80,12 +80,12 @@ export default function HowActs() {
       className="relative text-white py-20 pb-24 overflow-visible min-height-screen"
     >
       {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
-        // style={{ backgroundImage: `url(${bgImage})` }}
-      />
+      {/* <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0" */}
+        {/* // style={{ backgroundImage: `url(${bgImage})` }} */}
+      {/* /> */}
 
-      <video
+      {/* <video
         autoPlay
         muted
         loop
@@ -93,10 +93,10 @@ export default function HowActs() {
         className="absolute inset-0 w-full h-full object-cover z-0"
       >
         <source src="/video/bg-video.mp4" type="video/mp4" />
-      </video>
+      </video> */}
 
       {/* Dark overlay for readability */}
-      <div className="absolute inset-0 bg-black/60 z-0" />
+      <div className="absolute inset-0 z-0" />
 
       <div className="relative z-20 text-center max-w-5xl mx-auto mb-28">
         <h2 className="text-4xl md:text-6xl text-[#0D7EB6] font-semibold tracking-tight mb-6">

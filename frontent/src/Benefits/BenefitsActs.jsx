@@ -10,7 +10,7 @@ import { MdDeviceHub } from "react-icons/md";
 import { PiGlobeSimpleLight } from "react-icons/pi";
 import { RiRobot2Line } from "react-icons/ri";
 import { FiEye, FiMessageCircle, FiHeart } from "react-icons/fi";
-import bgImage from "../assets/BenefitsofACT _ BG.jpeg";
+// import bgImage from "../assets/BenefitsofACT _ BG.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -178,10 +178,10 @@ export default function BenefitsActs() {
   return (
     <section
       ref={sectionRef}
-      className="pt-10 pb-10 text-white px-6 overflow-hidden bg-cover bg-top bg-no-repeat"
-      style={{
-        backgroundImage: `url(${bgImage})`,
-      }}
+      className="pt-10 pb-10 text-white px-6 overflow-hidden"
+      // style={{
+      //   backgroundImage: `url(${bgImage})`,
+      // }}
     >
       <div className="max-w-[1550px] mx-auto text-center">
         <h2 className="text-4xl md:text-6xl text-[#159ce0] font-semibold mb-6 tracking-tight">

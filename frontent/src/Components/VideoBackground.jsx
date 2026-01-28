@@ -16,7 +16,7 @@ export default function VideoBackground() {
       </video>
 
       {/* optional overlay */}
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 " />
     </div>
   );
 }

@@ -24,7 +24,7 @@ const partners = [
 
 export default function GSIPartnership() {
   return (
-    <section className="bg-gradient-to-r from-[#02060d] via-[#071827] via-[#0b2a3d] to-[#0e3b4e] px-6 py-20">
+    <section className="px-6 py-20">
       <div className="max-w-[1400px] mx-auto">
         {/* Heading */}
         <div className="text-center mb-16">
