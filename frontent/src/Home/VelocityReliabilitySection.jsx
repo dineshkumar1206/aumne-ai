@@ -134,34 +134,48 @@ export default function VelocityReliabilitySection() {
               // className="group p-8 rounded-2xl border border-[#1e3a8a] bg-[#112240]/40 backdrop-blur-sm transition-all hover:border-[#ef4444]/30 "
               className="group  rounded-2xl   backdrop-blur-sm transition-all "
             >
-                <div className="mt-14 flex flex-col md:flex-row gap-7 text-white">
-    <div className="text-center md:text-left">
-      <p className="text-4xl font-medium">Slow</p>
-      <p className="text-lg text-white/80 mt-1">9-18 Months timelines</p>
-    </div>
-
-    <div className="hidden md:block w-[2px] bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
-
-    <div className="text-center md:text-left">
-      <p className="text-4xl font-bold">70%+</p>
-      <p className="text-lg text-white/80 mt-1">
-        Automation Across the Lifecycle
-      </p>
-    </div>
-
-    <div className="hidden md:block w-[2px] bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
-
-    <div className="text-center md:text-left">
-      <p className="text-4xl font-extrabold">3x</p>
-      <p className="text-lg text-white/80 mt-1">
-        ROI on Modernization
-      </p>
-    </div>
+                <div className="mt-14 flex flex-row items-stretch justify-between gap-6 text-white">
+  {/* Item 1 */}
+  <div className="text-center md:text-left">
+    <p className="text-2xl font-semibold">Slow</p>
+    <p className="text-sm text-white/60 mt-1">
+      9–18 month timelines
+    </p>
   </div>
 
-                  
-                 
-                
+  {/* Divider */}
+  <div className="hidden md:block w-[2px] self-stretch bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
+
+  {/* Item 2 */}
+  <div className="text-center md:text-left">
+    <p className="text-2xl font-semibold">Expensive</p>
+    <p className="text-sm text-white/60 mt-1">
+      $1M+ per transformation
+    </p>
+  </div>
+
+  {/* Divider */}
+  <div className="hidden md:block w-[2px] self-stretch bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
+
+  {/* Item 3 */}
+  <div className="text-center md:text-left">
+    <p className="text-2xl font-semibold">Services-Heavy</p>
+    <p className="text-sm text-white/60 mt-1">
+      High executive risk
+    </p>
+  </div>
+
+  {/* Divider */}
+  <div className="hidden md:block w-[2px] self-stretch bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
+
+  {/* Item 4 */}
+  <div className="text-center md:text-left">
+    <p className="text-2xl font-semibold">Disconnected</p>
+    <p className="text-sm text-white/60 mt-1">
+      No continuous evolution
+    </p>
+  </div>
+</div>
              
             </div>
           </div>

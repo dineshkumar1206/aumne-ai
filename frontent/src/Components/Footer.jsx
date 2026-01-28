@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedinIn, FaFacebookF, FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn, FaFacebookF, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 export default function Footer() {
@@ -127,6 +127,27 @@ export default function Footer() {
                   size={18}
                 />
               </a>
+
+              <a
+  href="#" 
+  target="_blank"
+  rel="noopener noreferrer"
+  className="group relative p-2 rounded-full bg-neutral-300/30 overflow-hidden transition-all"
+>
+  {/* Gradient Hover Layer */}
+  <span
+    className="absolute inset-0 bg-linear-to-r from-[#25D366] via-[#1EBE5D] to-[#128C7E]
+    opacity-0 transition-opacity duration-300 ease-out
+    group-hover:opacity-100"
+  />
+
+  {/* Icon */}
+  <FaWhatsapp
+    className="relative z-10 text-neutral-300 group-hover:text-white transition-colors"
+    size={18}
+  />
+</a>
+
             </div>
           </div>
 
