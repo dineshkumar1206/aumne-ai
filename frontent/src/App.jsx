@@ -22,11 +22,11 @@ const App = () => {
       <main className="relative z-20">
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/solutions" element={<Solution />} />
+        {/* <Route path="/solutions" element={<Solution />} />
         <Route path="/benefits" element={<Benefits />} />
         <Route path="/industry-trends" element={<StatisticsSection/>}/>
         <Route path="/roi-calculator" element={<ROICalculator/>}/>
-        <Route path="/gst-partnership" element={<GSIPartnership/>} />
+        <Route path="/gst-partnership" element={<GSIPartnership/>} /> */}
 
       </Routes>
       <Footer />

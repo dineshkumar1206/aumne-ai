@@ -112,9 +112,9 @@ export default function WhyAumneCard() {
               onMouseLeave={() => handleMouseLeave(0)}
               style={{ transformStyle: "preserve-3d" }}
               // className="group p-8 rounded-2xl border border-[#1e3a8a] bg-[#112240]/40 backdrop-blur-sm transition-all hover:border-[#3b82f6]/50 "
-              className="group py-3 rounded-2xl  backdrop-blur-sm transition-all  "
+              className="group py-3 rounded-2xl  "
             >
-              <p className="text-base text-center lg:text-start w-full ml-2 lg:w-[600px] mb-7 text-white/50 ">
+              <p className="text-base text-center lg:text-start w-full ml-2 lg:w-[600px] mb-7 text-white/80 ">
               Aumne is purpose-built to modernize what already exists, not force enterprises to start from scratch. 
               Our agentic, AI-native platform turns IVR modernization from a one-time, high-risk project into a continuous platform capability.
               </p>

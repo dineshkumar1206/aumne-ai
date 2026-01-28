@@ -12,6 +12,8 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     min-height: 100vh;
+    scroll-behavior: smooth;
+    scroll-padding-top: 96px;
   }
 
   /* Text selection color (optional - looks cool) */

@@ -68,7 +68,7 @@ export default function WhyAymne() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen text-white pb-40 overflow-visible bg-linear-to-r from-[#02060d] via-[#071827]  to-[#0e3b4e]"
+      className="relative min-h-screen text-white pb-40 overflow-visible "
     >
       <section className="w-full bg-transparent pb-10">
         <div className="max-w-7xl mx-auto px-4">
@@ -98,7 +98,7 @@ export default function WhyAymne() {
                   <h3 className="text-white text-xl font-bold mb-4">
                     {service.title}
                   </h3>
-                  <p className="text-white/50 text-base leading-relaxed max-w-2xl">
+                  <p className="text-white/60 text-base leading-relaxed max-w-2xl">
                     {service.description}
                   </p>
                 </div>
@@ -123,7 +123,7 @@ export default function WhyAymne() {
       Services-Led: Yesterday’s Approach
       </h3>
 
-      <ul className="space-y-4 text-white/60">
+      <ul className="space-y-4 text-white/70">
         <li>• Manual discovery</li>
         <li>• Custom redesign every time</li>
         <li>• Knowledge locked in people</li>
@@ -140,7 +140,7 @@ export default function WhyAymne() {
        Platform-Led with Aumne: Today’s Advantage
       </h3>
 
-      <ul className="space-y-4 text-white/60">
+      <ul className="space-y-4 text-white/70">
         <li>• Automated discovery</li>
         <li>• Reusable patterns & intelligence</li>
         <li>• Design intelligence in software</li>
@@ -164,7 +164,7 @@ export default function WhyAymne() {
       <h3 class="text-lg font-semibold text-white mb-1">
         Enterprises
       </h3>
-      <p class="text-white/60 leading-relaxed">
+      <p class="text-white/70 leading-relaxed">
         Modernize complex legacy IVRs without ripping and replacing existing platforms.
       </p>
     </div>
@@ -173,7 +173,7 @@ export default function WhyAymne() {
       <h3 class="text-lg font-semibold text-white mb-1">
         Global System Integrators (GSIs)
       </h3>
-      <p class="text-white/60 leading-relaxed">
+      <p class="text-white/70 leading-relaxed">
         Deliver AI-driven CX transformation faster, at scale, while protecting margins.
       </p>
     </div>
@@ -182,7 +182,7 @@ export default function WhyAymne() {
       <h3 class="text-lg font-semibold text-white mb-1">
         BPOs & CX Providers
       </h3>
-      <p class="text-white/60 leading-relaxed">
+      <p class="text-white/70 leading-relaxed">
         Enable <span class="font-semibold text-white/60">Human + Voice AI</span> service models that
         improve productivity, margins, and deal competitiveness.
       </p>
@@ -196,22 +196,22 @@ export default function WhyAymne() {
   </h2>
 
   <ul class="space-y-4">
-    <li class="text-white/60 text-base leading-relaxed">
+    <li class="text-white/70 text-base leading-relaxed">
       • 5× faster time to value
     </li>
-    <li class="text-white/60 text-base leading-relaxed">
+    <li class="text-white/70 text-base leading-relaxed">
       • 70%+ automation across the lifecycle
     </li>
-    <li class="text-white/60 text-base leading-relaxed">
+    <li class="text-white/70 text-base leading-relaxed">
       • 3× ROI on transformation
     </li>
-    <li class="text-white/60 text-base leading-relaxed">
+    <li class="text-white/70 text-base leading-relaxed">
       • Reduced abandonment and agent load
     </li>
-    <li class="text-white/60 text-base leading-relaxed">
+    <li class="text-white/70 text-base leading-relaxed">
       • Predictable modernization economics
     </li>
-    <li class="text-white/60 text-base leading-relaxed">
+    <li class="text-white/70 text-base leading-relaxed">
       • Continuous CX improvement
     </li>
   </ul>
@@ -223,19 +223,19 @@ export default function WhyAymne() {
   </h2>
 
   <ul class="space-y-4 ">
-    <li class="text-white/60 leading-relaxed">
+    <li class="text-white/70 leading-relaxed">
       • Customers now expect conversational experiences—especially on voice
     </li>
-    <li class="text-white/60 leading-relaxed">
+    <li class="text-white/70 leading-relaxed">
       • Enterprises are already spending $53B+ annually on CX modernization
     </li>
-    <li class="text-white/60 leading-relaxed">
+    <li class="text-white/70 leading-relaxed">
       • Legacy IVR remains the biggest blocker
     </li>
-    <li class="text-white/60 leading-relaxed">
+    <li class="text-white/70 leading-relaxed">
       • AI has reached a point where legacy systems can be understood and transformed programmatically
     </li>
-    <li class="text-white/60 leading-relaxed">
+    <li class="text-white/70 leading-relaxed">
       • Enterprises no longer accept multi-year, million-dollar projects with uncertain ROI
     </li>
   </ul>
@@ -247,16 +247,16 @@ export default function WhyAymne() {
   </h2>
 
   <ul class="space-y-4">
-    <li class="text-white/60 leading-relaxed">
+    <li class="text-white/70 leading-relaxed">
       • 100+ years of combined experience in IVR, contact centers, enterprise CX, and platform engineering
     </li>
-    <li class="text-white/60 leading-relaxed">
+    <li class="text-white/70 leading-relaxed">
       • First-hand experience delivering large, services-heavy transformations
     </li>
-    <li class="text-white/60 leading-relaxed">
+    <li class="text-white/70 leading-relaxed">
       • Deep legacy fluency combined with AI-native platform thinking
     </li>
-    <li class="text-white/60 leading-relaxed">
+    <li class="text-white/70 leading-relaxed">
       • Defining a new category: <span class="font-semibold">Agentic Service Lifecycle Management</span>
     </li>
   </ul>

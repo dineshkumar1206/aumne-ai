@@ -50,7 +50,7 @@ const ROICalculator = () => {
       {/* BOX */}
       <div
   ref={boxRef}
-  className=" mx-auto max-w-4xl transform opacity-0 -translate-x-20 rounded-2xl  bg-[#163A5A] p-10 transition-all duration-1000 ease-out hover:-translate-y-1 hover:shadow-glow"
+  className=" mx-auto max-w-4xl transform opacity-0 -translate-x-20 rounded-2xl  bg-[#0a2133] p-10 transition-all duration-1000 ease-out hover:-translate-y-1 hover:shadow-glow"
     >
         <div className="grid gap-6 md:grid-cols-3">
           <div className="text-left">

@@ -87,7 +87,7 @@ export default function VelocityReliabilitySection() {
           <div className="relative flex-1 min-h-[565px]  overflow-hidden group border-r border-white/10">
             <div
               ref={imageRef}
-              className="absolute inset-0 bg-cover bg-center scale-125"
+              className="absolute inset-0 bg-cover bg-center scale-132"
               style={{
                 backgroundImage: "url('/image/The Core Problem - BG.jpg.jpeg')",
                 height: "100%",
@@ -132,7 +132,7 @@ export default function VelocityReliabilitySection() {
               onMouseLeave={() => handleMouseLeave(1)}
               style={{ transformStyle: "preserve-3d" }}
               // className="group p-8 rounded-2xl border border-[#1e3a8a] bg-[#112240]/40 backdrop-blur-sm transition-all hover:border-[#ef4444]/30 "
-              className="group  rounded-2xl   backdrop-blur-sm transition-all "
+              className="group  rounded-2xl "
             >
                 <div className="mt-14 flex flex-row items-stretch justify-between gap-6 text-white">
   {/* Item 1 */}

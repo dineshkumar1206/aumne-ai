@@ -6,7 +6,6 @@ import HorizontalScrollVideo from "../Home/HorizontalScrollImage";
 const Benefits = () => {
   return (
     <div>
-      <BenefitsActs />
       <HowActs />
     </div>
   );

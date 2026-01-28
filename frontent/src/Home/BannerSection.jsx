@@ -1,47 +1,36 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import DataGrowthSection from "./DataGrowthSection";
 import VelocityReliabilitySection from "./VelocityReliabilitySection";
 import StatisticsSection from "./StatisticsSection";
-import HorizontalScrollVideo from "./HorizontalScrollImage";
 import ROICalculator from "../RoiCalculator/ROICalculator";
 import heroVideo from "../assets/Aumnei-Video.mp4";
 import Benefits from "../Benefits/Benefits";
 import GSIPartnership from "../Partnership/GSIPartnership";
-
+import Solution from "../Solutions/Solution";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function BannerSection() {
   const sectionRef = useRef(null);
-  const bgRef = useRef(null);
   const contentRef = useRef(null);
-  const videoRef = useRef(null)
+  const videoRef = useRef(null);
+
+  const [isPlaying, setIsPlaying] = useState(true);
+  const [isMuted, setIsMuted] = useState(true);
+  const [progress, setProgress] = useState(0);
+const [duration, setDuration] = useState(0);
+
 
   useEffect(() => {
-    // 1. PINNING LOGIC
     ScrollTrigger.create({
       trigger: sectionRef.current,
       start: "top top",
       pin: true,
       pinSpacing: false,
-
     });
 
-    // 2. BACKGROUND PARALLAX (Video move aagura effect)
-    gsap.to(bgRef.current, {
-      yPercent: 15,
-      ease: "none",
-      scrollTrigger: {
-        trigger: sectionRef.current,
-        start: "top top",
-        end: "bottom top",
-        scrub: 1,
-      },
-    });
-
-    // 3. CONTENT REVEAL
     gsap.to(contentRef.current, {
       opacity: 0,
       y: -50,
@@ -53,32 +42,43 @@ export default function BannerSection() {
       },
     });
 
-           // 4. VIDEO REVEAL 
-   gsap.to(videoRef.current, {
-  opacity: 0,
-  y: -50,
-  scrollTrigger: {
-    trigger: sectionRef.current,
-    start: "top top",
-    end: "30% top",
-    scrub: true,
-  },
-});
-
+    gsap.to(videoRef.current, {
+      opacity: 0,
+      y: -50,
+      scrollTrigger: {
+        trigger: sectionRef.current,
+        start: "top top",
+        end: "30% top",
+        scrub: true,
+      },
+    });
 
     return () => {
       ScrollTrigger.getAll().forEach((t) => t.kill());
     };
   }, []);
 
+  // ✅ VIDEO CONTROLS (OUTSIDE useEffect)
+  const togglePlay = () => {
+    if (!videoRef.current) return;
+    if (isPlaying) videoRef.current.pause();
+    else videoRef.current.play();
+    setIsPlaying(!isPlaying);
+  };
+
+  const toggleMute = () => {
+    if (!videoRef.current) return;
+    videoRef.current.muted = !isMuted;
+    setIsMuted(!isMuted);
+  };
+
   return (
-    <main className="">
-      {/* SECTION 1: Fixed Banner with Video Background */}
+    <main>
       <section
-  ref={sectionRef}
-  className="relative h-screen w-full z-10 flex items-center"
->
-  <div className="relative z-10 mx-auto w-full max-w-8xl px-6 md:px-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        ref={sectionRef}
+        className="relative h-screen w-full z-10 flex items-center"
+      >
+       <div className="relative z-10 mx-auto w-full max-w-8xl px-6 md:px-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
     {/* LEFT: TEXT */}
     <div ref={contentRef} className="lg:-ml-8">
@@ -123,24 +123,123 @@ export default function BannerSection() {
   </div>
 </div>
 
-    {/* RIGHT: VIDEO */}
-    <div ref={videoRef} className="relative rounded-2xl overflow-hidden shadow-2xl lg:ml-12">
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="w-full h-full object-cover"
-      >
-        <source src={heroVideo} type="video/mp4" />
-      </video>
+          {/* Metrics */}
+      {/* <div className="mt-14 flex flex-col md:flex-row gap-10 text-white">
+        <div className="text-center md:text-left">
+          <p className="text-4xl font-extrabold">5X</p>
+          <p className="text-lg text-white/80 mt-1">Faster Transformation</p>
+        </div>
+    
+        <div className="hidden md:block w-[2px] bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
+    
+        <div className="text-center md:text-left">
+          <p className="text-4xl font-bold">70%+</p>
+          <p className="text-lg text-white/80 mt-1">
+            Automation Across the Lifecycle
+          </p>
+        </div>
+    
+        <div className="hidden md:block w-[2px] bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
+    
+        <div className="text-center md:text-left">
+          <p className="text-4xl font-extrabold">3x</p>
+          <p className="text-lg text-white/80 mt-1">
+            ROI on Modernization
+          </p>
+        </div> */}
+    
+             {/* RIGHT: VIDEO */}
+  <div ref={videoRef} className="relative rounded-2xl overflow-hidden shadow-2xl lg:ml-12 bg-black w-full max-w-[520px] aspect-video mt-24">
 
-      <div className="absolute inset-0 bg-black/20" />
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="w-full h-full object-cover"
+    onTimeUpdate={(e) => {
+      const progress = (e.target.currentTime / e.target.duration) * 100;
+      setProgress(progress);
+      setCurrentTime(e.target.currentTime);
+      setDuration(e.target.duration);
+    }}
+  >
+    <source src={heroVideo} type="video/mp4" />
+  </video>
+
+  {/* Dark overlay */}
+  <div className="absolute inset-0 bg-black/20"></div>
+
+  {/* CENTER PLAY BUTTON */}
+  {!isPlaying && (
+    <button
+      onClick={togglePlay}
+      className="absolute inset-0 flex items-center justify-center"
+    >
+      <div className="bg-black/60 p-6 rounded-full text-white text-4xl hover:scale-110 transition">
+        ▶
+      </div>
+    </button>
+  )}
+
+  {/* BOTTOM CONTROL BAR */}
+  <div className="absolute bottom-0 left-0 w-full px-4 pb-3">
+
+    {/* PROGRESS BAR */}
+    <div
+      className="w-full h-1 bg-white/30 rounded cursor-pointer mb-2"
+      onClick={(e) => {
+        const rect = e.currentTarget.getBoundingClientRect();
+        const clickX = e.clientX - rect.left;
+        const percent = clickX / rect.width;
+        videoRef.current.currentTime = percent * duration;
+      }}
+    >
+      <div
+        className="h-1 bg-red-500 rounded"
+        style={{ width: `${progress}%` }}
+      ></div>
     </div>
 
-  </div>
-</section>
+    {/* CONTROLS ROW */}
+    <div className="flex items-center justify-between text-white text-sm">
 
+      {/* LEFT CONTROLS */}
+      <div className="flex items-center gap-3">
+
+        {/* Play/Pause */}
+        <button onClick={togglePlay} className="text-lg">
+          {isPlaying ? "⏸" : "▶"}
+        </button>
+
+        {/* Volume */}
+        <button onClick={toggleMute} className="text-lg">
+          {isMuted ? "🔇" : "🔊"}
+        </button>
+
+        {/* Time */}
+        {/* <span className="text-xs opacity-80">
+          {Math.floor(currentTime)} / {Math.floor(duration)} sec
+        </span> */}
+      </div>
+
+      {/* RIGHT ICONS */}
+      <div className="flex items-center gap-3 opacity-80">
+        {/* <span>⚙</span> */}
+        <button
+          onClick={() => videoRef.current.requestFullscreen()}
+          className="text-lg"
+        >
+          ⛶
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+      </section>
 
 
       {/* SECTION 2 */}
@@ -156,30 +255,26 @@ export default function BannerSection() {
         {/* <section className="">
           <HorizontalScrollVideo className="w-full h-32" />
         </section> */}
-        <section className="">
+         <section className="" id="solutions">
+           <Solution/>
+        </section>
+        <section className="" id="benefits">
            <Benefits/>
         </section>
-        <section className="">
+        <section className="" id="statistics">
            <StatisticsSection/>
         </section>
-        <section className="">
+        <section className="" id="roi">
            <ROICalculator/>
         </section>
-        <section className="">
+        <section className="" id="gsi">
            <GSIPartnership/>
         </section>
       </section>
     </main>
   );
 }
- {/* <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-full object-cover opacity-70"
-        >
-          <source src="/video/bg-video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-         */}
+
+
+  
+
