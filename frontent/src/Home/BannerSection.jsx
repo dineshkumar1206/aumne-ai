@@ -5,6 +5,7 @@ import DataGrowthSection from "./DataGrowthSection";
 import VelocityReliabilitySection from "./VelocityReliabilitySection";
 import StatisticsSection from "./StatisticsSection";
 import HorizontalScrollVideo from "./HorizontalScrollImage";
+import ROICalculator from "../RoiCalculator/ROICalculator";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -60,7 +61,7 @@ export default function BannerSection() {
         className="relative h-screen w-full overflow-hidden z-10"
       >
         {/* Updated: Background Video */}
-        <video
+        {/* <video
           ref={bgRef}
           autoPlay
           muted
@@ -69,7 +70,7 @@ export default function BannerSection() {
           className="absolute inset-0 w-full h-full object-cover"
         >
           <source src="/video/bg-video.mp4" type="video/mp4" />
-        </video>
+        </video> */}
 
         {/* Overlay to make text readable */}
         <div className="absolute inset-0 bg-black/50" />
@@ -120,10 +121,11 @@ export default function BannerSection() {
   </div>
 </div>
 
+
       </section>
 
       {/* SECTION 2 */}
-      <section className="bg-[#0A0A0A] px-10 ">
+      <section className=" px-10 ">
         <DataGrowthSection />
       </section>
 
@@ -132,8 +134,14 @@ export default function BannerSection() {
       </section>
       <section className="">
         {/* <StatisticsSection /> */}
-        <section className="">
+        {/* <section className="">
           <HorizontalScrollVideo className="w-full h-32" />
+        </section> */}
+        <section className="">
+           <StatisticsSection/>
+        </section>
+        <section className="">
+           <ROICalculator/>
         </section>
       </section>
     </main>

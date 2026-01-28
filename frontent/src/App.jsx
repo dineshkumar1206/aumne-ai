@@ -10,12 +10,16 @@ import StatisticsSection from "./Home/StatisticsSection";
 import ROICalculator from "./RoiCalculator/ROICalculator";
 import GSIPartnership from "./Partnership/GSIPartnership";
 import ScrollToTop from "./Components/ScrollToTop";
+import VideoBackground from "./Components/VideoBackground";
 
 const App = () => {
   return (
     <>
-      <ScrollToTop/>
+      
       <Navbar />
+      <VideoBackground/>
+      <div className="fixed inset-0 z-10 bg-black/50 pointer-events-none" />
+      <main className="relative z-20">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/solutions" element={<Solution />} />
@@ -26,6 +30,7 @@ const App = () => {
 
       </Routes>
       <Footer />
+      </main>
     </>
   );
 };

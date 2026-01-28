@@ -177,7 +177,7 @@ export default function StatisticsSection() {
   return (
     <section
       ref={sectionRef}
-      className="pt-10 pb-24 text-white px-6 bg-linear-to-r from-[#02060d] via-[#071827]  to-[#0e3b4e] overflow-hidden"
+      className="pt-10 pb-24 text-white px-6 overflow-hidden"
     >
       <div className="max-w-[1550px] mx-auto text-center">
         <h2 className="text-4xl md:text-6xl text-[#0D7EB6] font-semibold mb-6 tracking-tight">

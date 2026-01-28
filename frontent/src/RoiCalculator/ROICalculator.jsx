@@ -30,7 +30,7 @@ const ROICalculator = () => {
   return (
     <section
       id="roi-calculator"
-      className="relative overflow-hidden bg-gradient-to-r from-[#02060d] via-[#071827] via-[#0b2a3d] to-[#0e3b4e] py-15 px-4 text-center"
+      className="relative overflow-hidden py-15 px-4 text-center"
     >
       {/* TEXT */}
       <div

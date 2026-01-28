@@ -81,18 +81,18 @@ export default function DataGrowthSection() {
         <div className="border border-white/20 grid grid-cols-1 lg:grid-cols-12 min-h-[650px] relative ">
           {/* LEFT CONTENT BLOCK */}
           <div className="lg:col-span-5 relative overflow-hidden border-r border-white/10 p-12 lg:p-13 flex flex-col justify-center">
-            <div
+            {/* <div
               ref={bgRef}
               className="absolute inset-0 w-[140%] h-full opacity-30 bg-cover bg-center pointer-events-none z-0"
               style={{ backgroundImage: "url('/para2.avif')", left: "-20%" }}
-            />
+            /> */}
             <div className="relative z-10">
               <h2 className="text-xl md:text-3xl font-semibold text-white">
                 ACT bridges speed, <br />
                 and customer delight <br />
                 <span
                   //  className="font-semibold bg-linear-to-r from-[#036ffd] via-[#1e88e5] to-[#42a5f5] bg-clip-text text-transparent"
-                  className="font-semibold bg-linear-to-r text-[#0D7EB6]"
+                  className="font-semibold text-[#0D7EB6]"
                 >
                   with enterprise-grade control.
                 </span>
