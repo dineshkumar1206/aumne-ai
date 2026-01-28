@@ -196,22 +196,22 @@ export default function WhyAymne() {
   </h2>
 
   <ul class="space-y-4">
-    <li class="text-white text-base leading-relaxed">
+    <li class="text-white/60 text-base leading-relaxed">
       • 5× faster time to value
     </li>
-    <li class="text-white text-base leading-relaxed">
+    <li class="text-white/60 text-base leading-relaxed">
       • 70%+ automation across the lifecycle
     </li>
-    <li class="text-white text-base leading-relaxed">
+    <li class="text-white/60 text-base leading-relaxed">
       • 3× ROI on transformation
     </li>
-    <li class="text-white text-base leading-relaxed">
+    <li class="text-white/60 text-base leading-relaxed">
       • Reduced abandonment and agent load
     </li>
-    <li class="text-white text-base leading-relaxed">
+    <li class="text-white/60 text-base leading-relaxed">
       • Predictable modernization economics
     </li>
-    <li class="text-white text-base leading-relaxed">
+    <li class="text-white/60 text-base leading-relaxed">
       • Continuous CX improvement
     </li>
   </ul>
@@ -223,19 +223,19 @@ export default function WhyAymne() {
   </h2>
 
   <ul class="space-y-4 ">
-    <li class="text-white leading-relaxed">
+    <li class="text-white/60 leading-relaxed">
       • Customers now expect conversational experiences—especially on voice
     </li>
-    <li class="text-white leading-relaxed">
+    <li class="text-white/60 leading-relaxed">
       • Enterprises are already spending $53B+ annually on CX modernization
     </li>
-    <li class="text-white leading-relaxed">
+    <li class="text-white/60 leading-relaxed">
       • Legacy IVR remains the biggest blocker
     </li>
-    <li class="text-white leading-relaxed">
+    <li class="text-white/60 leading-relaxed">
       • AI has reached a point where legacy systems can be understood and transformed programmatically
     </li>
-    <li class="text-white leading-relaxed">
+    <li class="text-white/60 leading-relaxed">
       • Enterprises no longer accept multi-year, million-dollar projects with uncertain ROI
     </li>
   </ul>
@@ -247,16 +247,16 @@ export default function WhyAymne() {
   </h2>
 
   <ul class="space-y-4">
-    <li class="text-white leading-relaxed">
+    <li class="text-white/60 leading-relaxed">
       • 100+ years of combined experience in IVR, contact centers, enterprise CX, and platform engineering
     </li>
-    <li class="text-white leading-relaxed">
+    <li class="text-white/60 leading-relaxed">
       • First-hand experience delivering large, services-heavy transformations
     </li>
-    <li class="text-white leading-relaxed">
+    <li class="text-white/60 leading-relaxed">
       • Deep legacy fluency combined with AI-native platform thinking
     </li>
-    <li class="text-white leading-relaxed">
+    <li class="text-white/60 leading-relaxed">
       • Defining a new category: <span class="font-semibold">Agentic Service Lifecycle Management</span>
     </li>
   </ul>

@@ -20,6 +20,7 @@ export default function BannerSection() {
       start: "top top",
       pin: true,
       pinSpacing: false,
+
     });
 
     // 2. BACKGROUND PARALLAX (Video move aagura effect)
@@ -65,7 +66,7 @@ export default function BannerSection() {
           muted
           loop
           playsInline
-          className="absolute inset-0 w-full h-[120%] object-cover"
+          className="absolute inset-0 w-full h-full object-cover"
         >
           <source src="/video/bg-video.mp4" type="video/mp4" />
         </video>

@@ -9,7 +9,7 @@ import {
   LuRocket,
   LuRefreshCw,
 } from "react-icons/lu";
-import bgImage from "../assets/2151618523.jpg";
+// import bgImage from "../assets/2151618523.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -159,8 +159,8 @@ export default function HowActs() {
         /* Border styling */
         border border-white/10 border-b-white/5
         /* Shadow & Glow */
-        shadow-[0_20px_50px_rgba(0,0,0,0.5)]
-        hover:shadow-[0_0_30px_rgba(13,126,182,0.3)]
+        // shadow-[0_20px_50px_rgba(0,0,0,0.5)]
+        // hover:shadow-[0_0_30px_rgba(13,126,182,0.3)]
         /* Amazing Angle & Perspective */
         hover:-translate-y-4 hover:rotate-1
         flex flex-col justify-between overflow-hidden
@@ -168,16 +168,16 @@ export default function HowActs() {
       `}
                 >
                   {/* 1. Animated Gradient Background on Hover */}
-                  <div className="absolute inset-0 bg-linear-to-br from-[#0D7EB6]/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  {/* <div className="absolute inset-0 bg-linear-to-br from-[#0D7EB6]/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" /> */}
 
                   {/* 2. Top Glow Ornament */}
-                  <div className="absolute -top-10 -right-10 w-32 h-32 bg-[#0D7EB6]/10 blur-3xl rounded-full group-hover:bg-[#0D7EB6]/30 transition-all duration-500" />
+                  {/* <div className="absolute -top-10 -right-10 w-32 h-32 bg-[#0D7EB6]/10 blur-3xl rounded-full group-hover:bg-[#0D7EB6]/30 transition-all duration-500" /> */}
 
                   <div className="relative z-10">
                     {/* Icon with Floating effect */}
-                    <div className="text-4xl mb-6 text-white transform transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1">
+                    {/* <div className="text-4xl mb-6 text-white transform transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1">
                       {card.icon}
-                    </div>
+                    </div> */}
 
                     {/* Title with Gradient */}
                     <h3 className="text-lg font-semibold  bg-clip-text bg-linear-to-r text-[#0D7EB6] mb-4 leading-tight">
