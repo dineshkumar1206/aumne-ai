@@ -83,12 +83,10 @@ export default function WhyAumneCard() {
     >
       {/* Heading */}
       <div className="max-w-[1550px] mx-auto text-center">
-          <h2 className="text-4xl md:text-6xl text-[#0D7EB6] font-semibold mb-6 tracking-tight">
-          Solutions
+          <h2 className="text-4xl md:text-6xl text-[#0D7EB6] font-semibold mb-6 tracking-tight mb-20">
+         The Aumne Solution
         </h2>
-        <p className="mb-20 text-white text-lg md:text-xl max-w-4xl mx-auto leading-relaxed">
-          We help organizations overcome operational bottlenecks and deliver scalable, intelligent customer experiences without disrupting existing workflows.
-        </p>
+        
       </div>
       <div className="max-w-7xl mx-auto  ">
         <div className="flex flex-col md:flex-row items-center gap-10 border border-white/10 overflow-hidden">

@@ -18,6 +18,7 @@ import OutcomesSection from "./Solutions/OutcomesSection";
 import TransformationWindow from "./Solutions/TransformationWindow";
 import LivedExperienceSection from "./Solutions/LivedExperienceSection";
 import Enterprise from "./Solutions/Enterprise";
+import Global from "./Solutions/Global";
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
         <Route path="/gst-partnership" element={<GSIPartnership/>} /> */}
 
       </Routes>
+      <Global/>
       <Footer />
       </main>
     </>

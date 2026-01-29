@@ -82,13 +82,13 @@ const [duration, setDuration] = useState(0);
     <main>
       <section
         ref={sectionRef}
-        className="relative h-screen w-full z-10 flex items-center"
+        className="relative h-screen w-full z-10 flex items-center mt-5"
       >
        <div className="relative z-10 mx-auto w-full max-w-8xl px-6 md:px-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
     {/* LEFT: TEXT */}
     <div ref={contentRef} className="lg:-ml-8">
-      <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold leading-tight -mt-15">
+      <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold leading-tight -mt-40">
         Transform Legacy IVR into AI-Native Customer Service
       </h2>
 
@@ -155,7 +155,7 @@ const [duration, setDuration] = useState(0);
         </div> */}
     
              {/* RIGHT: VIDEO */}
-  <div ref={videoRef} className="relative rounded-2xl overflow-hidden shadow-2xl lg:ml-12 bg-black w-full max-w-[620px] aspect-video mt-8">
+  <div ref={videoRef} className="relative rounded-2xl overflow-hidden shadow-2xl lg:ml-12 bg-black w-full max-w-[620px] aspect-video -mt-20">
 
   <video
     autoPlay
@@ -264,9 +264,7 @@ const [duration, setDuration] = useState(0);
          <section className="" id="solutions">
            <Solution/>
         </section>
-        <section className="" id="enterprise">
-           <Enterprise/>
-        </section>
+        
          <section className="" id="transformation-comparison">
            <TransformationComparison/>
         </section>
@@ -282,6 +280,9 @@ const [duration, setDuration] = useState(0);
         <section className="" id="lived-experience">
            <LivedExperienceSection/>
         </section> 
+        <section className="" id="enterprise">
+           <Enterprise/>
+        </section>
         {/* {/* <section className="" id="benefits">
            <Benefits/>
         </section> */}
