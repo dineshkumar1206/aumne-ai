@@ -21,7 +21,7 @@ export default function LivedExperienceSection() {
   ];
 
   return (
-    <section className="w-full py-28 pb-0">
+    <section className="w-full py-28 pb-15">
       <div className="max-w-6xl mx-auto px-4">
 
         {/* Heading */}

@@ -35,11 +35,56 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-10 text-[15px]">
           {/* <NavLink to="/" className={activeStyle}>Home</NavLink> */}
           <button onClick={()=>scrollToSection("home")} className="hover:text-gray-300 transition cursor-pointer">Home</button>
-
+            
+            <div className="relative group">
          <button onClick={()=>scrollToSection("solutions")} className="hover:text-gray-300 transition cursor-pointer">Solutions</button>
+
+          {/* Dropdown */}
+              <div className="absolute left-0 top-full mt-3 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                <div className="bg-[#0a0a0a] border border-white/10 rounded-xl shadow-xl p-3 space-y-2">
+            
+                  <button
+                    onClick={() => scrollToSection("transformation-comparison")}
+                    className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition"
+                  >
+                    Transformation Comparison
+                  </button>
+            
+                  <button
+                    onClick={() => scrollToSection("ecosystem-audience")}
+                    className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition"
+                  >
+                    Ecosystem & Audience
+                  </button>
+            
+                  <button
+                    onClick={() => scrollToSection("outcomes")}
+                    className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition"
+                  >
+                    Outcomes
+                  </button>
+            
+                  <button
+                    onClick={() => scrollToSection("transformation-window")}
+                    className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition"
+                  >
+                    Transformation Window
+                  </button>
+            
+                  <button
+                    onClick={() => scrollToSection("lived-experience")}
+                    className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition"
+                  >
+                    Lived Experience
+                  </button>
+            
+                </div>
+              </div>
+            
+            </div>
           {/* <NavLink to="/solutions" className={activeStyle}>Solutions</NavLink> */}
 
-        <button onClick={()=>scrollToSection("benefits")} className="hover:text-gray-300 transition cursor-pointer">Benefits</button>
+        {/* <button onClick={()=>scrollToSection("benefits")} className="hover:text-gray-300 transition cursor-pointer">Benefits</button> */}
           {/* <NavLink to="/benefits" className={activeStyle}>Benefits</NavLink> */}
         
         <button onClick={()=>scrollToSection("statistics")} className="hover:text-gray-300 transition cursor-pointer">Industry Trends</button>

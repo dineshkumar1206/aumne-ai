@@ -9,7 +9,7 @@ const OutcomesSection = () => {
   ];
 
   return (
-    <section className="max-w-6xl mx-auto mt-28 px-4 mb-10">
+    <section className="max-w-6xl mx-auto mt-32 px-4 mb-10">
       {/* Background gradient like your site */}
       <div className="absolute inset-0" />
 

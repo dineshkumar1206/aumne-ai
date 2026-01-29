@@ -9,6 +9,11 @@ import heroVideo from "../assets/Aumnei-Video.mp4";
 import Benefits from "../Benefits/Benefits";
 import GSIPartnership from "../Partnership/GSIPartnership";
 import Solution from "../Solutions/Solution";
+import TransformationComparison from "../Solutions/TransformationComparison";
+import EcosystemAudience from "../Solutions/EcosystemAudience";
+import OutcomesSection from "../Solutions/OutcomesSection";
+import TransformationWindow from "../Solutions/TransformationWindow";
+import LivedExperienceSection from "../Solutions/LivedExperienceSection";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -258,9 +263,24 @@ const [duration, setDuration] = useState(0);
          <section className="" id="solutions">
            <Solution/>
         </section>
-        <section className="" id="benefits">
-           <Benefits/>
+         <section className="" id="transformation-comparison">
+           <TransformationComparison/>
         </section>
+        <section className="" id="ecosystem-audience">
+           <EcosystemAudience/>
+        </section>
+        <section className="" id="outcomes">
+           <OutcomesSection/>
+        </section>
+        <section className="" id="transformation-window">
+           <TransformationWindow/>
+        </section>
+        <section className="" id="lived-experience">
+           <LivedExperienceSection/>
+        </section>
+        {/* <section className="" id="benefits">
+           <Benefits/>
+        </section> */}
         <section className="" id="statistics">
            <StatisticsSection/>
         </section>
@@ -270,6 +290,14 @@ const [duration, setDuration] = useState(0);
         <section className="" id="gsi">
            <GSIPartnership/>
         </section>
+        
+       
+
+
+
+
+
+
       </section>
     </main>
   );
