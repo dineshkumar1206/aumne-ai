@@ -10,6 +10,8 @@ import OutcomesSection from "./OutcomesSection";
 import TransformationWindow from "./TransformationWindow";
 import LivedExperienceSection from "./LivedExperienceSection";
 import ImageCarousel from "./ImageCarousel";
+import DataGrowthSection from "../Home/DataGrowthSection";
+
 gsap.registerPlugin(ScrollTrigger);
 
 export default function WhyAymne() {
@@ -81,8 +83,9 @@ export default function WhyAymne() {
           <div>
             <WhyAumneCard />
           </div>
-          <div>
-               <ImageCarousel/>
+          <div className="">
+               {/* <ImageCarousel/> */}
+               <DataGrowthSection/>
           </div>
           {/* Main Grid Container with Top & Left Border */}
           <div className="border-t border-l border-white/20 ml-2">

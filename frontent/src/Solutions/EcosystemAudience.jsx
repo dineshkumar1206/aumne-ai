@@ -23,7 +23,7 @@ export default function EcosystemAudience() {
           </div>
 
           <h3 className="text-lg font-semibold text-white mb-3">
-            Enterprises
+            Enterprises <br/><br/>
           </h3>
 
           <p className="text-white/80 text-[15px] leading-relaxed">
@@ -69,7 +69,7 @@ export default function EcosystemAudience() {
           </div>
 
           <h3 className="text-lg font-semibold text-white mb-3">
-            BPOs & CX Providers
+            BPOs & CX Providers <br/><br/>
           </h3>
 
           <p className="text-white/80 text-[15px] leading-relaxed">

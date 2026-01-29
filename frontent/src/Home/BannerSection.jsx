@@ -5,7 +5,7 @@ import DataGrowthSection from "./DataGrowthSection";
 import VelocityReliabilitySection from "./VelocityReliabilitySection";
 import StatisticsSection from "./StatisticsSection";
 import ROICalculator from "../RoiCalculator/ROICalculator";
-import heroVideo from "../assets/Aumnei-Video.mp4";
+// import heroVideo from "../assets/Aumnei-Video.mp4";
 import Benefits from "../Benefits/Benefits";
 import GSIPartnership from "../Partnership/GSIPartnership";
 import Solution from "../Solutions/Solution";
@@ -21,12 +21,12 @@ gsap.registerPlugin(ScrollTrigger);
 export default function BannerSection() {
   const sectionRef = useRef(null);
   const contentRef = useRef(null);
-  const videoRef = useRef(null);
+//   const videoRef = useRef(null);
 
-  const [isPlaying, setIsPlaying] = useState(true);
-  const [isMuted, setIsMuted] = useState(true);
-  const [progress, setProgress] = useState(0);
-const [duration, setDuration] = useState(0);
+//   const [isPlaying, setIsPlaying] = useState(true);
+//   const [isMuted, setIsMuted] = useState(true);
+//   const [progress, setProgress] = useState(0);
+// const [duration, setDuration] = useState(0);
 
 
   useEffect(() => {
@@ -48,16 +48,16 @@ const [duration, setDuration] = useState(0);
       },
     });
 
-    gsap.to(videoRef.current, {
-      opacity: 0,
-      y: -50,
-      scrollTrigger: {
-        trigger: sectionRef.current,
-        start: "top top",
-        end: "30% top",
-        scrub: true,
-      },
-    });
+    // gsap.to(videoRef.current, {
+    //   opacity: 0,
+    //   y: -50,
+    //   scrollTrigger: {
+    //     trigger: sectionRef.current,
+    //     start: "top top",
+    //     end: "30% top",
+    //     scrub: true,
+    //   },
+    // });
 
     return () => {
       ScrollTrigger.getAll().forEach((t) => t.kill());
@@ -65,18 +65,18 @@ const [duration, setDuration] = useState(0);
   }, []);
 
   // ✅ VIDEO CONTROLS (OUTSIDE useEffect)
-  const togglePlay = () => {
-    if (!videoRef.current) return;
-    if (isPlaying) videoRef.current.pause();
-    else videoRef.current.play();
-    setIsPlaying(!isPlaying);
-  };
+  // const togglePlay = () => {
+  //   if (!videoRef.current) return;
+  //   if (isPlaying) videoRef.current.pause();
+  //   else videoRef.current.play();
+  //   setIsPlaying(!isPlaying);
+  // };
 
-  const toggleMute = () => {
-    if (!videoRef.current) return;
-    videoRef.current.muted = !isMuted;
-    setIsMuted(!isMuted);
-  };
+  // const toggleMute = () => {
+  //   if (!videoRef.current) return;
+  //   videoRef.current.muted = !isMuted;
+  //   setIsMuted(!isMuted);
+  // };
 
   return (
     <main>
@@ -155,7 +155,7 @@ const [duration, setDuration] = useState(0);
         </div> */}
     
              {/* RIGHT: VIDEO */}
-  <div ref={videoRef} className="relative rounded-2xl overflow-hidden shadow-2xl lg:ml-12 bg-black w-full max-w-[620px] aspect-video -mt-20">
+  {/*<div ref={videoRef} className="relative rounded-2xl overflow-hidden shadow-2xl lg:ml-12 bg-black w-full max-w-[620px] aspect-video -mt-20">*/}
 
   {/* <video
     autoPlay
@@ -174,10 +174,10 @@ const [duration, setDuration] = useState(0);
   </video> */}
 
   {/* Dark overlay */}
-  <div className="absolute inset-0 bg-black/20"></div>
+  {/* <div className="absolute inset-0 bg-black/20"></div> */}
 
   {/* CENTER PLAY BUTTON */}
-  {!isPlaying && (
+  {/* {!isPlaying && (
     <button
       onClick={togglePlay}
       className="absolute inset-0 flex items-center justify-center"
@@ -186,13 +186,13 @@ const [duration, setDuration] = useState(0);
         ▶
       </div>
     </button>
-  )}
+  )} */}
 
   {/* BOTTOM CONTROL BAR */}
-  <div className="absolute bottom-0 left-0 w-full px-4 pb-3">
+  {/* <div className="absolute bottom-0 left-0 w-full px-4 pb-3"> */}
 
     {/* PROGRESS BAR */}
-    <div
+    {/* <div
       className="w-full h-1 bg-white/30 rounded cursor-pointer mb-2"
       onClick={(e) => {
         const rect = e.currentTarget.getBoundingClientRect();
@@ -205,23 +205,23 @@ const [duration, setDuration] = useState(0);
         className="h-1 bg-red-500 rounded"
         style={{ width: `${progress}%` }}
       ></div>
-    </div>
+    </div> */}
 
     {/* CONTROLS ROW */}
-    <div className="flex items-center justify-between text-white text-sm">
+    {/* <div className="flex items-center justify-between text-white text-sm"> */}
 
       {/* LEFT CONTROLS */}
-      <div className="flex items-center gap-3">
+      {/* <div className="flex items-center gap-3"> */}
 
         {/* Play/Pause */}
-        <button onClick={togglePlay} className="text-lg">
+        {/* <button onClick={togglePlay} className="text-lg">
           {isPlaying ? "⏸" : "▶"}
-        </button>
+        </button> */}
 
         {/* Volume */}
-        <button onClick={toggleMute} className="text-lg">
+        {/* <button onClick={toggleMute} className="text-lg">
           {isMuted ? "🔇" : "🔊"}
-        </button>
+        </button> */}
 
         {/* Time */}
         {/* <span className="text-xs opacity-80">
@@ -230,28 +230,28 @@ const [duration, setDuration] = useState(0);
       </div>
 
       {/* RIGHT ICONS */}
-      <div className="flex items-center gap-3 opacity-80">
+      {/* <div className="flex items-center gap-3 opacity-80"> */}
         {/* <span>⚙</span> */}
-        <button
+        {/* <button
           onClick={() => videoRef.current.requestFullscreen()}
           className="text-lg"
         >
           ⛶
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+        </button> */}
+      {/* </div> */}
+    {/* </div> */}
+  {/* </div> */}
+{/* </div> */}
+{/* </div>   */}
 
 
       </section>
 
 
       {/* SECTION 2 */}
-      <section className=" px-10 ">
+      {/* <section className=" px-10 ">
         <DataGrowthSection />
-      </section>
+      </section> */}
 
       <section className="">
         <VelocityReliabilitySection />
@@ -289,9 +289,9 @@ const [duration, setDuration] = useState(0);
         <section className="" id="statistics">
            <StatisticsSection/>
         </section>
-        <section className="" id="roi">
+        {/* <section className="" id="roi">
            <ROICalculator/>
-        </section>
+        </section> */}
         <section className="" id="gsi">
            <GSIPartnership/>
         </section>

@@ -4,7 +4,7 @@
 
 export default function VideoBackground() {
   return (
-    <div className="fixed inset-0 z-0 overflow-hidden">
+    <div className="fixed inset-0 z-0 overflow-hidden opacity-80">
       <video
         autoPlay
         muted

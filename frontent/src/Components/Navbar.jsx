@@ -132,12 +132,12 @@ const Navbar = () => {
           </button>
           {/* <NavLink to="/industry-trends" className={activeStyle}>Industry Trends</NavLink> */}
 
-          <button
+          {/* <button
             onClick={() => scrollToSection("roi")}
             className="hover:text-gray-300 transition cursor-pointer"
           >
             ROI Calculator
-          </button>
+          </button> */}
 
           {/* <NavLink to="/roi-calculator" className={activeStyle}>ROI Calculator</NavLink> */}
 
