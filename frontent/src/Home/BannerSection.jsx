@@ -155,7 +155,7 @@ const [duration, setDuration] = useState(0);
         </div> */}
     
              {/* RIGHT: VIDEO */}
-  <div ref={videoRef} className="relative rounded-2xl overflow-hidden shadow-2xl lg:ml-12 bg-black w-full max-w-[520px] aspect-video mt-24">
+  <div ref={videoRef} className="relative rounded-2xl overflow-hidden shadow-2xl lg:ml-12 bg-black w-full max-w-[620px] aspect-video mt-8">
 
   <video
     autoPlay
