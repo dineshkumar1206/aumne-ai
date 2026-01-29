@@ -14,6 +14,7 @@ import EcosystemAudience from "../Solutions/EcosystemAudience";
 import OutcomesSection from "../Solutions/OutcomesSection";
 import TransformationWindow from "../Solutions/TransformationWindow";
 import LivedExperienceSection from "../Solutions/LivedExperienceSection";
+import Enterprise from "../Solutions/Enterprise";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -263,7 +264,10 @@ const [duration, setDuration] = useState(0);
          <section className="" id="solutions">
            <Solution/>
         </section>
-         <section className="" id="transformation-comparison">
+        <section className="" id="enterprise">
+           <Enterprise/>
+        </section>
+         {/* <section className="" id="transformation-comparison">
            <TransformationComparison/>
         </section>
         <section className="" id="ecosystem-audience">
@@ -277,7 +281,7 @@ const [duration, setDuration] = useState(0);
         </section>
         <section className="" id="lived-experience">
            <LivedExperienceSection/>
-        </section>
+        </section> */}
         {/* <section className="" id="benefits">
            <Benefits/>
         </section> */}
@@ -290,6 +294,7 @@ const [duration, setDuration] = useState(0);
         <section className="" id="gsi">
            <GSIPartnership/>
         </section>
+
         
        
 

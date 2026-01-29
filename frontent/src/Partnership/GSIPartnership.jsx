@@ -42,7 +42,7 @@ export default function GSIPartnership() {
           {partners.map((partner, index) => (
             <div
               key={index}
-              className="bg-[#0b2a3d]/60 backdrop-blur-xl border border-white/10 rounded-3xl p-10 transition-all duration-300 hover:border-[#0D7EB6]/40"
+              className="bg-[#0b2a3d]/60 backdrop-blur-xl border border-white/10 rounded-3xl p-10 transition-all duration-300 hover:border-[#0D7EB6]/40 "
             >
               {/* Logo */}
               <div className="bg-[#0a2238] rounded-xl p-6 mb-8 flex items-center justify-center">

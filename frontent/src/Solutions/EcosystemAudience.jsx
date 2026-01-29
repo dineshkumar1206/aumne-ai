@@ -6,8 +6,8 @@ export default function EcosystemAudience() {
 
       {/* Heading */}
      <h2 className="text-4xl md:text-5xl font-semibold text-white tracking-tight text-center pb-10">
-          Built for the Ecosystem that{" "}
-          <span className="text-[#0D7EB6]">Delivers Customer Service</span>
+          Built for the Ecosystem that Delivers{" "}<br/>
+          <span className="text-[#0D7EB6]"> Customer Service</span>
         </h2>
                          {/* built for the ecosystem that    delivers customer service*/}
 
@@ -19,7 +19,7 @@ export default function EcosystemAudience() {
                         shadow-sm hover:shadow-md transition">
 
           <div className="mb-6 flex h-14 w-14 items-center justify-center
-                          rounded-xl bg-[#0D7EB6] text-white mx-auto">
+                          rounded-xl bg-[#0D7EB6]/15 border border-[#0D7EB6]/40 shrink-0 text-[#0D7EB6] mx-auto">
             <Building2 className="h-7 w-7" strokeWidth={2} />
           </div>
 
@@ -42,7 +42,7 @@ export default function EcosystemAudience() {
                         shadow-md">
 
           <div className="mb-6 flex h-14 w-14 items-center justify-center
-                          rounded-xl bg-[#0D7EB6] text-white mx-auto">
+                          rounded-xl bg-[#0D7EB6]/15 border border-[#0D7EB6]/40 shrink-0 text-[#0D7EB6] mx-auto">
             <Users className="h-7 w-7" strokeWidth={2} />
           </div>
 
@@ -65,7 +65,7 @@ export default function EcosystemAudience() {
                         shadow-sm hover:shadow-md transition">
 
           <div className="mb-6 flex h-14 w-14 items-center justify-center
-                          rounded-xl bg-[#0D7EB6] text-white mx-auto">
+                          rounded-xl bg-[#0D7EB6]/15 border border-[#0D7EB6]/40 shrink-0 text-[#0D7EB6] mx-auto">
             <Headphones className="h-7 w-7" strokeWidth={2} />
           </div>
 

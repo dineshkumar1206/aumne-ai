@@ -36,7 +36,7 @@ export default function WhyAymne() {
     {
       title: "Understand Legacy First",
       description:
-        "Auto-discovery of IVR code, flows, configurations, APIs, , call recordings, and transcripts—revealing what exists, what works, and what must change.",
+        "Auto-discovery of IVR code, flows, configurations, APIs, call recordings, and transcripts—revealing what exists, what works, and what must change.",
       icon: <Crown className="w-10 h-10 text-black" />,
       bgColor: "bg-[#95a9e6]", // Light blue-purple
     },
@@ -76,7 +76,7 @@ export default function WhyAymne() {
       className="relative min-h-screen text-white pb-10 overflow-visible "
     >
       <section className="w-full  pb-10">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4">
           <div>
             <WhyAumneCard />
           </div>
@@ -85,10 +85,10 @@ export default function WhyAymne() {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="grid grid-cols-1 md:grid-cols-[300px_1fr] group transition-all duration-300"
+                className="grid grid-cols-2 md:grid-cols-[120px_1fr] group transition-all duration-300"
               >
                 {/* Left Side: Icon Container */}
-                <div className="flex items-center justify-center p-5 border-r border-b border-white/20">
+                <div className="flex items-center justify-center p-5 border-r border-b border-white/20 w-30">
                   <div
                     className={`${service.bgColor} p-6 rounded-lg relative flex flex-col items-center`}
                   >
@@ -99,7 +99,7 @@ export default function WhyAymne() {
                 </div>
 
                 {/* Right Side: Text Content */}
-                <div className="p-10 md:p-5 flex flex-col justify-center border-r border-b border-white/20 bg-transparent hover:bg-white/5 transition-colors">
+                <div className="p-10 pl-10 md:p-5 flex flex-col justify-center border-r border-b border-white/20 bg-transparent hover:bg-white/5 transition-colors">
                   <h3 className="text-white text-xl font-bold mb-4">
                     {service.title}
                   </h3>
