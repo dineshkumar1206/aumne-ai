@@ -36,7 +36,6 @@ const App = () => {
         <Route path="/gst-partnership" element={<GSIPartnership/>} /> */}
 
       </Routes>
-      <Enterprise/>
       <Footer />
       </main>
     </>

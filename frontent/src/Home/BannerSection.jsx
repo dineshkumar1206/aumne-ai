@@ -267,7 +267,7 @@ const [duration, setDuration] = useState(0);
         <section className="" id="enterprise">
            <Enterprise/>
         </section>
-         {/* <section className="" id="transformation-comparison">
+         <section className="" id="transformation-comparison">
            <TransformationComparison/>
         </section>
         <section className="" id="ecosystem-audience">
@@ -281,8 +281,8 @@ const [duration, setDuration] = useState(0);
         </section>
         <section className="" id="lived-experience">
            <LivedExperienceSection/>
-        </section> */}
-        {/* <section className="" id="benefits">
+        </section> 
+        {/* {/* <section className="" id="benefits">
            <Benefits/>
         </section> */}
         <section className="" id="statistics">
