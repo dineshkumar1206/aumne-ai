@@ -89,10 +89,10 @@ export default function BannerSection() {
     {/* LEFT: TEXT */}
     <div ref={contentRef} className="lg:-ml-8">
       <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold leading-tight -mt-40">
-        Transform Legacy IVR into AI-Native Customer Service
+        Transform Legacy IVR into AI-Native Conversations
       </h2>
 
-      <h2 className="mt-4 text-[#159ce0] text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight">
+      {/* <h2 className="mt-4 text-[#159ce0] text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight">
         At 5× Speed and 3× ROI <br /> on modernization
       </h2>
 
@@ -100,7 +100,7 @@ export default function BannerSection() {
         Aumne is an AI-native, agentic Service Lifecycle Management platform that
         transforms legacy IVR into modern omnichannel experiences—fast,
         governed, and built to evolve.
-      </p>
+      </p> */}
 
        {/* Metrics */}
   <div className="mt-8 grid grid-cols-1 md:grid-cols-[auto_1px_auto_1px_auto] items-center text-white gap-y-6 md:gap-x-10">

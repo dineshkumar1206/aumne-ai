@@ -1,6 +1,6 @@
 import React from "react";
-import agnoshinLogo from "../assets/partnership1.png";
-import visnetLogo from "../assets/partnership2.png";
+import agnoshinLogo from "../assets/AgnoShin.png";
+import visnetLogo from "../assets/Visnet-Logo.png";
 
 const partners = [
   {
@@ -44,8 +44,8 @@ export default function GSIPartnership() {
               key={index}
               className="bg-[#0b2a3d]/60 backdrop-blur-xl border border-white/10 rounded-3xl p-10 transition-all duration-300 hover:border-[#0D7EB6]/40 "
             >
-              {/* Logo */}
-              <div className="bg-[#0a2238] rounded-xl p-6 mb-8 flex items-center justify-center">
+              {/* Logo  bg-[#0a2238]*/}
+              <div className=" rounded-xl p-6 mb-8 flex items-center justify-center">
                 <img
                   src={partner.logo}
                   alt={partner.name}

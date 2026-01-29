@@ -35,43 +35,43 @@ export default function WhyAymne() {
     );
   }, []);
 
-  const services = [
-    {
-      title: "Understand Legacy First",
-      description:
-        "Auto-discovery of IVR code, flows, configurations, APIs, call recordings, and transcripts—revealing what exists, what works, and what must change.",
-      icon: <Search />,
-      // bgColor: "bg-[#95a9e6]", // Light blue-purple
-    },
-    {
-      title: "Automate Conversational Transformation",
-      description:
-        "AI-driven design and build converts legacy logic into conversational experiences—reducing time and effort by up to 70%.",
-      icon: <Sparkles />,
-      // bgColor: "bg-[#ff6b6b]", // Reddish-pink
-    },
-    {
-      title: "Human-in-the-Loop Governance ",
-      description:
-        "Built-in review, approvals, versioning, rollback, and compliance controls. Enterprises stay firmly in control.",
-      icon: <Shield />,
-      // bgColor: "bg-[#95a9e6]",
-    },
-    {
-      title: "Build Once. Deploy Everywhere",
-      description:
-        "Deploy consistently across voice, chat, web, and messaging—without duplicating logic or redesigning journeys.",
-      icon: <Globe/>,
-      // bgColor: "bg-[#ff6b6b]",
-    },
-    {
-      title: "Continuously Evolve Services",
-      description:
-        "Rapid prototyping, recommendations, and controlled iteration keep customer service aligned with changing products and policies.",
-      icon: <RefreshCw />,
-      // bgColor: "bg-[#95a9e6]",
-    },
-  ];
+  // const services = [
+  //   {
+  //     title: "Understand Legacy First",
+  //     description:
+  //       "Auto-discovery of IVR code, flows, configurations, APIs, call recordings, and transcripts—revealing what exists, what works, and what must change.",
+  //     icon: <Search />,
+  //     bgColor: "bg-[#95a9e6]", // Light blue-purple
+  //   },
+  //   {
+  //     title: "Automate Conversational Transformation",
+  //     description:
+  //       "AI-driven design and build converts legacy logic into conversational experiences—reducing time and effort by up to 70%.",
+  //     icon: <Sparkles />,
+  //     bgColor: "bg-[#ff6b6b]", // Reddish-pink
+  //   },
+  //   {
+  //     title: "Human-in-the-Loop Governance ",
+  //     description:
+  //       "Built-in review, approvals, versioning, rollback, and compliance controls. Enterprises stay firmly in control.",
+  //     icon: <Shield />,
+  //     bgColor: "bg-[#95a9e6]",
+  //   },
+  //   {
+  //     title: "Build Once. Deploy Everywhere",
+  //     description:
+  //       "Deploy consistently across voice, chat, web, and messaging—without duplicating logic or redesigning journeys.",
+  //     icon: <Globe/>,
+  //     bgColor: "bg-[#ff6b6b]",
+  //   },
+  //   {
+  //     title: "Continuously Evolve Services",
+  //     description:
+  //       "Rapid prototyping, recommendations, and controlled iteration keep customer service aligned with changing products and policies.",
+  //     icon: <RefreshCw />,
+  //     bgColor: "bg-[#95a9e6]",
+  //   },
+  // ];
 
   return (
     <section
@@ -87,26 +87,26 @@ export default function WhyAymne() {
                {/* <ImageCarousel/> */}
                <DataGrowthSection/>
           </div>
-          {/* Main Grid Container with Top & Left Border */}
+          {/* Main Grid Container with Top & Left Border 
           <div className="border-t border-l border-white/20 ml-2">
             {services.map((service, index) => (
               <div
                 key={index}
-                className="grid grid-cols-2 md:grid-cols-[120px_1fr] group transition-all duration-300"
-              >
+                className="grid grid-cols-2 md:grid-cols-[120px_1fr] group transition-all duration-300" 
+              >  */}
                 {/* Left Side: Icon Container */}
-                <div className="flex items-center justify-center p-5 border-r border-b border-white/20 w-30 ">
+                {/* <div className="flex items-center justify-center p-5 border-r border-b border-white/20 w-30 ">
                   <div
                     className={`${service.bgColor} mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-[#0D7EB6]/15 border border-[#0D7EB6]/40 shrink-0 text-[#0D7EB6] mx-auto`}
                   >
-                    {service.icon}
+                    {service.icon} */}
                     {/* The small black dash line below the icon */}
                     {/* <div className="w-8 h-0.5 bg-black mt-4"></div> */}
-                  </div>
-                </div>
+                  {/* </div>
+                </div> */}
 
                 {/* Right Side: Text Content */}
-                <div className="p-10 pl-10 md:p-5 flex flex-col justify-center border-r border-b border-white/20 bg-transparent hover:bg-white/5 transition-colors">
+                {/* <div className="p-10 pl-10 md:p-5 flex flex-col justify-center border-r border-b border-white/20 bg-transparent hover:bg-white/5 transition-colors">
                   <h3 className="text-white text-xl font-bold mb-4">
                     {service.title}
                   </h3>
@@ -116,7 +116,7 @@ export default function WhyAymne() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
