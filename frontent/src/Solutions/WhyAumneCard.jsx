@@ -79,9 +79,9 @@ export default function WhyAumneCard() {
   return (
     <section
       ref={sectionRef}
-      className="relative pb-20 bg-#0c2f41 text-white overflow-hidden pt-20"
+      className="relative pb-20 text-white overflow-hidden pt-20 "
     >
-      <div className="max-w-6xl mx-auto  ">
+      <div className="max-w-7xl mx-auto  ">
         <div className="flex flex-col md:flex-row items-center gap-10 border border-white/10 rounded-xl overflow-hidden">
           {/* LEFT IMAGE BLOCK */}
           <div className="relative flex-1 min-h-[365px]  overflow-hidden group border-r border-white/10">
@@ -116,7 +116,6 @@ export default function WhyAumneCard() {
             >
               <p className="text-base text-center lg:text-start w-full ml-2 lg:w-[600px] mb-7 text-white/80 ">
               Aumne is purpose-built to modernize what already exists, not force enterprises to start from scratch. 
-              Our agentic, AI-native platform turns IVR modernization from a one-time, high-risk project into a continuous platform capability.
               </p>
             </div>
 
@@ -124,6 +123,17 @@ export default function WhyAumneCard() {
           </div>
         </div>
       </div>
+      {/* CENTERED CALLOUT BOX */}
+<div className="mt-16 flex justify-center px-4">
+  <div className="max-w-3xl w-full rounded-2xl  bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 p-8  border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] px-8 py-6 text-center">
+    <p className="text-base md:text-lg text-white leading-relaxed">
+      Our agentic, AI-native platform turns IVR modernization from a one-time, high-risk
+      project into a <span className="text-[#0D7EB6] font-medium">
+        continuous platform capability
+      </span>.
+    </p>
+  </div>
+</div>
       
     </section>
   );

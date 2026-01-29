@@ -160,7 +160,7 @@ const [duration, setDuration] = useState(0);
     onTimeUpdate={(e) => {
       const progress = (e.target.currentTime / e.target.duration) * 100;
       setProgress(progress);
-      setCurrentTime(e.target.currentTime);
+      // setCurrentTime(e.target.currentTime);
       setDuration(e.target.duration);
     }}
   >

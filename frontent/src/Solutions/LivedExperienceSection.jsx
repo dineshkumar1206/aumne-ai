@@ -1,45 +1,63 @@
+import { Users, BadgeCheck, Lightbulb, Rocket } from "lucide-react";
+
 export default function LivedExperienceSection() {
+  const items = [
+    {
+      text: "100+ years of combined experience in IVR, contact centers, enterprise CX, and platform engineering",
+      icon: Users,
+    },
+    {
+      text: "First-hand experience delivering large, services-heavy transformations",
+      icon: BadgeCheck,
+    },
+    {
+      text: "Deep legacy fluency combined with AI-native platform thinking",
+      icon: Lightbulb,
+    },
+    {
+      text: "Defining a new category: Agentic Service Lifecycle Management",
+      icon: Rocket,
+    },
+  ];
+
   return (
-    <section className="max-w-6xl mx-auto px-4">
-      {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-semibold text-[#159ce0] tracking-tight">
-        Built by People Who’ve Lived the Problem
-      </h2>
+    <section className="w-full py-28 pb-0">
+      <div className="max-w-6xl mx-auto px-4">
 
-      {/* Accent underline */}
-      <div className="w-24 h-[2px] bg-linear-to-r from-[#1E4EAD] via-[#159ce0] to-[#1CC2D1] mt-4 mb-16" />
+        {/* Heading */}
+        <h2 className="text-4xl md:text-5xl font-semibold text-white tracking-tight text-center">
+          Built by People Who&apos;ve{" "}
+          <span className="text-[#0D7EB6]">Lived the Problem</span>
+        </h2>
 
-      {/* Experience list */}
-      <ul className="relative space-y-8 pl-10">
-        {[
-          "100+ years of combined experience across IVR, contact centers, enterprise CX, and platform engineering",
-          "First-hand ownership of large-scale, services-heavy CX transformations",
-          "Deep legacy fluency paired with AI-native platform thinking",
-          "Defining a new category: Agentic Service Lifecycle Management"
-        ].map((item, index) => (
-          <li key={index} className="group relative">
-            {/* Dot */}
-            <span className="absolute -left-5 top-1.5 w-4 h-4 rounded-full bg-gradient-to-br from-[#1E4EAD] to-[#1CC2D1] shadow-lg transform transition-transform duration-300 group-hover:scale-125" />
-            
-            {/* Text */}
-            <p className="text-white/80 text-lg md:text-[17px] leading-relaxed transition-colors duration-300 group-hover:text-white">
-              {index === 0 || index === 3 ? (
-                <>
-                  <span className="font-semibold text-white">
-                    {item.split(":")[0]}:
-                  </span>
-                  {" " + item.split(":")[1]}
-                </>
-              ) : (
-                item
-              )}
-            </p>
+        {/* Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+          {items.map((item, index) => {
+            const Icon = item.icon;
+            return (
+              <div
+                key={index}
+                className="flex items-start gap-5 p-6 rounded-2xl border border-white/10
+                bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20
+                shadow-[0_20px_60px_rgba(0,0,0,0.8)]
+                transition-all duration-300 hover:border-white/20 hover:scale-[1.02]"
+              >
+                {/* Icon Box */}
+                <div className="w-12 h-12 flex items-center justify-center rounded-xl 
+                bg-[#0D7EB6]/15 border border-[#0D7EB6]/40 shrink-0">
+                  <Icon className="w-6 h-6 text-[#0D7EB6]" />
+                </div>
 
-            {/* Hover effect: subtle left border highlight */}
-            <span className="absolute -left-10 top-0 h-full w-1 rounded-full bg-gradient-to-b from-[#1E4EAD]/50 to-[#1CC2D1]/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
-          </li>
-        ))}
-      </ul>
+                {/* Text */}
+                <p className="text-white/80 text-[16px] md:text-[17px] leading-relaxed">
+                  {item.text}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+
+      </div>
     </section>
   );
 }

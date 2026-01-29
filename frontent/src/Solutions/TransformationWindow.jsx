@@ -1,10 +1,27 @@
+import { MessageCircle, Zap, Lock, Cpu, Clock } from "lucide-react";
+
 const TransformationWindow = () => {
   const points = [
-    "Customers now expect conversational experiences—especially on voice",
-    "Enterprises are already spending $53B+ annually on CX modernization",
-    "Legacy IVR remains the biggest blocker",
-    "AI has reached a point where legacy systems can be understood and transformed programmatically",
-    "Enterprises no longer accept multi-year, million-dollar projects with uncertain ROI",
+    {
+      text: "Customers now expect conversational experiences—especially on voice",
+      icon: MessageCircle,
+    },
+    {
+      text: "Enterprises are already spending $53B+ annually on CX modernization",
+      icon: Zap,
+    },
+    {
+      text: "Legacy IVR remains the biggest blocker",
+      icon: Lock,
+    },
+    {
+      text: "AI has reached a point where legacy systems can be understood and transformed programmatically",
+      icon: Cpu,
+    },
+    {
+      text: "Enterprises no longer accept multi-year, million-dollar projects with uncertain ROI",
+      icon: Clock,
+    },
   ];
 
   return (
@@ -12,41 +29,37 @@ const TransformationWindow = () => {
       <div className="max-w-6xl mx-auto px-4">
 
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-semibold text-[#159ce0] tracking-tight">
-          The Window for Platform-Led CX Transformation Is Open
+        <h2 className="text-4xl md:text-5xl font-semibold text-white tracking-tight text-center">
+          The Window for Platform-Led CX <br />
+          Transformation{" "}
+          <span className="text-[#0D7EB6]">Is Open</span>
         </h2>
 
-        {/* Accent */}
-        <div className="w-24 h-[2px] bg-linear-to-r from-[#1E4EAD] via-[#159ce0] to-[#1CC2D1] mt-4 mb-16" />
+        {/* Boxes */}
+        <div className="mt-16 space-y-6">
+          {points.map((item, index) => {
+            const Icon = item.icon;
+            return (
+              <div
+                key={index}
+                className="flex items-center gap-5 rounded-2xl p-6 border border-white/10 
+                bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20
+                shadow-[0_20px_60px_rgba(0,0,0,0.8)]
+                transition-all duration-300 hover:border-white/20 hover:scale-[1.01]"
+              >
+                {/* Icon Box */}
+                <div className="w-12 h-12 flex items-center justify-center rounded-xl 
+                bg-[#0D7EB6]/15 border border-[#0D7EB6]/40">
+                  <Icon className="w-6 h-6 text-[#0D7EB6]" />
+                </div>
 
-        {/* List */}
-        <div className="space-y-8">
-          {points.map((text, index) => (
-            <div
-              key={index}
-              className="group flex items-start gap-6 p-5 rounded-xl
-                         transition-all duration-300
-                         hover:border hover:border-white/15
-                         hover:backdrop-blur-sm"
-            >
-              {/* Indicator */}
-              <div className="mt-2 flex flex-col items-center">
-                <span className="w-3 h-3 rounded-full bg-[#159ce0]
-                                 shadow-[0_0_12px_#159ce0]
-                                 transition-transform duration-300
-                                 group-hover:scale-125" />
-                {index !== points.length - 1 && (
-                  <span className="w-[1px] h-10 bg-white/15 mt-2" />
-                )}
+                {/* Text */}
+                <p className="text-white/80 text-[16px] md:text-[17px] leading-relaxed">
+                  {item.text}
+                </p>
               </div>
-
-              {/* Text */}
-              <p className="text-white/75 text-[16px] md:text-[17px] leading-relaxed
-                            transition group-hover:text-white">
-                {text}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
       </div>

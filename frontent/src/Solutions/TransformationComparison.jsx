@@ -1,84 +1,110 @@
+import { X, Check } from "lucide-react";
+
 export default function TransformationComparison() {
   return (
-    <section className="max-w-6xl mx-auto mt-28 px-4">
+    <section className="max-w-5xl mx-auto mt-28 px-4">
 
       {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-semibold text-[#159ce0] mb-4 tracking-tight">
-        Why Services-Led Transformation No Longer Works
-      </h2>
+       <h2 className="text-4xl md:text-5xl font-semibold text-white tracking-tight text-center pb-10">
+          Why Services-Led Transformation{" "} <br/>
+          <span className="text-[#0D7EB6]">No Longer Works</span>
+        </h2>
 
+                      {/* Why Services-Led Transformation No Longer Works */}
+             
       {/* Accent Divider */}
-      <div className="h-[2px] w-24 bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1] mb-14" />
+      {/* <div className="h-[2px] w-24 bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1] mb-14" /> */}
 
-     {/* Comparison Grid */}
-<div className="grid grid-cols-1 md:grid-cols-2 rounded-2xl overflow-hidden border border-white/15">
+      {/* Comparison Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 rounded-2xl overflow-hidden border border-white/15">
 
-  {/* LEFT — SERVICES LED */}
-  <div className="relative p-8 md:p-10 border-b md:border-b-0 md:border-r border-white/10">
+        {/* LEFT — SERVICES LED */}
+        <div className="relative p-8 md:p-10 border-b md:border-b-0 md:border-r border-white/10">
 
-    {/* subtle edge glow */}
-    <div className="pointer-events-none absolute inset-0 border-l-4 border-transparent bg-gradient-to-r from-white/5 to-transparent" />
+          {/* subtle edge glow */}
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-white/5 to-transparent" />
 
-    {/* <h3 className="text-lg uppercase tracking-widest text-white/60 mb-2">
-      Then
-    </h3> */}
+          {/* Header */}
+          <div className="flex items-start gap-4 mb-10">
+            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-red-400 text-white">
+              <X className="h-5 w-5" strokeWidth={2.5} />
+            </span>
 
-    <h3 className="text-xl font-semibold text-white mb-8">
-      Services-Led: Yesterday’s Approach
-    </h3>
+            <div>
+              <h3 className="text-lg font-semibold text-white">
+                Services-Led
+              </h3>
+              <p className="text-sm text-white/50">
+                Yesterday’s approach
+              </p>
+            </div>
+          </div>
 
-    <ul className="space-y-5 text-white/70 text-[15px]">
-      {[
-        "Manual discovery",
-        "Custom redesign every time",
-        "Knowledge locked in people",
-        "Long timelines",
-        "One-off projects",
-        "Risky production changes",
-        "ROI uncertain",
-      ].map((item, i) => (
-        <li key={i} className="flex items-start gap-3">
-          <span className="mt-1 h-2 w-2 rounded-full bg-[#159ce0]" />
-          <span>{item}</span>
-        </li>
-      ))}
-    </ul>
-  </div>
+          {/* List */}
+          <ul className="space-y-5 text-white/70 text-[15px]">
+            {[
+              "Manual discovery",
+              "Custom redesign every time",
+              "Knowledge locked in people",
+              "Long timelines",
+              "One-off projects",
+              "Risky production changes",
+              "ROI uncertain",
+            ].map((item, i) => (
+              <li key={i} className="flex items-start gap-4">
+                <span className="mt-0.5 flex h-7 w-7 items-center justify-center rounded-full bg-red-500/10 text-red-400">
+                  <X className="h-4 w-4" strokeWidth={2.5} />
+                </span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
 
-  {/* RIGHT — PLATFORM LED */}
-  <div className="relative p-8 md:p-10">
+        {/* RIGHT — PLATFORM LED */}
+        <div className="relative p-8 md:p-10">
 
-    {/* subtle edge glow */}
-    <div className="pointer-events-none absolute inset-0 border-l-4 border-transparent bg-gradient-to-r from-[#1CC2D1]/20 to-transparent" />
+          {/* subtle edge glow */}
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#1CC2D1]/20 to-transparent" />
 
-    {/* <h3 className="text-lg uppercase tracking-widest text-[#1CC2D1]/80 mb-2">
-      Now
-    </h3> */}
+          {/* Header */}
+          <div className="flex items-start gap-4 mb-10">
+            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-500 text-white">
+              <Check className="h-5 w-5" strokeWidth={2.5} />
+            </span>
 
-    <h3 className="text-xl font-semibold text-white mb-8">
-      Platform-Led with Aumne: Today’s Advantage
-    </h3>
+            <div>
+              <h3 className="text-lg font-semibold text-white">
+                Platform-Led with Aumne
+              </h3>
+              <p className="text-sm text-[#1CC2D1]">
+                Today’s advantage
+              </p>
+            </div>
+          </div>
 
-    <ul className="space-y-5 text-white/70 text-[15px]">
-      {[
-        "Automated discovery",
-        "Reusable patterns & intelligence",
-        "Design intelligence in software",
-        "Fast, repeatable delivery",
-        "Continuous evolution",
-        "Safe prototyping",
-        "Predictable ROI",
-      ].map((item, i) => (
-        <li key={i} className="flex items-start gap-3">
-          <span className="mt-1 h-2 w-2 rounded-full bg-[#1CC2D1]" />
-          <span>{item}</span>
-        </li>
-      ))}
-    </ul>
-  </div>
+          {/* List */}
+          <ul className="space-y-5 text-white/70 text-[15px]">
+            {[
+              "Automated discovery",
+              "Reusable patterns & intelligence",
+              "Design intelligence in software",
+              "Fast, repeatable delivery",
+              "Continuous evolution",
+              "Safe prototyping",
+              "Predictable ROI",
+            ].map((item, i) => (
+              <li key={i} className="flex items-start gap-4">
+                <span className="mt-0.5 flex h-7 w-7 items-center justify-center rounded-full bg-emerald-500/15 text-emerald-400">
+                  <Check className="h-4 w-4" strokeWidth={2.5} />
+                </span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
 
-</div>
-
+      </div>
     </section>
   );
 }

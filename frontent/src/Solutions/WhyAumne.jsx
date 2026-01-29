@@ -75,7 +75,7 @@ export default function WhyAymne() {
       ref={sectionRef}
       className="relative min-h-screen text-white pb-40 overflow-visible "
     >
-      <section className="w-full bg-transparent pb-10">
+      <section className="w-full  pb-10">
         <div className="max-w-7xl mx-auto px-4">
           <div>
             <WhyAumneCard />
@@ -88,7 +88,7 @@ export default function WhyAymne() {
                 className="grid grid-cols-1 md:grid-cols-[300px_1fr] group transition-all duration-300"
               >
                 {/* Left Side: Icon Container */}
-                <div className="flex items-center justify-center p-16 border-r border-b border-white/20">
+                <div className="flex items-center justify-center p-10 border-r border-b border-white/20">
                   <div
                     className={`${service.bgColor} p-6 rounded-lg relative flex flex-col items-center`}
                   >
@@ -99,7 +99,7 @@ export default function WhyAymne() {
                 </div>
 
                 {/* Right Side: Text Content */}
-                <div className="p-10 md:p-16 flex flex-col justify-center border-r border-b border-white/20 bg-transparent hover:bg-white/5 transition-colors">
+                <div className="p-10 md:p-10 flex flex-col justify-center border-r border-b border-white/20 bg-transparent hover:bg-white/5 transition-colors">
                   <h3 className="text-white text-xl font-bold mb-4">
                     {service.title}
                   </h3>

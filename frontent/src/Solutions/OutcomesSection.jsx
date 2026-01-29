@@ -9,19 +9,21 @@ const OutcomesSection = () => {
   ];
 
   return (
-    <section className="max-w-6xl mx-auto mt-28 px-4">
+    <section className="max-w-6xl mx-auto mt-28 px-4 mb-10">
       {/* Background gradient like your site */}
       <div className="absolute inset-0" />
 
       {/* Glow wave effect */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#0b3a5a,transparent_55%)] opacity-50"></div>
+      {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#0b3a5a,transparent_55%)] opacity-50"></div> */}
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* Heading style (same as your ecosystem section) */}
-        <h2 className="text-3xl md:text-4xl font-semibold text-[#159ce0] tracking-tight">
-          Outcomes That Matter
-        </h2>
-        <div className="w-16 h-[2px] bg-[#159ce0] mt-3 mb-16"></div>
+       <h2 className="text-4xl md:text-5xl font-semibold text-white tracking-tight text-center pb-10">
+          Outcomes That{" "}
+          <span className="text-[#0D7EB6]">Matter</span>
+        </h2>           
+                            {/* Outcomes That matter */}
+        {/* <div className="w-16 h-[2px] bg-[#159ce0] mt-3 mb-16"></div> */}
 
         {/* Cards grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
@@ -35,8 +37,7 @@ const OutcomesSection = () => {
             >
               <div
                 className="
-                  h-full rounded-2xl bg-[#060d13]/90 backdrop-blur-xl
-                  px-8 py-7 border border-white/10
+                  h-full rounded-2xl  bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 p-8  border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)]
                   transition-all duration-300
                   group-hover:border-[#159ce0]/40
                   group-hover:shadow-[0_0_50px_rgba(21,156,224,0.25)]
