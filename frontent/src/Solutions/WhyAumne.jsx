@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import { Crown, Zap, ShieldCheck, TrendingUp, Target } from "lucide-react";
+import { Crown, Zap, ShieldCheck, TrendingUp, Target ,Search , Sparkles, Shield , Globe , RefreshCw } from "lucide-react";
 import WhyAumneCard from "./WhyAumneCard";
 import TransformationComparison from "./TransformationComparison";
 import EcosystemAudience from "./EcosystemAudience";
@@ -37,36 +37,36 @@ export default function WhyAymne() {
       title: "Understand Legacy First",
       description:
         "Auto-discovery of IVR code, flows, configurations, APIs, call recordings, and transcripts—revealing what exists, what works, and what must change.",
-      icon: <Crown className="w-10 h-10 text-black" />,
-      bgColor: "bg-[#95a9e6]", // Light blue-purple
+      icon: <Search />,
+      // bgColor: "bg-[#95a9e6]", // Light blue-purple
     },
     {
       title: "Automate Conversational Transformation",
       description:
         "AI-driven design and build converts legacy logic into conversational experiences—reducing time and effort by up to 70%.",
-      icon: <Zap className="w-10 h-10 text-black" />,
-      bgColor: "bg-[#ff6b6b]", // Reddish-pink
+      icon: <Sparkles />,
+      // bgColor: "bg-[#ff6b6b]", // Reddish-pink
     },
     {
       title: "Human-in-the-Loop Governance ",
       description:
         "Built-in review, approvals, versioning, rollback, and compliance controls. Enterprises stay firmly in control.",
-      icon: <ShieldCheck className="w-10 h-10 text-black" />,
-      bgColor: "bg-[#95a9e6]",
+      icon: <Shield />,
+      // bgColor: "bg-[#95a9e6]",
     },
     {
       title: "Build Once. Deploy Everywhere",
       description:
         "Deploy consistently across voice, chat, web, and messaging—without duplicating logic or redesigning journeys.",
-      icon: <TrendingUp className="w-10 h-10 text-black" />,
-      bgColor: "bg-[#ff6b6b]",
+      icon: <Globe/>,
+      // bgColor: "bg-[#ff6b6b]",
     },
     {
       title: "Continuously Evolve Services",
       description:
         "Rapid prototyping, recommendations, and controlled iteration keep customer service aligned with changing products and policies.",
-      icon: <Target className="w-10 h-10 text-black" />,
-      bgColor: "bg-[#95a9e6]",
+      icon: <RefreshCw />,
+      // bgColor: "bg-[#95a9e6]",
     },
   ];
 
@@ -88,13 +88,13 @@ export default function WhyAymne() {
                 className="grid grid-cols-2 md:grid-cols-[120px_1fr] group transition-all duration-300"
               >
                 {/* Left Side: Icon Container */}
-                <div className="flex items-center justify-center p-5 border-r border-b border-white/20 w-30">
+                <div className="flex items-center justify-center p-5 border-r border-b border-white/20 w-30 ">
                   <div
-                    className={`${service.bgColor} p-6 rounded-lg relative flex flex-col items-center`}
+                    className={`${service.bgColor} mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-[#0D7EB6]/15 border border-[#0D7EB6]/40 shrink-0 text-[#0D7EB6] mx-auto`}
                   >
                     {service.icon}
                     {/* The small black dash line below the icon */}
-                    <div className="w-8 h-0.5 bg-black mt-4"></div>
+                    {/* <div className="w-8 h-0.5 bg-black mt-4"></div> */}
                   </div>
                 </div>
 

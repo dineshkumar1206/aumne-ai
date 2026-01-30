@@ -19,6 +19,7 @@ import TransformationWindow from "./Solutions/TransformationWindow";
 import LivedExperienceSection from "./Solutions/LivedExperienceSection";
 import Enterprise from "./Solutions/Enterprise";
 import Global from "./Solutions/Global";
+import BPO from "./Solutions/BPO";
 
 const App = () => {
   return (
@@ -36,12 +37,13 @@ const App = () => {
         <Route path="/industry-trends" element={<StatisticsSection/>}/>
         <Route path="/roi-calculator" element={<ROICalculator/>}/>
         <Route path="/gst-partnership" element={<GSIPartnership/>} /> */}
+
         <Route path="/enterprise" element={<Enterprise/>}></Route>
         <Route path="/global" element={<Global/>}></Route>
+        <Route path="/bpo" element={<BPO/>} ></Route>
         <Route path="/" element={<HomePage />} />
 
       </Routes>
-      
       <Footer />
       </main>
     </>

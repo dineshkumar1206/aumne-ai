@@ -18,8 +18,7 @@ export default function EcosystemAudience() {
         <div className="rounded-2xl border  bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 p-8  border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] p-8
                         shadow-sm hover:shadow-md transition">
 
-          <div className="mb-6 flex h-14 w-14 items-center justify-center
-                          rounded-xl bg-[#0D7EB6]/15 border border-[#0D7EB6]/40 shrink-0 text-[#0D7EB6] mx-auto">
+          <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-[#0D7EB6]/15 border border-[#0D7EB6]/40 shrink-0 text-[#0D7EB6] mx-auto">
             <Building2 className="h-7 w-7" strokeWidth={2} />
           </div>
 

@@ -79,8 +79,7 @@ const Navbar = () => {
                     Lived Experience
                   </button>
                            
-              <NavLink to="/enterprise" className= {activeStyle} >Enterprise</NavLink><br/>
-           <NavLink to="/global" className={activeStyle}>Global System Integration</NavLink>
+            
 
 
 
@@ -92,7 +91,9 @@ const Navbar = () => {
           
 
         {/* <button onClick={()=>scrollToSection("benefits")} className="hover:text-gray-300 transition cursor-pointer">Benefits</button> */}
-         
+           <NavLink to="/enterprise" className= {activeStyle} >Enterprise</NavLink>
+           <NavLink to="/global" className={activeStyle}>Global System Integration</NavLink>
+           <NavLink to="/bpo" className={activeStyle}>BPO & CX Providers</NavLink>
         
         <button onClick={()=>scrollToSection("statistics")} className="hover:text-gray-300 transition cursor-pointer">Industry Trends</button>
           {/* <NavLink to="/industry-trends" className={activeStyle}>Industry Trends</NavLink> */}
