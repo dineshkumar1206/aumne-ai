@@ -93,10 +93,11 @@ const Navbar = () => {
               </div>
             
             </div>
-          {/* <NavLink to="/solutions" className={activeStyle}>Solutions</NavLink> */}
+          <NavLink to="/enterprise" className={activeStyle}>Enterprise</NavLink>
+           <NavLink to="/global" className={activeStyle}>Global System Integration</NavLink>
 
         {/* <button onClick={()=>scrollToSection("benefits")} className="hover:text-gray-300 transition cursor-pointer">Benefits</button> */}
-          {/* <NavLink to="/benefits" className={activeStyle}>Benefits</NavLink> */}
+         
         
         <button onClick={()=>scrollToSection("statistics")} className="hover:text-gray-300 transition cursor-pointer">Industry Trends</button>
           {/* <NavLink to="/industry-trends" className={activeStyle}>Industry Trends</NavLink> */}

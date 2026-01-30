@@ -280,9 +280,9 @@ const [duration, setDuration] = useState(0);
         <section className="" id="lived-experience">
            <LivedExperienceSection/>
         </section> 
-        <section className="" id="enterprise">
+        {/* <section className="" id="enterprise">
            <Enterprise/>
-        </section>
+        </section> */}
         {/* {/* <section className="" id="benefits">
            <Benefits/>
         </section> */}
