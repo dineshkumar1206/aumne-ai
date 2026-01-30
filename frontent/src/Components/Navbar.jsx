@@ -79,12 +79,8 @@ const Navbar = () => {
                     Lived Experience
                   </button>
                            
-               <button
-                    onClick={() => scrollToSection("enterprise")}
-                    className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition cursor-pointer"
-                  >
-                    Enterprise
-                  </button>
+              <NavLink to="/enterprise" className= {activeStyle} >Enterprise</NavLink><br/>
+           <NavLink to="/global" className={activeStyle}>Global System Integration</NavLink>
 
 
 
@@ -93,8 +89,7 @@ const Navbar = () => {
               </div>
             
             </div>
-          <NavLink to="/enterprise" className={activeStyle}>Enterprise</NavLink>
-           <NavLink to="/global" className={activeStyle}>Global System Integration</NavLink>
+          
 
         {/* <button onClick={()=>scrollToSection("benefits")} className="hover:text-gray-300 transition cursor-pointer">Benefits</button> */}
          
