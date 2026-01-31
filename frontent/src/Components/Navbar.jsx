@@ -66,9 +66,9 @@ const Navbar = () => {
             </button>
 
             {/* Dropdown */}
-            <div className="absolute left-0 top-full mt-3 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+             <div className="absolute left-0 top-full mt-3 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
               <div className="bg-[#0a0a0a] border border-white/10 rounded-xl shadow-xl p-3 space-y-2">
-                <button
+                {/* <button
                   onClick={() => scrollToSection("transformation-comparison")}
                   className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition cursor-pointer"
                 >
@@ -101,21 +101,28 @@ const Navbar = () => {
                   className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition cursor-pointer"
                 >
                   Lived Experience
-                </button>
+                </button> */}
+                 <div className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition cursor-pointer">
+                  <NavLink to="/enterprise" className={activeStyle}>
+            Enterprise
+             </NavLink> <br/>
+             </div>
+             <div className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition cursor-pointer">
+             <NavLink to="/global" className={activeStyle}>
+               Global System Integration
+             </NavLink> <br/>
               </div>
-            </div>
+                <div className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition cursor-pointer">
+             <NavLink to="/bpo" className={activeStyle}>
+               BPO & CX Providers
+             </NavLink>
+             </div>
+              </div>
+            </div> 
           </div>
 
           {/* <button onClick={()=>scrollToSection("benefits")} className="hover:text-gray-300 transition cursor-pointer">Benefits</button> */}
-          <NavLink to="/enterprise" className={activeStyle}>
-            Enterprise
-          </NavLink>
-          <NavLink to="/global" className={activeStyle}>
-            Global System Integration
-          </NavLink>
-          <NavLink to="/bpo" className={activeStyle}>
-            BPO & CX Providers
-          </NavLink>
+          
 
           <button
             onClick={() => scrollToSection("statistics")}
