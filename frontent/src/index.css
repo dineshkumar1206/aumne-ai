@@ -14,7 +14,24 @@
     min-height: 100vh;
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
+    
   }
+
+  @keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-zoomIn {
+  animation: zoomIn 0.35s ease-out;
+}
+
 
   /* Text selection color (optional - looks cool) */
   ::selection {
@@ -40,3 +57,5 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #444;
 }
+
+
