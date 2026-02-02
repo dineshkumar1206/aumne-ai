@@ -84,7 +84,7 @@ export default function WhyAymne() {
             <WhyAumneCard />
           </div>
           <div className="">
-               {/* <ImageCarousel/> */}
+               <ImageCarousel/>
                <DataGrowthSection/>
           </div>
           {/* Main Grid Container with Top & Left Border 

@@ -1,273 +1,103 @@
-import { useEffect, useRef, useState, useCallback } from "react";
-import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import React, { useState } from "react";
+import { FiX, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const images = [
-  { src: "/image/img1.jpg", alt: "Beautiful landscape view" },
-  { src: "/image/img2.jpg", alt: "City skyline at night" },
-  { src: "/image/img3.jpg", alt: "Mountain adventure" },
-  { src: "/image/img4.jpg", alt: "Beach sunset" },
-  { src: "/image/img5.jpg", alt: "Forest trail" },
-  { src: "/image/img6.jpg", alt: "Desert dunes" },
+  "/image/img1.jpg",
+  "/image/img2.jpg",
+  "/image/img5.jpg",
+  "/image/img7.jpg",
 ];
 
-const VISIBLE_IMAGES = 2;
-const AUTO_PLAY_INTERVAL = 3000;
-const TRANSITION_DURATION = 500;
+const ImageCarousel = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-export default function MinimalCarousel() {
-  const trackRef = useRef(null);
-  const autoPlayRef = useRef(null);
-  const [currentPosition, setCurrentPosition] = useState(0);
-  const [selectedImage, setSelectedImage] = useState(null);
-  const [isPaused, setIsPaused] = useState(false);
-  const [isTransitioning, setIsTransitioning] = useState(false);
-
-  // Create extended array for seamless continuous flow
-  const extendedImages = [...images, ...images.slice(0, VISIBLE_IMAGES)];
-
-  // Get the transform value for the track
-  const getTransformValue = () => {
-    // Each image takes 50% width (100 / VISIBLE_IMAGES)
-    const percentagePerImage = 100 / VISIBLE_IMAGES;
-    // Move by one image at a time
-    const translateX = currentPosition * percentagePerImage;
-    return `translateX(-${translateX}%)`;
+  const openModal = (index) => {
+    setCurrentIndex(index);
+    setIsOpen(true);
   };
 
-  // Move to next position (one image at a time)
-  const moveNext = useCallback(() => {
-    if (isTransitioning) return;
-    setIsTransitioning(true);
-    
-    setCurrentPosition(prev => {
-      const nextPosition = prev + 1;
-      
-      // If we're about to go beyond original images, reset position
-      if (nextPosition > images.length) {
-        // This will trigger the seamless reset
-        return nextPosition;
-      }
-      return nextPosition;
-    });
-  }, [isTransitioning]);
+  const closeModal = () => setIsOpen(false);
 
-  // Move to previous position
-  const movePrev = useCallback(() => {
-    if (isTransitioning) return;
-    setIsTransitioning(true);
-    
-    setCurrentPosition(prev => {
-      const prevPosition = prev - 1;
-      
-      // If we go before 0, show last position
-      if (prevPosition < 0) {
-        return images.length - 1;
-      }
-      return prevPosition;
-    });
-  }, [isTransitioning]);
-
-  // Handle seamless reset when we reach the end
-  useEffect(() => {
-    if (!isTransitioning) return;
-
-    const timer = setTimeout(() => {
-      setIsTransitioning(false);
-      
-      // If we've moved beyond the original images, reset to beginning
-      if (currentPosition >= images.length) {
-        // Disable transition for instant reset
-        trackRef.current.style.transition = 'none';
-        
-        // Reset position to 0 (but keep the visual continuity)
-        setCurrentPosition(prev => prev - images.length);
-        
-        // Re-enable transition
-        requestAnimationFrame(() => {
-          trackRef.current.style.transition = `transform ${TRANSITION_DURATION}ms ease-in-out`;
-        });
-      }
-    }, TRANSITION_DURATION);
-
-    return () => clearTimeout(timer);
-  }, [currentPosition, isTransitioning]);
-
-  // Auto-play functionality
-  useEffect(() => {
-    if (isPaused || selectedImage || isTransitioning) {
-      if (autoPlayRef.current) {
-        clearInterval(autoPlayRef.current);
-        autoPlayRef.current = null;
-      }
-      return;
-    }
-
-    autoPlayRef.current = setInterval(() => {
-      moveNext();
-    }, AUTO_PLAY_INTERVAL);
-
-    return () => {
-      if (autoPlayRef.current) {
-        clearInterval(autoPlayRef.current);
-      }
-    };
-  }, [isPaused, selectedImage, isTransitioning, moveNext]);
-
-  // Get current image indices
-  const getCurrentImageIndex = () => {
-    return currentPosition % images.length;
+  const prevImage = () => {
+    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };
 
-  // Handle image click
-  const handleImageClick = (img, index) => {
-    setSelectedImage({ ...img, index });
-  };
-
-  // Handle lightbox navigation
-  const handleLightboxPrev = (e) => {
-    e.stopPropagation();
-    movePrev();
-    const currentIndex = getCurrentImageIndex();
-    setSelectedImage({ ...images[currentIndex], index: currentIndex });
-  };
-
-  const handleLightboxNext = (e) => {
-    e.stopPropagation();
-    moveNext();
-    const currentIndex = getCurrentImageIndex();
-    setSelectedImage({ ...images[currentIndex], index: currentIndex });
+  const nextImage = () => {
+    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
 
   return (
-    <section className="py-12 px-4 md:px-6">
-      <div className="relative max-w-4xl mx-auto">
-        {/* Carousel Container */}
-        <div
-          className="relative overflow-hidden"
-          onMouseEnter={() => setIsPaused(true)}
-          onMouseLeave={() => !selectedImage && setIsPaused(false)}
-        >
-          {/* Track */}
+    <div className="w-full py-12 flex justify-center">
+      {/* Image Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-7xl w-full px-6">
+        {images.map((img, index) => (
           <div
-            ref={trackRef}
-            className="flex transition-transform ease-in-out"
-            style={{
-              transform: getTransformValue(),
-              transitionDuration: `${TRANSITION_DURATION}ms`,
-            }}
+            key={index}
+            onClick={() => openModal(index)}
+            className="cursor-pointer rounded-xl overflow-hidden shadow-lg bg-white hover:scale-105 transition-transform duration-300"
           >
-            {extendedImages.map((img, index) => {
-              const actualIndex = index % images.length;
-              return (
-                <div
-                  key={`${img.src}-${index}`}
-                  className="w-1/2 px-2 flex-shrink-0"
-                >
-                  <div className="relative group aspect-square">
-                    {/* Square Clickable Image */}
-                    <div 
-                      className="relative overflow-hidden cursor-pointer aspect-square"
-                      onClick={() => handleImageClick(img, actualIndex)}
-                    >
-                      <img
-                        src={img.src}
-                        alt={img.alt}
-                        className="w-full h-full object-cover transition-all duration-300 group-hover:scale-105"
-                        loading="lazy"
-                      />
-                      
-                      {/* Simple overlay on hover */}
-                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
+            <div className="w-full h-[380px]">
+              <img
+                src={img}
+                alt={`img-${index}`}
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
-
-          {/* Navigation Arrows - Clean and minimal */}
-          <button
-            onClick={movePrev}
-            disabled={isTransitioning}
-            className="absolute top-1/2 left-2 -translate-y-1/2 z-20 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full disabled:opacity-30 disabled:cursor-not-allowed transition-all"
-            aria-label="Previous image"
-          >
-            <ChevronLeft size={20} />
-          </button>
-
-          <button
-            onClick={moveNext}
-            disabled={isTransitioning}
-            className="absolute top-1/2 right-2 -translate-y-1/2 z-20 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full disabled:opacity-30 disabled:cursor-not-allowed transition-all"
-            aria-label="Next image"
-          >
-            <ChevronRight size={20} />
-          </button>
-
-          {/* Minimal progress dots */}
-          <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex items-center gap-1 z-20">
-            {images.map((_, index) => {
-              const isActive = getCurrentImageIndex() === index;
-              return (
-                <div
-                  key={index}
-                  className={`w-1.5 h-1.5 rounded-full transition-all ${
-                    isActive ? 'bg-white' : 'bg-white/50'
-                  }`}
-                />
-              );
-            })}
-          </div>
-        </div>
+        ))}
       </div>
 
-      {/* Lightbox Modal - Clean and minimal */}
-      {selectedImage && (
+      {/* Popup Modal */}
+      {isOpen && (
         <div
-          className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4"
-          onClick={() => setSelectedImage(null)}
+          className="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
+          onClick={closeModal} // click outside to close
         >
-          <div className="relative w-full max-w-4xl max-h-[90vh]">
-            <div className="relative h-full">
-              {/* Square Image in Lightbox */}
-              <div className="aspect-square max-w-full mx-auto">
-                <img
-                  src={selectedImage.src}
-                  alt={selectedImage.alt}
-                  className="w-full h-full object-contain"
-                  onClick={(e) => e.stopPropagation()}
-                />
-              </div>
-              
-              {/* Navigation in Lightbox */}
+          <div
+            className="relative w-full max-w-5xl px-4"
+            onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside
+          >
+            {/* Close Button */}
+            <button
+              onClick={closeModal}
+              className="absolute -top-10 right-0 text-white text-3xl hover:text-gray-300"
+            >
+              <FiX />
+            </button>
+
+            {/* Image */}
+            <div className="relative flex items-center justify-center">
               <button
-                onClick={handleLightboxPrev}
-                className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 p-2 rounded-full backdrop-blur-sm transition-all"
-                aria-label="Previous image"
+                onClick={prevImage}
+                className="absolute left-0 text-white text-4xl p-3 hover:bg-white/20 rounded-full"
               >
-                <ChevronLeft size={20} className="text-white" />
+                <FiChevronLeft />
               </button>
 
-              <button
-                onClick={handleLightboxNext}
-                className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 p-2 rounded-full backdrop-blur-sm transition-all"
-                aria-label="Next image"
-              >
-                <ChevronRight size={20} className="text-white" />
-              </button>
+              <img
+                src={images[currentIndex]}
+                alt="popup"
+                className="max-h-[80vh] w-auto rounded-lg shadow-2xl"
+              />
 
-              {/* Close Button */}
               <button
-                onClick={() => setSelectedImage(null)}
-                className="absolute top-2 right-2 bg-white/10 hover:bg-white/20 p-1.5 rounded-full backdrop-blur-sm transition-colors"
-                aria-label="Close lightbox"
+                onClick={nextImage}
+                className="absolute right-0 text-white text-4xl p-3 hover:bg-white/20 rounded-full"
               >
-                <X size={18} className="text-white" />
+                <FiChevronRight />
               </button>
             </div>
+
+            {/* Counter */}
+            <p className="text-center text-white mt-4 text-lg">
+              {currentIndex + 1} / {images.length}
+            </p>
           </div>
         </div>
       )}
-    </section>
+    </div>
   );
-}
+};
+
+export default ImageCarousel;
