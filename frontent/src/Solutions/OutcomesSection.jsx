@@ -41,7 +41,7 @@ const outcomes = [
         className="
           h-full rounded-2xl
           bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20
-          p-6
+          p-6 
           border border-white/10
           shadow-[0_20px_60px_rgba(0,0,0,0.8)]
           transition-all duration-300
@@ -54,7 +54,7 @@ const outcomes = [
           
             {/* NUMBER */}
   {item.no && (
-    <div className="flex-shrink-0 text-[#0D7EB6] font-bold text-xl md:text-2xl">
+    <div className="flex-shrink-0 text-[#0D7EB6] font-extrabold text-x1 md:text-2xl">
       {item.no}
     </div>
   )}
