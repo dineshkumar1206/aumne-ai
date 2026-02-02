@@ -1,6 +1,7 @@
 import React from "react";
 import agnoshinLogo from "../assets/AgnoShin.png";
 import visnetLogo from "../assets/Visnet-Logo.png";
+import gclogo from "../assets/GC-Partner1.png";
 
 const partners = [
   {
@@ -19,6 +20,15 @@ const partners = [
     employees: "200+",
     presence:
       "UK, USA, UAE, Oman, Singapore, Philippines, Malaysia, Australia, China, Europe, Africa",
+  },
+  {
+    name: "Third Partner Name",
+    logo: gclogo,
+    description:
+      "Enterprise systems integrator delivering digital transformation, AI-driven customer engagement, and large-scale platform modernization.",
+    employees: "500+",
+    presence:
+      "India, USA, Europe, Middle East, Asia-Pacific",
   },
 ];
 
@@ -40,10 +50,15 @@ export default function GSIPartnership() {
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {partners.map((partner, index) => (
-            <div
-              key={index}
-              className="bg-[#0b2a3d]/60 backdrop-blur-xl border border-white/10 rounded-3xl p-10 transition-all duration-300 hover:border-[#0D7EB6]/40 "
-            >
+  <div
+    key={index}
+    className={`bg-[#0b2a3d]/60 backdrop-blur-xl border border-white/10 rounded-3xl p-10 transition-all duration-300 hover:border-[#0D7EB6]/40
+      ${partners.length % 2 !== 0 && index === partners.length - 1
+        ? "md:col-span-2 md:max-w-[640px] md:mx-auto"
+        : ""}
+    `}
+  >
+
               {/* Logo  bg-[#0a2238]*/}
               <div className=" rounded-xl p-6 mb-8 flex items-center justify-center">
                 <img
