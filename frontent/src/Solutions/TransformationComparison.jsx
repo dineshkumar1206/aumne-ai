@@ -16,13 +16,14 @@ export default function TransformationComparison() {
       {/* <div className="h-[2px] w-24 bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1] mb-14" /> */}
 
       {/* Comparison Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 rounded-2xl overflow-hidden border border-white/15">
+      <div className="grid grid-cols-1 md:grid-cols-2 rounded-2xl border  bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 p-8  border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] p-8
+                        shadow-sm hover:shadow-md transition">
 
         {/* LEFT — SERVICES LED */}
-        <div className="relative p-8 md:p-10 border-b md:border-b-0 md:border-r border-white/10">
+        <div className="relative p-8 md:p-10 ">
 
           {/* subtle edge glow */}
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-white/5 to-transparent" />
+          <div className="pointer-events-none absolute inset-0" />
 
           {/* Header */}
           <div className="flex items-start gap-4 mb-10">
@@ -65,7 +66,7 @@ export default function TransformationComparison() {
         <div className="relative p-8 md:p-10">
 
           {/* subtle edge glow */}
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#1CC2D1]/20 to-transparent" />
+          <div className="pointer-events-none absolute inset-0" />
 
           {/* Header */}
           <div className="flex items-start gap-4 mb-10">

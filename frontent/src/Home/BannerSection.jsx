@@ -157,7 +157,7 @@ const [duration, setDuration] = useState(0);
              {/* RIGHT: VIDEO */}
   <div ref={videoRef} className="relative rounded-2xl overflow-hidden shadow-2xl lg:ml-12 bg-black w-full max-w-[620px] aspect-video -mt-20">
 
-  <video
+  {/* <video
     autoPlay
     muted
     loop
@@ -166,12 +166,12 @@ const [duration, setDuration] = useState(0);
     onTimeUpdate={(e) => {
       const progress = (e.target.currentTime / e.target.duration) * 100;
       setProgress(progress);
-      // setCurrentTime(e.target.currentTime);
+      setCurrentTime(e.target.currentTime);
       setDuration(e.target.duration);
     }}
   >
     <source src={heroVideo} type="video/mp4" />
-  </video>
+  </video> */}
 
   {/* Dark overlay */}
   <div className="absolute inset-0 bg-black/20"></div>
