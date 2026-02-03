@@ -154,7 +154,7 @@ const Navbar = () => {
 
          <button
           onClick={() => setOpenDemo(true)}
-          className="px-5 py-2 rounded-lg bg-[#0D7EB6] hover:bg-[#0D7EB6]/80 transition"
+          className="px-5 py-2 rounded-lg bg-[#0D7EB6] hover:bg-[#0D7EB6]/80 transition cursor-pointer"
         >
           Book a Demo
         </button>
