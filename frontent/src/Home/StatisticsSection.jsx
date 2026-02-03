@@ -199,7 +199,9 @@ export default function StatisticsSection() {
               onMouseEnter={(e) => handleMouseEnter(e, index)}
               onMouseMove={(e) => handleMouseMove(e, index)}
               onMouseLeave={() => handleMouseLeave(index)}
-              className="relative bg-[#0f0f0f] border border-white/5 rounded-2xl p-10 flex flex-col items-center text-center transition-colors duration-500 cursor-default overflow-hidden"
+              className="relative rounded-2xl border border-white/10 
+          bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
+          shadow-[0_20px_60px_rgba(0,0,0,0.8)] p-10 flex flex-col items-center text-center transition-colors duration-500 cursor-default overflow-hidden"
               style={{ transformStyle: "preserve-3d" }}
             >
               {/* Background Glow Effect */}

@@ -1,11 +1,11 @@
 const OutcomesSection = () => {
   const outcomes = [
-    { no: "5×", text: " faster time to value" },
-    { no: "70%+", text: " automation across the lifecycle" },
-    { no: "3×", text: " ROI on transformation" },
-    { text: "Reduced abandonment and agent load" },
-    { text: "Predictable modernization economics" },
-    { text: "Continuous CX improvement" },
+    { no: "5×", text: " Faster Time to Value" },
+    { no: "70%+", text: " Automation Across the Lifecycle" },
+    { no: "3×", text: " ROI on Transformation" },
+    { text: "Reduced Abandonment and Agent Load" },
+    { text: "Predictable Modernization Economics" },
+    { text: "Continuous CX Improvement" },
   ];
 
   return (
