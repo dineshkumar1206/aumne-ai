@@ -89,9 +89,9 @@ export default function WhyAumneCard() {
         
       </div>
       <div className="max-w-7xl mx-auto  ">
-        <div className="flex flex-col md:flex-row items-center gap-10 border border-white/10 overflow-hidden">
-          {/* LEFT IMAGE BLOCK */}
-          <div className="relative flex-1 min-h-[365px]  overflow-hidden group border-r border-white/10">
+        <div className="flex flex-col md:flex-row items-center gap-10  overflow-hidden">
+          {/* LEFT IMAGE BLOCK    border border-white/10*/}
+          <div className="relative flex-1 min-h-[365px]  overflow-hidden group ">
             <div
               ref={imageRef}
               className="absolute inset-0 bg-cover bg-center scale-125"

@@ -105,14 +105,14 @@ export default function BannerSection() {
        {/* Metrics */}
   <div className="mt-20 grid grid-cols-1 md:grid-cols-[auto_1px_auto_1px_auto] items-center text-white gap-y-6 md:gap-x-10">
     <div className="text-center md:text-left">
-      <p className="text-4xl font-bold text-[#0D7EB6]">5X</p>
+      <p className="text-6xl font-bold text-[#0D7EB6]">5X</p>
       <p className="text-lg text-white/80 mt-1">Faster Transformation</p>
     </div>
 
     <div className="hidden md:block h-15 w-[1px] bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
 
     <div className="text-center md:text-left">
-      <p className="text-4xl font-bold text-[#0D7EB6]">70%+</p>
+      <p className="text-6xl font-bold text-[#0D7EB6]">70%+</p>
       <p className="text-lg text-white/80 mt-1">
         Automation Across the Lifecycle
       </p>
@@ -121,7 +121,7 @@ export default function BannerSection() {
     <div className="hidden md:block h-15 w-[1px] bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
 
     <div className="text-center md:text-left">
-      <p className="text-4xl font-bold text-[#0D7EB6]">3x</p>
+      <p className="text-6xl font-bold text-[#0D7EB6]">3x</p>
       <p className="text-lg text-white/80 mt-1">
         ROI on Modernization
       </p>

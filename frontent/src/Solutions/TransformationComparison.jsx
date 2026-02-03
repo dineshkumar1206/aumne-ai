@@ -2,42 +2,31 @@ import { X, Check } from "lucide-react";
 
 export default function TransformationComparison() {
   return (
-    <section className="max-w-5xl mx-auto mt-28 px-4">
+    <section className="max-w-6xl mx-auto mt-20 px-4 min-h-screen flex flex-col justify-center">
 
       {/* Heading */}
-       <h2 className="text-4xl md:text-5xl font-semibold text-white tracking-tight text-center pb-10">
-          Why Services-Led Transformation{" "} <br/>
-          <span className="text-[#0D7EB6]">No Longer Works</span>
-        </h2>
+      <h2 className="text-4xl md:text-5xl font-semibold text-white tracking-tight text-center pb-12">
+        Why Services-Led Transformation <br />
+        <span className="text-[#0D7EB6]">No Longer Works</span>
+      </h2>
 
-                      {/* Why Services-Led Transformation No Longer Works */}
-             
-      {/* Accent Divider */}
-      {/* <div className="h-[2px] w-24 bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1] mb-14" /> */}
+      {/* Two Boxes */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 min-h-[60vh]">
 
-      {/* Comparison Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 rounded-2xl border  bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 p-8  border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] p-8
-                        shadow-sm hover:shadow-md transition">
-
-        {/* LEFT — SERVICES LED */}
-        <div className="relative p-8 md:p-10 ">
-
-          {/* subtle edge glow */}
-          <div className="pointer-events-none absolute inset-0" />
+        {/* LEFT BOX */}
+        <div className="relative rounded-2xl border border-white/10 
+          bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
+          shadow-[0_20px_60px_rgba(0,0,0,0.8)]
+          p-8 md:p-10 flex flex-col justify-between">
 
           {/* Header */}
           <div className="flex items-start gap-4 mb-10">
-            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-red-400 text-white">
+            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-red-500 text-white">
               <X className="h-5 w-5" strokeWidth={2.5} />
             </span>
-
             <div>
-              <h3 className="text-lg font-semibold text-white">
-                Services-Led
-              </h3>
-              <p className="text-sm text-white/50">
-                Yesterday’s approach
-              </p>
+              <h3 className="text-lg font-semibold text-white">Services-Led</h3>
+              <p className="text-sm text-white/50">Yesterday’s approach</p>
             </div>
           </div>
 
@@ -62,25 +51,22 @@ export default function TransformationComparison() {
           </ul>
         </div>
 
-        {/* RIGHT — PLATFORM LED */}
-        <div className="relative p-8 md:p-10">
-
-          {/* subtle edge glow */}
-          <div className="pointer-events-none absolute inset-0" />
+        {/* RIGHT BOX */}
+        <div className="relative rounded-2xl border border-white/10 
+          bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
+          shadow-[0_20px_60px_rgba(0,0,0,0.8)]
+          p-8 md:p-10 flex flex-col justify-between">
 
           {/* Header */}
           <div className="flex items-start gap-4 mb-10">
             <span className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-500 text-white">
               <Check className="h-5 w-5" strokeWidth={2.5} />
             </span>
-
             <div>
               <h3 className="text-lg font-semibold text-white">
                 Platform-Led with Aumne
               </h3>
-              <p className="text-sm text-[#1CC2D1]">
-                Today’s advantage
-              </p>
+              <p className="text-sm text-[#1CC2D1]">Today’s advantage</p>
             </div>
           </div>
 
