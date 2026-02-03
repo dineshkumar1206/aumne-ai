@@ -38,8 +38,8 @@ export default function GSIPartnership() {
 
         {/* LEFT CONTENT */}
         <div className="max-w-xl">
-          <h2 className="text-4xl md:text-5xl font-semibold text-[#0D7EB6] mb-6">
-            Global Systems Integrator Partners
+          <h2 className="text-4xl md:text-5xl font-semibold text-white  mb-6">
+            Global Systems<span className="text-[#0D7EB6]"> Integrator Partners </span>
           </h2>
 
           <p className="text-white/80 text-lg leading-relaxed mb-8">
@@ -56,44 +56,47 @@ export default function GSIPartnership() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 -ml-6">
 
           {partners.map((partner, index) => (
-            <div
-              key={index}
-              className={`relative rounded-2xl border border-white/10 
-              bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
-              shadow-[0_20px_60px_rgba(0,0,0,0.8)]
-              p-6 h-[320px] flex flex-col
-              ${index === 0 ? "sm:col-span-2" : ""}`}
-            >
-              {/* Logo */}
-              <div className="mb-4 flex items-center justify-center h-12">
-                <img
-                  src={partner.logo}
-                  alt={partner.name}
-                  className="h-9 object-contain"
-                />
-              </div>
+  <div
+    key={index}
+    className={`relative rounded-2xl border border-white/10 
+    bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
+    shadow-[0_20px_60px_rgba(0,0,0,0.8)]
+    p-6 flex flex-col justify-between
+    ${index === 0 ? "sm:col-span-2 min-h-[240px]" : "min-h-[280px]"}`}
+  >
+    {/* Logo */}
+    <div className="mb-4 flex items-center justify-center h-12">
+      <img
+        src={partner.logo}
+        alt={partner.name}
+        className="h-9 object-contain"
+      />
+    </div>
 
-              {/* Title */}
-              <h3 className="text-lg font-semibold text-white mb-2">
-                {partner.name}
-              </h3>
+    {/* Title */}
+    <h3 className="text-lg font-semibold text-white mb-2">
+      {partner.name}
+    </h3>
 
-              {/* Description */}
-              <p className="text-white/60 text-sm leading-relaxed line-clamp-3 mb-4">
-                {partner.description}
-              </p>
+    {/* Description */}
+    <p className="text-white/60 text-sm leading-relaxed line-clamp-3 mb-4">
+      {partner.description}
+    </p>
 
-              {/* Meta */}
-              <p className="text-white text-sm mb-1">
-                Employee Strength:{" "}
-                <span className="text-white/60">{partner.employees}</span>
-              </p>
-              <p className="text-white text-sm">
-                Global Presence:{" "}
-                <span className="text-white/60">{partner.presence}</span>
-              </p>
-            </div>
-          ))}
+    {/* Meta */}
+    <div>
+      <p className="text-white text-sm mb-1">
+        Employee Strength:{" "}
+        <span className="text-white/60">{partner.employees}</span>
+      </p>
+      <p className="text-white text-sm">
+        Global Presence:{" "}
+        <span className="text-white/60">{partner.presence}</span>
+      </p>
+    </div>
+  </div>
+))}
+
         </div>
 
       </div>

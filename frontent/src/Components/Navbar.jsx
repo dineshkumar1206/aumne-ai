@@ -154,7 +154,7 @@ const Navbar = () => {
             onClick={() => scrollToSection("#")}
             className="bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1] px-6 py-2 rounded-md hover:opacity-90 transition cursor-pointer"
           >
-            Get Started
+            Book a Demo
           </button>
         </div>
 
@@ -197,7 +197,23 @@ const Navbar = () => {
               Solutions
             </button>
             {/* Dropdown */}
-            <div className="absolute left-0 top-full mt-3 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+
+           < div className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition cursor-pointer">
+                  <NavLink to="/enterprise" className={activeStyle}>
+            Enterprise
+             </NavLink> <br/>
+             </div>
+             <div className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition cursor-pointer">
+             <NavLink to="/global" className={activeStyle}>
+               Global System Integration
+             </NavLink> <br/>
+              </div>
+                <div className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition cursor-pointer">
+             <NavLink to="/bpo" className={activeStyle}>
+               BPO & CX Providers
+             </NavLink>
+             </div>
+            {/* <div className="absolute left-0 top-full mt-3 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
               <div className="bg-[#0a0a0a] border border-white/10 rounded-xl shadow-xl p-3 space-y-2">
                 <button
                   onClick={() => scrollToSection("transformation-comparison")}
@@ -234,7 +250,7 @@ const Navbar = () => {
                   Lived Experience
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
           {/* <button
     onClick={() => {
@@ -254,14 +270,14 @@ const Navbar = () => {
             Industry Trends
           </button>
 
-          <button
+          {/* <button
             onClick={() => {
               scrollToSection("roi");
             }}
             className="text-left hover:text-gray-300 transition"
           >
             ROI Calculator
-          </button>
+          </button> */}
 
           <button
             onClick={() => {
@@ -278,7 +294,7 @@ const Navbar = () => {
             }}
             className="mt-3 w-full bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1] py-2 rounded-md hover:opacity-90 transition"
           >
-            Get Started
+            Book a Demo
           </button>
         </div>
       </motion.div>

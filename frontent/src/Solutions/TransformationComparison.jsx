@@ -5,7 +5,7 @@ export default function TransformationComparison() {
     <section className="max-w-6xl mx-auto mt-5 px-4 min-h-screen flex flex-col justify-center">
 
       {/* Heading */}
-      <h2 className="text-4xl md:text-5xl font-semibold text-white tracking-tight text-center pb-12">
+      <h2 className="text-4xl md:text-5xl font-semibold text-white tracking-tight text-center pb-10">
         Why Services-Led Transformation <br />
         <span className="text-[#0D7EB6]">No Longer Works</span>
       </h2>
@@ -20,18 +20,18 @@ export default function TransformationComparison() {
           p-8 md:p-10 flex flex-col justify-between">
 
           {/* Header */}
-          <div className="flex items-start gap-4 mb-10">
+          <div className="flex items-start gap-4 mb-4 pb-2">
             <span className="flex h-10 w-10 items-center justify-center rounded-full bg-red-500 text-white">
               <X className="h-5 w-5" strokeWidth={2.5} />
             </span>
             <div>
               <h3 className="text-lg font-semibold text-white">Services-Led</h3>
-              <p className="text-sm text-white/50">Yesterday’s approach</p>
+              <p className="text-sm text-white/50 text-[16px]">Yesterday’s approach</p>
             </div>
           </div>
 
           {/* List */}
-          <ul className="space-y-5 text-white/70 text-[15px]">
+          <ul className="space-y-5 text-white/70 text-[17px]">
             {[
               "Manual discovery",
               "Custom redesign every time",
@@ -58,7 +58,7 @@ export default function TransformationComparison() {
           p-8 md:p-10 flex flex-col justify-between">
 
           {/* Header */}
-          <div className="flex items-start gap-4 mb-10">
+          <div className="flex items-start gap-4 mb-4 pb-2">
             <span className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-500 text-white">
               <Check className="h-5 w-5" strokeWidth={2.5} />
             </span>
@@ -66,12 +66,12 @@ export default function TransformationComparison() {
               <h3 className="text-lg font-semibold text-white">
                 Platform-Led with Aumne
               </h3>
-              <p className="text-sm text-[#1CC2D1]">Today’s advantage</p>
+              <p className="text-sm text-[#1CC2D1] text-[16px]">Today’s advantage</p>
             </div>
           </div>
 
           {/* List */}
-          <ul className="space-y-5 text-white/70 text-[15px]">
+          <ul className="space-y-5 text-white/70 text-[17px]">
             {[
               "Automated discovery",
               "Reusable patterns & intelligence",

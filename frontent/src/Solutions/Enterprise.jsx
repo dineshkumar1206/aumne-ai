@@ -31,8 +31,7 @@ export default function Enterprise() {
 
         {/* Subtitle */}
         <p className="mt-6 text-lg text-white/80 max-w-3xl mx-auto">
-          An AI-native platform that transforms legacy IVR into continuously
-          evolving customer service.
+          Transforming legacy IVR into intelligent conversational experiences with enterprise grade control.
         </p>
 
         {/* Stats */}
@@ -73,16 +72,15 @@ export default function Enterprise() {
       <section className="max-w-6xl mx-auto px-4 py-24 pb-10 ">
       {/* Heading */}
       <h2 className="text-4xl md:text-5xl font-semibold text-white text-center">
-        Why Enterprises Are Struggling to{" "}
-        <span className="text-[#0D7EB6]">Modernize</span>
+        Why Customer Service Needs{" "}
+        <span className="text-[#0D7EB6]">Change</span>
         <br />
-        <span className="text-[#0D7EB6]">at the Pace of AI</span>
+        {/* <span className="text-[#0D7EB6]">at the Pace of AI</span> */}
       </h2>
 
       {/* Sub-heading */}
       <p className="mt-6 max-w-3xl mx-auto text-center text-white/70 text-lg leading-relaxed">
-        Customers want conversations. Enterprises still offer menus.
-        Legacy IVR is the bottleneck to AI-native customer service.
+        Customer expectations have moved faster than enterprise customer service systems.
       </p>
 
       {/* Cards */}
@@ -93,11 +91,10 @@ export default function Enterprise() {
             <Clock className="h-6 w-6 text-[#0D7EB6]" />
           </div>
           <h3 className="text-xl font-semibold text-white mb-2">
-            Slow Modernization
+            Legacy IVR Blocks CX Innovation
           </h3>
           <p className="text-white/70 leading-relaxed">
-            Nearly 2 out of 3 customer calls still pass through IVR before
-            reaching resolution. Most IVR modernization efforts take 9–18 months.
+           Outdated, menu driven IVR systems frustrate customers, slow resolution, and block meaningful CX improvements.
           </p>
         </div>
 
@@ -107,11 +104,10 @@ export default function Enterprise() {
             <DollarSign className="h-6 w-6 text-[#0D7EB6]" />
           </div>
           <h3 className="text-xl font-semibold text-white mb-2">
-            Expensive & Services-Heavy
+            Customers Expect Conversational AI
           </h3>
           <p className="text-white/70 leading-relaxed">
-            Legacy IVR modernization is slow, expensive, and driven by
-            services-heavy delivery models with unpredictable ROI.
+           Modern users expect natural, intuitive conversations and not rigid menus and long call trees.
           </p>
         </div>
 
@@ -121,11 +117,10 @@ export default function Enterprise() {
             <RefreshCcw className="h-6 w-6 text-[#0D7EB6]" />
           </div>
           <h3 className="text-xl font-semibold text-white mb-2">
-            Disconnected from Evolution
+                Modernization Is Painfully Slow         
           </h3>
           <p className="text-white/70 leading-relaxed">
-            Journeys update slowly while products, policies, and customer
-            behavior evolve continuously.
+            Typical IVR upgrades take 9 to 18 months, lagging far behind the pace of AI, product, and policy change.
           </p>
         </div>
 
@@ -135,11 +130,10 @@ export default function Enterprise() {
             <AlertTriangle className="h-6 w-6 text-[#0D7EB6]" />
           </div>
           <h3 className="text-xl font-semibold text-white mb-2">
-            ROI Struggles
+           ROI on CX Investments Is Unpredictable
           </h3>
           <p className="text-white/70 leading-relaxed">
-            Services-heavy change models and lack of prototyping slow
-            time-to-value and inflate cost.
+           Legacy systems inflate costs, limit experimentation, and prevent rapid prototyping and validation.
           </p>
         </div>
       </div>
@@ -203,14 +197,13 @@ export default function Enterprise() {
        <section className="max-w-6xl mx-auto px-4 py-28 pb-10">
       {/* Heading */}
       <h2 className="text-4xl md:text-5xl font-semibold text-white text-center">
-        Why The Problem{" "}
+        Why Legacy IVR{" "}
         <span className="text-[#0D7EB6]">Persists</span>
       </h2>
 
       {/* Subheading */}
       <p className="mt-6 max-w-3xl mx-auto text-center text-white/80 text-lg leading-relaxed">
-        Enterprises lack a platform to transform, govern, version, and
-        continuously evolve customer service over time.
+      The problem is not intent. It is tooling.
       </p>
 
       {/* Cards */}
@@ -221,11 +214,10 @@ export default function Enterprise() {
             <Building2 className="h-6 w-6 text-[#0D7EB6]" />
           </div>
           <h3 className="text-lg font-semibold text-white mb-2">
-            Existing Platforms Built for Greenfield
+            Greenfield Platforms Miss Legacy Reality
           </h3>
           <p className="text-white/80 leading-relaxed">
-            CCaaS, bots, and LLM tools assume clean, modern flows and
-            cannot understand or transform decades of legacy IVR logic.
+          Most modern CX platforms are designed for clean, new journeys and cannot interpret decades old IVR logic.
           </p>
         </div>
 
@@ -235,11 +227,10 @@ export default function Enterprise() {
             <Users className="h-6 w-6 text-[#0D7EB6]" />
           </div>
           <h3 className="text-lg font-semibold text-white mb-2">
-            System Integrators Are Services-Led
+            Manual, Services Led Transformation
           </h3>
           <p className="text-white/80 leading-relaxed">
-            IVR modernization remains manual, custom, and people-heavy.
-            Every project starts from scratch and scales linearly.
+            IVR modernization relies on custom, people heavy delivery models that do not scale.
           </p>
         </div>
 
@@ -249,12 +240,10 @@ export default function Enterprise() {
             <AlertTriangle className="h-6 w-6 text-[#0D7EB6]" />
           </div>
           <h3 className="text-lg font-semibold text-white mb-2">
-            Knowledge Trapped in Artifacts
+            Fragmented Business Logic
           </h3>
           <p className="text-white/80 leading-relaxed">
-            Legacy IVR knowledge is locked in artifacts. Service
-            evolution and upkeep remain manual with incentives
-            favoring slow change.
+            Critical IVR knowledge is scattered across VXML, code, diagrams, configurations, and tribal expertise, making automation difficult.
           </p>
         </div>
 
@@ -264,11 +253,10 @@ export default function Enterprise() {
             <DollarSign className="h-6 w-6 text-[#0D7EB6]" />
           </div>
           <h3 className="text-lg font-semibold text-white mb-2">
-            Services Monetize Duration
+            Outcome
           </h3>
           <p className="text-white/80 leading-relaxed">
-            Services-heavy models monetize duration and complexity
-            rather than speed and automation.
+           IVR becomes a permanent bottleneck instead of an evolving capability.
           </p>
         </div>
       </div>
@@ -277,13 +265,13 @@ export default function Enterprise() {
                  <section className="max-w-6xl mx-auto px-4 py-28 pb-10">
       {/* Heading */}
       <h2 className="text-4xl md:text-5xl font-semibold text-center text-white">
-        The Solution:{" "}
+        Aumne AI{" "}
         <span className="text-[#0D7EB6]">Aumne&apos;s AI-Native Platform</span>
       </h2>
 
       {/* Subheading */}
       <p className="mt-6 max-w-3xl mx-auto text-center text-white/70 text-lg">
-        Purpose-built to modernize legacy IVR and customer service at the pace of AI.
+        Aumne is an <b> AI native Service Lifecycle Management platform </b>designed specifically for enterprise IVR modernization.
       </p>
 
       {/* Cards */}
@@ -294,11 +282,10 @@ export default function Enterprise() {
             <Zap className="h-7 w-7 text-[#0D7EB6]" />
           </div>
           <h3 className="text-lg font-semibold text-white mb-3">
-            De-risk Transformation
+            AI Native Platform for Legacy IVR
           </h3>
           <p className="text-white/70 leading-relaxed">
-            Auto-discovers IVR and contact-center artifacts to reveal what exists,
-            what works, and what must change before modernization begins.
+            Purpose built to modernize complex, production IVR systems at scale.
           </p>
         </div>
 
@@ -308,11 +295,10 @@ export default function Enterprise() {
             <Layers className="h-7 w-7 text-[#0D7EB6]" />
           </div>
           <h3 className="text-lg font-semibold text-white mb-3">
-            Automates Conversational Transformation
+            Intelligent Auto Discovery
           </h3>
           <p className="text-white/70 leading-relaxed">
-            Intelligent auto-design and build generates personalized conversational
-            journeys, reducing modernization time by up to 70%.
+            Automatically maps existing IVR logic and artifacts before transformation begins.
           </p>
         </div>
 
@@ -322,11 +308,10 @@ export default function Enterprise() {
             <RefreshCcw className="h-7 w-7 text-[#0D7EB6]" />
           </div>
           <h3 className="text-lg font-semibold text-white mb-3">
-            Enables Continuous Evolution
+            Conversational Journey Automation
           </h3>
           <p className="text-white/70 leading-relaxed">
-            Built-in recommendations, rapid prototyping, and A/B testing keep
-            services aligned with changing products and behavior.
+            Generates personalized, omnichannel customer journeys <b> up to 70 percent </b>faster.
           </p>
         </div>
       </div>
@@ -339,11 +324,10 @@ export default function Enterprise() {
             <ShieldCheck className="h-7 w-7 text-[#0D7EB6]" />
           </div>
           <h3 className="text-lg font-semibold text-white mb-3">
-            Human-in-the-Loop Governance
+            Continuous Service Evolution
           </h3>
           <p className="text-white/70 leading-relaxed">
-            Enterprises stay in control with expert review, approvals,
-            versioning, and rollback.
+           Built in prototyping, recommendations, and A B testing enable ongoing improvement instead of one time projects.
           </p>
         </div>
 
@@ -353,11 +337,10 @@ export default function Enterprise() {
             <Target className="h-7 w-7 text-[#0D7EB6]" />
           </div>
           <h3 className="text-lg font-semibold text-white mb-3">
-            Build Once, Deploy Everywhere
+            Continuous Evolution at AI Speed
           </h3>
           <p className="text-white/70 leading-relaxed">
-            Generate journeys and deploy seamlessly across voice, chat,
-            web, and messaging.
+            Customer service should evolve as fast as your business safely.
           </p>
         </div>
       </div>

@@ -180,8 +180,8 @@ export default function StatisticsSection() {
       className="pt-10 pb-24 text-white px-6 overflow-hidden"
     >
       <div className="max-w-[1550px] mx-auto text-center">
-        <h2 className="text-4xl md:text-6xl text-[#0D7EB6] font-semibold mb-6 tracking-tight">
-          Industry Trends
+        <h2 className="text-4xl md:text-6xl text-white font-semibold mb-6 tracking-tight">
+          Industry <span className="text-[#0D7EB6]"> Trends </span>
         </h2>
         <p className="mb-20 text-white text-lg md:text-xl max-w-4xl mx-auto leading-relaxed">
           The customer service landscape is rapidly evolving, but many

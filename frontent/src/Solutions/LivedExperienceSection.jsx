@@ -24,7 +24,7 @@ export default function LivedExperienceSection() {
     <section className="w-full py-28 relative">
 
       {/* HEADING (UNCHANGED ✅) */}
-      <div className="max-w-6xl mx-auto px-4 relative z-10 mb-16">
+      <div className="max-w-6xl mx-auto px-4 relative z-10 -mb-2">
         <h2 className="text-4xl md:text-5xl font-semibold text-white tracking-tight text-center">
           Built by People Who&apos;ve{" "}
           <span className="text-[#0D7EB6]">Lived the Problem</span>
