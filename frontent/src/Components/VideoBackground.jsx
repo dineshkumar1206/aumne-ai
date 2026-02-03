@@ -1,10 +1,10 @@
 
 
-
+// bg-[bg-[#90D5FF]
 
 export default function VideoBackground() {
   return (
-    <div className="fixed inset-0 z-0 overflow-hidden opacity-80">
+    <div className="fixed inset-0 z-0 overflow-hidden opacity-80">  
       <video
         autoPlay
         muted

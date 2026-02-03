@@ -82,13 +82,13 @@ export default function BannerSection() {
     <main>
       <section
         ref={sectionRef}
-        className="relative h-screen w-full z-10 flex items-center mt-5"
+        className="relative h-screen w-full z-10 flex items-center -mt-20"
       >
        <div className="relative z-10 mx-auto w-full max-w-8xl px-6 md:px-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
     {/* LEFT: TEXT */}
     <div ref={contentRef} className="lg:-ml-8">
-      <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold leading-tight -mt-40">
+      <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight -mt-40">
         Transform Legacy IVR into AI-Native Conversations
       </h2>
 
@@ -103,16 +103,16 @@ export default function BannerSection() {
       </p> */}
 
        {/* Metrics */}
-  <div className="mt-8 grid grid-cols-1 md:grid-cols-[auto_1px_auto_1px_auto] items-center text-white gap-y-6 md:gap-x-10">
+  <div className="mt-20 grid grid-cols-1 md:grid-cols-[auto_1px_auto_1px_auto] items-center text-white gap-y-6 md:gap-x-10">
     <div className="text-center md:text-left">
-      <p className="text-3xl font-bold">5X</p>
+      <p className="text-4xl font-bold text-[#0D7EB6]">5X</p>
       <p className="text-lg text-white/80 mt-1">Faster Transformation</p>
     </div>
 
     <div className="hidden md:block h-15 w-[1px] bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
 
     <div className="text-center md:text-left">
-      <p className="text-3xl font-bold">70%+</p>
+      <p className="text-4xl font-bold text-[#0D7EB6]">70%+</p>
       <p className="text-lg text-white/80 mt-1">
         Automation Across the Lifecycle
       </p>
@@ -121,7 +121,7 @@ export default function BannerSection() {
     <div className="hidden md:block h-15 w-[1px] bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
 
     <div className="text-center md:text-left">
-      <p className="text-3xl font-bold">3x</p>
+      <p className="text-4xl font-bold text-[#0D7EB6]">3x</p>
       <p className="text-lg text-white/80 mt-1">
         ROI on Modernization
       </p>
