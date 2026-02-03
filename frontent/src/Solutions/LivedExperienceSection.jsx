@@ -21,42 +21,71 @@ export default function LivedExperienceSection() {
   ];
 
   return (
-    <section className="w-full py-28 pb-15">
-      <div className="max-w-6xl mx-auto px-4">
+    <section className="w-full py-28 relative">
 
-        {/* Heading */}
+      {/* HEADING (UNCHANGED ✅) */}
+      <div className="max-w-6xl mx-auto px-4 relative z-10 mb-16">
         <h2 className="text-4xl md:text-5xl font-semibold text-white tracking-tight text-center">
           Built by People Who&apos;ve{" "}
           <span className="text-[#0D7EB6]">Lived the Problem</span>
         </h2>
+      </div>
 
-        {/* Cards Grid (2 x 2) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
-          {items.map((item, index) => {
-            const Icon = item.icon;
-            return (
-              <div
-                key={index}
-                className="flex flex-col items-center text-center p-8 rounded-2xl
-                border border-white/10
-                bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20
-                shadow-[0_20px_60px_rgba(0,0,0,0.8)]
-                transition-all duration-300 hover:border-white/20 hover:scale-[1.02]"
-              >
-                {/* Icon (top center like stats cards) */}
-                <div className="mb-5 w-12 h-12 flex items-center justify-center rounded-xl
-                  bg-[#0D7EB6]/15 border border-[#0D7EB6]/40">
-                  <Icon className="w-6 h-6 text-[#0D7EB6]" />
-                </div>
+      {/* FULL WIDTH IMAGE */}
+      <div className="relative w-full h-[680px]">
 
-                {/* Text */}
-                <p className="text-white/80 text-[16px] md:text-[17px] leading-relaxed">
-                  {item.text}
-                </p>
-              </div>
-            );
-          })}
+        <img
+          src="/image/Build.jpg.jpeg"
+          alt="Background"
+          className="w-full h-full object-cover brightness-110 contrast-110 saturate-110"
+        />
+
+        {/* LIGHT BLUE OVERLAY (MORE IMAGE VISIBILITY ✅) */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#001a33]/70 via-[#001a33]/40 to-transparent"></div>
+
+{/* CARDS LIKE SECOND IMAGE (CUSTOM POSITIONING) */}
+<div className="absolute inset-0">
+
+  <div className="max-w-6xl mx-auto px-4 w-full h-full relative">
+
+    {items.map((item, index) => {
+      const Icon = item.icon;
+
+      // custom positions like your reference image
+      const positions = [
+        "top-[80px] left-[120px]",
+        "top-[230px] left-[30px]",
+        "top-[360px] left-[120px]",
+        "top-[490px] left-[30px]",
+      ];
+
+      return (
+        <div
+          key={index}
+          className={`absolute ${positions[index]}
+          flex items-center gap-5 px-7 py-6 rounded-2xl w-[520px]
+          border border-[#0D7EB6]/60
+          bg-[#001a33]/55 backdrop-blur-md
+          shadow-[0_0_35px_rgba(13,126,182,0.35)]
+          transition-all duration-300 hover:scale-[1.02]`}
+        >
+          {/* ICON - PERFECT CENTER */}
+          <div className="w-14 h-14 flex items-center justify-center rounded-xl
+            bg-[#0D7EB6]/25 border border-[#0D7EB6]/60 shrink-0">
+            <Icon className="w-7 h-7 text-[#0D7EB6]" />
+          </div>
+
+          {/* TEXT */}
+          <p className="text-white/90 text-[16px] leading-relaxed">
+            {item.text}
+          </p>
         </div>
+      );
+    })}
+
+  </div>
+</div>
+
 
       </div>
     </section>
