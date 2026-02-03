@@ -5,6 +5,14 @@ import gclogo from "../assets/GC-Partner1.png";
 
 const partners = [
   {
+    name: "Google Cloud Partner",
+    logo: gclogo,
+    description:
+      "Enterprise systems integrator delivering digital transformation, AI-driven customer engagement, and large-scale platform modernization.",
+    employees: "500+",
+    presence: "India, USA, Europe, Middle East, Asia-Pacific",
+  },
+  {
     name: "AgnoShin",
     logo: agnoshinLogo,
     description:
@@ -21,16 +29,6 @@ const partners = [
     presence:
       "UK, USA, UAE, Oman, Singapore, Philippines, Malaysia, Australia, China, Europe, Africa",
   },
-  {
-    name: "Third Partner Name",
-    logo: gclogo,
-    description:
-      "Enterprise systems integrator delivering digital transformation, AI-driven customer engagement, and large-scale platform modernization.",
-    employees: "500+",
-    presence:
-      "India, USA, Europe, Middle East, Asia-Pacific",
-  },
-  {}, // empty 4th card
 ];
 
 export default function GSIPartnership() {
@@ -49,7 +47,7 @@ export default function GSIPartnership() {
             comprehensive customer service transformations worldwide.
           </p>
 
-          <button className="px-6 py-3 rounded-xl bg-[#0D7EB6] text-white font-medium hover:bg-[#0D7EB6]/80 transition">
+          <button className="px-6 py-3 mt-20 rounded-xl bg-[#0D7EB6] text-white font-medium hover:bg-[#0D7EB6]/80 transition">
             Get Started →
           </button>
         </div>
@@ -61,43 +59,39 @@ export default function GSIPartnership() {
             <div
               key={index}
               className={`relative rounded-2xl border border-white/10 
-          bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
-          shadow-[0_20px_60px_rgba(0,0,0,0.8)]
-              ${!partner.name ? "opacity-0 pointer-events-none" : ""}
-              p-6 h-[320px] flex flex-col`}
+              bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
+              shadow-[0_20px_60px_rgba(0,0,0,0.8)]
+              p-6 h-[320px] flex flex-col
+              ${index === 0 ? "sm:col-span-2" : ""}`}
             >
-              {partner.name && (
-                <>
-                  {/* Logo */}
-                  <div className="mb-4 flex items-center justify-center h-12">
-                    <img
-                      src={partner.logo}
-                      alt={partner.name}
-                      className="h-9 object-contain"
-                    />
-                  </div>
+              {/* Logo */}
+              <div className="mb-4 flex items-center justify-center h-12">
+                <img
+                  src={partner.logo}
+                  alt={partner.name}
+                  className="h-9 object-contain"
+                />
+              </div>
 
-                  {/* Title */}
-                  <h3 className="text-lg font-semibold text-white mb-2">
-                    {partner.name}
-                  </h3>
+              {/* Title */}
+              <h3 className="text-lg font-semibold text-white mb-2">
+                {partner.name}
+              </h3>
 
-                  {/* Description */}
-                  <p className="text-white/60 text-sm leading-relaxed line-clamp-3 mb-4">
-                    {partner.description}
-                  </p>
+              {/* Description */}
+              <p className="text-white/60 text-sm leading-relaxed line-clamp-3 mb-4">
+                {partner.description}
+              </p>
 
-                  {/* Meta */}
-                  <p className="text-white text-sm mb-1">
-                    Employee Strength:{" "}
-                    <span className="text-white/60">{partner.employees}</span>
-                  </p>
-                  <p className="text-white text-sm">
-                    Global Presence:{" "}
-                    <span className="text-white/60">{partner.presence}</span>
-                  </p>
-                </>
-              )}
+              {/* Meta */}
+              <p className="text-white text-sm mb-1">
+                Employee Strength:{" "}
+                <span className="text-white/60">{partner.employees}</span>
+              </p>
+              <p className="text-white text-sm">
+                Global Presence:{" "}
+                <span className="text-white/60">{partner.presence}</span>
+              </p>
             </div>
           ))}
         </div>
