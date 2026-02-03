@@ -83,10 +83,12 @@ export default function WhyAymne() {
           <div>
             <WhyAumneCard />
           </div>
-          <div className="">
+          {/* <div className="">
                <ImageCarousel/>
                <DataGrowthSection/>
-          </div>
+          </div> */}
+
+
           {/* Main Grid Container with Top & Left Border 
           <div className="border-t border-l border-white/20 ml-2">
             {services.map((service, index) => (

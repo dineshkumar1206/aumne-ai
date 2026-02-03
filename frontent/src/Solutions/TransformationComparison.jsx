@@ -2,7 +2,7 @@ import { X, Check } from "lucide-react";
 
 export default function TransformationComparison() {
   return (
-    <section className="max-w-6xl mx-auto mt-20 px-4 min-h-screen flex flex-col justify-center">
+    <section className="max-w-6xl mx-auto mt-5 px-4 min-h-screen flex flex-col justify-center">
 
       {/* Heading */}
       <h2 className="text-4xl md:text-5xl font-semibold text-white tracking-tight text-center pb-12">

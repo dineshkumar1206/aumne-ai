@@ -1,60 +1,47 @@
-import { SlRefresh } from "react-icons/sl";
-import { IoEyeOutline } from "react-icons/io5";
-import { MdDeviceHub } from "react-icons/md";
-import { PiGlobeSimpleLight } from "react-icons/pi";
-import { FiUsers } from "react-icons/fi"; 
-import {Search , Sparkles, Shield , Globe , RefreshCw } from "lucide-react";
+import { Search, Sparkles, Shield, Globe, RefreshCw } from "lucide-react";
 
 export default function DataGrowthSection() {
+  const cards = [
+    {
+      icon: <Search className="w-7 h-7" />,
+      title: "Understand Legacy First",
+      desc:
+        "Auto-discovery of IVR code, flows, configurations, APIs, call recordings, and transcripts—revealing what exists, what works, and what must change.",
+    },
+    {
+      icon: <Sparkles className="w-7 h-7" />,
+      title: "Automate Conversational Transformation",
+      desc:
+        "AI-driven design and build converts legacy logic into conversational experiences—reducing time and effort by up to 70%.",
+    },
+    {
+      icon: <Shield className="w-7 h-7" />,
+      title: "Human-in-the-Loop Governance",
+      desc:
+        "Built-in review, approvals, versioning, rollback, and compliance controls. Enterprises stay firmly in control.",
+    },
+    {
+      icon: <Globe className="w-7 h-7" />,
+      title: "Build Once. Deploy Everywhere",
+      desc:
+        "Deploy consistently across voice, chat, web, and messaging—without duplicating logic or redesigning journeys.",
+    },
+    {
+      icon: <RefreshCw className="w-7 h-7" />,
+      title: "Continuously Evolve Services",
+      desc:
+        "Rapid prototyping, recommendations, and controlled iteration keep customer service aligned with changing products and policies.",
+    },
+  ];
+
   return (
-    <section className="relative min-h-screen -py-20 text-white">
-      <div className="max-w-[1300px] mx-auto px-6">
-
-        {/* CARD GRID */}
-        <div className="grid grid-cols-3 gap-x-5 gap-y-8 place-items-center">
-
-          {/* CARD 1 */}
-          <Card
-            icon={<Search className="w-10 h-10" />}
-            title="Understand Legacy First"
-            desc="Auto-discovery of IVR code, flows, configurations, APIs, call recordings, and transcripts—revealing what exists, what works, and what must change."
-            className="w-72 h-[440px] ml-22 border border-white/10 bg-linear-to-br from-[#0a0a0a] via-[#111f2f] to-[#034fa8]/20 shadow-[0_25px_70px_rgba(0,0,0,0.85)]"
-          />
-
-          {/* CARD 2 – CENTER TOP */}
-          <Card
-            icon={<Sparkles className="w-10 h-10" />}
-            title="Automate Conversational Transformation"
-            desc="AI-driven design and build converts legacy logic into conversational experiences—reducing time and effort by up to 70%."
-            className="w-72 h-[440px] mt-100 border border-white/10 bg-linear-to-br from-[#0a0a0a] via-[#111f2f] to-[#034fa8]/20 shadow-[0_25px_70px_rgba(0,0,0,0.85)]"
-          />
-
-          {/* CARD 3 */}
-          <Card
-            icon={<Shield className="w-10 h-10" />}
-            title="Human-in-the-Loop Governance"
-            desc="Built-in review, approvals, versioning, rollback, and compliance controls. Enterprises stay firmly in control."
-            className="w-72 h-[440px] mr-22 border border-white/10 bg-linear-to-br from-[#0a0a0a] via-[#111f2f] to-[#034fa8]/20 shadow-[0_25px_70px_rgba(0,0,0,0.85)] "
-          />
-
-          {/* CARD 4 */}
-          <Card
-            icon={<Globe className="w-10 h-10" />}
-            title="Build Once. Deploy Everywhere"
-            desc="Deploy consistently across voice, chat, web, and messaging—without duplicating logic or redesigning journeys."
-            className="w-72 h-[440px] ml-22 -mt-49 border border-white/10 bg-linear-to-br from-[#090909] via-[#0e1b2d] to-[#036ffd]/20 shadow-[0_25px_70px_rgba(0,0,0,0.85)]"
-          />
-
-          {/* CARD 5 */}
-          <Card
-            icon={<RefreshCw className="w-10 h-10"/>}
-            title="Continuously Evolve Services"
-            desc="Rapid prototyping, recommendations, and controlled iteration keep customer service aligned with changing products and policies."
-            className="w-72 h-[440px] mr-22 ml-182 -mt-49 border border-white/10 bg-linear-to-br from-[#090909] via-[#0f2135] to-[#036ffd]/25 shadow-[0_25px_70px_rgba(0,0,0,0.85)]"
-          />
-
-          {/* EMPTY SPACE */}
-          <div />
+    <section className="relative py-10">
+      <div className="max-w-[1700px] mx-auto -px-6">
+        {/* CARD ROW */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 -mt-13">
+          {cards.map((card, index) => (
+            <GrowthCard key={index} {...card} />
+          ))}
         </div>
       </div>
     </section>
@@ -63,32 +50,41 @@ export default function DataGrowthSection() {
 
 /* ================= CARD ================= */
 
-const Card = ({ icon, title, desc, className }) => {
+const GrowthCard = ({ icon, title, desc }) => {
   return (
-    <div
-      className={`
-        ${className}
-        p-8
-        flex flex-col justify-between
-        transition-all duration-500
-      `}
-    >
-      <div>
-        <div className="text-4xl mb-5 text-white opacity-90">
+    <div className="relative pt-10">
+      {/* TOP FLOATING BADGE (layout like image) */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 z-10">
+        <div
+          className="
+            w-14 h-14 rounded-full
+            flex items-center justify-center
+            border bg-[#0D7EB6]/15 border border-[#0D7EB6]/40 shrink-0 text-[#0D7EB6] mt-13 "
+        >
           {icon}
         </div>
+      </div>
 
-        <h3 className="text-lg font-semibold text-[#0D7EB6] mb-3">
+      {/* CARD BODY */}
+      <div
+        className="
+          h-[390px]
+          rounded-2xl
+          border border-white/10
+          bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20
+          shadow-[0_20px_60px_rgba(0,0,0,0.8)]
+          px-6 pt-20 pb-7
+          flex flex-col 
+        "
+      >
+        <h3 className="text-lg font-semibold text-[#0D7EB6] mb-4 text-center">
           {title}
         </h3>
 
-        <p className="text-white/80 text-sm leading-relaxed">
+        <p className="text-sm text-white/80 leading-relaxed text-center">
           {desc}
         </p>
       </div>
-
-      {/* HORIZONTAL LINE */}
-      <div className="w-full h-[2px]  mt-6" />
     </div>
   );
 };
