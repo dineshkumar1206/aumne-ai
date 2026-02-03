@@ -30,82 +30,77 @@ const partners = [
     presence:
       "India, USA, Europe, Middle East, Asia-Pacific",
   },
+  {}, // empty 4th card
 ];
 
 export default function GSIPartnership() {
   return (
     <section className="px-6 py-20">
-      <div className="max-w-[1400px] mx-auto">
-        {/* Heading */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-semibold text-[#0D7EB6] mb-6">
+      <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-[1.1fr_1.5fr] gap-10 items-start">
+
+        {/* LEFT CONTENT */}
+        <div className="max-w-xl">
+          <h2 className="text-4xl md:text-5xl font-semibold text-[#0D7EB6] mb-6">
             Global Systems Integrator Partners
           </h2>
-          <p className="text-white text-lg md:text-xl max-w-4xl mx-auto leading-relaxed">
+
+          <p className="text-white/80 text-lg leading-relaxed mb-8">
             Strategic partnerships with leading systems integrators to deliver
-            comprehensive customer service transformations worldwide
+            comprehensive customer service transformations worldwide.
           </p>
+
+          <button className="px-6 py-3 rounded-xl bg-[#0D7EB6] text-white font-medium hover:bg-[#0D7EB6]/80 transition">
+            Get Started →
+          </button>
         </div>
 
-        {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        {/* RIGHT GRID */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 -ml-6">
+
           {partners.map((partner, index) => (
-  <div
-    key={index}
-    className={`bg-[#0b2a3d]/60 backdrop-blur-xl border border-white/10 rounded-3xl p-10 transition-all duration-300 hover:border-[#0D7EB6]/40
-      ${partners.length % 2 !== 0 && index === partners.length - 1
-        ? "md:col-span-2 md:max-w-[640px] md:mx-auto"
-        : ""}
-    `}
-  >
+            <div
+              key={index}
+              className={`border border-white/10 rounded-2xl backdrop-blur-xl
+              bg-[#0b2a3d]/60 shadow-lg transition hover:border-[#0D7EB6]/40
+              ${!partner.name ? "opacity-0 pointer-events-none" : ""}
+              p-6 h-[320px] flex flex-col`}
+            >
+              {partner.name && (
+                <>
+                  {/* Logo */}
+                  <div className="mb-4 flex items-center justify-center h-12">
+                    <img
+                      src={partner.logo}
+                      alt={partner.name}
+                      className="h-9 object-contain"
+                    />
+                  </div>
 
-              {/* Logo  bg-[#0a2238]*/}
-              <div className=" rounded-xl p-6 mb-8 flex items-center justify-center">
-                <img
-                  src={partner.logo}
-                  alt={partner.name}
-                  className="h-12 object-contain"
-                />
-              </div>
+                  {/* Title */}
+                  <h3 className="text-lg font-semibold text-white mb-2">
+                    {partner.name}
+                  </h3>
 
-              {/* Title */}
-              <h3 className="text-3xl font-semibold text-white mb-4">
-                {partner.name}
-              </h3>
+                  {/* Description */}
+                  <p className="text-white/60 text-sm leading-relaxed line-clamp-3 mb-4">
+                    {partner.description}
+                  </p>
 
-              {/* Description */}
-              <p className="text-neutral-300 leading-relaxed mb-10">
-                {partner.description}
-              </p>
-
-              {/* Meta */}
-              <div className="space-y-3 mb-8">
-                <p className="text-white font-medium">
-                  Employee Strength:{" "}
-                  <span className="text-neutral-300 font-normal">
-                    {partner.employees}
-                  </span>
-                </p>
-
-                <p className="text-white font-medium">
-                  Global Presence:{" "}
-                  <span className="text-neutral-300 font-normal">
-                    {partner.presence}
-                  </span>
-                </p>
-              </div>
-
-              {/* Learn More */}
-              <a
-                href="#"
-                className="inline-flex items-center gap-2 text-[#0D7EB6] font-medium hover:underline"
-              >
-                Learn More
-                <span className="text-lg">↗</span>
-              </a>
+                  {/* Meta */}
+                  <p className="text-white text-sm mb-1">
+                    Employee Strength:{" "}
+                    <span className="text-white/60">{partner.employees}</span>
+                  </p>
+                  <p className="text-white text-sm">
+                    Global Presence:{" "}
+                    <span className="text-white/60">{partner.presence}</span>
+                  </p>
+                </>
+              )}
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
