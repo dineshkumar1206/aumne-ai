@@ -28,7 +28,7 @@ const ImageCarousel = () => {
   };
 
   return (
-    <div className="w-full py-12 flex justify-center">
+    <div className="w-full py-12 flex justify-center -mb-6">
       {/* Image Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-7xl w-full px-6">
         {images.map((img, index) => (

@@ -36,7 +36,7 @@ export default function WhyAumneCard() {
     >
       {/* MAIN HEADING (NO CHANGE) */}
       <div className="max-w-[1550px] mx-auto text-center mb-5">
-        <h2 className="text-3xl md:text-6xl font-semibold tracking-tight">
+        <h2 className="text-2xl md:text-5xl font-semibold tracking-tight">
           The Aumne Solution
         </h2>
       </div>
@@ -55,10 +55,10 @@ export default function WhyAumneCard() {
 
       {/* CENTER CALLOUT BOX (NO STYLE CHANGE) */}
       <div className=" flex justify-center px-4">
-        <div className="max-w-4xl w-full rounded-2xl 
+        <div className="max-w-6xl w-full rounded-2xl 
           bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
           border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)]
-          px-10 py-8 text-center"
+          px-8 py-7 text-center pt-2 pb-2 -mb-4"
         >
           <p className="text-base md:text-lg text-white leading-relaxed">
             Our agentic, AI-native platform turns IVR modernization from a
