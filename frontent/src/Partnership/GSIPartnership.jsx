@@ -60,8 +60,9 @@ export default function GSIPartnership() {
           {partners.map((partner, index) => (
             <div
               key={index}
-              className={`border border-white/10 rounded-2xl backdrop-blur-xl
-              bg-[#0b2a3d]/60 shadow-lg transition hover:border-[#0D7EB6]/40
+              className={`relative rounded-2xl border border-white/10 
+          bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
+          shadow-[0_20px_60px_rgba(0,0,0,0.8)]
               ${!partner.name ? "opacity-0 pointer-events-none" : ""}
               p-6 h-[320px] flex flex-col`}
             >
