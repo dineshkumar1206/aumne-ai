@@ -2,11 +2,13 @@
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FiMenu, FiX } from "react-icons/fi";
+import BookDemoModal from "./BookDemoModal";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
+  const [openDemo, setOpenDemo] = useState(false);
 
   const activeStyle = ({ isActive }) =>
     isActive
@@ -150,12 +152,13 @@ const Navbar = () => {
 
           {/* <NavLink to="/gst-partnership" className={activeStyle}>GSI Partnership</NavLink> */}
 
-          <button
-            onClick={() => scrollToSection("#")}
-            className="bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1] px-6 py-2 rounded-md hover:opacity-90 transition cursor-pointer"
-          >
-            Book a Demo
-          </button>
+         <button
+          onClick={() => setOpenDemo(true)}
+          className="px-5 py-2 rounded-lg bg-[#0D7EB6] hover:bg-[#0D7EB6]/80 transition"
+        >
+          Book a Demo
+        </button>
+        <BookDemoModal open={openDemo} onClose={() => setOpenDemo(false)} />
         </div>
 
         {/* Mobile Menu Button */}
@@ -288,14 +291,13 @@ const Navbar = () => {
             GSI Partnership
           </button>
 
-          <button
-            onClick={() => {
-              scrollToSection("home");
-            }}
-            className="mt-3 w-full bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1] py-2 rounded-md hover:opacity-90 transition"
-          >
-            Book a Demo
-          </button>
+         <button
+          onClick={() => setOpenDemo(true)}
+          className="px-5 py-2 rounded-lg bg-[#0D7EB6] hover:bg-[#0D7EB6]/80 transition"
+        >
+          Book a Demo
+        </button>
+        <BookDemoModal open={openDemo} onClose={() => setOpenDemo(false)} />
         </div>
       </motion.div>
     </header>

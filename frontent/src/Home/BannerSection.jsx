@@ -15,6 +15,7 @@ import OutcomesSection from "../Solutions/OutcomesSection";
 import TransformationWindow from "../Solutions/TransformationWindow";
 import LivedExperienceSection from "../Solutions/LivedExperienceSection";
 import Enterprise from "../Solutions/Enterprise";
+import BookDemoModal from "../Components/BookDemoModal";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -290,7 +291,7 @@ export default function BannerSection() {
            <StatisticsSection/>
         </section>
         {/* <section className="" id="roi">
-           <ROICalculator/>
+           <BookDemoModal/>
         </section> */}
         <section className="" id="gsi">
            <GSIPartnership/>
