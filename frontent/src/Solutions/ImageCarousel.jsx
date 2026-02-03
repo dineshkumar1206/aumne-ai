@@ -37,7 +37,7 @@ const ImageCarousel = () => {
             onClick={() => openModal(index)}
             className="cursor-pointer rounded-xl overflow-hidden shadow-lg bg-white hover:scale-105 transition-transform duration-300"
           >
-            <div className="w-full h-[300px]">
+            <div className="w-full h-[250px]">
               <img
                 src={img}
                 alt={`img-${index}`}

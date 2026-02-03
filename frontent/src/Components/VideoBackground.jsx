@@ -8,7 +8,7 @@ export default function VideoBackground() {
         muted
         loop
         playsInline
-        className="w-full h-full object-cover brightness-125 contrast-105 saturate-110"
+        className="w-full h-full object-cover brightness-105 contrast-105 saturate-110"
       >
         <source src="/video/bg-video.mp4" type="video/mp4" />
       </video>

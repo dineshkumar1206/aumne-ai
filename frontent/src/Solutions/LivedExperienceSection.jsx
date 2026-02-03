@@ -21,10 +21,10 @@ export default function LivedExperienceSection() {
   ];
 
   return (
-    <section className="w-full py-28 relative">
+    <section className="w-full py-10 relative">
 
       {/* HEADING (UNCHANGED ✅) */}
-      <div className="max-w-6xl mx-auto px-4 relative z-10 -mb-2">
+      <div className="max-w-6xl mx-auto px-4 relative z-10 -mb-8">
         <h2 className="text-4xl md:text-5xl font-semibold text-white tracking-tight text-center">
           Built by People Who&apos;ve{" "}
           <span className="text-[#0D7EB6]">Lived the Problem</span>
@@ -53,17 +53,17 @@ export default function LivedExperienceSection() {
 
       // custom positions like your reference image
       const positions = [
-        "top-[80px] left-[120px]",
-        "top-[230px] left-[30px]",
-        "top-[360px] left-[120px]",
-        "top-[490px] left-[30px]",
+        "top-[92px] left-[120px]",
+        "top-[237px] left-[30px]",
+        "top-[367px] left-[120px]",
+        "top-[492px] left-[30px]",
       ];
 
       return (
         <div
           key={index}
           className={`absolute ${positions[index]}
-          flex items-center gap-5 px-7 py-6 rounded-2xl w-[520px]
+          flex items-center gap-4 px-7 py-4 rounded-2xl w-[520px]
           border border-[#0D7EB6]/60
           bg-[#001a33]/55 backdrop-blur-md
           shadow-[0_0_35px_rgba(13,126,182,0.35)]

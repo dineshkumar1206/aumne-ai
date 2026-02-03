@@ -35,7 +35,7 @@ export default function DataGrowthSection() {
   ];
 
   return (
-    <section className="relative py-10">
+    <section className="relative py-5">
       <div className="max-w-[1700px] mx-auto -px-6">
         {/* CARD ROW */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 -mt-13">
@@ -68,7 +68,7 @@ const GrowthCard = ({ icon, title, desc }) => {
       {/* CARD BODY */}
       <div
         className="
-          h-[390px]
+          h-[350px]
           rounded-2xl
           border border-white/10
           bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20

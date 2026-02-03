@@ -42,8 +42,8 @@ export default function WhyAumneCard() {
       </div>
 
       {/* SUB HEADING + PARAGRAPH (CENTERED) */}
-      <div className="max-w-4xl mx-auto text-center px-6">
-        <h3 className="text-5xl md:text-3xl font-bold text-[#0D7EB6] mb-5">
+      <div className="max-w-5xl mx-auto text-center px-6">
+        <h3 className="text-5xl md:text-3xl font-bold text-[#0D7EB6] mb-3">
           From Legacy IVR to Conversational AI—Automatically
         </h3>
 
