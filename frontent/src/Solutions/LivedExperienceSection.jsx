@@ -21,12 +21,12 @@ export default function LivedExperienceSection() {
   ];
 
   return (
-    <section className="w-full py-10 relative">
+    <section className="w-full py-20 relative">
 
       {/* HEADING (UNCHANGED ✅) */}
-      <div className="max-w-6xl mx-auto px-4 relative z-10 -mb-30">
-        <h2 className="text-4xl md:text-5xl font-semibold text-white tracking-tight text-start">
-          Built by People Who&apos;ve{" "} <br/>
+      <div className="max-w-6xl mx-auto px-4 relative z-10 -mb-15">
+        <h2 className="text-4xl md:text-5xl font-semibold text-white tracking-tight text-center">
+          Built by People Who&apos;ve{" "}
           <span className="text-[#0D7EB6]">Lived the Problem</span>
         </h2>
       </div>
@@ -46,17 +46,17 @@ export default function LivedExperienceSection() {
 {/* CARDS LIKE SECOND IMAGE (CUSTOM POSITIONING) */}
 <div className="absolute inset-0">
 
-  <div className="max-w-6xl mx-auto px-4 w-full h-full relative mt-15">
+  <div className="max-w-6xl mx-auto px-4 w-full h-full relative mt-10">
 
     {items.map((item, index) => {
       const Icon = item.icon;
 
       // custom positions like your reference image
       const positions = [
-        "top-[92px]  left-[33px]",
-        "top-[237px] left-[33px]",
-        "top-[367px] left-[33px]",
-        "top-[492px] left-[33px]",
+        "top-[92px]  left-[100px]",
+        "top-[237px] left-[20px]",
+        "top-[367px] left-[100px]",
+        "top-[492px] left-[20px]",
       ];
 
       return (
