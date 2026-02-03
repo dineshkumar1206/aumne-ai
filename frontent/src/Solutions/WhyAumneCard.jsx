@@ -83,7 +83,7 @@ export default function WhyAumneCard() {
     >
       {/* Heading */}
       <div className="max-w-[1550px] mx-auto text-center">
-          <h2 className="text-4xl md:text-6xl text-[#0D7EB6] font-semibold mb-6 tracking-tight mb-20">
+          <h2 className="text-4xl md:text-6xl text-white font-semibold mb-6 tracking-tight mb-20">
          The Aumne Solution
         </h2>
         

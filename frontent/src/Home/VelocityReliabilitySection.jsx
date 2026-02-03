@@ -81,17 +81,18 @@ export default function VelocityReliabilitySection() {
       ref={sectionRef}
       className="relative min-h-screen text-white overflow-hidden py-20"
     >
-      <div className="mx-auto max-w-[1550px] px-6 md:px-14">
-        <div className="flex flex-col md:flex-row items-center gap-10 border border-white/10 rounded-xl overflow-hidden">
+      <div className="mx-auto max-w-[1550px] px-8 md:px-14">
+        <div className="flex flex-col md:flex-row items-center gap-10 rounded-xl overflow-hidden">
           {/* LEFT IMAGE BLOCK */}
-          <div className="relative flex-1 min-h-[565px]  overflow-hidden group border-r border-white/10">
+          <div className="relative flex-1 min-h-[580px]  overflow-hidden group border-r border-white/10">
             <div
               ref={imageRef}
               className="absolute inset-0 bg-cover bg-center scale-132"
               style={{
-                backgroundImage: "url('/image/The Core Problem - BG.jpg.jpeg')",
+                backgroundImage: "url('/image/The Core Problem - BG.jpg.jpeg')", //core problem image
                 height: "100%",
-                top: "-10%",
+                top: "10%",
+                bottom:"20%",
               }}
             />
             <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500" />
