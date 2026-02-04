@@ -119,7 +119,7 @@ const Step = ({ number, title, desc }) => (
       <div className="relative max-w-6xl mx-auto px-4 py-28 text-center text-white pb-10">
 
         {/* Tag */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#0D7EB6]/40 bg-[#0D7EB6]/10 text-[#0D7EB6] text-sm mb-8">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#0D7EB6]/40 bg-[#0D7EB6]/10 text-[#0D7EB6] text-xl mb-8">
               For BPOs & CX Providers
         </div>
 

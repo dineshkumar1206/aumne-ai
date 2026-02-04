@@ -10,7 +10,7 @@ const GoogleCloudPartner = () => {
     <section className="max-w-7xl mx-auto px-6 py-24">
       {/* TOP BADGE */}
       <div className="flex justify-center mb-6">
-        <span className="px-4 py-1.5 text-sm font-medium rounded-full border border-[#0D7EB6]/40 text-[#0D7EB6] bg-[#0D7EB6]/10">
+        <span className="px-4 py-1.5 text-xl font-medium rounded-full border border-[#0D7EB6]/40 text-[#0D7EB6] bg-[#0D7EB6]/10">
           Validated Technology Partner
         </span>
       </div>

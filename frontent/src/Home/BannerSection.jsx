@@ -294,12 +294,13 @@ export default function BannerSection() {
         {/* <section className="" id="roi">
            <BookDemoModal/>
         </section> */}
-        <section className="" id="gsi">
-           <GSIPartnership/>
-        </section>
         <section>
           <GoogleCloudPartner/>
         </section>
+        <section className="" id="gsi">
+           <GSIPartnership/>
+        </section>
+        
 
         
        

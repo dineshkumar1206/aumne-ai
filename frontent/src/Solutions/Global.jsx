@@ -90,7 +90,7 @@ const Global = () => {
                            
                            {/* Section 1 */}
         {/* Tag */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#0D7EB6]/40 bg-[#0D7EB6]/10 text-[#0D7EB6] text-sm mb-8">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#0D7EB6]/40 bg-[#0D7EB6]/10 text-[#0D7EB6] text-xl mb-8">
           For Global System Integrators
         </div>
 

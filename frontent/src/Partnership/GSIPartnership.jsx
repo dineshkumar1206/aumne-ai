@@ -1,104 +1,115 @@
 import React from "react";
 import agnoshinLogo from "../assets/AgnoShin.png";
 import visnetLogo from "../assets/Visnet-Logo.png";
-import gclogo from "../assets/GC-Partner1.png";
 
 const partners = [
   {
-    name: "Google Cloud Partner",
-    logo: gclogo,
-    description:
-      "Enterprise systems integrator delivering digital transformation, AI-driven customer engagement, and large-scale platform modernization.",
-    employees: "500+",
-    presence: "India, USA, Europe, Middle East, Asia-Pacific",
-  },
-  {
-    name: "AgnoShin",
-    logo: agnoshinLogo,
-    description:
-      "Technology-agnostic customer experience management solutions with deep vertical expertise across US, Asia-Pacific, Middle East and Africa.",
-    employees: "200+",
-    presence: "US, Asia-Pacific, Middle East, Africa",
-  },
-  {
-    name: "Visnet",
+    name: "Aumne × VIS Network Partnership",
     logo: visnetLogo,
-    description:
-      "Strategic partner in communication systems integration and customer experience optimization across global markets including UK, USA, UAE, and Asia-Pacific.",
-    employees: "200+",
-    presence:
-      "UK, USA, UAE, Oman, Singapore, Philippines, Malaysia, Australia, China, Europe, Africa",
+    aboutTitle: "About VIS Network",
+    about:
+      "VIS Network is a technology services firm focused on enterprise integration, digital transformation, and managed services.",
+    experience:
+      "10+ years of enterprise delivery experience, 100+ integration and transformation engagements, Proven delivery across BFSI, telecom, and large enterprises.",
+    why:
+      "It unites integration strength with AI-native platforms to accelerate service modernization at scale.",
+  },
+  {
+    name: "Aumne × Agnoshin Partnership",
+    logo: agnoshinLogo,
+    aboutTitle: "About Agnoshin",
+    about:
+      "Agnoshin is a technology-agnostic CX and digital transformation firm specializing in CX, cloud, analytics, and managed services.",
+    experience:
+      "200+ CX projects delivered globally, 100+ industries served.",
+    why:
+      "It unites systemized AI-native platforms with proven enterprise delivery to modernize customer service at scale.",
   },
 ];
 
 export default function GSIPartnership() {
   return (
-    <section className="px-6 py-20">
-      <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-[1.1fr_1.5fr] gap-10 items-start">
+    <section className="min-h-screen px-6 py-16 flex items-center">
+      <div className="max-w-[1400px] mx-auto w-full">
 
-        {/* LEFT CONTENT */}
-        <div className="max-w-xl">
-          <h2 className="text-4xl md:text-5xl font-semibold text-white  mb-6">
-            Global Systems<span className="text-[#0D7EB6]"> Integrator Partners </span>
+        {/* HEADING CENTER */}
+        <div className="text-center mb-6">
+          <h2 className="text-4xl md:text-5xl font-semibold text-white mb-4">
+            Global Systems
+            <span className="text-[#0D7EB6]"> Integrator Partners </span>
           </h2>
 
-          <p className="text-white/80 text-lg leading-relaxed mb-8">
+          <p className="text-white/80 text-lg leading-relaxed max-w-3xl mx-auto">
             Strategic partnerships with leading systems integrators to deliver
             comprehensive customer service transformations worldwide.
           </p>
 
-          <button className="px-6 py-3 mt-20 rounded-xl bg-[#0D7EB6] text-white font-medium hover:bg-[#0D7EB6]/80 transition">
+          {/* Get Started Button (Commented) */}
+          {/*
+          <button className="px-6 py-3 mt-10 rounded-xl bg-[#0D7EB6] text-white font-medium hover:bg-[#0D7EB6]/80 transition">
             Get Started →
           </button>
+          */}
         </div>
 
-        {/* RIGHT GRID */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 -ml-6">
+        {/* TWO CARDS */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-7">
 
           {partners.map((partner, index) => (
-  <div
-    key={index}
-    className={`relative rounded-2xl border border-white/10 
-    bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
-    shadow-[0_20px_60px_rgba(0,0,0,0.8)]
-    p-6 flex flex-col justify-between
-    ${index === 0 ? "sm:col-span-2 min-h-[240px]" : "min-h-[280px]"}`}
-  >
-    {/* Logo */}
-    <div className="mb-4 flex items-center justify-center h-12">
-      <img
-        src={partner.logo}
-        alt={partner.name}
-        className="h-9 object-contain"
-      />
-    </div>
+            <div
+              key={index}
+              className="rounded-2xl border border-white/10 
+              bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
+              shadow-[0_20px_60px_rgba(0,0,0,0.8)]
+              p-8 flex flex-col gap-5"
+            >
+              {/* Logo */}
+              <div className="flex items-center justify-center h-13">
+                <img
+                  src={partner.logo}
+                  alt={partner.name}
+                  className="h-10 object-contain"
+                />
+              </div>
 
-    {/* Title */}
-    <h3 className="text-lg font-semibold text-white mb-2">
-      {partner.name}
-    </h3>
+              {/* Name */}
+              <h3 className="text-xl font-semibold text-white text-center">
+                {partner.name}
+              </h3>
 
-    {/* Description */}
-    <p className="text-white/60 text-sm leading-relaxed line-clamp-3 mb-4">
-      {partner.description}
-    </p>
+              {/* About */}
+              <div>
+                <h4 className="text-[#0D7EB6] font-medium text-lg mb-1">
+                  {partner.aboutTitle}
+                </h4>
+                <p className="text-white/70 text-16 leading-relaxed">
+                  {partner.about}
+                </p>
+              </div>
 
-    {/* Meta */}
-    <div>
-      <p className="text-white text-sm mb-1">
-        Employee Strength:{" "}
-        <span className="text-white/60">{partner.employees}</span>
-      </p>
-      <p className="text-white text-sm">
-        Global Presence:{" "}
-        <span className="text-white/60">{partner.presence}</span>
-      </p>
-    </div>
-  </div>
-))}
+              {/* Experience & Impact */}
+              <div>
+                <h4 className="text-[#0D7EB6] font-medium  text-lg mb-1">
+                  Experience & Impact
+                </h4>
+                <p className="text-white/70 text-16 leading-relaxed">
+                  {partner.experience}
+                </p>
+              </div>
+
+              {/* Why This Partnership Matters */}
+              <div>
+                <h4 className="text-[#0D7EB6] font-medium text-lg mb-1">
+                  Why This Partnership Matters
+                </h4>
+                <p className="text-white/70 text-16 leading-relaxed">
+                  {partner.why}
+                </p>
+              </div>
+            </div>
+          ))}
 
         </div>
-
       </div>
     </section>
   );
