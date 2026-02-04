@@ -1,64 +1,106 @@
-import { ArrowRight, TrendingDown, AlertCircle, Award, DollarSign, Users, Target, RefreshCw, TrendingUp, Zap, Repeat, Handshake, PiggyBank,  Shield, BarChart3} from "lucide-react";
+import { ArrowRight, TrendingDown, AlertCircle, Award, DollarSign, Users,Search , MessageSquare, GitBranch, Target, RefreshCw, TrendingUp, Zap, Repeat, Handshake, PiggyBank,  Shield, BarChart3} from "lucide-react";
 
 export default function BPO() {
 
-    const Card = ({ Icon, title, desc, highlight }) => (
-  <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md p-8">
-    <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-[#0D7EB6]/15">
-      <Icon className="h-6 w-6 text-[#0D7EB6]" />
+ const Card = ({ Icon, title, desc, highlight }) => (
+  <div
+    className="rounded-2xl bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
+    p-8 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] 
+    flex items-start gap-5"
+  >
+    {/* Icon Box - Updated Style */}
+    <div className="w-14 h-14 flex items-center justify-center rounded-xl 
+      bg-[#0D7EB6]/25 border border-[#0D7EB6]/60 shrink-0">
+      <Icon className="h-7 w-7 text-[#0D7EB6]" />
     </div>
 
-    {highlight && (
-      <h3 className="text-[#0D7EB6] text-xl font-semibold mb-1">
-        {highlight}
-      </h3>
-    )}
+    {/* Text Content */}
+    <div className="flex flex-col">
+      {highlight && (
+        <h3 className="text-[#0D7EB6] text-xl font-semibold mb-1">
+          {highlight}
+        </h3>
+      )}
 
-    <h4 className="text-white font-semibold mb-3">{title}</h4>
+      <h4 className="text-white font-semibold mb-3">
+        {title}
+      </h4>
 
-    <p className="text-white/70 leading-relaxed">{desc}</p>
+      <p className="text-white/70 leading-relaxed">
+        {desc}
+      </p>
+    </div>
   </div>
 );
+
 
  const Items = ({ Icon, title, desc }) => (
-  <div className="bg-[#0b2a3d]/60 backdrop-blur-xl border border-white/10 rounded-3xl p-10 transition-all duration-300 hover:border-[#0D7EB6]/40">
-    <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-[#0D7EB6]/15">
-      <Icon className="h-6 w-6 text-[#0D7EB6]" />
+  <div
+    className="rounded-2xl bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
+    p-8 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] 
+    flex items-start gap-5"
+  >
+    {/* Icon Box - Updated Style */}
+    <div className="w-14 h-14 flex items-center justify-center rounded-xl 
+      bg-[#0D7EB6]/25 border border-[#0D7EB6]/60 shrink-0">
+      <Icon className="h-7 w-7 text-[#0D7EB6]" />
     </div>
 
-    <h4 className="text-white font-semibold mb-3">{title}</h4>
+    {/* Text Content */}
+    <div className="flex flex-col">
+      <h4 className="text-white font-semibold mb-3">
+        {title}
+      </h4>
 
-    <p className="text-white/70 leading-relaxed">{desc}</p>
+      <p className="text-white/70 leading-relaxed">
+        {desc}
+      </p>
+    </div>
   </div>
-
 );
+
 
 const Coins = ({ Icon, title, desc }) => (
-  <div className="rounded-2xl bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 p-8 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)]">
-    <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-[#0D7EB6]/15">
-      <Icon className="h-6 w-6 text-[#0D7EB6]" />
+  <div
+    className="rounded-2xl bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
+    p-8 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] 
+    flex items-start gap-5"
+  >
+    {/* Icon Box - Updated Style */}
+    <div className="w-14 h-14 flex items-center justify-center rounded-xl 
+      bg-[#0D7EB6]/25 border border-[#0D7EB6]/60 shrink-0">
+      <Icon className="h-7 w-7 text-[#0D7EB6]" />
     </div>
 
-    <h4 className="text-white font-semibold mb-3">
-      {title}
-    </h4>
+    {/* Text Content */}
+    <div className="flex flex-col">
+      <h4 className="text-white font-semibold mb-3">
+        {title}
+      </h4>
 
-    <p className="text-white/70 leading-relaxed">
-      {desc}
-    </p>
+      <p className="text-white/70 leading-relaxed">
+        {desc}
+      </p>
+    </div>
   </div>
 );
+
 
 const Box = ({ Icon, title, items }) => (
   <div className="bg-[#0b2a3d]/60 backdrop-blur-xl border border-white/10 rounded-3xl p-10 transition-all duration-300 hover:border-[#0D7EB6]/40">
-    <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-[#0D7EB6]/15">
+    
+    {/* Icon - centered */}
+    <div className="mb-5 -mt-1 w-14 h-14 flex items-center justify-center rounded-xl 
+      bg-[#0D7EB6]/25 border border-[#0D7EB6]/60 shrink-0 mx-auto">
       <Icon className="h-6 w-6 text-[#0D7EB6]" />
     </div>
 
-    <h4 className="text-white font-semibold mb-4">
+    {/* Title - centered like image */}
+    <h4 className="text-white font-semibold mb-4 text-center">
       {title}
     </h4>
 
+    {/* List - keep left aligned */}
     <ul className="space-y-3 text-white/70">
       {items.map((item, idx) => (
         <li key={idx} className="flex gap-3">
@@ -69,6 +111,29 @@ const Box = ({ Icon, title, items }) => (
     </ul>
   </div>
 );
+
+const step = [
+    {
+      title: "Identify High-Impact Journeys",
+      desc: "Pinpoint the customer journeys that matter most to your business and users.",
+      icon: Search,
+    },
+    {
+      title: "Discover Existing IVR Logic",
+      desc: "Automatically analyze your current IVR flows and logic to uncover opportunities.",
+      icon: GitBranch,
+    },
+    {
+      title: "Launch Conversational Experiences",
+      desc: "Deploy intelligent conversational solutions quickly without complexity.",
+      icon: MessageSquare,
+    },
+    {
+      title: "Measure, Learn & Evolve",
+      desc: "Track outcomes, optimize continuously, and scale with confidence.",
+      icon: BarChart3,
+    },
+  ];
 
 const steps = [
   {
@@ -116,21 +181,19 @@ const Step = ({ number, title, desc }) => (
       {/* Background Gradient */}
       <div className="absolute inset-0 " />
 
-      <div className="relative max-w-6xl mx-auto px-4 py-28 text-center text-white pb-10">
-
-        {/* Tag */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#0D7EB6]/40 bg-[#0D7EB6]/10 text-[#0D7EB6] text-xl mb-8">
-              For BPOs & CX Providers
-        </div>
-
+      <div className="relative max-w-6xl mx-auto px-4 py-26 text-center text-white pb-10">
+      
         {/* Heading */}
-        <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight">
+        <h1 className="text-white text-7xl font-bold mb-6">
+        For BPOs & CX Providers
+      </h1>
+        <h2 className="text-3xl md:text-5xl font-bold tracking-tight leading-tight">
           <span className="text-white">Empowering Your Agents.</span>{" "}<br/>
           <span className="text-[#0D7EB6]">
             Scaling Voice AI.
           </span>{" "}
           <span className="text-white"> Protecting Your Margins.</span>
-        </h1>
+        </h2>
 
         {/* Subtitle */}
         <p className="mt-6 text-lg text-white/80 max-w-3xl mx-auto">
@@ -352,7 +415,88 @@ const Step = ({ number, title, desc }) => (
       </div>
     </section>
 
-    {/* Section 6 */}
+     {/*section 6  */}
+             <section className="w-full py-20">
+      <div className="max-w-7xl mx-auto px-6">
+
+        {/* Heading */}
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h1 className="text-5xl font-bold text-white leading-tight">
+            Start Small. Prove Value. 
+            <span className="text-[#0D7EB6]"> Scale with Confidence.</span>
+          </h1>
+          <p className="mt-5 text-lg text-white/80">
+            Transform enterprise customer experience without massive disruption.
+            Start with focused impact, validate results, and scale intelligently.
+          </p>
+        </div>
+
+        {/* Steps Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+  {step.map((step, index) => (
+    <div
+      key={index}
+      className="rounded-2xl bg-gradient-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
+      p-8 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] 
+      flex flex-col items-center text-center gap-5 transition-all duration-300 hover:scale-[1.02]"
+    >
+      {/* Icon Center */}
+      <div
+        className="w-14 h-14 flex items-center justify-center rounded-xl 
+        bg-[#0D7EB6]/25 border border-[#0D7EB6]/60 shrink-0"
+      >
+        <step.icon className="h-7 w-7 text-[#0D7EB6]" />
+      </div>
+
+      {/* Title */}
+      <h3 className="text-xl font-semibold text-white">
+        {step.title}
+      </h3>
+
+      {/* Description */}
+      <p className="text-gray-300 text-sm leading-relaxed">
+        {step.desc}
+      </p>
+
+      {/* Step Number */}
+      <div className="text-sm font-semibold text-white opacity-70">
+        Step {index + 1}
+      </div>
+    </div>
+  ))}
+</div>
+
+
+        {/* CTA Section */}
+        <div className="mt-20 text-center border-t border-gray-200 pt-12">
+          <h3 className="text-2xl font-bold text-white mb-4">
+            Ready to Modernize Enterprise Customer Service?
+          </h3>
+          <p className="text-white/80 mb-6">
+            Let’s build smarter, faster, and more human customer experiences.
+          </p>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="mailto:hello@aumne.ai"
+              className="px-6 py-3 rounded-lg bg-[#0D7EB6] text-white font-semibold hover:bg-[#0b6a9b] transition cursor-pointer"
+            >
+              Contact Us
+            </a>
+            <a
+              href="https://www.aumne.ai"
+              target="_blank"
+              className="px-6 py-3 rounded-lg border border-[#0D7EB6] text-[#0D7EB6] font-semibold hover:bg-[#0D7EB6]/10 transition cursor-pointer"
+            >
+              Visit Website
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    {/* Section 7 */}
 
     <section className="py-28 px-6">
       <div className="max-w-7xl mx-auto text-center mb-16">

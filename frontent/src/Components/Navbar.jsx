@@ -141,7 +141,7 @@ const Navbar = () => {
             ROI Calculator
           </button> */}
 
-          {/* <NavLink to="/roi-calculator" className={activeStyle}>ROI Calculator</NavLink> */}
+          <NavLink to="/contact" className={activeStyle}>Contact</NavLink>
 
           <button
             onClick={() => scrollToSection("gsi")}

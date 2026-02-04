@@ -1,5 +1,5 @@
 import React from "react";
-import { Search, RefreshCcw, DollarSign, TrendingUp, ArrowRight, Layers,  BarChart3, Shield,Repeat, Zap , Globe, Rocket, PiggyBank, FileStack, } from "lucide-react";
+import { Search, RefreshCcw, DollarSign, TrendingUp, ArrowRight, Layers,  BarChart3, Shield,Repeat, Zap , Globe, Rocket, PiggyBank, FileStack,GitBranch, MessageSquare, } from "lucide-react";
 
 
        const items = [
@@ -81,25 +81,87 @@ const coins = [
   },
 ];
 
+const steps = [
+  {
+    number: "1",
+    title: "Pick a Program",
+    desc: "Select an existing customer or program",
+  },
+  {
+    number: "2",
+    title: "Run a Pilot",
+    desc: "Prove the impact with minimal risk",
+  },
+  {
+    number: "3",
+    title: "Prove Impact",
+    desc: "Demonstrate margin and productivity gains",
+  },
+  {
+    number: "4",
+    title: "Scale with Confidence",
+    desc: "Expand across your customer base",
+  },
+];
+
+const step = [
+    {
+      title: "Identify High-Impact Journeys",
+      desc: "Pinpoint the customer journeys that matter most to your business and users.",
+      icon: Search,
+    },
+    {
+      title: "Discover Existing IVR Logic",
+      desc: "Automatically analyze your current IVR flows and logic to uncover opportunities.",
+      icon: GitBranch,
+    },
+    {
+      title: "Launch Conversational Experiences",
+      desc: "Deploy intelligent conversational solutions quickly without complexity.",
+      icon: MessageSquare,
+    },
+    {
+      title: "Measure, Learn & Evolve",
+      desc: "Track outcomes, optimize continuously, and scale with confidence.",
+      icon: BarChart3,
+    },
+  ];
+
+const Step1 = ({ number, title, desc }) => (
+  <div className="flex flex-col items-center text-center max-w-xs mx-auto">
+    <div className="flex items-center justify-center h-14 w-14 rounded-full bg-[#0D7EB6] text-white text-xl font-semibold mb-5">
+      {number}
+    </div>
+
+    <h4 className="text-white font-semibold mb-2">
+      {title}
+    </h4>
+
+    <p className="text-white/70 text-sm leading-relaxed">
+      {desc}
+    </p>
+  </div>
+);
+
 
 const Global = () => {
   return (        
 <>
     <section className="w-full flex items-center justify-center py-20">
-      <div className="max-w-5xl mx-auto text-center px-4">
+      <div className="max-w-6xl mx-auto text-center px-4">
                            
                            {/* Section 1 */}
         {/* Tag */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#0D7EB6]/40 bg-[#0D7EB6]/10 text-[#0D7EB6] text-xl mb-8">
+        <h1 className="text-white text-7xl font-bold mb-5">
           For Global System Integrators
-        </div>
+        </h1>
 
         {/* Heading */}
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight text-white">
+        <h2 className="text-3xl md:text-5xl font-bold leading-tight text-white">
           Unlock Faster Transformation. <br />
           <span className="text-[#0D7EB6]">Protect Margins.</span> Differentiate <br />
           Your CX Story.
-        </h1>
+        </h2>
 
         {/* Description */}
         <p className="mt-6 text-gray-300 text-lg max-w-3xl mx-auto">
@@ -124,7 +186,7 @@ const Global = () => {
         </div>
 
         {/* Buttons */}
-       < div className="flex flex-col sm:flex-row justify-center gap-5 mt-14">
+       < div className="flex flex-col sm:flex-row justify-center gap-5 mt-10">
           <button className="flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-[#0D7EB6] hover:opacity-90 transition text-white font-medium cursor-pointer">
             Talk to an Expert <ArrowRight size={18} />
           </button>
@@ -154,57 +216,101 @@ const Global = () => {
 
       {/* Cards */}
       <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* Card 1 */}
-        <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md p-8">
-          <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-[#0D7EB6]/15">
-            <Search className="h-6 w-6 text-[#0D7EB6]" />
-          </div>
-          <h3 className="text-xl font-semibold text-white mb-2">
-            Legacy IVR discovery is manual and unscalable
-          </h3>
-          <p className="text-white/70 leading-relaxed">
-           Legacy IVR logic, flows, and integrations are buried in fragmented artifacts, making discovery slow, human-driven, and error-prone.
-          </p>
-        </div>
+  {/* Card 1 */}
+  <div className="rounded-2xl bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
+    p-8 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] 
+    flex items-start gap-5">
+
+    {/* Icon Box */}
+    <div className="w-14 h-14 flex items-center justify-center rounded-xl 
+      bg-[#0D7EB6]/25 border border-[#0D7EB6]/60 shrink-0">
+      <Search className="h-7 w-7 text-[#0D7EB6]" />
+    </div>
+
+    {/* Text Content */}
+    <div className="flex flex-col">
+      <h3 className="text-lg md:text-xl font-semibold text-white mb-2">
+        Legacy IVR discovery is manual and unscalable
+      </h3>
+      <p className="text-white/70 leading-relaxed text-sm md:text-base">
+        Legacy IVR logic, flows, and integrations are buried in fragmented artifacts, making discovery slow, human-driven, and error-prone.
+      </p>
+    </div>
+
+  </div>
+
 
         {/* Card 2 */}
-        <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md p-8">
-          <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-[#0D7EB6]/15">
-            <RefreshCcw className="h-6 w-6 text-[#0D7EB6]" />
-          </div>
-          <h3 className="text-xl font-semibold text-white mb-2">
-            Every transformation starts from scratch
-          </h3>
-          <p className="text-white/70 leading-relaxed">
-           There is no systematic reuse of CX designs, intents, or integrations—even across similar clients and platforms.
-          </p>
-        </div>
+       <div className="rounded-2xl bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
+  p-8 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] 
+  flex items-start gap-5">
+
+  {/* Icon Box */}
+  <div className="w-14 h-14 flex items-center justify-center rounded-xl 
+    bg-[#0D7EB6]/25 border border-[#0D7EB6]/60 shrink-0">
+    <RefreshCcw className="h-7 w-7 text-[#0D7EB6]" />
+  </div>
+
+  {/* Text Content */}
+  <div className="flex flex-col">
+    <h3 className="text-lg md:text-xl font-semibold text-white mb-2">
+      Every transformation starts from scratch
+    </h3>
+    <p className="text-white/70 leading-relaxed text-sm md:text-base">
+      There is no systematic reuse of CX designs, intents, or integrations—even across similar clients and platforms.
+    </p>
+  </div>
+
+</div>
+
 
         {/* Card 3 */}
-        <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md p-8">
-          <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-[#0D7EB6]/15">
-            <DollarSign className="h-6 w-6 text-[#0D7EB6]" />
-          </div>
-          <h3 className="text-xl font-semibold text-white mb-2">
-           Complexity destroys delivery margins
-          </h3>
-          <p className="text-white/70 leading-relaxed">
-            Deep IVR trees and integrations introduce scope creep and estimation risk, turning fixed-price deals into margin traps.
-          </p>
-        </div>
+       <div className="rounded-2xl bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
+  p-8 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] 
+  flex items-start gap-5">
+
+  {/* Icon Box */}
+  <div className="w-14 h-14 flex items-center justify-center rounded-xl 
+    bg-[#0D7EB6]/25 border border-[#0D7EB6]/60 shrink-0">
+    <DollarSign className="h-7 w-7 text-[#0D7EB6]" />
+  </div>
+
+  {/* Text Content */}
+  <div className="flex flex-col">
+    <h3 className="text-lg md:text-xl font-semibold text-white mb-2">
+      Complexity destroys delivery margins
+    </h3>
+    <p className="text-white/70 leading-relaxed text-sm md:text-base">
+      Deep IVR trees and integrations introduce scope creep and estimation risk, turning fixed-price deals into margin traps.
+    </p>
+  </div>
+
+</div>
+
 
         {/* Card 4 */}
-        <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md p-8">
-          <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-[#0D7EB6]/15 border border-[#0D7EB6]/40 shrink-0">
-            <TrendingUp className="h-6 w-6 text-[#0D7EB6]" />
-          </div>
-          <h3 className="text-xl font-semibold text-white mb-2">
-                  AI platforms evolve faster than GSI delivery models      
-          </h3>
-          <p className="text-white/70 leading-relaxed">
-            CX platforms innovate rapidly, but delivery methods remain services-heavy and linear, creating a widening execution gap.
-          </p>
-        </div>
+        <div className="rounded-2xl bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
+  p-8 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] 
+  flex items-start gap-5">
+
+  {/* Icon Box */}
+  <div className="w-14 h-14 flex items-center justify-center rounded-xl 
+    bg-[#0D7EB6]/25 border border-[#0D7EB6]/60 shrink-0">
+    <TrendingUp className="h-7 w-7 text-[#0D7EB6]" />
+  </div>
+
+  {/* Text Content */}
+  <div className="flex flex-col">
+    <h3 className="text-lg md:text-xl font-semibold text-white mb-2">
+      AI platforms evolve faster than GSI delivery models
+    </h3>
+    <p className="text-white/70 leading-relaxed text-sm md:text-base">
+      CX platforms innovate rapidly, but delivery methods remain services-heavy and linear, creating a widening execution gap.
+    </p>
+  </div>
+
+</div>
+
       </div>
     </section>
                           {/* Section3 */}
@@ -318,30 +424,35 @@ const Global = () => {
 
         {/* Cards */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-          {cards.map((item, index) => {
-            const Icon = item.icon;
-            return (
-              <div
-                key={index}
-                className=" rounded-2xl bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 p-8 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)]"
-              >
-                {/* Icon */}
-                <div className="w-12 h-12 flex items-center justify-center rounded-xl
-                                bg-[#0D7EB6]/10 text-[#0D7EB6] mb-5">
-                  <Icon size={22} />
-                </div>
-
-                {/* Text */}
-                <h3 className="text-lg font-semibold text-white">
-                  {item.title}
-                </h3>
-                <p className="mt-3 text-sm leading-relaxed text-white/80">
-                  {item.desc}
-                </p>
-              </div>
-            );
-          })}
+  {cards.map((item, index) => {
+    const Icon = item.icon;
+    return (
+      <div
+        key={index}
+        className="rounded-2xl bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
+        p-8 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] 
+        flex items-start gap-5"
+      >
+        {/* Icon Box */}
+        <div className="w-14 h-14 flex items-center justify-center rounded-xl 
+          bg-[#0D7EB6]/25 border border-[#0D7EB6]/60 shrink-0">
+          <Icon className="h-7 w-7 text-[#0D7EB6]" />
         </div>
+
+        {/* Text Content */}
+        <div className="flex flex-col">
+          <h3 className="text-lg md:text-xl font-semibold text-white mb-2">
+            {item.title}
+          </h3>
+          <p className="text-white/70 leading-relaxed text-sm md:text-base">
+            {item.desc}
+          </p>
+        </div>
+      </div>
+    );
+  })}
+</div>
+
       </div>
     </section>
 
@@ -394,58 +505,72 @@ const Global = () => {
         </h2>
 
         {/* Cards */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-          {coins.slice(0, 3).map((item, index) => {
-            const Icon = item.icon;
-            return (
-              <div
-                key={index}
-                className="rounded-2xl bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 p-8 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)]"
-              >
-                <div
-                  className="mx-auto mb-5 w-12 h-12 flex items-center justify-center
-                             rounded-xl bg-[#0D7EB6]/10 text-[#0D7EB6]"
-                >
-                  <Icon size={22} />
-                </div>
-
-                <h3 className="text-base font-semibold text-white">
-                  {item.title}
-                </h3>
-                <p className="mt-3 text-sm leading-relaxed text-white/80">
-                  {item.desc}
-                </p>
-              </div>
-            );
-          })}
+   <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+  {coins.slice(0, 3).map((item, index) => {
+    const Icon = item.icon;
+    return (
+      <div
+        key={index}
+        className="rounded-2xl bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
+        p-8 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] 
+        flex flex-col items-center text-center"
+      >
+        {/* Icon Box - CENTERED */}
+        <div className="w-14 h-14 flex items-center justify-center rounded-xl 
+          bg-[#0D7EB6]/25 border border-[#0D7EB6]/60 shrink-0 
+          shadow-[0_0_20px_rgba(13,126,182,0.35)] mb-4">
+          <Icon className="h-7 w-7 text-[#0D7EB6]" />
         </div>
+
+        {/* Text Content */}
+        <div className="flex flex-col">
+          <h3 className="text-lg font-semibold text-white mb-2 leading-snug">
+            {item.title}
+          </h3>
+          <p className="text-white/70 leading-relaxed text-sm md:text-base">
+            {item.desc}
+          </p>
+        </div>
+      </div>
+    );
+  })}
+</div>
+
+
+
 
         {/* Bottom row (centered 2 cards) */}
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {coins.slice(3).map((item, index) => {
-            const Icon = item.icon;
-            return (
-              <div
-                key={index}
-                className="rounded-2xl bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 p-8 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)]"
-              >
-                <div
-                  className="mx-auto mb-5 w-12 h-12 flex items-center justify-center
-                             rounded-xl bg-[#0D7EB6]/10 text-[#0D7EB6]"
-                >
-                  <Icon size={22} />
-                </div>
-
-                <h3 className="text-base font-semibold text-white">
-                  {item.title}
-                </h3>
-                <p className="mt-3 text-sm leading-relaxed text-white/80">
-                  {item.desc}
-                </p>
-              </div>
-            );
-          })}
+       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+  {coins.slice(3).map((item, index) => {
+    const Icon = item.icon;
+    return (
+      <div
+        key={index}
+        className="rounded-2xl bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
+        p-8 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] 
+        flex flex-col"
+      >
+        {/* Icon Box - centered */}
+        <div className="w-14 h-14 flex items-center justify-center rounded-xl 
+          bg-[#0D7EB6]/25 border border-[#0D7EB6]/60 shrink-0 mx-auto mb-4">
+          <Icon className="h-7 w-7 text-[#0D7EB6]" />
         </div>
+
+        {/* Text Content */}
+        <div className="flex flex-col text-center">
+          <h3 className="text-lg font-semibold text-white mb-2">
+            {item.title}
+          </h3>
+          <p className="text-white/70 leading-relaxed text-sm md:text-base">
+            {item.desc}
+          </p>
+        </div>
+      </div>
+    );
+  })}
+</div>
+
+
       </div>
         <div className="max-w-5xl mx-auto mt-20 px-8 py-8 rounded-3xl border-white/10 bg-white/5 backdrop-blur-md shadow-sm">
   <p className="text-center text-lg md:text-xl text-white leading-relaxed">
@@ -461,6 +586,103 @@ const Global = () => {
   </p>
 </div>
 
+    </section>
+
+     {/*section 6  */}
+             <section className="w-full py-20">
+      <div className="max-w-7xl mx-auto px-6">
+
+        {/* Heading */}
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h1 className="text-5xl font-bold text-white leading-tight">
+            Start Small. Prove Value. 
+            <span className="text-[#0D7EB6]"> Scale with Confidence.</span>
+          </h1>
+          <p className="mt-5 text-lg text-white/80">
+            Transform enterprise customer experience without massive disruption.
+            Start with focused impact, validate results, and scale intelligently.
+          </p>
+        </div>
+
+        {/* Steps Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+  {step.map((step, index) => (
+    <div
+      key={index}
+      className="rounded-2xl bg-gradient-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
+      p-8 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] 
+      flex flex-col items-center text-center gap-5 transition-all duration-300 hover:scale-[1.02]"
+    >
+      {/* Icon Center */}
+      <div
+        className="w-14 h-14 flex items-center justify-center rounded-xl 
+        bg-[#0D7EB6]/25 border border-[#0D7EB6]/60 shrink-0"
+      >
+        <step.icon className="h-7 w-7 text-[#0D7EB6]" />
+      </div>
+
+      {/* Title */}
+      <h3 className="text-xl font-semibold text-white">
+        {step.title}
+      </h3>
+
+      {/* Description */}
+      <p className="text-gray-300 text-sm leading-relaxed">
+        {step.desc}
+      </p>
+
+      {/* Step Number */}
+      <div className="text-sm font-semibold text-white opacity-70">
+        Step {index + 1}
+      </div>
+    </div>
+  ))}
+</div>
+
+
+        {/* CTA Section */}
+        <div className="mt-20 text-center border-t border-gray-200 pt-12">
+          <h3 className="text-2xl font-bold text-white mb-4">
+            Ready to Modernize Enterprise Customer Service?
+          </h3>
+          <p className="text-white/80 mb-6">
+            Let’s build smarter, faster, and more human customer experiences.
+          </p>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="mailto:hello@aumne.ai"
+              className="px-6 py-3 rounded-lg bg-[#0D7EB6] text-white font-semibold hover:bg-[#0b6a9b] transition cursor-pointer"
+            >
+              Contact Us
+            </a>
+            <a
+              href="https://www.aumne.ai"
+              target="_blank"
+              className="px-6 py-3 rounded-lg border border-[#0D7EB6] text-[#0D7EB6] font-semibold hover:bg-[#0D7EB6]/10 transition cursor-pointer"
+            >
+              Visit Website
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+     {/* Section 7 */}
+
+    <section className="py-28 px-6">
+      <div className="max-w-7xl mx-auto text-center mb-16">
+        <h2 className="text-4xl md:text-5xl font-semibold text-[#0D7EB6]">
+          Next Steps
+        </h2>
+      </div>
+
+      <div className="grid md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+        {steps.map((step, idx) => (
+          <Step1 key={idx} {...step} />
+        ))}
+      </div>
     </section>
 
 

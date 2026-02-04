@@ -20,6 +20,7 @@ import LivedExperienceSection from "./Solutions/LivedExperienceSection";
 import Enterprise from "./Solutions/Enterprise";
 import Global from "./Solutions/Global";
 import BPO from "./Solutions/BPO";
+import Contact from "./Components/Contact";
 
 const App = () => {
   return (
@@ -41,6 +42,8 @@ const App = () => {
         <Route path="/enterprise" element={<Enterprise/>}></Route>
         <Route path="/global" element={<Global/>}></Route>
         <Route path="/bpo" element={<BPO/>} ></Route>
+        <Route path="/contact" element={<Contact/>} ></Route>
+        
         <Route path="/" element={<HomePage />} />
 
       </Routes>

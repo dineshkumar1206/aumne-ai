@@ -1,12 +1,104 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import { Clock, DollarSign, RefreshCcw, AlertTriangle,  Zap, Layers, ShieldCheck,  FlaskConical,} from "lucide-react";
+import { Clock, DollarSign, RefreshCcw, AlertTriangle, Rocket, Cpu, TrendingUp, CheckCircle,  Zap, Layers, ShieldCheck,  FlaskConical, Search, GitBranch, MessageSquare, BarChart3 } from "lucide-react";
 import {
   Building2,
-  Users
+  Users, Sparkles
 } from "lucide-react";
 
 export default function Enterprise() {
+
+  const impacts = [
+    {
+      title: "Accelerate Time to Value",
+      highlight: "Up to 5x faster",
+      desc: "Deliver results significantly faster than traditional IVR modernization programs.",
+      icon: Rocket,
+      points: ["Rapid deployment", "Quick ROI", "Minimal disruption"],
+    },
+    {
+      title: "Automate Customer Service at Scale",
+      highlight: "≈ 70% automation",
+      desc: "Achieve large-scale automation across the entire customer service lifecycle.",
+      icon: Cpu,
+      points: ["End-to-end automation", "Scalable workflows", "Consistent CX"],
+    },
+    {
+      title: "Drive Efficiency Improvements",
+      highlight: "40%+ improvement",
+      desc: "Increase self-service adoption and optimize operational efficiency.",
+      icon: TrendingUp,
+      points: [
+        "Reduce AHT",
+        "Improve FCR",
+        "Lower cost per interaction",
+        "Improve CSAT & NPS",
+      ],
+    },
+  ];
+
+  const step = [
+    {
+      title: "Identify High-Impact Journeys",
+      desc: "Pinpoint the customer journeys that matter most to your business and users.",
+      icon: Search,
+    },
+    {
+      title: "Discover Existing IVR Logic",
+      desc: "Automatically analyze your current IVR flows and logic to uncover opportunities.",
+      icon: GitBranch,
+    },
+    {
+      title: "Launch Conversational Experiences",
+      desc: "Deploy intelligent conversational solutions quickly without complexity.",
+      icon: MessageSquare,
+    },
+    {
+      title: "Measure, Learn & Evolve",
+      desc: "Track outcomes, optimize continuously, and scale with confidence.",
+      icon: BarChart3,
+    },
+  ];
+
+ const steps = [
+  {
+    number: "1",
+    title: "Pick a Program",
+    desc: "Select an existing customer or program",
+  },
+  {
+    number: "2",
+    title: "Run a Pilot",
+    desc: "Prove the impact with minimal risk",
+  },
+  {
+    number: "3",
+    title: "Prove Impact",
+    desc: "Demonstrate margin and productivity gains",
+  },
+  {
+    number: "4",
+    title: "Scale with Confidence",
+    desc: "Expand across your customer base",
+  },
+];
+
+const Step1 = ({ number, title, desc }) => (
+  <div className="flex flex-col items-center text-center max-w-xs mx-auto">
+    <div className="flex items-center justify-center h-14 w-14 rounded-full bg-[#0D7EB6] text-white text-xl font-semibold mb-5">
+      {number}
+    </div>
+
+    <h4 className="text-white font-semibold mb-2">
+      {title}
+    </h4>
+
+    <p className="text-white/70 text-sm leading-relaxed">
+      {desc}
+    </p>
+  </div>
+);
+
   return (
     <>                       
                       {/* Section 1  */}
@@ -14,20 +106,20 @@ export default function Enterprise() {
       {/* Background Gradient */}
       <div className="absolute inset-0 " />
 
-      <div className="relative max-w-6xl mx-auto px-4 py-28 text-center text-white pb-10">
+      <div className="relative max-w-6xl mx-auto px-4 py-20 text-center text-white pb-6">
 
         {/* Tag */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#0D7EB6]/40 bg-[#0D7EB6]/10 text-[#0D7EB6] text-xl mb-8">
+        <h1 className="text-white text-7xl font-bold mb-6">
           For Enterprise Leaders
-        </div>
+        </h1>
 
         {/* Heading */}
-        <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight">
+        <h2 className="text-3xl md:text-5xl font-bold tracking-tight leading-tight">
           <span className="text-white">$53B at Stake:</span>{" "}
           <span className="text-[#0D7EB6]">
             The Next Platform <br/> Shift in Customer Service
           </span>
-        </h1>
+        </h2>
 
         {/* Subtitle */}
         <p className="mt-6 text-lg text-white/80 max-w-3xl mx-auto">
@@ -479,11 +571,11 @@ export default function Enterprise() {
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
-        <h2 className="text-4xl font-bold text-white text-center mb-4">
+        <h2 className="text-4xl md:text-5xl font-semibold text-center text-white ">
           Continuous Evolution at <span className="text-[#0D7EB6]">AI Speed</span>
         </h2>
 
-        <p className="text-white/70 text-center max-w-3xl mx-auto mb-12">
+        <p className="mt-6 max-w-3xl mx-auto text-center text-white/70 text-lg mb-4">
           Customer service should evolve as fast as your business safely.
         </p>
 
@@ -555,6 +647,262 @@ export default function Enterprise() {
         </div>
       </div>
     </section>
+
+            {/* Section page 1 */}
+
+            <section className="w-full py-20">
+      <div className="max-w-7xl mx-auto px-6">
+
+        {/* Heading */}
+        <div className="max-w-4xl mx-auto mb-16 text-center">
+          <h2 className="text-4xl md:text-5xl font-semibold text-white">
+            Customer Experience &{" "}
+            <span className="text-[#0D7EB6]">Employee Experience</span>{" "}
+            Are Connected
+          </h2>
+          <p className="mt-6 text-lg text-white/70">
+            Customer service systems shape the daily experience of frontline teams.
+            When technology is rigid, both customers and employees suffer.
+          </p>
+        </div>
+
+        {/* Grid Layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+          {/* Problem Card */}
+          <div className="rounded-2xl bg-gradient-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
+            p-8 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] flex flex-col gap-6">
+
+            <div className="w-14 h-14 flex items-center justify-center rounded-xl 
+              bg-red-500/20 border border-red-500/40">
+              <AlertTriangle className="h-7 w-7 text-red-400" />
+            </div>
+
+            <h3 className="text-2xl font-semibold text-white">
+              When IVR Is Rigid & Outdated
+            </h3>
+
+            <ul className="space-y-3 text-white/70 text-sm">
+              <li className="flex items-center gap-2">
+                <CheckCircle className="h-4 w-4 text-red-400" />
+                Agents receive poor-quality interactions
+              </li>
+              <li className="flex items-center gap-2">
+                <CheckCircle className="h-4 w-4 text-red-400" />
+                Supervisors rely on workarounds instead of improvements
+              </li>
+              <li className="flex items-center gap-2">
+                <CheckCircle className="h-4 w-4 text-red-400" />
+                IT teams become bottlenecks for change
+              </li>
+            </ul>
+          </div>
+
+          {/* Solution Card */}
+          <div className="rounded-2xl bg-gradient-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
+            p-8 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] flex flex-col gap-6">
+
+            <div className="w-14 h-14 flex items-center justify-center rounded-xl 
+              bg-[#0D7EB6]/25 border border-[#0D7EB6]/60">
+              <Sparkles className="h-7 w-7 text-[#0D7EB6]" />
+            </div>
+
+            <h3 className="text-2xl font-semibold text-white">
+              With Aumne
+            </h3>
+
+            <p className="text-white/70 text-sm leading-relaxed">
+              Modernize legacy IVR into intelligent, conversational and continuously evolving experiences.
+            </p>
+
+            <div className="grid grid-cols-2 gap-3 mt-2">
+              {[
+                "Agent effectiveness",
+                "Supervisor agility",
+                "Operational confidence",
+                "Employee satisfaction",
+              ].map((item, i) => (
+                <div key={i} className="flex items-center gap-2 text-white/80 text-sm">
+                  <Users className="h-4 w-4 text-[#0D7EB6]" />
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Statement */}
+        <div className="mt-16 text-center">
+          <p className="text-xl md:text-2xl font-semibold text-white">
+            Better CX starts with better EX —{" "}
+            <span className="text-[#0D7EB6]">both begin with the same platform.</span>
+          </p>
+        </div>
+
+      </div>
+    </section>
+     
+
+         {/* section page2 */}
+
+          <section className="w-full py-20 ">
+      <div className="max-w-7xl mx-auto px-6">
+
+        {/* Heading */}
+       <div className="max-w-3xl mx-auto mb-16 text-center">
+  <h2 className="text-4xl md:text-5xl font-semibold text-white">
+    Proven Impact for <span className="text-[#0D7EB6]">Enterprises</span>
+  </h2>
+  <p className="mt-6 text-white/70 text-lg">
+    Aumne delivers <span className="text-white/80 font-semibold">measurable outcomes</span>, not promises.
+  </p>
+</div>
+
+        {/* Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {impacts.map((item, index) => (
+            <div
+              key={index}
+              className="rounded-2xl bg-gradient-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
+              p-8 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)]
+              flex flex-col gap-6 hover:scale-[1.02] transition"
+            >
+              {/* Icon */}
+              <div className="w-14 h-14 flex items-center justify-center rounded-xl 
+                bg-[#0D7EB6]/25 border border-[#0D7EB6]/60">
+                <item.icon className="h-7 w-7 text-[#0D7EB6]" />
+              </div>
+
+              {/* Title */}
+              <h3 className="text-2xl font-semibold text-white">
+                {item.title}
+              </h3>
+
+              {/* Highlight */}
+              <div className="text-[#0D7EB6] font-bold text-lg">
+                {item.highlight}
+              </div>
+
+              {/* Description */}
+              <p className="text-gray-300 text-sm leading-relaxed">
+                {item.desc}
+              </p>
+
+              {/* Points */}
+              <ul className="space-y-2 mt-2">
+                {item.points.map((point, i) => (
+                  <li key={i} className="flex items-center gap-2 text-gray-300 text-sm">
+                    <CheckCircle className="h-4 w-4 text-[#0D7EB6]" />
+                    {point}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+      </div>
+    </section>
+
+
+             {/*section 7  */}
+             <section className="w-full py-20">
+      <div className="max-w-7xl mx-auto px-6">
+
+        {/* Heading */}
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h1 className="text-5xl font-bold text-white leading-tight">
+            Start Small. Prove Value. 
+            <span className="text-[#0D7EB6]"> Scale with Confidence.</span>
+          </h1>
+          <p className="mt-5 text-lg text-white/80">
+            Transform enterprise customer experience without massive disruption.
+            Start with focused impact, validate results, and scale intelligently.
+          </p>
+        </div>
+
+        {/* Steps Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+  {step.map((step, index) => (
+    <div
+      key={index}
+      className="rounded-2xl bg-gradient-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
+      p-8 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] 
+      flex flex-col items-center text-center gap-5 transition-all duration-300 hover:scale-[1.02]"
+    >
+      {/* Icon Center */}
+      <div
+        className="w-14 h-14 flex items-center justify-center rounded-xl 
+        bg-[#0D7EB6]/25 border border-[#0D7EB6]/60 shrink-0"
+      >
+        <step.icon className="h-7 w-7 text-[#0D7EB6]" />
+      </div>
+
+      {/* Title */}
+      <h3 className="text-xl font-semibold text-white">
+        {step.title}
+      </h3>
+
+      {/* Description */}
+      <p className="text-gray-300 text-sm leading-relaxed">
+        {step.desc} 
+      </p>
+
+      {/* Step Number */}
+      <div className="text-sm font-semibold text-white opacity-70">
+        Step {index + 1}
+      </div>
+    </div>
+  ))}
+</div>
+
+
+        {/* CTA Section */}
+        <div className="mt-20 text-center border-t border-gray-200 pt-12">
+          <h3 className="text-2xl font-bold text-white mb-4">
+            Ready to Modernize Enterprise Customer Service?
+          </h3>
+          <p className="text-white/80 mb-6">
+            Let’s build smarter, faster, and more human customer experiences.
+          </p>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="mailto:hello@aumne.ai"
+              className="px-6 py-3 rounded-lg bg-[#0D7EB6] text-white font-semibold hover:bg-[#0b6a9b] transition cursor-pointer"
+            >
+              Contact Us
+            </a>
+            <a
+              href="https://www.aumne.ai"
+              target="_blank"
+              className="px-6 py-3 rounded-lg border border-[#0D7EB6] text-[#0D7EB6] font-semibold hover:bg-[#0D7EB6]/10 transition cursor-pointer"
+            >
+              Visit Website
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+     {/* Section 8 */}
+
+    <section className="py-28 px-6">
+      <div className="max-w-7xl mx-auto text-center mb-16">
+        <h2 className="text-4xl md:text-5xl font-semibold text-[#0D7EB6]">
+          Next Steps
+        </h2>
+      </div>
+
+      <div className="grid md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+        {steps.map((step, idx) => (
+          <Step1 key={idx} {...step} />
+        ))}
+      </div>
+    </section>
+     
+
 
 {/* Section 6 */}
 
