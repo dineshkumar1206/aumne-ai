@@ -26,7 +26,7 @@ export default function EcosystemAudience() {
             Enterprises <br/><br/>
           </h3>
 
-          <p className="text-white/80 text-[15px] leading-relaxed">
+          <p className="text-white/80 text-[16px] leading-relaxed">
             Modernize complex legacy IVRs without ripping and replacing
             existing platforms.
           </p>
@@ -49,7 +49,7 @@ export default function EcosystemAudience() {
             Global System Integrators (GSIs)
           </h3>
 
-          <p className="text-white/80 text-[15px] leading-relaxed">
+          <p className="text-white/80 text-[16px] leading-relaxed">
             Deliver AI-driven CX transformation faster, at scale,
             while protecting margins.
           </p>
@@ -69,10 +69,10 @@ export default function EcosystemAudience() {
           </div>
 
           <h3 className="text-lg font-semibold text-white mb-3">
-            BPOs & CX Providers <br/><br/>
+            BPOs<br/><br/>
           </h3>
 
-          <p className="text-white/80 text-[15px] leading-relaxed">
+          <p className="text-white/80 text-[16px] leading-relaxed">
             Enable Human + Voice AI service models that improve productivity,
             margins, and deal competitiveness.
           </p>

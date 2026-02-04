@@ -122,7 +122,7 @@ export default function BannerSection() {
     <div className="hidden md:block h-15 w-[1px] bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
 
     <div className="text-center md:text-left">
-      <p className="text-6xl font-bold text-[#0D7EB6]">3x</p>
+      <p className="text-6xl font-bold text-[#0D7EB6]">3X</p>
       <p className="text-lg text-white/80 mt-1">
         ROI on Modernization
       </p>

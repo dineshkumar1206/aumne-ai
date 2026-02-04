@@ -1,14 +1,14 @@
-import { MessageCircle, Zap, Lock, Cpu, Clock } from "lucide-react";
+import { MessageCircle, DollarSign, Lock, Cpu, Clock } from "lucide-react";
 
 const TransformationWindow = () => {
   const points = [
     {
-      text: "Customers now expect conversational experiences—especially on voice",
+      text: "Customers now expect conversational experiences, especially on voice",
       icon: MessageCircle,
     },
     {
-      text: "Enterprises are already spending $53B+ annually on CX modernization",
-      icon: Zap,
+      text: "Enterprises are already spending $53B+ annually on CX/EX modernization",
+      icon: DollarSign,
     },
     {
       text: "Legacy IVR remains the biggest blocker",
@@ -82,7 +82,7 @@ const TransformationWindow = () => {
         </div>
 
         {/* Text */}
-        <p className="text-white/80 text-[16px] leading-relaxed">
+        <p className="text-white/80 text-[18px] leading-relaxed">
           {item.text}
         </p>
       </div>

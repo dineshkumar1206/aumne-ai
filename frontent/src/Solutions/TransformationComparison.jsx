@@ -26,7 +26,7 @@ export default function TransformationComparison() {
             </span>
             <div>
               <h3 className="text-lg font-semibold text-white">Services-Led</h3>
-              <p className="text-sm text-white/50 text-[16px]">Yesterday’s approach</p>
+              <p className="text-sm text-white/60 text-[16px]">Yesterday’s approach</p>
             </div>
           </div>
 
@@ -66,12 +66,12 @@ export default function TransformationComparison() {
               <h3 className="text-lg font-semibold text-white">
                 Platform-Led with Aumne
               </h3>
-              <p className="text-sm text-[#1CC2D1] text-[16px]">Today’s advantage</p>
+              <p className="text-sm text-white/80 text-[16px]">Today’s advantage</p>
             </div>
           </div>
 
           {/* List */}
-          <ul className="space-y-5 text-white/70 text-[17px]">
+          <ul className="space-y-5 text-white/90 text-[17px]">
             {[
               "Automated discovery",
               "Reusable patterns & intelligence",

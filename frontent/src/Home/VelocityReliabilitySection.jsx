@@ -82,20 +82,20 @@ export default function VelocityReliabilitySection() {
       className="relative min-h-screen text-white overflow-hidden py-20"
     >
       <div className="mx-auto max-w-[1550px] px-8 md:px-14">
-        <div className="flex flex-col md:flex-row items-center gap-10 rounded-xl overflow-hidden">
+        <div className="flex flex-col md:flex-row items-center gap-10  overflow-hidden">
           {/* LEFT IMAGE BLOCK */}
-          <div className="relative flex-1 min-h-[580px]  overflow-hidden group border-r border-white/10">
+          <div className="relative flex-1 min-h-[580px]  overflow-hidden group ">
             <div
               ref={imageRef}
               className="absolute inset-0 bg-cover bg-center scale-132"
               style={{
-                backgroundImage: "url('/image/The Core Problem - BG.jpg.jpeg')", //core problem image
+                backgroundImage: "url('/image/TheCoreProblem-BG.jpg.png')", //core problem image border-r border-white/10
                 height: "100%",
-                top: "10%",
-                bottom:"20%",
+                top: "14%",
+                bottom:"20%",           //bg-black/40 group-hover:bg-black/20 transition-colors
               }}
             />
-            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500" />
+            <div className="absolute inset-0  duration-500" />  
           </div>
 
           {/* RIGHT TEXT BLOCK */}
@@ -119,7 +119,7 @@ export default function VelocityReliabilitySection() {
                 Legacy IVR Is the Bottleneck to AI-Native Customer Service
               </h3>
               <p className="text-gray-300 text-md leading-relaxed">
-               Nearly 75% of enterprises still rely on legacy, menu-driven IVR, even as customer expectations have shifted decisively toward natural, conversational experiences. Voice remains the front door of customer service—yet it's the weakest link.
+              <b> Nearly 75% </b>of enterprises still rely on legacy, menu-driven IVR, even as customer expectations have shifted decisively toward natural, conversational experiences. <br/> Voice remains the front door of customer service, yet it's the weakest link.
               </p>
             </div>
 
@@ -139,7 +139,7 @@ export default function VelocityReliabilitySection() {
   {/* Item 1 */}
   <div className="text-center md:text-left">
     <p className="text-2xl font-semibold">Slow</p>
-    <p className="text-sm text-white/60 mt-1">
+    <p className="text-17 text-white/70 mt-1">
       9–18 month timelines
     </p>
   </div>
@@ -150,7 +150,7 @@ export default function VelocityReliabilitySection() {
   {/* Item 2 */}
   <div className="text-center md:text-left">
     <p className="text-2xl font-semibold">Expensive</p>
-    <p className="text-sm text-white/60 mt-1">
+    <p className="text-17 text-white/70 mt-1">
       $1M+ per transformation
     </p>
   </div>
@@ -161,7 +161,7 @@ export default function VelocityReliabilitySection() {
   {/* Item 3 */}
   <div className="text-center md:text-left">
     <p className="text-2xl font-semibold">Services-Heavy</p>
-    <p className="text-sm text-white/60 mt-1">
+    <p className="text-17 text-white/70 mt-1">
       High executive risk
     </p>
   </div>
@@ -172,7 +172,7 @@ export default function VelocityReliabilitySection() {
   {/* Item 4 */}
   <div className="text-center md:text-left">
     <p className="text-2xl font-semibold">Disconnected</p>
-    <p className="text-sm text-white/60 mt-1">
+    <p className="text-17 text-white/70 mt-1">
       No continuous evolution
     </p>
   </div>

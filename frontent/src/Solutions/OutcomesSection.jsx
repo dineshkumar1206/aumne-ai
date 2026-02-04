@@ -1,12 +1,26 @@
+import { Headset, BarChart3, RefreshCcw } from "lucide-react";
+
+
 const OutcomesSection = () => {
-  const outcomes = [
-    { no: "5×", text: " Faster Time to Value" },
-    { no: "70%+", text: " Automation Across the Lifecycle" },
-    { no: "3×", text: " ROI on Transformation" },
-    { text: "Reduced Abandonment and Agent Load" },
-    { text: "Predictable Modernization Economics" },
-    { text: "Continuous CX Improvement" },
-  ];
+ const outcomes = [
+  { no: "5X", text: "Faster Time to Value" },
+  { no: "70%+", text: "Automation Across the Lifecycle" },
+  { no: "3X", text: "ROI on Transformation" },
+
+  {
+    text: "Reduced Abandonment and Agent Load",
+    icon: Headset,
+  },
+  {
+    text: "Predictable Modernization Economics",
+    icon: BarChart3,
+  },
+  {
+    text: "Continuous CX Improvement",
+    icon: RefreshCcw,
+  },
+];
+
 
   return (
     <section className="max-w-6xl mx-auto mt-32 px-4 mb-10">
@@ -41,13 +55,23 @@ const OutcomesSection = () => {
                 "
               >
                 {/* CONTENT ROW */}
-                <div className="flex items-center gap-6 w-full">
-                  {/* NUMBER */}
-                  {item.no && (
-                    <div className="flex-shrink-0 text-[#0D7EB6] font-extrabold text-3xl md:text-4xl">
-                      {item.no}
-                    </div>
-                  )}
+               <div className="flex items-center gap-6 w-full">
+  {/* ICON (only when no number) */}
+  {!item.no && item.icon && (
+    <div className="flex w-13 h-11 items-center justify-center text-[#0D7EB6] rounded-xl 
+          bg-[#0D7EB6]/15 border border-[#0D7EB6]/40">
+      <item.icon
+        className="w-8 h-8"
+        strokeWidth={1.6}
+      />
+    </div>
+  )}
+              {/* NUMBER */}
+  {item.no && (
+    <div className="flex-shrink-0 text-[#0D7EB6] font-extrabold text-3xl md:text-4xl">
+      {item.no}
+    </div>
+  )}
 
                   {/* DIVIDER */}
                   {item.no && <div className="w-px h-12 bg-white/20"></div>}

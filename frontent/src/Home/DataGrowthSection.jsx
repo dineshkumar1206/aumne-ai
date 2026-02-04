@@ -6,31 +6,31 @@ export default function DataGrowthSection() {
       icon: <Search className="w-7 h-7" />,
       title: "Understand Legacy First",
       desc:
-        "Auto-discovery of IVR code, flows, configurations, APIs, call recordings, and transcripts—revealing what exists, what works, and what must change.",
+        "Auto-discovery of IVR code, flows, configurations, APIs, call recordings, and transcripts, revealing what exists, what works, and what must change.",
     },
     {
       icon: <Sparkles className="w-7 h-7" />,
       title: "Automate Conversational Transformation",
       desc:
-        "AI-driven design and build converts legacy logic into conversational experiences—reducing time and effort by up to 70%.",
+        "AI-driven design and build converts legacy logic into conversational experiences, reducing time and effort by up to 70%.",
     },
     {
       icon: <Shield className="w-7 h-7" />,
       title: "Human-in-the-Loop Governance",
       desc:
-        "Built-in review, approvals, versioning, rollback, and compliance controls. Enterprises stay firmly in control.",
+        "Built-in review, approvals, versioning, rollback, and compliance controls. provides enterprise grade control.",
     },
     {
       icon: <Globe className="w-7 h-7" />,
       title: "Build Once. Deploy Everywhere",
       desc:
-        "Deploy consistently across voice, chat, web, and messaging—without duplicating logic or redesigning journeys.",
+        "Deploy consistently across regions, platforms and channels like voice, chat, web, and messaging without duplicating logic or redesigning journeys.",
     },
     {
       icon: <RefreshCw className="w-7 h-7" />,
       title: "Continuously Evolve Services",
       desc:
-        "Rapid prototyping, recommendations, and controlled iteration keep customer service aligned with changing products and policies.",
+        "Built-in change management helps rapid prototyping, recommendations, and controlled iteration to keep customer service aligned with changing products and policies.",
     },
   ];
 
@@ -52,6 +52,7 @@ export default function DataGrowthSection() {
 
 const GrowthCard = ({ icon, title, desc }) => {
   return (
+    <>
     <div className="relative pt-10">
       {/* TOP FLOATING BADGE (layout like image) */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 z-10">
@@ -68,7 +69,7 @@ const GrowthCard = ({ icon, title, desc }) => {
       {/* CARD BODY */}
       <div
         className="
-          h-[350px]
+          h-[385px]
           rounded-2xl
           border border-white/10
           bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20
@@ -86,5 +87,6 @@ const GrowthCard = ({ icon, title, desc }) => {
         </p>
       </div>
     </div>
+    </>
   );
 };

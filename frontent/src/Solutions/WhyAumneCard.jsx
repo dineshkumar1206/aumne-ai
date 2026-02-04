@@ -32,7 +32,7 @@ export default function WhyAumneCard() {
   return (
     <section
       ref={sectionRef}
-      className="relative pt-24 pb-24 text-white overflow-hidden"
+      className="relative pt-24 pb-18 text-white overflow-hidden"
     >
       {/* MAIN HEADING (NO CHANGE) */}
       <div className="max-w-[1550px] mx-auto text-center mb-5">
@@ -44,17 +44,17 @@ export default function WhyAumneCard() {
       {/* SUB HEADING + PARAGRAPH (CENTERED) */}
       <div className="max-w-5xl mx-auto text-center px-6">
         <h3 className="text-5xl md:text-3xl font-bold text-[#0D7EB6] mb-3">
-          From Legacy IVR to Conversational AI—Automatically
+        Automatically Transforms Legacy IVR to Conversational AI
         </h3>
 
-        <p className="text-white/80 text-lg leading-relaxed mb-2">
-          Aumne is purpose-built to modernize what already exists,
+        <p className="text-white/80 text-xl leading-relaxed mb-2">
+          Our Platfrom is purpose-built to modernize what already exists,
           not force enterprises to start from scratch.
         </p>
       </div>
 
       {/* CENTER CALLOUT BOX (NO STYLE CHANGE) */}
-      <div className=" flex justify-center px-4">
+      {/* <div className=" flex justify-center px-4">
         <div className="max-w-6xl w-full rounded-2xl 
           bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
           border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)]
@@ -68,7 +68,7 @@ export default function WhyAumneCard() {
             </span>.
           </p>
         </div>
-      </div>
+      </div> */}
 
       {/* IMAGE ROW (4 IMAGES) */}
       <div className=" max-w-7xl mx-auto px-6">
@@ -76,8 +76,15 @@ export default function WhyAumneCard() {
       </div>
 
       {/* DATA GROWTH CARDS (5 IN ONE LINE) */}
-      <div className="-mb-30">
+      <div className="-mb-20">
         <DataGrowthSection/>
+      </div>
+      <div className="-mb-10">
+         <div className="max-w-6xl mx-auto mt-20 px-8 py-8 rounded-3xl border-white/10 bg-white/5 backdrop-blur-md shadow-sm">
+  <p className="text-center text-lg md:text-xl text-white leading-relaxed">
+    Our Agentic platform goes beyond transformation, providing comprehensive Service Lifecycle Management (SLM) to optimize and sustain your services.
+  </p>
+</div>
       </div>
     </section>
   );
