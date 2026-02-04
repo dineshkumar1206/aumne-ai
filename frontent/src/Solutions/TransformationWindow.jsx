@@ -76,7 +76,7 @@ const TransformationWindow = () => {
         transition-all duration-300 hover:border-white/20 hover:scale-[1.01]"
       >
         {/* Icon (top center) */}
-        <div className="w-12 h-12 flex items-center justify-center rounded-xl 
+        <div className="w-14 h-12 flex items-center justify-center rounded-xl 
           bg-[#0D7EB6]/15 border border-[#0D7EB6]/40">
           <Icon className="w-6 h-6 text-[#0D7EB6]" />
         </div>

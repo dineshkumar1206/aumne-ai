@@ -16,6 +16,7 @@ import TransformationWindow from "../Solutions/TransformationWindow";
 import LivedExperienceSection from "../Solutions/LivedExperienceSection";
 import Enterprise from "../Solutions/Enterprise";
 import BookDemoModal from "../Components/BookDemoModal";
+import GoogleCloudPartner from "./GoogleCloudPartner";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -295,6 +296,9 @@ export default function BannerSection() {
         </section> */}
         <section className="" id="gsi">
            <GSIPartnership/>
+        </section>
+        <section>
+          <GoogleCloudPartner/>
         </section>
 
         
