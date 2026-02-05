@@ -100,7 +100,7 @@ export default function VelocityReliabilitySection() {
 
           {/* RIGHT TEXT BLOCK */}
           <div className="flex-1 flex flex-col py-10 px-5 justify-center  space-y-8 ">
-            <h2 className="text-xl md:text-3xl font-bold text-white mb-10">
+            <h2 className="text-3xl md:text-3xl font-bold text-white mb-10">
               The Core Problem
             </h2>
             {/* <div className="h-0.5 w-[53%] bg-linear-to-r from-[#036ffd] to-[#42a5f5] rounded-full" /> */}
@@ -115,7 +115,7 @@ export default function VelocityReliabilitySection() {
               // className="group p-8 rounded-2xl border border-[#1e3a8a] bg-[#112240]/40 backdrop-blur-sm transition-all hover:border-[#3b82f6]/50 "
               className="group py-3 rounded-2xl  backdrop-blur-sm transition-all  "
             >
-              <h3 className="text-[#0D7EB6] text-md md:text-xl font-bold mb-4 leading-tight">
+              <h3 className="text-[#0D7EB6] text-xl md:text-3xl font-bold mb-4 leading-tight">
                 Legacy IVR Is the Bottleneck to AI-Native Customer Service
               </h3>
               <p className="text-gray-300 text-md leading-relaxed">
