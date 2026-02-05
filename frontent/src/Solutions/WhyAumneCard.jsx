@@ -80,8 +80,8 @@ export default function WhyAumneCard() {
         <DataGrowthSection/>
       </div>
       <div className="-mb-10">
-         <div className="max-w-6xl mx-auto mt-20 px-8 py-8 rounded-3xl border-white/10 bg-white/5 backdrop-blur-md shadow-sm">
-  <p className="text-center text-lg md:text-xl text-white leading-relaxed">
+         <div className="max-w-7xl mx-auto mt-20 px-8 py-8">
+  <p className="text-center text-xl md:text-2xl text-white leading-relaxed">
     Our Agentic platform goes beyond transformation, providing comprehensive Service Lifecycle Management (SLM) to optimize and sustain your services.
   </p>
 </div>

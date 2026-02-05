@@ -142,7 +142,7 @@ export default function StatisticsSection() {
     },
     {
       icon: <FiDollarSign />,
-      value: "46",
+      value: "93",
       prefix: "$",
       suffix: "B",
       label: "spent annually on service transformation with limited results",

@@ -147,7 +147,7 @@ const Step1 = ({ number, title, desc }) => (
 const Global = () => {
   return (        
 <>
-    <section className="w-full flex items-center justify-center py-20">
+    <section className="w-full flex items-center justify-center py-18">
       <div className="max-w-6xl mx-auto text-center px-4">
                            
                            {/* Section 1 */}
@@ -170,23 +170,23 @@ const Global = () => {
         </p>
 
         {/* Stats */}
-        <div className="flex flex-col md:flex-row justify-center gap-12 mt-10">
+        <div className="flex flex-col md:flex-row justify-center gap-18 mt-6">
           <div>
-            <h2 className="text-4xl font-bold text-[#0D7EB6]">5×</h2>
-            <p className="text-gray-300 mt-1">Faster Transformation</p>
+            <h2 className="text-6xl font-bold text-[#0D7EB6]">5X</h2>
+            <p className="text-16 text-white/80 mt-2">Faster Transformation</p>
           </div>
           <div>
-            <h2 className="text-4xl font-bold text-[#0D7EB6]">70%+</h2>
-            <p className="text-gray-300 mt-1">Automation</p>
+            <h2 className="text-6xl font-bold text-[#0D7EB6]">70%+</h2>
+            <p className="text-16 text-white/80 mt-2">Automation</p>
           </div>
           <div>
-            <h2 className="text-4xl font-bold text-[#0D7EB6]">3-4×</h2>
-            <p className="text-gray-300 mt-1">ROI on Delivery</p>
+            <h2 className="text-6xl font-bold text-[#0D7EB6]">3-4X</h2>
+            <p className="text-16 text-white/80 mt-2">ROI on Delivery</p>
           </div>
         </div>
 
         {/* Buttons */}
-       < div className="flex flex-col sm:flex-row justify-center gap-5 mt-10">
+       {/* < div className="flex flex-col sm:flex-row justify-center gap-5 mt-10">
           <button className="flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-[#0D7EB6] hover:opacity-90 transition text-white font-medium cursor-pointer">
             Talk to an Expert <ArrowRight size={18} />
           </button>
@@ -194,7 +194,7 @@ const Global = () => {
           <button className="px-6 py-3 rounded-lg border border-[#0D7EB6] text-white hover:bg-[#0D7EB6]/10 transition font-medium cursor-pointer">
             See How It Works
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
 
@@ -572,14 +572,14 @@ const Global = () => {
 
 
       </div>
-        <div className="max-w-5xl mx-auto mt-20 px-8 py-8 rounded-3xl border-white/10 bg-white/5 backdrop-blur-md shadow-sm">
-  <p className="text-center text-lg md:text-xl text-white leading-relaxed">
+        <div className="max-w-5xl mx-auto mt-12 px-8 py-8">
+  <p className="text-center text-xl md:text-2xl text-white leading-relaxed">
     Aumne enables GSIs to{" "}
-    <span className="text-[#0D7EB6] font-medium">
+    <span className="text-[#0D7EB6] font-bold">
       grow revenue, protect margins,
     </span>{" "}
     and{" "}
-    <span className="text-[#0D7EB6] font-medium">
+    <span className="text-[#0D7EB6] font-bold">
       create recurring income
     </span>{" "}
     through a platform-led CX transformation model—while retaining full ownership and delivery control.
@@ -595,7 +595,7 @@ const Global = () => {
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h1 className="text-5xl font-bold text-white leading-tight">
-            Start Small. Prove Value. 
+            Start Small. Prove Value. <br/>
             <span className="text-[#0D7EB6]"> Scale with Confidence.</span>
           </h1>
           <p className="mt-5 text-lg text-white/80">
@@ -605,65 +605,48 @@ const Global = () => {
         </div>
 
         {/* Steps Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-  {step.map((step, index) => (
-    <div
-      key={index}
-      className="rounded-2xl bg-gradient-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
-      p-8 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] 
-      flex flex-col items-center text-center gap-5 transition-all duration-300 hover:scale-[1.02]"
-    >
-      {/* Icon Center */}
-      <div
-        className="w-14 h-14 flex items-center justify-center rounded-xl 
-        bg-[#0D7EB6]/25 border border-[#0D7EB6]/60 shrink-0"
-      >
-        <step.icon className="h-7 w-7 text-[#0D7EB6]" />
-      </div>
-
-      {/* Title */}
-      <h3 className="text-xl font-semibold text-white">
-        {step.title}
-      </h3>
-
-      {/* Description */}
-      <p className="text-gray-300 text-sm leading-relaxed">
-        {step.desc}
-      </p>
-
-      {/* Step Number */}
-      <div className="text-sm font-semibold text-white opacity-70">
-        Step {index + 1}
-      </div>
-    </div>
-  ))}
-</div>
-
-
-        {/* CTA Section */}
-        <div className="mt-20 text-center border-t border-gray-200 pt-12">
-          <h3 className="text-2xl font-bold text-white mb-4">
-            Ready to Modernize Enterprise Customer Service?
-          </h3>
-          <p className="text-white/80 mb-6">
-            Let’s build smarter, faster, and more human customer experiences.
-          </p>
-
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href="mailto:hello@aumne.ai"
-              className="px-6 py-3 rounded-lg bg-[#0D7EB6] text-white font-semibold hover:bg-[#0b6a9b] transition cursor-pointer"
-            >
-              Contact Us
-            </a>
-            <a
-              href="https://www.aumne.ai"
-              target="_blank"
-              className="px-6 py-3 rounded-lg border border-[#0D7EB6] text-[#0D7EB6] font-semibold hover:bg-[#0D7EB6]/10 transition cursor-pointer"
-            >
-              Visit Website
-            </a>
-          </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14 overflow-hidden">
+          {step.map((step, index) => (
+            <div key={index} className="relative h-full">
+              
+              {/* Card */}
+              <div
+                className="h-full rounded-2xl bg-gradient-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20
+                p-8 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)]
+                flex flex-col items-center text-center justify-between gap-6"
+              >
+                {/* Icon */}
+                <div
+                  className="w-14 h-14 flex items-center justify-center rounded-xl
+                  bg-[#0D7EB6]/25 border border-[#0D7EB6]/60 shrink-0"
+                >
+                  <step.icon className="h-7 w-7 text-[#0D7EB6]" />
+                </div>
+        
+                {/* Title */}
+                <h3 className="text-xl font-semibold text-white min-h-[56px] flex items-center">
+                  {step.title}
+                </h3>
+        
+                {/* Description */}
+                <p className="text-gray-300 text-sm leading-relaxed min-h-[72px]">
+                  {step.desc}
+                </p>
+        
+                {/* Step */}
+                <div className="text-sm font-semibold text-white opacity-70">
+                  Step {index + 1}
+                </div>
+              </div>
+        
+              {/* Arrow (not for last card) */}
+              {index !== step.length - 1 && (
+                <div className="hidden lg:flex absolute top-1/2 -right-12 -translate-y-1/2">
+                  <ArrowRight className="w-10 h-10 text-[#0D7EB6]" />
+                </div>
+              )}
+            </div>
+          ))}
         </div>
 
       </div>
@@ -673,7 +656,7 @@ const Global = () => {
 
     <section className="py-28 px-6">
       <div className="max-w-7xl mx-auto text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-semibold text-[#0D7EB6]">
+        <h2 className="text-4xl md:text-5xl font-semibold text-white">
           Next Steps
         </h2>
       </div>
@@ -684,6 +667,34 @@ const Global = () => {
         ))}
       </div>
     </section>
+
+  <div>
+            {/* CTA Section */}
+        <div className="mt-20 text-center border-t border-gray-200 pt-12">
+          <h3 className="text-2xl font-bold text-white mb-4">
+            Ready to Modernize Enterprise Customer Service?
+          </h3>
+          <p className="text-white/80 mb-6">
+            Let’s build smarter, faster, and more human customer experiences.
+          </p>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="/contact"
+              className="flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-[#0D7EB6] hover:opacity-90 transition text-white font-medium cursor-pointer"
+            >
+              Talk to an Expert <ArrowRight size={18}/>
+            </a>
+            <a
+              href="https://www.aumne.ai"
+              target="_blank"
+              className="px-6 py-3 rounded-lg border border-[#0D7EB6] text-white/80 font-semibold hover:bg-[#0D7EB6]/10 transition cursor-pointer"
+            >
+              Visit Website
+            </a>
+          </div>
+        </div>
+  </div>
 
 
     </>
