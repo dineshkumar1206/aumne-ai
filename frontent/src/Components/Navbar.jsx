@@ -39,7 +39,7 @@ const Navbar = () => {
       <motion.nav
         initial={{ y: 0, opacity: 1 }}
         animate={{ y: 0, opacity: 1 }}
-        className="bg-[#011428] text-white px-6 md:px-16 py-5 flex items-center justify-between shadow-xl"
+        className=" text-white px-6 md:px-16 py-5 flex items-center justify-between shadow-xl"
       >
         {/* Logo */}
         <button
