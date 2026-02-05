@@ -100,7 +100,7 @@ export default function VelocityReliabilitySection() {
 
           {/* RIGHT TEXT BLOCK */}
           <div className="flex-1 flex flex-col py-10 px-5 justify-center  space-y-8 ">
-            <h2 className="text-3xl md:text-3xl font-bold text-white mb-10">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-10">
               The Core Problem
             </h2>
             {/* <div className="h-0.5 w-[53%] bg-linear-to-r from-[#036ffd] to-[#42a5f5] rounded-full" /> */}

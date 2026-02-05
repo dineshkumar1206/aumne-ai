@@ -52,7 +52,7 @@ export default function WhyAumneCard() {
           not force enterprises to start from scratch.
         </p>
       </div>
-update
+
       {/* CENTER CALLOUT BOX (NO STYLE CHANGE) */}
       {/* <div className=" flex justify-center px-4">
         <div className="max-w-6xl w-full rounded-2xl 
