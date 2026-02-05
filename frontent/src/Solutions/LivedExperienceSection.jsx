@@ -1,24 +1,43 @@
 import { Users, BadgeCheck, Lightbulb, Rocket } from "lucide-react";
 
 export default function LivedExperienceSection() {
-  const items = [
-    {
-      text: "100+ years of combined experience in IVR, contact centers, enterprise CX, and platform engineering",
-      icon: Users,
-    },
-    {
-      text: "First-hand experience delivering large, services-heavy transformations",
-      icon: BadgeCheck,
-    },
-    {
-      text: "Deep legacy fluency combined with AI-native platform thinking",
-      icon: Lightbulb,
-    },
-    {
-      text: "Defining a new category: Agentic Service Lifecycle Management",
-      icon: Rocket,
-    },
-  ];
+ const items = [
+  {
+    text: (
+      <>
+        <strong className="font-semibold text-[#0D7EB6]">100+</strong> years of combined experience in IVR, contact centers, enterprise CX, and platform engineering
+      </>
+    ),
+    icon: Users,
+  },
+  {
+    text: (
+      <>
+        <strong className="font-semibold text-[#0D7EB6]">First-hand</strong> experience delivering large, services-heavy transformations
+      </>
+    ),
+    icon: BadgeCheck,
+  },
+  {
+    text: (
+      <>
+        <strong className="font-semibold text-[#0D7EB6]">Deep legacy</strong> fluency combined with{" "}
+        <strong className="font-semibold text-[#0D7EB6]">AI-native</strong> platform thinking
+      </>
+    ),
+    icon: Lightbulb,
+  },
+  {
+    text: (
+      <>
+        Defining a{" "}
+        <strong className="font-semibold text-[#0D7EB6]">new category</strong>: Agentic Service Lifecycle Management
+      </>
+    ),
+    icon: Rocket,
+  },
+];
+
 
   return (
     <section className="w-full py-20 relative">
@@ -35,7 +54,7 @@ export default function LivedExperienceSection() {
       <div className="relative w-full h-[680px]">
 
         <img
-          src="/image/Build.jpg.jpeg"
+          src="/image/Build-1.jpeg"
           alt="Background"
           className="w-full h-full object-cover brightness-110 contrast-110 saturate-110"
         />
@@ -76,7 +95,7 @@ export default function LivedExperienceSection() {
           </div>
 
           {/* TEXT */}
-          <p className="text-white/90 text-[16px] leading-relaxed">
+          <p className="text-white/90 text-[18px] leading-relaxed">
             {item.text}
           </p>
         </div>

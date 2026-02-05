@@ -5,12 +5,17 @@ import {
   PhoneCall,
   MessageSquare,
 } from "lucide-react";
+import Map1 from "../Components/Map1";
 
 export default function Contact() {
+
+  
  
     function Select({ label, placeholder, options = [] }) {
   return (
-    <div>
+ 
+    <div>     
+
       <label className="text-sm text-gray-300 mb-1 block">
         {label}
       </label>
@@ -45,8 +50,13 @@ export default function Contact() {
 
 
   return (
-    <div className="w-full min-h-screen flex justify-center px-4 py-16 text-white">
+    <div className="w-full min-h-screen flex justify-center px-4 py-10 text-white">
       <div className="w-full max-w-5xl">
+
+                      {/* MAP SECTION */}
+         <div className="mb-20 ">
+           <Map1 />
+         </div>
 
         {/* Top Button */}
         <div className="flex justify-center mb-8">
@@ -55,6 +65,8 @@ export default function Contact() {
             Get in Touch
           </button>
         </div>
+
+          
 
         {/* Title */}
         <h1 className="text-5xl font-bold text-center mb-4">
@@ -66,6 +78,8 @@ export default function Contact() {
           Tell us about your transformation goals. Our experts will craft a
           personalized approach to modernize your customer conversations.
         </p>
+
+ 
 
         {/* FORM */}
         <div className="space-y-10">
@@ -192,6 +206,7 @@ export default function Contact() {
         }
       `}</style>
     </div>
+    
   );
 }
 
@@ -212,6 +227,7 @@ function Section({ icon, title, children }) {
       </div>
       {children}
     </div>
+    
   );
 }
 
@@ -236,5 +252,7 @@ function Select({ label }) {
         <option>{label}</option>
       </select>
     </div>
+
+    
   );
 }
