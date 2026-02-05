@@ -54,7 +54,7 @@ export default function LivedExperienceSection() {
       <div className="relative w-full h-[680px]">
 
         <img
-          src="/image/Build-1.jpeg"
+          src="/image/Build-3.jpg.jpeg"
           alt="Background"
           className="w-full h-full object-cover brightness-110 contrast-110 saturate-110"
         />
