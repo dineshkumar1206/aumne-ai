@@ -37,7 +37,7 @@ export default function WhyAumneCard() {
       {/* MAIN HEADING (NO CHANGE) */}
       <div className="max-w-[1550px] mx-auto text-center mb-5">
         <h2 className="text-2xl md:text-5xl font-semibold tracking-tight">
-          The Aumne Solution
+          The Aumne Platform 
         </h2>
       </div>
 
@@ -52,7 +52,7 @@ export default function WhyAumneCard() {
           not force enterprises to start from scratch.
         </p>
       </div>
-
+update
       {/* CENTER CALLOUT BOX (NO STYLE CHANGE) */}
       {/* <div className=" flex justify-center px-4">
         <div className="max-w-6xl w-full rounded-2xl 
