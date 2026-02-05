@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { FiX, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const images = [
-  "/image/img1.jpg",
-  "/image/img2.jpg",
-  "/image/img5.jpg",
-  "/image/img7.jpg",
+  "/image/img1.jpeg",
+  "/image/img2.jpeg",
+  "/image/img3.jpeg",
+  "/image/img4.jpeg",
 ];
 
 const ImageCarousel = () => {

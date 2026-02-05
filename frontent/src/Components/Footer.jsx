@@ -82,9 +82,9 @@ export default function Footer() {
         </div>
 
         {/* NEWSLETTER + SOCIAL */}
-        <div className="space-y-8">
+        {/* <div className="space-y-8">
 
-          {/* Newsletter */}
+          Newsletter
           <div className="space-y-4">
             <h4 className="text-lg font-medium">Subscribe to Our Newsletter</h4>
 
@@ -105,7 +105,7 @@ export default function Footer() {
             <button className="border border-white/50 px-8 py-2 text-sm hover:bg-white hover:text-black transition">
               Submit
             </button>
-          </div>
+          </div>  */}
 
           {/* Social */}
           <div className="space-y-3">
@@ -127,7 +127,6 @@ export default function Footer() {
           </div>
 
         </div>
-      </div>
 
       {/* Floating Chat Button */}
       <div className="fixed bottom-6 right-6 z-50">
@@ -137,6 +136,12 @@ export default function Footer() {
           </svg>
         </button>
       </div>
+
+        {/* COPYRIGHT */}
+<div className="mt-14 text-center text-sm text-white/60 border-t border-white/10 pt-6">
+  © 2026 SLMX AI Pvt Ltd. All rights reserved.
+</div>
+
     </footer>
   );
 }
