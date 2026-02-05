@@ -29,6 +29,8 @@ const partners = [
 
 export default function GSIPartnership() {
   return (
+
+    <>
     <section className="min-h-screen px-6 py-16 flex items-center">
       <div className="max-w-[1400px] mx-auto w-full">
 
@@ -36,10 +38,10 @@ export default function GSIPartnership() {
         <div className="text-center mb-6">
           <h2 className="text-4xl md:text-5xl font-semibold text-white mb-4">
             Global Systems
-            <span className="text-[#0D7EB6]"> Integrator Partners </span>
+             Integrator Partners
           </h2>
 
-          <p className="text-white/80 text-lg leading-relaxed max-w-3xl mx-auto">
+          <p className="mb-20 text-[#0D7EB6] text-center text-bold md:text-2xl max-w-6xl mx-auto leading-relaxed mx-auto">
             Strategic partnerships with leading systems integrators to deliver
             comprehensive customer service transformations worldwide.
           </p>
@@ -112,5 +114,35 @@ export default function GSIPartnership() {
         </div>
       </div>
     </section>
+      {/* FOOTER LINE */}
+      <p className="text-center text-16 text-white/70 mt-16 mb-2">
+        Join enterprises worldwide who trust the Aumne + Google Cloud combination
+      </p>
+
+       {/* BADGES ROW */}
+  <div className="flex flex-wrap justify-center gap-6">
+    {[
+      "SOC 2 Compliant",
+      "GDPR Ready",
+      "HIPAA Compatible",
+      "99.9% Uptime SLA",
+    ].map((item, index) => (
+      <div
+        key={index}
+        className="
+          px-5 py-2
+          text-sm font-medium
+          text-white/80
+          rounded-full
+          border border-[#0D7EB6]/40 text-[#0D7EB6] bg-[#0D7EB6]/10
+          
+        "
+      >
+        {item}
+      </div>
+    ))}
+  </div>
+
+    </>
   );
 }

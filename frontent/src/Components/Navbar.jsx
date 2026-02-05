@@ -141,14 +141,17 @@ const Navbar = () => {
             ROI Calculator
           </button> */}
 
-          <NavLink to="/contact" className={activeStyle}>Contact</NavLink>
-
-          <button
-            onClick={() => scrollToSection("gsi")}
+           <button
+            onClick={() => scrollToSection("cloud")}
             className="hover:text-gray-300 transition cursor-pointer"
           >
-            GSI Partnership
+            Partners
           </button>
+
+          <NavLink to="/contact" className={activeStyle}>Contact</NavLink>
+          <NavLink to="/about" className={activeStyle}>About us</NavLink>
+
+         
 
           {/* <NavLink to="/gst-partnership" className={activeStyle}>GSI Partnership</NavLink> */}
 
@@ -215,6 +218,8 @@ const Navbar = () => {
              <NavLink to="/bpo" className={activeStyle}>
                BPO & CX Providers
              </NavLink>
+             </div>
+                
              </div>
             {/* <div className="absolute left-0 top-full mt-3 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
               <div className="bg-[#0a0a0a] border border-white/10 rounded-xl shadow-xl p-3 space-y-2">
@@ -288,9 +293,17 @@ const Navbar = () => {
             }}
             className="text-left hover:text-gray-300 transition"
           >
-            GSI Partnership
+          Partners
           </button>
-
+          <div className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition cursor-pointer">
+             <NavLink to="/contact" className={activeStyle}>
+               Contact
+             </NavLink>
+          <div className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition cursor-pointer">
+             <NavLink to="/about" className={activeStyle}>
+               About
+             </NavLink>
+            </div>
          <button
           onClick={() => setOpenDemo(true)}
           className="px-5 py-2 rounded-lg bg-[#0D7EB6] hover:bg-[#0D7EB6]/80 transition"

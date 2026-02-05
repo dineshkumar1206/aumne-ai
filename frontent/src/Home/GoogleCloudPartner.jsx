@@ -17,11 +17,11 @@ const GoogleCloudPartner = () => {
 
       {/* HEADING */}
       <h2 className="text-4xl md:text-5xl font-semibold text-center text-white mb-4">
-        Powered by <span className="text-[#0D7EB6]">Google Cloud</span>
+        Powered by Google Cloud
       </h2>
 
       {/* SUBTEXT */}
-      <p className="max-w-4xl mx-auto text-center text-lg text-white/80 mb-16">
+      <p className="mb-20 text-[#0D7EB6] text-center text-bold md:text-2xl max-w-6xl mx-auto leading-relaxed">
         As an official Google Cloud Partner, Aumne AI delivers enterprise-grade
         conversational AI transformation backed by the world's most advanced
         cloud infrastructure and AI capabilities.
@@ -72,7 +72,7 @@ const GoogleCloudPartner = () => {
         </div>
 
         {/* RIGHT COLUMN */}
-        <div className="space-y-6">
+        <div className="space-y-6 mt-8">
           {/* CARD 1 */}
           <div className="flex items-start text-start gap-4 rounded-2xl p-6 border border-white/10 
         bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20
@@ -86,7 +86,7 @@ const GoogleCloudPartner = () => {
             </div>
             <div>
               <h4 className="font-semibold mb-1">Architecture Validated</h4>
-              <p className="text-white/80 text-16">
+              <p className="text-white/80 text-18">
                 Aumne’s platform has undergone rigorous technical review by
                 Google Cloud experts, ensuring enterprise-grade security,
                 scalability, and performance standards.
@@ -109,7 +109,7 @@ const GoogleCloudPartner = () => {
               <h4 className="font-semibold mb-1">
                 Powered by Vertex AI & Gemini
               </h4>
-              <p className="text-white/80 text-16">
+              <p className="text-white/80 text-18">
                 Direct integration with Google’s most advanced AI models enables
                 our Design Intelligence engine to deliver context-aware, natural
                 conversations with unmatched accuracy.
@@ -132,7 +132,7 @@ const GoogleCloudPartner = () => {
               <h4 className="font-semibold mb-1">
                 Enterprise-Ready Infrastructure
               </h4>
-              <p className="text-white/80 text-16">
+              <p className="text-white/80 text-18">
                 Built on Google Cloud’s global infrastructure, Aumne provides
                 the reliability, compliance, and data governance that Fortune
                 500 enterprises demand.
@@ -142,34 +142,7 @@ const GoogleCloudPartner = () => {
         </div>
       </div>
 
-      {/* FOOTER LINE */}
-      <p className="text-center text-16 text-white/70 mt-16 mb-2">
-        Join enterprises worldwide who trust the Aumne + Google Cloud combination
-      </p>
-
-       {/* BADGES ROW */}
-  <div className="flex flex-wrap justify-center gap-6">
-    {[
-      "SOC 2 Compliant",
-      "GDPR Ready",
-      "HIPAA Compatible",
-      "99.9% Uptime SLA",
-    ].map((item, index) => (
-      <div
-        key={index}
-        className="
-          px-5 py-2
-          text-sm font-medium
-          text-white/80
-          rounded-full
-          border border-[#0D7EB6]/40 text-[#0D7EB6] bg-[#0D7EB6]/10
-          
-        "
-      >
-        {item}
-      </div>
-    ))}
-  </div>
+   
     </section>
   );
 };

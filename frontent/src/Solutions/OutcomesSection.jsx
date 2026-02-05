@@ -3,7 +3,7 @@ import { Headset, BarChart3, RefreshCcw } from "lucide-react";
 
 const OutcomesSection = () => {
  const outcomes = [
-  { no: "5X", text: "Faster Time to Value" },
+  { no: "5X", text: "Faster GTM" },
   { no: "70%+", text: "Automation Across the Lifecycle" },
   { no: "3X", text: "ROI on Transformation" },
 
@@ -28,7 +28,7 @@ const OutcomesSection = () => {
         {/* Heading */}
         <h2 className="text-4xl md:text-5xl font-semibold text-white tracking-tight text-center pb-10">
           Outcomes That{" "}
-          <span className="text-[#0D7EB6]">Matter</span>
+          Matter
         </h2>
 
         {/* Cards grid */}

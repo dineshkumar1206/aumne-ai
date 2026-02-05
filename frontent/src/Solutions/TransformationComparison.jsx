@@ -7,7 +7,7 @@ export default function TransformationComparison() {
       {/* Heading */}
       <h2 className="text-4xl md:text-5xl font-semibold text-white tracking-tight text-center pb-10">
         Why Services-Led Transformation <br />
-        <span className="text-[#0D7EB6]">No Longer Works</span>
+        No Longer Works
       </h2>
 
       {/* Two Boxes */}

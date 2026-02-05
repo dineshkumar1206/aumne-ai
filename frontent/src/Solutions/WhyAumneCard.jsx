@@ -36,7 +36,7 @@ export default function WhyAumneCard() {
     >
       {/* MAIN HEADING (NO CHANGE) */}
       <div className="max-w-[1550px] mx-auto text-center mb-5">
-        <h2 className="text-2xl md:text-5xl font-semibold tracking-tight">
+        <h2 className="text-4xl md:text-5xl font-semibold tracking-tight">
           The Aumne Platform 
         </h2>
       </div>
@@ -47,7 +47,7 @@ export default function WhyAumneCard() {
         Automatically Transforms Legacy IVR to Conversational AI
         </h3>
 
-        <p className="text-white/80 text-xl leading-relaxed mb-2">
+        <p className="text-center text-xl md:text-2xl text-white leading-relaxed mb-2">
           Our Platfrom is purpose-built to modernize what already exists,
           not force enterprises to start from scratch.
         </p>

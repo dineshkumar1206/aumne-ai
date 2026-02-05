@@ -100,7 +100,7 @@ export default function VelocityReliabilitySection() {
 
           {/* RIGHT TEXT BLOCK */}
           <div className="flex-1 flex flex-col py-10 px-5 justify-center  space-y-8 ">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-10">
+            <h2 className="text-4xl md:text-5xl font-semibold text-white mb-10">
               The Core Problem
             </h2>
             {/* <div className="h-0.5 w-[53%] bg-linear-to-r from-[#036ffd] to-[#42a5f5] rounded-full" /> */}
@@ -118,8 +118,8 @@ export default function VelocityReliabilitySection() {
               <h3 className="text-[#0D7EB6] text-xl md:text-3xl font-bold mb-4 leading-tight">
                 Legacy IVR Is the Bottleneck to AI-Native Customer Service
               </h3>
-              <p className="text-gray-300 text-md leading-relaxed">
-              <b> Nearly 75% </b>of enterprises still rely on legacy, menu-driven IVR, even as customer expectations have shifted decisively toward natural, conversational experiences. <br/> Voice remains the front door of customer service, yet it's the weakest link.
+              <p className="text-gray-300 text-xl leading-relaxed">
+              <b> Nearly 75% </b>of enterprises still rely on legacy, menu-driven IVR, even as customer expectations have shifted decisively toward natural, conversational experiences. <br/><br/> Voice remains the front door of customer service, yet it's the weakest link.
               </p>
             </div>
 
@@ -138,8 +138,8 @@ export default function VelocityReliabilitySection() {
                 <div className="mt-14 flex flex-row items-stretch justify-between gap-6 text-white">
   {/* Item 1 */}
   <div className="text-center md:text-left">
-    <p className="text-2xl font-semibold">Slow</p>
-    <p className="text-17 text-white/70 mt-1">
+    <p className="text-2xl font-semibold">Slow</p><br/>
+    <p className="text-18 text-white/70 mt-1">
       9–18 month timelines
     </p>
   </div>
@@ -149,8 +149,8 @@ export default function VelocityReliabilitySection() {
 
   {/* Item 2 */}
   <div className="text-center md:text-left">
-    <p className="text-2xl font-semibold">Expensive</p>
-    <p className="text-17 text-white/70 mt-1">
+    <p className="text-2xl font-semibold">Expensive</p><br/>
+    <p className="text-18 text-white/70 mt-1">
       $1M+ per transformation
     </p>
   </div>
@@ -158,22 +158,26 @@ export default function VelocityReliabilitySection() {
   {/* Divider */}
   <div className="hidden md:block w-[2px] self-stretch bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
 
-  {/* Item 3 */}
-  <div className="text-center md:text-left">
-    <p className="text-2xl font-semibold">Services-Heavy</p>
-    <p className="text-17 text-white/70 mt-1">
-      High executive risk
-    </p>
-  </div>
+  
 
   {/* Divider */}
-  <div className="hidden md:block w-[2px] self-stretch bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
 
   {/* Item 4 */}
   <div className="text-center md:text-left">
-    <p className="text-2xl font-semibold">Disconnected</p>
-    <p className="text-17 text-white/70 mt-1">
+    <p className="text-2xl font-semibold">Disconnected</p><br/>
+    <p className="text-18 text-white/70 mt-1">
       No continuous evolution
+    </p>
+  </div>
+
+  <div className="hidden md:block w-[2px] self-stretch bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
+
+
+  {/* Item 3 */}
+  <div className="text-center md:text-left">
+    <p className="text-2xl font-semibold">Services-Heavy</p>
+    <p className="text-18 text-white/70 mt-0.5">
+      High executive risk
     </p>
   </div>
 </div>

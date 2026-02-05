@@ -2,17 +2,17 @@ import { Building2, Users, Headphones } from "lucide-react";
 
 export default function EcosystemAudience() {
   return (
-    <section className="max-w-6xl mx-auto mt-28 px-4 pb-5">
+    <section className="max-w-7xl mx-auto mt-28 px-4 pb-5">
 
       {/* Heading */}
      <h2 className="text-4xl md:text-5xl font-semibold text-white tracking-tight text-center pb-10">
           Built for the Ecosystem that Delivers{" "}<br/>
-          <span className="text-[#0D7EB6]"> Customer Service</span>
+           Customer Service
         </h2>
                          {/* built for the ecosystem that    delivers customer service*/}
 
       {/* Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-3 md:grid-cols-3 gap-8">
 
         {/* Enterprises */}
         <div className="rounded-2xl border  bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 p-8  border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] p-8
@@ -23,7 +23,7 @@ export default function EcosystemAudience() {
           </div>
 
           <h3 className="text-lg font-semibold text-white mb-3">
-            Enterprises <br/><br/>
+            Enterprises
           </h3>
 
           <p className="text-white/80 text-[16px] leading-relaxed">
@@ -31,8 +31,8 @@ export default function EcosystemAudience() {
             existing platforms.
           </p>
 
-          <button className="mt-5 text-sm font-medium text-[#0D7EB6] hover:underline">
-            See the enterprise perspective →
+          <button className="mt-4 -ml-1 text-sm font-medium text-[#0D7EB6] hover:underline">
+            Turn your legacy IVR into Conversational AI →
           </button>
         </div>
 
@@ -46,7 +46,7 @@ export default function EcosystemAudience() {
           </div>
 
           <h3 className="text-lg font-semibold text-white mb-3">
-            Global System Integrators (GSIs)
+            Global System Integrators (GSI)
           </h3>
 
           <p className="text-white/80 text-[16px] leading-relaxed">
@@ -55,7 +55,7 @@ export default function EcosystemAudience() {
           </p>
 
           <button className="mt-5 text-sm font-medium text-[#0D7EB6] hover:underline">
-            How does it come together? →
+            Unlock faster transformation →
           </button>
         </div>
 
@@ -69,7 +69,7 @@ export default function EcosystemAudience() {
           </div>
 
           <h3 className="text-lg font-semibold text-white mb-3">
-            BPOs<br/><br/>
+            BPOs
           </h3>
 
           <p className="text-white/80 text-[16px] leading-relaxed">

@@ -3,7 +3,7 @@ import { MessageCircle, DollarSign, Lock, Cpu, Clock } from "lucide-react";
 const TransformationWindow = () => {
   const points = [
     {
-      text: "Customers now expect conversational experiences, especially on voice",
+      text: "Customers now expect conversational experiences, not menus",
       icon: MessageCircle,
     },
     {
@@ -15,7 +15,7 @@ const TransformationWindow = () => {
       icon: Lock,
     },
     {
-      text: "AI has reached a point where legacy systems can be understood and transformed programmatically",
+      text: "AI has reached a point where legacy systems can be understood and transformed",
       icon: Cpu,
     },
     {
@@ -29,10 +29,10 @@ const TransformationWindow = () => {
       <div className="max-w-6xl mx-auto px-4">
 
         {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-semibold text-white tracking-tight text-center">
-          The Window for Platform-Led CX <br />
+        <h2 className=" text-4xl md:text-5xl font-semibold text-white mb-10 tracking-tight text-center">
+          The Window for Platform-Led <br /> CX / EX 
           Transformation{" "}
-          <span className="text-[#0D7EB6]">Is Open</span>
+          Is Open
         </h2>
 
         {/* Boxes */}
@@ -109,7 +109,7 @@ const TransformationWindow = () => {
         </div>
 
         {/* Text */}
-        <p className="text-white/80 text-[16px] leading-relaxed">
+        <p className="text-white/80 text-[18px] leading-relaxed">
           {item.text}
         </p>
       </div>

@@ -279,9 +279,9 @@ export default function BannerSection() {
         <section className="" id="transformation-window">
            <TransformationWindow/>
         </section>
-        <section className="" id="lived-experience">
+        {/* <section className="" id="lived-experience">
            <LivedExperienceSection/>
-        </section> 
+        </section>  */}
         {/* <section className="" id="enterprise">
            <Enterprise/>
         </section> */}
@@ -294,10 +294,10 @@ export default function BannerSection() {
         {/* <section className="" id="roi">
            <BookDemoModal/>
         </section> */}
-        <section>
+        <section id="cloud">
           <GoogleCloudPartner/>
         </section>
-        <section className="" id="gsi">
+        <section className="" >
            <GSIPartnership/>
         </section>
         

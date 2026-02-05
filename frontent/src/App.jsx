@@ -21,6 +21,7 @@ import Enterprise from "./Solutions/Enterprise";
 import Global from "./Solutions/Global";
 import BPO from "./Solutions/BPO";
 import Contact from "./Components/Contact";
+import About from "./Components/About";
 
 const App = () => {
   return (
@@ -43,6 +44,7 @@ const App = () => {
         <Route path="/global" element={<Global/>}></Route>
         <Route path="/bpo" element={<BPO/>} ></Route>
         <Route path="/contact" element={<Contact/>} ></Route>
+        <Route path="/about" element={<About/>}></Route>
         
         <Route path="/" element={<HomePage />} />
 

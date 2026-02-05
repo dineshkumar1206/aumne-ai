@@ -31,7 +31,7 @@ export default function LivedExperienceSection() {
     text: (
       <>
         Defining a{" "}
-        <strong className="font-semibold text-[#0D7EB6]">new category</strong>: Agentic Service Lifecycle Management
+        <strong className="font-semibold text-[#0D7EB6]">new category</strong>: Agentic Service Lifecycle Management Platform
       </>
     ),
     icon: Rocket,

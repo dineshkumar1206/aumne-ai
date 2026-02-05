@@ -38,7 +38,7 @@ export default function Footer() {
           <div className="space-y-2 text-sm leading-relaxed text-white/80">
             <p>+91 9902267643</p>
             <p>+1 4423024441</p>
-            <p>info@aumneai.com</p>
+            <a href="mailto:hello@aumne.ai">hello@aumne.ai</a>
             <p>Bangalore, India</p>
           </div>
         </div>
