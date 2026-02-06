@@ -45,7 +45,7 @@ export default function LivedExperienceSection() {
   ];
 
   return (
-    <section className="w-full py-20 relative bg-transparent">
+    <section className="w-full py-2 relative bg-transparent">
       {/* HEADING */}
       <div className="max-w-6xl mx-auto px-4 mb-16">
         <h2 className="text-4xl md:text-5xl font-semibold text-white tracking-tight text-center">
@@ -95,11 +95,11 @@ export default function LivedExperienceSection() {
           </div>
 
           {/* RIGHT SIDE – IMAGE */}
-          <div className="w-1/2 h-[620px] relative rounded-3xl overflow-hidden">
+          <div className="w-1/2 h-[610px] relative rounded-3xl flex items-center justify-center">
             <img
               src="/image/team with laptop copy.png"
               alt="Team collaboration"
-              className="w-full h-full object-cover"
+              className="max-w-full max-h-full object-contain pl-8"
             />
 
             {/* Subtle overlay for brand consistency */}
