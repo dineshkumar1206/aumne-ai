@@ -83,30 +83,24 @@ export default function VelocityReliabilitySection() {
     >
       <div className="mx-auto max-w-[1550px] px-8 md:px-14">
         <div className="flex flex-col md:flex-row items-center gap-10  overflow-hidden">
-          
          {/* LEFT IMAGE BLOCK    scale-100 md:scale-132  transition-transform duration-500*/}
-<div className="relative flex-1 min-h-[420px] md:min-h-[700px] overflow-hidden group">
-  
+<div className="relative flex-1 min-h-[500px] md:min-h-[700px] overflow-hidden group">
   <div
     ref={imageRef}
     className="
-      absolute inset-0
-      bg-cover bg-center
+      absolute inset-0 bg-cover bg-center   
+                                                  
+      top-0 -md:top-[15%]
+      bottom-0 md:bottom-[25%]
       
-      md:bottom-[25%]
-      transition-transform duration-500
-      md:scale-100
-      scale-100
     "
     style={{
       backgroundImage: "url('/image/TheCoreProblem-BG.jpg.png')",
+      height: "100%",
     }}
   />
-
-  {/* Optional overlay */}
-  <div className="absolute inset-0 bg-black/0" />
+  <div className="absolute inset-0 duration-500" />
 </div>
-
 
 
           {/* RIGHT TEXT BLOCK */}
