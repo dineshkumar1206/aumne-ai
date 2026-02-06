@@ -273,10 +273,10 @@ const Navbar = () => {
             onClick={() => {
               scrollToSection("statistics");
             }}
-            className="text-left hover:text-gray-300 transition"
+            className="text-left hover:text-gray-300 pb-4 pl-5 transition"
           >
             Industry Trends
-          </button>
+          </button> <br/>
 
           {/* <button
             onClick={() => {
@@ -291,15 +291,15 @@ const Navbar = () => {
             onClick={() => {
               scrollToSection("gsi");
             }}
-            className="text-left hover:text-gray-300 transition"
+            className="text-left hover:text-gray-300 pl-5  transition"
           >
           Partners
           </button>
-          <div className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition cursor-pointer">
+          <div className="block w-full text-left px-4 py-2  rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition cursor-pointer">
              <NavLink to="/contact" className={activeStyle}>
                Contact
              </NavLink>
-          <div className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition cursor-pointer">
+          <div className="block w-full text-left px-3 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition cursor-pointer">
              <NavLink to="/about" className={activeStyle}>
                About
              </NavLink>

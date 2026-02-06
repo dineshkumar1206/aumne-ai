@@ -2,23 +2,26 @@ import { Building2, Users, Headphones } from "lucide-react";
 
 export default function EcosystemAudience() {
   return (
-    <section className="max-w-7xl mx-auto mt-28 px-4 pb-5">
+    <section className="max-w-7xl mx-auto mt-28 px-4 pb-10">
 
       {/* Heading */}
-     <h2 className="text-4xl md:text-5xl font-semibold text-white tracking-tight text-center pb-10">
-          Built for the Ecosystem that Delivers{" "}<br/>
-           Customer Service
-        </h2>
-                         {/* built for the ecosystem that    delivers customer service*/}
+      <h2 className="text-3xl md:text-5xl font-semibold text-white tracking-tight text-center pb-10">
+        Built for the Ecosystem that Delivers <br />
+        Customer Service
+      </h2>
 
       {/* Cards */}
-      <div className="grid grid-cols-3 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
         {/* Enterprises */}
-        <div className="rounded-2xl border  bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 p-8  border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] p-8
-                        shadow-sm hover:shadow-md transition">
+        <div className="rounded-2xl border border-white/10
+          bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20
+          p-8 shadow-[0_20px_60px_rgba(0,0,0,0.8)]
+          transition hover:shadow-md
+          text-center lg:text-left">
 
-          <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-[#0D7EB6]/15 border border-[#0D7EB6]/40 shrink-0 text-[#0D7EB6] mx-auto">
+          <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-xl 
+            bg-[#0D7EB6]/15 border border-[#0D7EB6]/40 text-[#0D7EB6] mx-auto lg:mx-0">
             <Building2 className="h-7 w-7" strokeWidth={2} />
           </div>
 
@@ -31,17 +34,20 @@ export default function EcosystemAudience() {
             existing platforms.
           </p>
 
-          <button className="mt-4 -ml-1 text-sm font-medium text-[#0D7EB6] hover:underline">
+          <button className="mt-5 text-sm font-medium text-[#0D7EB6] hover:underline">
             Turn your legacy IVR into Conversational AI →
           </button>
         </div>
 
         {/* GSIs */}
-        <div className="rounded-2xl  border  bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 p-8  border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] p-8
-                        shadow-md">
+        <div className="rounded-2xl border border-white/10
+          bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20
+          p-8 shadow-[0_20px_60px_rgba(0,0,0,0.8)]
+          transition hover:shadow-md
+          text-center lg:text-left">
 
-          <div className="mb-6 flex h-14 w-14 items-center justify-center
-                          rounded-xl bg-[#0D7EB6]/15 border border-[#0D7EB6]/40 shrink-0 text-[#0D7EB6] mx-auto">
+          <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-xl 
+            bg-[#0D7EB6]/15 border border-[#0D7EB6]/40 text-[#0D7EB6] mx-auto lg:mx-0">
             <Users className="h-7 w-7" strokeWidth={2} />
           </div>
 
@@ -60,11 +66,14 @@ export default function EcosystemAudience() {
         </div>
 
         {/* BPOs */}
-        <div className="rounded-2xl  border  bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 p-8  border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] p-8
-                        shadow-sm hover:shadow-md transition">
+        <div className="rounded-2xl border border-white/10
+          bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20
+          p-8 shadow-[0_20px_60px_rgba(0,0,0,0.8)]
+          transition hover:shadow-md
+          text-center lg:text-left">
 
-          <div className="mb-6 flex h-14 w-14 items-center justify-center
-                          rounded-xl bg-[#0D7EB6]/15 border border-[#0D7EB6]/40 shrink-0 text-[#0D7EB6] mx-auto">
+          <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-xl 
+            bg-[#0D7EB6]/15 border border-[#0D7EB6]/40 text-[#0D7EB6] mx-auto lg:mx-0">
             <Headphones className="h-7 w-7" strokeWidth={2} />
           </div>
 

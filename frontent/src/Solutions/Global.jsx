@@ -394,38 +394,46 @@ const Global = () => {
 
                             {/*Section 4  */}
             <section className="w-full py-20">
-      <div className="max-w-5xl mx-auto px-4">
-        
-        {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-semibold text-white text-center">
-          What GSIs Need to Win{" "}
-          AI-Driven CX at Scale
-        </h2>
+     <div className="max-w-5xl mx-auto px-4">
 
-        {/* List */}
-        <div className="mt-10 space-y-6">
-          {items.map((item, index) => (
-            <div
-              key={index}
-                 className="bg-[#0b2a3d]/60 pt-4 backdrop-blur-xl border border-white/10 rounded-3xl p-10 flex items-start gap-1 transition-all duration-300 hover:border-[#0D7EB6]/40"            >
-              {/* Icon */}
-              <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-[#0D7EB6]/15 border border-[#0D7EB6]/40 text-[#0D7EB6] shrink-0">
-                {item.icon}
-              </div>
+  {/* Heading */}
+  <h2 className="text-3xl md:text-5xl font-semibold text-white text-center leading-tight">
+    What GSIs Need to Win <br className="hidden md:block" />
+    AI-Driven CX at Scale
+  </h2>
 
-              {/* Text */}
-              <div className="pl-6 h-15 -pt-6">
-                <h3 className="text-xl font-semibold text-white">
-                  {item.title}
-                </h3>
-                <p className="text-white/80 mt-1 text-lg leading-relaxed">
-                  {item.desc}
-                </p>
-              </div>
-            </div>
-          ))}
+  {/* List */}
+  <div className="mt-8 md:mt-10 space-y-4 md:space-y-6">
+    {items.map((item, index) => (
+      <div
+        key={index}
+        className="
+          bg-[#0b2a3d]/60 backdrop-blur-xl 
+          border border-white/10 rounded-2xl md:rounded-3xl 
+          p-5 md:p-10 
+          flex flex-col md:flex-row 
+          items-start md:items-center 
+          gap-4 md:gap-6
+          transition-all duration-300 hover:border-[#0D7EB6]/40
+        "
+      >
+        {/* Icon */}
+        <div className="w-11 h-11 md:w-12 md:h-12 flex items-center justify-center rounded-xl bg-[#0D7EB6]/15 border border-[#0D7EB6]/40 text-[#0D7EB6] shrink-0">
+          {item.icon}
         </div>
 
+        {/* Text */}
+        <div className="flex-1">
+          <h3 className="text-lg md:text-xl font-semibold text-white">
+            {item.title}
+          </h3>
+          <p className="text-white/80 mt-1 text-sm md:text-lg leading-relaxed">
+            {item.desc}
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
         {/* Bottom Highlight Box */}
         <div className="max-w-5xl mx-auto mt-12 px-8 py-8">
           <p className="text-white text-center text-xl md:text-2xl leading-relaxed">

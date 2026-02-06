@@ -83,20 +83,25 @@ export default function VelocityReliabilitySection() {
     >
       <div className="mx-auto max-w-[1550px] px-8 md:px-14">
         <div className="flex flex-col md:flex-row items-center gap-10  overflow-hidden">
-          {/* LEFT IMAGE BLOCK */}
-          <div className="relative flex-1 min-h-[580px]  overflow-hidden group ">
-            <div
-              ref={imageRef}
-              className="absolute inset-0 bg-cover bg-center scale-132"
-              style={{
-                backgroundImage: "url('/image/TheCoreProblem-BG.jpg.png')", //core problem image border-r border-white/10
-                height: "100%",
-                top: "14%",
-                bottom:"20%",           //bg-black/40 group-hover:bg-black/20 transition-colors
-              }}
-            />
-            <div className="absolute inset-0  duration-500" />  
-          </div>
+         {/* LEFT IMAGE BLOCK    scale-100 md:scale-132  transition-transform duration-500*/}
+<div className="relative flex-1 min-h-[500px] md:min-h-[700px] overflow-hidden group">
+  <div
+    ref={imageRef}
+    className="
+      absolute inset-0 bg-cover bg-center   
+                                                  
+      top-0 -md:top-[15%]
+      bottom-0 md:bottom-[25%]
+      
+    "
+    style={{
+      backgroundImage: "url('/image/TheCoreProblem-BG.jpg.png')",
+      height: "100%",
+    }}
+  />
+  <div className="absolute inset-0 duration-500" />
+</div>
+
 
           {/* RIGHT TEXT BLOCK */}
           <div className="flex-1 flex flex-col py-10 px-5 justify-center  space-y-8 ">
@@ -113,7 +118,7 @@ export default function VelocityReliabilitySection() {
               onMouseLeave={() => handleMouseLeave(0)}
               style={{ transformStyle: "preserve-3d" }}
               // className="group p-8 rounded-2xl border border-[#1e3a8a] bg-[#112240]/40 backdrop-blur-sm transition-all hover:border-[#3b82f6]/50 "
-              className="group py-3 rounded-2xl  backdrop-blur-sm transition-all  "
+              className="group py-3 transition-all  "    // rounded-2xl  backdrop-blur-sm 
             >
               <h3 className="text-[#0D7EB6] text-xl md:text-3xl font-bold mb-4 leading-tight">
                 Legacy IVR Is the Bottleneck to AI-Native Customer Service
@@ -127,14 +132,13 @@ export default function VelocityReliabilitySection() {
 
             {/* Card 2 */}
             <div
-              ref={(el) => (cardsRef.current[1] = el)}
-              onMouseEnter={() => handleMouseEnter(1)}
-              onMouseMove={(e) => handleMouseMove(e, 1)}
-              onMouseLeave={() => handleMouseLeave(1)}
-              style={{ transformStyle: "preserve-3d" }}
-              // className="group p-8 rounded-2xl border border-[#1e3a8a] bg-[#112240]/40 backdrop-blur-sm transition-all hover:border-[#ef4444]/30 "
-              className="group  rounded-2xl "
-            >
+  ref={(el) => (cardsRef.current[1] = el)}
+  onMouseEnter={() => handleMouseEnter(1)}
+  onMouseMove={(e) => handleMouseMove(e, 1)}
+  onMouseLeave={() => handleMouseLeave(1)}
+  style={{ transformStyle: "preserve-3d" }}
+  className="group rounded-2xl"
+>
                 <div className="mt-14 flex flex-row items-stretch justify-between gap-6 text-white">
   {/* Item 1 */}
   <div className="text-center md:text-left">
