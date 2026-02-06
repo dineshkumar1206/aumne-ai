@@ -83,24 +83,30 @@ export default function VelocityReliabilitySection() {
     >
       <div className="mx-auto max-w-[1550px] px-8 md:px-14">
         <div className="flex flex-col md:flex-row items-center gap-10  overflow-hidden">
+          
          {/* LEFT IMAGE BLOCK    scale-100 md:scale-132  transition-transform duration-500*/}
-<div className="relative flex-1 min-h-[500px] md:min-h-[700px] overflow-hidden group">
+<div className="relative flex-1 min-h-[420px] md:min-h-[700px] overflow-hidden group">
+  
   <div
     ref={imageRef}
     className="
-      absolute inset-0 bg-cover bg-center   
-                                                  
-      top-0 -md:top-[15%]
-      bottom-0 md:bottom-[25%]
+      absolute inset-0
+      bg-cover bg-center
       
+      md:bottom-[25%]
+      transition-transform duration-500
+      md:scale-100
+      scale-100
     "
     style={{
       backgroundImage: "url('/image/TheCoreProblem-BG.jpg.png')",
-      height: "100%",
     }}
   />
-  <div className="absolute inset-0 duration-500" />
+
+  {/* Optional overlay */}
+  <div className="absolute inset-0 bg-black/0" />
 </div>
+
 
 
           {/* RIGHT TEXT BLOCK */}
@@ -130,8 +136,8 @@ export default function VelocityReliabilitySection() {
 
             {/* <div className="h-0.5 w-full bg-linear-to-r from-[#036ffd] to-[#42a5f5] rounded-full" /> */}
 
-            {/* Card 2 */}
-            <div
+    {/* Card 2 */}
+<div
   ref={(el) => (cardsRef.current[1] = el)}
   onMouseEnter={() => handleMouseEnter(1)}
   onMouseMove={(e) => handleMouseMove(e, 1)}
@@ -139,53 +145,55 @@ export default function VelocityReliabilitySection() {
   style={{ transformStyle: "preserve-3d" }}
   className="group rounded-2xl"
 >
-                <div className="mt-14 flex flex-row items-stretch justify-between gap-6 text-white">
-  {/* Item 1 */}
-  <div className="text-center md:text-left">
-    <p className="text-2xl font-semibold">Slow</p><br/>
-    <p className="text-18 text-white/70 mt-1">
-      9–18 month timelines
-    </p>
+  <div className="mt-14 flex flex-col md:flex-row items-center md:items-stretch justify-between gap-8 text-white">
+
+    {/* Item 1 */}
+    <div className="text-center md:text-left w-full md:w-auto">
+      <p className="text-xl md:text-2xl font-semibold">Slow</p>
+      <p className="text-sm md:text-18 text-white/70 mt-1">
+        9–18 month timelines
+      </p>
+    </div>
+
+    {/* Divider */}
+    <div className="block md:hidden w-full h-[2px] bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
+    <div className="hidden md:block w-[2px] self-stretch bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
+
+    {/* Item 2 */}
+    <div className="text-center md:text-left w-full md:w-auto">
+      <p className="text-xl md:text-2xl font-semibold">Expensive</p>
+      <p className="text-sm md:text-18 text-white/70 mt-1">
+        $1M+ per transformation
+      </p>
+    </div>
+
+    {/* Divider */}
+    <div className="block md:hidden w-full h-[2px] bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
+    <div className="hidden md:block w-[2px] self-stretch bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
+
+    {/* Item 3 */}
+    <div className="text-center md:text-left w-full md:w-auto">
+      <p className="text-xl md:text-2xl font-semibold">Disconnected</p>
+      <p className="text-sm md:text-18 text-white/70 mt-1">
+        No continuous evolution
+      </p>
+    </div>
+
+    {/* Divider */}
+    <div className="block md:hidden w-full h-[2px] bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
+    <div className="hidden md:block w-[2px] self-stretch bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
+
+    {/* Item 4 */}
+    <div className="text-center md:text-left w-full md:w-auto">
+      <p className="text-xl md:text-2xl font-semibold">Services-Heavy</p>
+      <p className="text-sm md:text-18 text-white/70 mt-1">
+        High executive risk
+      </p>
+    </div>
+
   </div>
 
-  {/* Divider */}
-  <div className="hidden md:block w-[2px] self-stretch bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
-
-  {/* Item 2 */}
-  <div className="text-center md:text-left">
-    <p className="text-2xl font-semibold">Expensive</p><br/>
-    <p className="text-18 text-white/70 mt-1">
-      $1M+ per transformation
-    </p>
-  </div>
-
-  {/* Divider */}
-  <div className="hidden md:block w-[2px] self-stretch bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
-
-  
-
-  {/* Divider */}
-
-  {/* Item 4 */}
-  <div className="text-center md:text-left">
-    <p className="text-2xl font-semibold">Disconnected</p><br/>
-    <p className="text-18 text-white/70 mt-1">
-      No continuous evolution
-    </p>
-  </div>
-
-  <div className="hidden md:block w-[2px] self-stretch bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
-
-
-  {/* Item 3 */}
-  <div className="text-center md:text-left">
-    <p className="text-2xl font-semibold">Services-Heavy</p>
-    <p className="text-18 text-white/70 mt-0.5">
-      High executive risk
-    </p>
-  </div>
-</div>
-             
+   
             </div>
           </div>
         </div>

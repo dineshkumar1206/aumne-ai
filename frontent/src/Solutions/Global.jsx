@@ -151,51 +151,56 @@ const Global = () => {
       <div className="max-w-7xl mx-auto text-center px-4">
                            
                            {/* Section 1 */}
-        {/* Tag */}
-        <h1 className="text-white text-7xl font-bold mb-5">
-         Global System Integrators
-        </h1>
+     {/* Tag */}
+<h1 className="text-white text-4xl md:text-7xl font-bold mb-5 text-center md:text-center">
+  Global System Integrators
+</h1>
 
-        {/* Heading */}
-        <h2 className="text-3xl md:text-5xl font-bold leading-tight text-white">
-          Unlock Faster Transformation.
-          Protect Margins.  <br />Differentiate
-          Your CX / EX Story.
-        </h2>
+{/* Heading */}
+<h2 className="text-xl md:text-5xl font-bold leading-snug md:leading-tight text-white text-center md:text-center">
+  Unlock Faster Transformation.
+  Protect Margins.  
+  <br className="hidden md:block" />
+  Differentiate Your CX / EX Story.
+</h2>
 
-        {/* Description */}
-        <p className="text-center text-xl md:text-2xl text-[#0D7EB6] leading-relaxed mt-6">
-          An AI-native platform that helps GSIs modernize legacy IVR into AI-powered
-          customer service—faster, repeatable, and at scale.
-        </p>
+{/* Description */}
+<p className="text-center md:text-center  text-base md:text-2xl text-[#0D7EB6] leading-relaxed mt-6 max-w-6xl">
+  An AI-native platform that helps GSIs modernize legacy IVR into AI-powered
+  customer service—faster, repeatable, and at scale.
+</p>
 
-        {/* Stats */}
+{/* Metrics */}
+<div className="mt-12 grid grid-cols-1 md:grid-cols-[auto_1px_auto_1px_auto] items-center text-white gap-y-8 md:gap-x-4">
 
-         {/* Metrics */}
-  <div className="mt-18 grid grid-cols-1 md:grid-cols-[auto_1px_auto_1px_auto] items-center text-white gap-y-2 md:gap-x-4">
-    <div className="text-center md:text-center">
-      <p className="text-6xl font-bold text-[#0D7EB6]">5X</p>
-      <p className="text-lg text-white/80 mt-1">Faster Transformation</p>
-    </div>
-
-    <div className="hidden md:block h-15 w-[1px] bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
-
-    <div className="text-center md:text-center">
-      <p className="text-6xl font-bold text-[#0D7EB6]">70%+</p>
-      <p className="text-lg text-white/80 mt-1">
-        Automation Across the Lifecycle
-      </p>
-    </div>
-
-    <div className="hidden md:block h-15 w-[1px] bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
-
-    <div className="text-center md:text-center">
-      <p className="text-6xl font-bold text-[#0D7EB6]">3X</p>
-      <p className="text-lg text-white/80 mt-1">
-        ROI on Modernization
-      </p>
-    </div>
+  <div className="text-center md:text-center">
+    <p className="text-4xl md:text-6xl font-bold text-[#0D7EB6]">5X</p>
+    <p className="text-sm md:text-lg text-white/80 mt-1">
+      Faster Transformation
+    </p>
   </div>
+
+  <div className="hidden md:block h-16 w-[1px] bg-gradient-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
+
+  <div className="text-center md:text-center">
+    <p className="text-4xl md:text-6xl font-bold text-[#0D7EB6]">70%+</p>
+    <p className="text-sm md:text-lg text-white/80 mt-1">
+      Automation Across the Lifecycle
+    </p>
+  </div>
+
+  <div className="hidden md:block h-16 w-[1px] bg-gradient-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
+
+  <div className="text-center md:text-center">
+    <p className="text-4xl md:text-6xl font-bold text-[#0D7EB6]">3X</p>
+    <p className="text-sm md:text-lg text-white/80 mt-1">
+      ROI on Modernization
+    </p>
+  </div>
+
+</div>
+
+
         {/* <div className="flex flex-col md:flex-row justify-center gap-18 mt-6">
           <div>
             <h2 className="text-6xl font-bold text-[#0D7EB6]">5X</h2>
