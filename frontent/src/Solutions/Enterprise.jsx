@@ -599,7 +599,7 @@ const Step1 = ({ number, title, desc }) => (
         </h2>
 
         <p className="mt-6 text-center text-xl md:text-2xl text-[#0D7EB6] leading-relaxed mb-6">
-          Customer service should evolve as fast as your business safely.
+          Customer service should evolve as fast as your business
         </p>
 
         {/* Cards Grid */}
@@ -671,7 +671,7 @@ const Step1 = ({ number, title, desc }) => (
       </div>
     </section>
 
-            {/* Section page 1 */}
+            {/* Section page customer experience */}
 
             <section className="w-full py-20">
       <div className="max-w-7xl mx-auto px-6">

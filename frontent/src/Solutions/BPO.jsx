@@ -1,4 +1,4 @@
-import { ArrowRight, TrendingDown, AlertCircle, Award, DollarSign, Users,Search , MessageSquare, GitBranch, Target, RefreshCw, TrendingUp, Zap, Repeat, Handshake, PiggyBank,  Shield, BarChart3} from "lucide-react";
+import { ArrowRight, TrendingDown,Sparkles, AlertTriangle,CheckCircle, AlertCircle, Award, DollarSign, Users,Search , MessageSquare, GitBranch, Target, RefreshCw, TrendingUp, Zap, Repeat, Handshake, PiggyBank,  Shield, BarChart3} from "lucide-react";
 
 export default function BPO() {
 
@@ -369,6 +369,102 @@ const Step = ({ number, title, desc }) => (
   </p>
 </div>
     </section>
+
+           {/* Section page customer experience */}
+
+            <section className="w-full py-13">
+      <div className="max-w-7xl mx-auto px-6">
+
+        {/* Heading */}
+        <div className="max-w-4x2 mx-auto mb-16 text-center">
+          <h2 className="text-4xl md:text-5xl font-semibold text-white">
+            Customer Experience &{" "}<br/>
+           Employee Experience{" "}
+            Are Connected
+          </h2>
+          <p className="mt-6 text-center text-xl md:text-2xl text-[#0D7EB6] leading-relaxed">
+            Customer service systems shape the daily experience of frontline teams.
+            When technology is rigid, both customers and employees suffer.
+          </p>
+        </div>
+
+        {/* Grid Layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+          {/* Problem Card */}
+          <div className="rounded-2xl bg-gradient-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
+            p-8 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] flex flex-col gap-6">
+
+            <div className="w-14 h-14 flex items-center justify-center rounded-xl 
+              bg-red-500/20 border border-red-500/40">
+              <AlertTriangle className="h-7 w-7 text-red-400" />
+            </div>
+
+            <h3 className="text-2xl font-semibold text-white">
+              When IVR Is Rigid & Outdated
+            </h3>
+
+            <ul className="space-y-3 text-white/70 text-lg">
+              <li className="flex items-center gap-2">
+                <CheckCircle className="h-4 w-4 text-red-400" />
+                Agents receive poor-quality interactions
+              </li>
+              <li className="flex items-center gap-2">
+                <CheckCircle className="h-4 w-4 text-red-400" />
+                Supervisors rely on workarounds instead of improvements
+              </li>
+              <li className="flex items-center gap-2">
+                <CheckCircle className="h-4 w-4 text-red-400" />
+                IT teams become bottlenecks for change
+              </li>
+            </ul>
+          </div>
+
+          {/* Solution Card */}
+          <div className="rounded-2xl bg-gradient-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
+            p-8 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] flex flex-col gap-6">
+
+            <div className="w-14 h-14 flex items-center justify-center rounded-xl 
+              bg-[#0D7EB6]/25 border border-[#0D7EB6]/60">
+              <Sparkles className="h-7 w-7 text-[#0D7EB6]" />
+            </div>
+
+            <h3 className="text-2xl font-semibold text-white">
+              With Aumne
+            </h3>
+
+            <p className="text-white/70 text-lg leading-relaxed">
+              Modernize legacy IVR into intelligent, conversational and continuously evolving experiences.
+            </p>
+
+            <div className="grid grid-cols-2 gap-3 mt-2">
+              {[
+                "Agent effectiveness",
+                "Supervisor agility",
+                "Operational confidence",
+                "Employee satisfaction",
+              ].map((item, i) => (
+                <div key={i} className="flex items-center gap-2 text-white/80 text-sm">
+                  <Users className="h-4 w-4 text-[#0D7EB6]" />
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Statement */}
+        <div className="mt-16 text-center">
+          <p className="text-xl md:text-2xl font-semibold leading-relaxed text-white">
+            Better CX starts with better EX —{" "}
+            <span className="text-[#0D7EB6]">both begin with the same platform.</span>
+          </p>
+        </div>
+
+      </div>
+    </section>
+           
+
            {/* Section 5 */}
 
        <section className="py-20 px-6">
@@ -413,6 +509,8 @@ const Step = ({ number, title, desc }) => (
         />
       </div>
     </section>
+
+    
 
      {/*section 6  */}
              <section className="w-full py-20">
