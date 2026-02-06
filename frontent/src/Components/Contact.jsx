@@ -1,4 +1,5 @@
 import { ChevronDown } from "lucide-react";
+import Map from "../Components/Map1";
 
 const countries = [
    "India",
@@ -65,6 +66,10 @@ const reachOptions = [
 
 const Contact = () => {
   return (
+    <>
+    <div>
+      <Map/>
+    </div>
     <div className="w-full min-h-screen flex justify-center items-start bg-transparent py-16">
       <div className="w-full max-w-4xl px-6">
         {/* Title */}
@@ -183,7 +188,10 @@ const Contact = () => {
         </div>
       </div>
     </div>
+
+    </>
   );
 };
+
 
 export default Contact;

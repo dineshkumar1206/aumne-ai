@@ -5,7 +5,7 @@ export default function LivedExperienceSection() {
     {
       text: (
         <>
-          <strong className="font-semibold text-[#0D7EB6]">100+</strong> years of
+          <strong className="font-semibold">100+</strong> years of
           combined experience in IVR, contact centers, enterprise CX, and platform
           engineering
         </>
@@ -15,7 +15,7 @@ export default function LivedExperienceSection() {
     {
       text: (
         <>
-          <strong className="font-semibold text-[#0D7EB6]">First-hand</strong>{" "}
+          <strong className="font-semibold ">First-hand</strong>{" "}
           experience delivering large, services-heavy transformations
         </>
       ),
@@ -24,9 +24,9 @@ export default function LivedExperienceSection() {
     {
       text: (
         <>
-          <strong className="font-semibold text-[#0D7EB6]">Deep legacy</strong>{" "}
+          <strong className="font-semibold ">Deep legacy</strong>{" "}
           fluency combined with{" "}
-          <strong className="font-semibold text-[#0D7EB6]">AI-native</strong>{" "}
+          <strong className="font-semibold ">AI-native</strong>{" "}
           platform thinking
         </>
       ),
@@ -36,7 +36,7 @@ export default function LivedExperienceSection() {
       text: (
         <>
           Defining a{" "}
-          <strong className="font-semibold text-[#0D7EB6]">new category</strong>:
+          <strong className="font-semibold ">new category</strong>:
           Agentic Service Lifecycle Management Platform
         </>
       ),

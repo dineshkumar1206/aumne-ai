@@ -48,8 +48,7 @@ export default function WhyAumneCard() {
         </h3>
 
         <p className="text-center text-xl md:text-2xl text-white leading-relaxed mb-2">
-          Our Platfrom is purpose-built to modernize what already exists,
-          not force enterprises to start from scratch.
+         Our Agentic platfrom is purpose-built to modernize what already exists, not force enterprises to start from scratch.
         </p>
       </div>
 
