@@ -33,7 +33,7 @@ import { Search, RefreshCcw, DollarSign, TrendingUp, ArrowRight, Layers,  BarCha
     const cards = [
   {
     title: "One Platform to Transform All Major Legacy IVRs",
-    desc: "A single transformation control plane that ingests and standardizes legacy IVR environments across Avaya, Genesys, Cisco, and custom systems—unifying fragmented CX estates into one transformation pipeline.",
+    desc: "A single transformation control plane that ingests and standardizes legacy IVR environments across Avaya, Genesys, Cisco, and custom systems unifying fragmented CX estates into one transformation pipeline.",
     icon: Globe,
   },
   {
@@ -43,7 +43,7 @@ import { Search, RefreshCcw, DollarSign, TrendingUp, ArrowRight, Layers,  BarCha
   },
   {
     title: "Replatform Once. Deploy Across Platforms and Channels",
-    desc: "Legacy CX is transformed once and deployed consistently across regions, CX platforms, and channels—without duplicating design, logic, or integration effort.",
+    desc: "Legacy CX is transformed once and deployed consistently across regions, CX platforms, and channels without duplicating design, logic, or integration effort.",
     icon: Layers,
   },
   {
@@ -159,12 +159,12 @@ const Global = () => {
         {/* Heading */}
         <h2 className="text-3xl md:text-5xl font-bold leading-tight text-white">
           Unlock Faster Transformation.
-          Protect Margins.Differentiate <br />
-          Your CX Story.
+          Protect Margins.  <br />Differentiate
+          Your CX / EX Story.
         </h2>
 
         {/* Description */}
-        <p className="mt-6 text-gray-300 text-lg max-w-3xl mx-auto">
+        <p className="text-center text-xl md:text-2xl text-[#0D7EB6] leading-relaxed mt-6">
           An AI-native platform that helps GSIs modernize legacy IVR into AI-powered
           customer service—faster, repeatable, and at scale.
         </p>
@@ -172,7 +172,7 @@ const Global = () => {
         {/* Stats */}
 
          {/* Metrics */}
-  <div className="mt-18 grid grid-cols-1 md:grid-cols-[auto_1px_auto_1px_auto] items-center text-white gap-y-3 md:gap-x-4">
+  <div className="mt-18 grid grid-cols-1 md:grid-cols-[auto_1px_auto_1px_auto] items-center text-white gap-y-2 md:gap-x-4">
     <div className="text-center md:text-center">
       <p className="text-6xl font-bold text-[#0D7EB6]">5X</p>
       <p className="text-lg text-white/80 mt-1">Faster Transformation</p>
@@ -229,13 +229,13 @@ const Global = () => {
       {/* Heading */}
       <h2 className="text-4xl md:text-5xl font-semibold text-white text-center">
         Why Enterprises Are Struggling to{" "}
-        <span className="text-[#0D7EB6]">Modernize</span>
+        Modernize
         <br />
-        <span className="text-[#0D7EB6]">at the Pace of AI</span>
+       at the Pace of AI
       </h2>
 
       {/* Sub-heading */}
-      <p className="mt-6 max-w-3xl mx-auto text-center text-white/70 text-lg leading-relaxed">
+      <p className="mt-6 text-center text-xl md:text-2xl text-[#0D7EB6] leading-relaxed">
         Customers want conversations. Enterprises still offer menus.
         Legacy IVR is the bottleneck to AI-native customer service.
       </p>
@@ -259,7 +259,7 @@ const Global = () => {
         Legacy IVR discovery is manual and unscalable
       </h3>
       <p className="text-white/70 leading-relaxed text-sm md:text-base">
-        Legacy IVR logic, flows, and integrations are buried in fragmented artifacts, making discovery slow, human-driven, and error-prone.
+        Legacy IVR logic, Flows, and Integrations are buried in fragmented artifacts, making discovery slow, Human-driven, and Error-prone.
       </p>
     </div>
 
@@ -283,7 +283,7 @@ const Global = () => {
       Every transformation starts from scratch
     </h3>
     <p className="text-white/70 leading-relaxed text-sm md:text-base">
-      There is no systematic reuse of CX designs, intents, or integrations—even across similar clients and platforms.
+      There is no systematic reuse of CX / EX designs, intents, or integrations even across similar clients and platforms.
     </p>
   </div>
 
@@ -354,7 +354,7 @@ const Global = () => {
             <div className="text-5xl font-semibold text-[#0D7EB6] mb-3">
              40%+
             </div>
-            <p className="text-white/70 leading-relaxed">
+            <p className="text-white/80 leading-relaxed">
              Programs overrun estimates
             </p>
           </div>
@@ -364,7 +364,7 @@ const Global = () => {
             <div className="text-5xl font-semibold text-[#0D7EB6] mb-3">
               30%+
             </div>
-            <p className="text-white/70 leading-relaxed">
+            <p className="text-white/80 leading-relaxed">
               Margin erosion on complex deals
             </p>
           </div>
@@ -374,15 +374,15 @@ const Global = () => {
             <div className="text-5xl font-semibold text-[#0D7EB6] mb-3">
               30%+
             </div>
-            <p className="text-white/70 leading-relaxed">
+            <p className="text-white/80 leading-relaxed">
               Effort lost to manual discovery
             </p>
           </div>
         </div>
 
         {/* Impact Bar */}
-        <div className="mt-16 rounded-2xl border border-[#0D7EB6]/30 bg-[#0D7EB6]/10 px-6 py-5 text-center">
-          <p className="text-white">
+        <div className="mt-16 px-6 py-5 text-center">
+          <p className="text-white text-center text-xl md:text-2xl">
             <span className="font-semibold text-[#0D7EB6]">
              Result:
             </span>{" "}
@@ -397,28 +397,28 @@ const Global = () => {
       <div className="max-w-5xl mx-auto px-4">
         
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-white">
+        <h2 className="text-4xl md:text-5xl font-semibold text-white text-center">
           What GSIs Need to Win{" "}
-          <span className="text-[#0D7EB6]">AI-Driven CX at Scale</span>
+          AI-Driven CX at Scale
         </h2>
 
         {/* List */}
-        <div className="mt-12 space-y-6">
+        <div className="mt-10 space-y-6">
           {items.map((item, index) => (
             <div
               key={index}
-                 className="bg-[#0b2a3d]/60 backdrop-blur-xl border border-white/10 rounded-3xl p-8 flex items-start gap-1 transition-all duration-300 hover:border-[#0D7EB6]/40"            >
+                 className="bg-[#0b2a3d]/60 pt-4 backdrop-blur-xl border border-white/10 rounded-3xl p-10 flex items-start gap-1 transition-all duration-300 hover:border-[#0D7EB6]/40"            >
               {/* Icon */}
               <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-[#0D7EB6]/15 border border-[#0D7EB6]/40 text-[#0D7EB6] shrink-0">
                 {item.icon}
               </div>
 
               {/* Text */}
-              <div className="pl-6 h-12">
-                <h3 className="text-lg font-semibold text-white">
+              <div className="pl-6 h-15 -pt-6">
+                <h3 className="text-xl font-semibold text-white">
                   {item.title}
                 </h3>
-                <p className="text-white/80 mt-1 text-sm leading-relaxed">
+                <p className="text-white/80 mt-1 text-lg leading-relaxed">
                   {item.desc}
                 </p>
               </div>
@@ -427,10 +427,10 @@ const Global = () => {
         </div>
 
         {/* Bottom Highlight Box */}
-        <div className="mt-12 p-6 rounded-xl border border-white/10 bg-white/5 backdrop-blur-md shadow-sm text-center">
-          <p className="text-white text-sm md:text-base">
-            <span className="text-[#0D7EB6] font-semibold">
-              The Reality today:
+        <div className="max-w-5xl mx-auto mt-12 px-8 py-8">
+          <p className="text-white text-center text-xl md:text-2xl leading-relaxed">
+            <span className="text-[#0D7EB6] font-bold">
+              The Reality today : 
             </span>{" "}
             Most GSI delivery models rely on people and process, not platforms,
             to scale AI-driven CX transformation.
@@ -443,9 +443,9 @@ const Global = () => {
            <section className="py-24 ">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-white">
+        <h2 className="text-4xl md:text-5xl font-semibold text-white text-center">
           How Aumne Impacts{" "}
-          <span className="text-[#0D7EB6]">GSI CX Transformation at Scale</span>
+          GSI CX / EX <br/>Transformation at Scale
         </h2>
 
         {/* Cards */}
@@ -470,7 +470,7 @@ const Global = () => {
           <h3 className="text-lg md:text-xl font-semibold text-white mb-2">
             {item.title}
           </h3>
-          <p className="text-white/70 leading-relaxed text-sm md:text-base">
+          <p className="text-white/70 leading-relaxed text-16 md:text-base">
             {item.desc}
           </p>
         </div>
@@ -486,32 +486,32 @@ const Global = () => {
 <div className="mt-2">
   <div className="max-w-5xl mx-auto mt-2 px-8 py-8 rounded-3xl border-white/10 bg-white/5 backdrop-blur-md shadow-sm">
     {/* Title */}
-    <h2 className="text-xl font-bold text-white text-center">
+    <h2 className="text-3xl font-bold text-white text-center mb-14">
       Delivery Impact
     </h2>
 
     {/* Stats */}
-    <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-10 text-center">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
       {/* Stat 1 */}
       <div>
-        <p className="text-3xl font-bold text-[#0D7EB6]">5×</p>
-        <p className="mt-2 text-sm text-white/80">
+        <p className="text-5xl font-semibold text-[#0D7EB6] mb-3">5X</p>
+        <p className="text-white/80 leading-relaxed">
           Faster Transformation
         </p>
       </div>
 
       {/* Stat 2 */}
       <div>
-        <p className="text-3xl font-bold text-[#0D7EB6]">70%+</p>
-        <p className="mt-2 text-sm text-white/80">
+        <p className="text-5xl font-semibold text-[#0D7EB6] mb-3">70%+</p>
+        <p className="text-white/80 leading-relaxed">
           Automation
         </p>
       </div>
 
       {/* Stat 3 */}
       <div>
-        <p className="text-3xl font-bold text-[#0D7EB6]">3–4×</p>
-        <p className="mt-2 text-sm text-white">
+        <p className="text-5xl font-semibold text-[#0D7EB6] mb-3">3–4X</p>
+        <p className="text-white/80 leading-relaxed">
           ROI on Delivery
         </p>
       </div>
@@ -523,11 +523,9 @@ const Global = () => {
       <section className="py-24 ">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-white">
-          How GSIs Monetize{" "}
-          <span className="text-[#0D7EB6]">
-            Platform-Led CX Transformation
-          </span>
+        <h2 className="text-4xl md:text-5xl font-semibold text-white text-center">
+          How GSIs Monetize{" "}Platform- <br/>Led CX / EX Transformation
+          
         </h2>
 
         {/* Cards */}
@@ -550,10 +548,10 @@ const Global = () => {
 
         {/* Text Content */}
         <div className="flex flex-col">
-          <h3 className="text-lg font-semibold text-white mb-2 leading-snug">
+          <h3 className="text-xl font-semibold text-white mb-2 leading-snug">
             {item.title}
           </h3>
-          <p className="text-white/70 leading-relaxed text-sm md:text-base">
+          <p className="text-white/80 leading-relaxed text-sm md:text-base">
             {item.desc}
           </p>
         </div>
@@ -584,10 +582,10 @@ const Global = () => {
 
         {/* Text Content */}
         <div className="flex flex-col text-center">
-          <h3 className="text-lg font-semibold text-white mb-2">
+          <h3 className="text-xl font-semibold text-white mb-2">
             {item.title}
           </h3>
-          <p className="text-white/70 leading-relaxed text-sm md:text-base">
+          <p className="text-white/80 leading-relaxed text-sm md:text-base">
             {item.desc}
           </p>
         </div>
@@ -619,12 +617,12 @@ const Global = () => {
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-4xl mx-auto mb-16">
           <h1 className="text-5xl font-bold text-white leading-tight">
             Start Small. Prove Value. <br/>
-            <span className="text-[#0D7EB6]"> Scale with Confidence.</span>
+             Scale with Confidence.
           </h1>
-          <p className="mt-5 text-lg text-white/80">
+          <p className="mt-5 text-center text-xl md:text-2xl text-[#0D7EB6] leading-relaxed">
             Transform enterprise customer experience without massive disruption.
             Start with focused impact, validate results, and scale intelligently.
           </p>
@@ -655,20 +653,20 @@ const Global = () => {
                 </h3>
         
                 {/* Description */}
-                <p className="text-gray-300 text-sm leading-relaxed min-h-[72px]">
+                <p className="text-gray-300 text-16 leading-relaxed min-h-[72px]">
                   {step.desc}
                 </p>
         
                 {/* Step */}
-                <div className="text-sm font-semibold text-white opacity-70">
+                {/* <div className="text-sm font-semibold text-white opacity-70">
                   Step {index + 1}
-                </div>
+                </div> */}
               </div>
         
               {/* Arrow (not for last card) */}
               {index !== step.length - 1 && (
                 <div className="hidden lg:flex absolute top-1/2 -right-12 -translate-y-1/2">
-                  <ArrowRight className="w-10 h-10 text-[#0D7EB6]" />
+                  <ArrowRight className="w-13 h-13 text-white " />
                 </div>
               )}
             </div>
@@ -680,14 +678,14 @@ const Global = () => {
 
      {/* Section 7 */}
 
-    <section className="py-28 px-6">
+    <section className="py-24 px-6">
       <div className="max-w-7xl mx-auto text-center mb-16">
         <h2 className="text-4xl md:text-5xl font-semibold text-white">
           Next Steps
         </h2>
       </div>
 
-      <div className="grid md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+      <div className="grid md:grid-cols-4 gap-12 text-xl max-w-7xl mx-auto">
         {steps.map((step, idx) => (
           <Step1 key={idx} {...step} />
         ))}
@@ -695,31 +693,30 @@ const Global = () => {
     </section>
 
   <div>
-            {/* CTA Section */}
-        <div className="mt-20 text-center border-t border-gray-200 pt-12">
-          <h3 className="text-2xl font-bold text-white mb-4">
-            Ready to Modernize Enterprise Customer Service?
-          </h3>
-          <p className="text-white/80 mb-6">
-            Let’s build smarter, faster, and more human customer experiences.
-          </p>
-
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href="/contact"
-              className="flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-[#0D7EB6] hover:opacity-90 transition text-white font-medium cursor-pointer"
-            >
-              Talk to an Expert <ArrowRight size={18}/>
-            </a>
-            <a
-              href="https://www.aumne.ai"
-              target="_blank"
-              className="px-6 py-3 rounded-lg border border-[#0D7EB6] text-white/80 font-semibold hover:bg-[#0D7EB6]/10 transition cursor-pointer"
-            >
-              Visit Website
-            </a>
-          </div>
-        </div>
+          <div className="mt-10 text-center pt-8">
+                    <h3 className="text-2xl font-bold text-white mb-4">
+                      Ready to Modernize Now
+                    </h3>
+                    <p className="text-white/80 text-lg mb-6">
+                      Let’s build smarter, faster, and more human customer experiences.
+                    </p>
+          
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                      <a
+                        href="/contact"
+                        className="flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-[#0D7EB6] hover:opacity-90 transition text-white font-medium cursor-pointer"
+                      >
+                         Free Trail <ArrowRight size={18}/>
+                      </a>
+                      {/* <a
+                        href="https://www.aumne.ai"
+                        target="_blank"
+                        className="px-6 py-3 rounded-lg border border-[#0D7EB6] text-white/80 font-semibold hover:bg-[#0D7EB6]/10 transition cursor-pointer"
+                      >
+                        Visit Website
+                      </a> */}
+                    </div>
+                  </div>
   </div>
 
 

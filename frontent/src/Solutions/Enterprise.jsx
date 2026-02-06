@@ -106,7 +106,7 @@ const Step1 = ({ number, title, desc }) => (
       {/* Background Gradient */}
       <div className="absolute inset-0 " />
 
-      <div className="relative max-w-6xl mx-auto px-4 py-20 text-center text-white pb-6">
+      <div className="relative max-w-7xl mx-auto px-4 py-20 text-center text-white pb-6">
 
         {/* Tag */}
         <h1 className="text-white text-7xl font-bold mb-6">
@@ -121,7 +121,7 @@ const Step1 = ({ number, title, desc }) => (
         </h2>
 
         {/* Subtitle */}
-        <p className="text-center text-xl md:text-2xl text-[#0D7EB6] leading-relaxed">
+        <p className="text-center text-xl md:text-2xl text-[#0D7EB6] leading-relaxed mt-6">
           Transforming legacy IVR into intelligent conversational experiences with enterprise grade control.
         </p>
 
@@ -345,7 +345,7 @@ const Step1 = ({ number, title, desc }) => (
         </div>
 
         {/* Impact Bar */}
-        <div className="mt-16 rounded-2xl border border-[#0D7EB6]/30 bg-[#0D7EB6]/10 px-6 py-5 text-center">
+        <div className="mt-16  px-6 py-5 text-center">
           <p className="text-center text-xl md:text-2xl">
             <span className="font-semibold text-[#0D7EB6]">
               Direct Impact :
