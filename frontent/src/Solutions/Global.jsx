@@ -148,18 +148,18 @@ const Global = () => {
   return (        
 <>
     <section className="w-full flex items-center justify-center py-18">
-      <div className="max-w-6xl mx-auto text-center px-4">
+      <div className="max-w-7xl mx-auto text-center px-4">
                            
                            {/* Section 1 */}
         {/* Tag */}
         <h1 className="text-white text-7xl font-bold mb-5">
-          For Global System Integrators
+         Global System Integrators
         </h1>
 
         {/* Heading */}
         <h2 className="text-3xl md:text-5xl font-bold leading-tight text-white">
-          Unlock Faster Transformation. <br />
-          <span className="text-[#0D7EB6]">Protect Margins.</span> Differentiate <br />
+          Unlock Faster Transformation.
+          Protect Margins.Differentiate <br />
           Your CX Story.
         </h2>
 
@@ -170,7 +170,33 @@ const Global = () => {
         </p>
 
         {/* Stats */}
-        <div className="flex flex-col md:flex-row justify-center gap-18 mt-6">
+
+         {/* Metrics */}
+  <div className="mt-18 grid grid-cols-1 md:grid-cols-[auto_1px_auto_1px_auto] items-center text-white gap-y-3 md:gap-x-4">
+    <div className="text-center md:text-center">
+      <p className="text-6xl font-bold text-[#0D7EB6]">5X</p>
+      <p className="text-lg text-white/80 mt-1">Faster Transformation</p>
+    </div>
+
+    <div className="hidden md:block h-15 w-[1px] bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
+
+    <div className="text-center md:text-center">
+      <p className="text-6xl font-bold text-[#0D7EB6]">70%+</p>
+      <p className="text-lg text-white/80 mt-1">
+        Automation Across the Lifecycle
+      </p>
+    </div>
+
+    <div className="hidden md:block h-15 w-[1px] bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
+
+    <div className="text-center md:text-center">
+      <p className="text-6xl font-bold text-[#0D7EB6]">3X</p>
+      <p className="text-lg text-white/80 mt-1">
+        ROI on Modernization
+      </p>
+    </div>
+  </div>
+        {/* <div className="flex flex-col md:flex-row justify-center gap-18 mt-6">
           <div>
             <h2 className="text-6xl font-bold text-[#0D7EB6]">5X</h2>
             <p className="text-16 text-white/80 mt-2">Faster Transformation</p>
@@ -183,7 +209,7 @@ const Global = () => {
             <h2 className="text-6xl font-bold text-[#0D7EB6]">3-4X</h2>
             <p className="text-16 text-white/80 mt-2">ROI on Delivery</p>
           </div>
-        </div>
+        </div> */}
 
         {/* Buttons */}
        {/* < div className="flex flex-col sm:flex-row justify-center gap-5 mt-10">

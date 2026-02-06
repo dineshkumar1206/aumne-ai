@@ -7,7 +7,7 @@ const TransformationWindow = () => {
       icon: MessageCircle,
     },
     {
-      text: "Enterprises are already spending $53B+ annually on CX/EX modernization",
+      text: "Enterprises are already spending $53B+ annually on CX / EX modernization",
       icon: DollarSign,
     },
     {

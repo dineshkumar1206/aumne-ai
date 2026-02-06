@@ -110,24 +110,48 @@ const Step1 = ({ number, title, desc }) => (
 
         {/* Tag */}
         <h1 className="text-white text-7xl font-bold mb-6">
-          For Enterprise Leaders
+          Enterprise Leaders
         </h1>
 
         {/* Heading */}
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight leading-tight">
-          <span className="text-white">$53B at Stake:</span>{" "}
-          <span className="text-[#0D7EB6]">
-            The Next Platform <br/> Shift in Customer Service
-          </span>
+          <span className="text-white">Turn your legacy IVR into</span>{" "}
+          
+          <br/> Conversational AI in just 3 steps
         </h2>
 
         {/* Subtitle */}
-        <p className="mt-6 text-lg text-white/80 max-w-3xl mx-auto">
+        <p className="text-center text-xl md:text-2xl text-[#0D7EB6] leading-relaxed">
           Transforming legacy IVR into intelligent conversational experiences with enterprise grade control.
         </p>
 
         {/* Stats */}
-        <div className="flex flex-col md:flex-row justify-center gap-12 mt-14">
+        {/* Metrics */}
+  <div className="mt-18 grid grid-cols-1 md:grid-cols-[auto_1px_auto_1px_auto] items-center text-white gap-y-3 md:gap-x-4">
+    <div className="text-center md:text-center">
+      <p className="text-6xl font-bold text-[#0D7EB6]">5X</p>
+      <p className="text-lg text-white/80 mt-1">Faster Transformation</p>
+    </div>
+
+    <div className="hidden md:block h-15 w-[1px] bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
+
+    <div className="text-center md:text-center">
+      <p className="text-6xl font-bold text-[#0D7EB6]">70%+</p>
+      <p className="text-lg text-white/80 mt-1">
+        Automation Across the Lifecycle
+      </p>
+    </div>
+
+    <div className="hidden md:block h-15 w-[1px] bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
+
+    <div className="text-center md:text-center">
+      <p className="text-6xl font-bold text-[#0D7EB6]">3X</p>
+      <p className="text-lg text-white/80 mt-1">
+        ROI on Modernization
+      </p>
+    </div>
+  </div>
+        {/* <div className="flex flex-col md:flex-row justify-center gap-12 mt-14">
           <div>
             <h3 className="text-6xl font-bold text-[#0D7EB6]">5X</h3>
             <p className="text-16 text-white/80 mt-2">Faster Time to Value</p>
@@ -146,7 +170,7 @@ const Step1 = ({ number, title, desc }) => (
               Average Enterprise ARR
             </p>
           </div>
-        </div>
+        </div> */}
 
         {/* Buttons */}
         {/* <div className="flex flex-col sm:flex-row justify-center gap-5 mt-14">
@@ -165,13 +189,13 @@ const Step1 = ({ number, title, desc }) => (
       {/* Heading */}
       <h2 className="text-4xl md:text-5xl font-semibold text-white text-center">
         Why Customer Service Needs{" "}
-        <span className="text-[#0D7EB6]">Change</span>
+        Change
         <br />
         {/* <span className="text-[#0D7EB6]">at the Pace of AI</span> */}
       </h2>
 
       {/* Sub-heading */}
-      <p className="mt-6 max-w-3xl mx-auto text-center text-white/70 text-lg leading-relaxed">
+      <p className="text-center text-xl md:text-2xl text-[#0D7EB6] leading-relaxed mt-4">
         Customer expectations have moved faster than enterprise customer service systems.
       </p>
 
@@ -194,7 +218,7 @@ const Step1 = ({ number, title, desc }) => (
       Legacy IVR Blocks CX Innovation
     </h3>
 
-    <p className="text-white/70 leading-relaxed text-sm md:text-base">
+    <p className="text-white/70 leading-relaxed text-lg md:text-lg">
       Outdated, menu driven IVR systems frustrate customers, slow resolution, and block meaningful CX improvements.
     </p>
   </div>
@@ -219,7 +243,7 @@ const Step1 = ({ number, title, desc }) => (
       Customers Expect Conversational AI
     </h3>
 
-    <p className="text-white/70 leading-relaxed text-sm md:text-base">
+    <p className="text-white/70 leading-relaxed text-lg md:text-lg">
       Modern users expect natural, intuitive conversations and not rigid menus and long call trees.
     </p>
   </div>
@@ -239,12 +263,12 @@ const Step1 = ({ number, title, desc }) => (
   </div>
 
   {/* Text Content */}
-  <div className="flex flex-col">
-    <h3 className="text-xl font-semibold text-white mb-2">
+  <div className="flex flex-col pt-3">
+    <h3 className="text-xl font-semibold text-white mb-7">
       Modernization Is Painfully Slow
     </h3>
 
-    <p className="text-white/70 leading-relaxed text-sm md:text-base">
+    <p className="text-white/70 leading-relaxed text-lg md:text-lg">
       Typical IVR upgrades take 9 to 18 months, lagging far behind the pace of AI, product, and policy change.
     </p>
   </div>
@@ -269,7 +293,7 @@ const Step1 = ({ number, title, desc }) => (
       ROI on CX Investments Is Unpredictable
     </h3>
 
-    <p className="text-white/70 leading-relaxed text-sm md:text-base">
+    <p className="text-white/70 leading-relaxed text-lg md:text-lg">
       Legacy systems inflate costs, limit experimentation, and prevent rapid prototyping and validation.
     </p>
   </div>
@@ -284,7 +308,7 @@ const Step1 = ({ number, title, desc }) => (
       <div className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md px-10 py-16">
         {/* Title */}
         <h2 className="text-3xl font-bold text-white text-center mb-14">
-          A Massive Opportunity
+          A Massive Problem
         </h2>
 
         {/* Stats */}
@@ -294,7 +318,7 @@ const Step1 = ({ number, title, desc }) => (
             <div className="text-5xl font-semibold text-[#0D7EB6] mb-3">
               75%
             </div>
-            <p className="text-white/70 leading-relaxed">
+            <p className="text-white/70 text-lg md:text-lg leading-relaxed">
               Of enterprises still run on legacy IVR
             </p>
           </div>
@@ -304,7 +328,7 @@ const Step1 = ({ number, title, desc }) => (
             <div className="text-5xl font-semibold text-[#0D7EB6] mb-3">
               $1M+
             </div>
-            <p className="text-white/70 leading-relaxed">
+            <p className="text-white/70 text-lg md:text-lg leading-relaxed">
               Average transformation spend per enterprise
             </p>
           </div>
@@ -314,7 +338,7 @@ const Step1 = ({ number, title, desc }) => (
             <div className="text-5xl font-semibold text-[#0D7EB6] mb-3">
               67%
             </div>
-            <p className="text-white/70 leading-relaxed">
+            <p className="text-white/70 text-lg md:text-lg leading-relaxed">
               Customer abandonment during IVR interactions
             </p>
           </div>
@@ -322,9 +346,9 @@ const Step1 = ({ number, title, desc }) => (
 
         {/* Impact Bar */}
         <div className="mt-16 rounded-2xl border border-[#0D7EB6]/30 bg-[#0D7EB6]/10 px-6 py-5 text-center">
-          <p className="text-white">
+          <p className="text-center text-xl md:text-2xl">
             <span className="font-semibold text-[#0D7EB6]">
-              Direct Impact:
+              Direct Impact :
             </span>{" "}
             NPS, churn, and revenue suffer from legacy IVR
           </p>
@@ -338,11 +362,11 @@ const Step1 = ({ number, title, desc }) => (
       {/* Heading */}
       <h2 className="text-4xl md:text-5xl font-semibold text-white text-center">
         Why Legacy IVR{" "}
-        <span className="text-[#0D7EB6]">Persists</span>
+        Persists
       </h2>
 
       {/* Subheading */}
-      <p className="mt-6 max-w-3xl mx-auto text-center text-white/80 text-lg leading-relaxed">
+      <p className="mt-4 text-center md:text-3xl text-[#0D7EB6] leading-relaxed">
       The problem is not intent. It is tooling.
       </p>
 
@@ -365,8 +389,8 @@ const Step1 = ({ number, title, desc }) => (
       Greenfield Platforms Miss Legacy Reality
     </h3>
 
-    <p className="text-white/80 leading-relaxed text-sm md:text-base">
-      Most modern CX platforms are designed for clean, new journeys and cannot interpret decades old IVR logic.
+    <p className="text-white/80 leading-relaxed text-18 md:text-lg">
+      Most modern CX / EX platforms are designed for clean, new journeys and cannot interpret decades old IVR logic.
     </p>
   </div>
 
@@ -390,7 +414,7 @@ const Step1 = ({ number, title, desc }) => (
       Manual, Services Led Transformation
     </h3>
 
-    <p className="text-white/80 leading-relaxed text-sm md:text-base">
+    <p className="text-white/80 leading-relaxed text-18 md:text-lg">
       IVR modernization relies on custom, people heavy delivery models that do not scale.
     </p>
   </div>
@@ -415,8 +439,8 @@ const Step1 = ({ number, title, desc }) => (
       Fragmented Business Logic
     </h3>
 
-    <p className="text-white/80 leading-relaxed text-sm md:text-base">
-      Critical IVR knowledge is scattered across VXML, code, diagrams, configurations, and tribal expertise, making automation difficult.
+    <p className="text-white/80 leading-relaxed text-18 md:text-lg">
+      Critical IVR knowledge is scattered across VXML, code, configurations, and tribal expertise, making automation difficult.
     </p>
   </div>
 
@@ -440,7 +464,7 @@ const Step1 = ({ number, title, desc }) => (
       Outcome
     </h3>
 
-    <p className="text-white/80 leading-relaxed text-sm md:text-base">
+    <p className="text-white/80 leading-relaxed text-18 md:text-lg">
       IVR becomes a permanent bottleneck instead of an evolving capability.
     </p>
   </div>
@@ -453,17 +477,16 @@ const Step1 = ({ number, title, desc }) => (
                  <section className="max-w-6xl mx-auto px-4 py-28 pb-10">
       {/* Heading */}
       <h2 className="text-4xl md:text-5xl font-semibold text-center text-white">
-        Aumne AI{" "}
-        <span className="text-[#0D7EB6]">Aumne&apos;s AI-Native Platform</span>
+        How do Aumne solve this problem?
       </h2>
 
       {/* Subheading */}
-      <p className="mt-6 max-w-3xl mx-auto text-center text-white/70 text-lg">
+      <p className="mt-6 text-center text-xl md:text-2xl leading-relaxed text-[#0D7EB6] text-lg">
         Aumne is an <b> AI native Service Lifecycle Management platform </b>designed specifically for enterprise IVR modernization.
       </p>
 
    {/* Cards */}
-<div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-8">
+<div className="mt-15 grid grid-cols-1 md:grid-cols-2 gap-8">
 
   {/* Card 1 */}
   <div className="rounded-2xl bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 
@@ -476,10 +499,10 @@ const Step1 = ({ number, title, desc }) => (
     </div>
 
     <div className="flex flex-col">
-      <h3 className="text-lg font-semibold text-white mb-3">
+      <h3 className="text-xl font-semibold text-white mb-3">
         AI Native Platform for Legacy IVR
       </h3>
-      <p className="text-white/70 leading-relaxed text-sm md:text-base">
+      <p className="text-white/70 leading-relaxed text-18 md:text-lg">
         Purpose built to modernize complex, production IVR systems at scale.
       </p>
     </div>
@@ -496,10 +519,10 @@ const Step1 = ({ number, title, desc }) => (
     </div>
 
     <div className="flex flex-col">
-      <h3 className="text-lg font-semibold text-white mb-3">
+      <h3 className="text-xl font-semibold text-white mb-3">
         Intelligent Auto Discovery
       </h3>
-      <p className="text-white/70 leading-relaxed text-sm md:text-base">
+      <p className="text-white/70 leading-relaxed text-18 md:text-lg">
         Automatically maps existing IVR logic and artifacts before transformation begins.
       </p>
     </div>
@@ -516,11 +539,11 @@ const Step1 = ({ number, title, desc }) => (
     </div>
 
     <div className="flex flex-col">
-      <h3 className="text-lg font-semibold text-white mb-3">
+      <h3 className="text-xl font-semibold text-white mb-3">
         Conversational Journey Automation
       </h3>
-      <p className="text-white/70 leading-relaxed text-sm md:text-base">
-        Generates personalized, omnichannel customer journeys <b>up to 70 percent</b> faster.
+      <p className="text-white/70 leading-relaxed text-18 md:text-lg">
+        Generates personalized, omnichannel customer journeys <b>up to 70 %</b> faster.
       </p>
     </div>
   </div>
@@ -536,10 +559,10 @@ const Step1 = ({ number, title, desc }) => (
     </div>
 
     <div className="flex flex-col">
-      <h3 className="text-lg font-semibold text-white mb-3">
+      <h3 className="text-xl font-semibold text-white mb-3">
         Continuous Service Evolution
       </h3>
-      <p className="text-white/70 leading-relaxed text-sm md:text-base">
+      <p className="text-white/70 leading-relaxed text-18 md:text-lg">
         Built in prototyping, recommendations, and A B testing enable ongoing improvement instead of one time projects.
       </p>
     </div>
@@ -558,7 +581,7 @@ const Step1 = ({ number, title, desc }) => (
     </span>{" "}
     into modern, conversational & omnichannel experiences with{" "}
     <span className="text-[#0D7EB6] font-bold">
-      5× faster time to value
+      5× Faster GTM
     </span>.
   </p>
 </div>
@@ -572,10 +595,10 @@ const Step1 = ({ number, title, desc }) => (
 
         {/* Heading */}
         <h2 className="text-4xl md:text-5xl font-semibold text-center text-white ">
-          Continuous Evolution at <span className="text-[#0D7EB6]">AI Speed</span>
+          Continuous Evolution at AI Speed 
         </h2>
 
-        <p className="mt-6 max-w-3xl mx-auto text-center text-white/70 text-lg mb-4">
+        <p className="mt-6 text-center text-xl md:text-2xl text-[#0D7EB6] leading-relaxed mb-6">
           Customer service should evolve as fast as your business safely.
         </p>
 
@@ -596,7 +619,7 @@ const Step1 = ({ number, title, desc }) => (
       <h3 className="text-lg font-semibold text-white mb-3">
         Rapid Prototyping and A/B Testing
       </h3>
-      <p className="text-white/70 leading-relaxed text-sm md:text-base">
+      <p className="text-white/70 leading-relaxed text-18 md:text-lg">
         Continuously optimize journeys to match evolving customer needs and behaviors.
       </p>
     </div>
@@ -617,7 +640,7 @@ const Step1 = ({ number, title, desc }) => (
       <h3 className="text-lg font-semibold text-white mb-3">
         Enterprise Grade Governance and Control
       </h3>
-      <p className="text-white/70 leading-relaxed text-sm md:text-base">
+      <p className="text-white/70 leading-relaxed text-18 md:text-lg">
         Human-in-the-loop oversight with approvals, versioning, and rollback ensures risk-free evolution.
       </p>
     </div>
@@ -635,10 +658,10 @@ const Step1 = ({ number, title, desc }) => (
     </div>
 
     <div className="flex flex-col">
-      <h3 className="text-lg font-semibold text-white mb-3">
+      <h3 className="text-lg font-semibold text-white mb-6 mt-3">
         Omnichannel Deployment
       </h3>
-      <p className="text-white/70 leading-relaxed text-sm md:text-base">
+      <p className="text-white/70 leading-relaxed text-18 md:text-lg">
         Seamlessly deploy conversational experiences across voice, chat, web, and messaging.
       </p>
     </div>
@@ -657,10 +680,10 @@ const Step1 = ({ number, title, desc }) => (
         <div className="max-w-4x2 mx-auto mb-16 text-center">
           <h2 className="text-4xl md:text-5xl font-semibold text-white">
             Customer Experience &{" "}<br/>
-            <span className="text-[#0D7EB6]">Employee Experience</span>{" "}
+           Employee Experience{" "}
             Are Connected
           </h2>
-          <p className="mt-6 text-lg text-white/70">
+          <p className="mt-6 text-center text-xl md:text-2xl text-[#0D7EB6] leading-relaxed">
             Customer service systems shape the daily experience of frontline teams.
             When technology is rigid, both customers and employees suffer.
           </p>
@@ -682,7 +705,7 @@ const Step1 = ({ number, title, desc }) => (
               When IVR Is Rigid & Outdated
             </h3>
 
-            <ul className="space-y-3 text-white/70 text-sm">
+            <ul className="space-y-3 text-white/70 text-lg">
               <li className="flex items-center gap-2">
                 <CheckCircle className="h-4 w-4 text-red-400" />
                 Agents receive poor-quality interactions
@@ -711,7 +734,7 @@ const Step1 = ({ number, title, desc }) => (
               With Aumne
             </h3>
 
-            <p className="text-white/70 text-sm leading-relaxed">
+            <p className="text-white/70 text-lg leading-relaxed">
               Modernize legacy IVR into intelligent, conversational and continuously evolving experiences.
             </p>
 
@@ -733,7 +756,7 @@ const Step1 = ({ number, title, desc }) => (
 
         {/* Bottom Statement */}
         <div className="mt-16 text-center">
-          <p className="text-xl md:text-2xl font-semibold text-white">
+          <p className="text-xl md:text-2xl font-semibold leading-relaxed text-white">
             Better CX starts with better EX —{" "}
             <span className="text-[#0D7EB6]">both begin with the same platform.</span>
           </p>
@@ -751,10 +774,10 @@ const Step1 = ({ number, title, desc }) => (
         {/* Heading */}
        <div className="max-w-3xl mx-auto mb-16 text-center">
   <h2 className="text-4xl md:text-5xl font-semibold text-white">
-    Proven Impact for <span className="text-[#0D7EB6]">Enterprises</span>
+    Proven Impact for Enterprises
   </h2>
-  <p className="mt-6 text-white/70 text-lg">
-    Aumne delivers <span className="text-white/80 font-semibold">measurable outcomes</span>, not promises.
+  <p className="mt-6 text-center text-xl md:text-2xl text-[#0D7EB6] leading-relaxed">
+    Aumne delivers <span className="text-[#0D7EB6] font-bold">measurable outcomes</span>, not promises.
   </p>
 </div>
 
@@ -779,12 +802,12 @@ const Step1 = ({ number, title, desc }) => (
               </h3>
 
               {/* Highlight */}
-              <div className="text-[#0D7EB6] font-bold text-lg">
+              <div className="text-[#0D7EB6] font-bold text-xl">
                 {item.highlight}
               </div>
 
               {/* Description */}
-              <p className="text-gray-300 text-sm leading-relaxed">
+              <p className="text-gray-300 text-lg leading-relaxed">
                 {item.desc}
               </p>
 
@@ -810,12 +833,12 @@ const Step1 = ({ number, title, desc }) => (
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-4xl mx-auto mb-16">
           <h1 className="text-5xl font-bold text-white leading-tight">
             Start Small. Prove Value. <br/>
-            <span className="text-[#0D7EB6]"> Scale with Confidence.</span>
+             Scale with Confidence.
           </h1>
-          <p className="mt-5 text-lg text-white/80">
+          <p className="mt-5 text-center text-xl md:text-2xl text-[#0D7EB6] leading-relaxed">
             Transform enterprise customer experience without massive disruption.
             Start with focused impact, validate results, and scale intelligently.
           </p>
@@ -846,20 +869,20 @@ const Step1 = ({ number, title, desc }) => (
         </h3>
 
         {/* Description */}
-        <p className="text-gray-300 text-sm leading-relaxed min-h-[72px]">
+        <p className="text-gray-300 text-16 leading-relaxed min-h-[72px]">
           {step.desc}
         </p>
 
         {/* Step */}
-        <div className="text-sm font-semibold text-white opacity-70">
+        {/* <div className="text-sm font-semibold text-white opacity-70">
           Step {index + 1}
-        </div>
+        </div> */}
       </div>
 
       {/* Arrow (not for last card) */}
       {index !== step.length - 1 && (
-        <div className="hidden lg:flex absolute top-1/2 -right-12 -translate-y-1/2">
-          <ArrowRight className="w-10 h-10 text-[#0D7EB6]" />
+        <div className="hidden lg:flex absolute top-1/2 -right-13 -translate-y-1/2">
+          <ArrowRight className="w-13 h-13 text-white " />
         </div>
       )}
     </div>
@@ -872,13 +895,13 @@ const Step1 = ({ number, title, desc }) => (
      {/* Section 8 */}
 
     <section className="py-24 px-6">
-      <div className="max-w-7xl mx-auto text-center mb-16">
+      <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-semibold text-white">
           Next Steps
         </h2>
       </div>
 
-      <div className="grid md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+      <div className="grid md:grid-cols-4 gap-12 text-xl max-w-7xl mx-auto">
         {steps.map((step, idx) => (
           <Step1 key={idx} {...step} />
         ))}
@@ -887,11 +910,11 @@ const Step1 = ({ number, title, desc }) => (
 
     <div>
               {/* CTA Section */}
-        <div className="mt-20 text-center border-t border-gray-200 pt-12">
+        <div className="mt-10 text-center pt-8">
           <h3 className="text-2xl font-bold text-white mb-4">
-            Ready to Modernize Enterprise Customer Service?
+            Ready to Modernize Now
           </h3>
-          <p className="text-white/80 mb-6">
+          <p className="text-white/80 text-lg mb-6">
             Let’s build smarter, faster, and more human customer experiences.
           </p>
 
@@ -900,15 +923,15 @@ const Step1 = ({ number, title, desc }) => (
               href="/contact"
               className="flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-[#0D7EB6] hover:opacity-90 transition text-white font-medium cursor-pointer"
             >
-              Talk to an Expert  <ArrowRight size={18}/>
+               Free Trail <ArrowRight size={18}/>
             </a>
-            <a
+            {/* <a
               href="https://www.aumne.ai"
               target="_blank"
               className="px-6 py-3 rounded-lg border border-[#0D7EB6] text-white/80 font-semibold hover:bg-[#0D7EB6]/10 transition cursor-pointer"
             >
               Visit Website
-            </a>
+            </a> */}
           </div>
         </div>
     </div>

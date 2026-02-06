@@ -50,7 +50,7 @@ export default function EcosystemAudience() {
           </h3>
 
           <p className="text-white/80 text-[16px] leading-relaxed">
-            Deliver AI-driven CX transformation faster, at scale,
+            Deliver AI-driven CX / EX transformation faster, at scale,
             while protecting margins.
           </p>
 
