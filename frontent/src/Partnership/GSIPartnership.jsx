@@ -115,33 +115,79 @@ export default function GSIPartnership() {
       </div>
     </section>
       {/* FOOTER LINE */}
-      <p className="text-center text-16 text-white/70 mt-16 mb-2">
+      <p className="text-center text-2xl text-white/70 mt-16 mb-4">
         Join enterprises worldwide who trust the Aumne + Google Cloud combination
       </p>
 
-       {/* BADGES ROW */}
-  <div className="flex flex-wrap justify-center gap-6">
+ {/* BADGES ROW */}
+<div className="max-w-5xl mx-auto">
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
     {[
-      "SOC 2 Compliant",
-      "GDPR Ready",
-      "HIPAA Compatible",
-      "99.9% Uptime SLA",
+      {
+        label: "SOC 2 Compliant",
+        img: "/image/soc-2.png",
+      },
+      {
+        label: "GDPR Ready",
+        img: "/image/gdpr.jpg",
+      },
+      {
+        label: "HIPAA Compatible",
+        img: "/image/hipaa.jpg",
+      },
+      {
+        label: "99.9% Uptime SLA",
+        img: "/image/uptime.png",
+      },
     ].map((item, index) => (
       <div
         key={index}
         className="
-          px-5 py-2
-          text-sm font-medium
-          text-white/80
-          rounded-full
-          border border-[#0D7EB6]/40 text-[#0D7EB6] bg-[#0D7EB6]/10
-          
+          group
+          flex items-center gap-8
+          px-10 py-7
+          rounded-2xl
+          border border-[#0D7EB6]/40
+          bg-[#0D7EB6]/10
+          text-lg md:text-xl
+          font-semibold
+          text-[#0D7EB6]
+          transition-all duration-300
+          hover:bg-[#0D7EB6]/20
+          hover:scale-[1.04]
+          hover:shadow-lg
         "
       >
-        {item}
+        {/* BIG BADGE IMAGE */}
+        <div
+          className="
+            w-20 h-20
+            rounded-2xl
+            bg-white
+            flex items-center justify-center
+            p-4
+            shadow-md
+            transition-transform duration-300
+            group-hover:scale-110
+            group-hover:rotate-3
+          "
+        >
+          <img
+            src={item.img}
+            alt={item.label}
+            className="w-full h-full object-contain"
+          />
+        </div>
+
+        {/* TEXT */}
+        <span className="leading-snug">
+          {item.label}
+        </span>
       </div>
     ))}
   </div>
+</div>
+
 
     </>
   );

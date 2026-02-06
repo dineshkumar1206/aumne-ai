@@ -1,5 +1,7 @@
 import { ChevronDown } from "lucide-react";
 import Map from "../Components/Map1";
+import emailjs from "@emailjs/browser";
+import React, { useRef } from "react";
 
 const countries = [
    "India",
@@ -65,21 +67,43 @@ const reachOptions = [
 ];
 
 const Contact = () => {
+
+   const formRef = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        formRef.current,
+        "YOUR_PUBLIC_KEY"
+      )
+      .then(
+        () => {
+          alert("Message sent successfully ✅");
+          formRef.current.reset();
+        },
+        () => {
+          alert("Failed to send message ❌");
+        }
+      );
+  };
+
   return (
     <>
-    <div>
-      <Map/>
-    </div>
-    <div className="w-full min-h-screen flex justify-center items-start bg-transparent py-16">
+    
+    <div className="w-full min-h-screen flex justify-center items-start bg-transparent py-8">
       <div className="w-full max-w-4xl px-6">
         {/* Title */}
-        <h1 className="text-3xl font-semibold text-center mb-10">
+        <h1 className="text-4xl md:text-5xl font-bold text-white text-center mb-5">
           Contact us
         </h1>
 
         {/* Form Card */}
         <div className="border border-gray-200 rounded-xl p-10">
-          <form className="space-y-8">
+          <form ref={formRef} onSubmit={sendEmail} className="space-y-8">
             {/* First & Last Name */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <input
@@ -177,16 +201,22 @@ const Contact = () => {
             </div>
 
             {/* Submit */}
+            
             <button
               type="submit"
               required
-              className="bg-[#0D7EB6] text-white text-xs font-semibold px-6 py-2 rounded-sm hover:bg-[#09699a] transition cursor-pointer"
+              className="bg-[#0D7EB6] text-white text-ms font-semibold px-6 py-2 rounded-sm hover:bg-[#09699a] transition cursor-pointer"
             >
               SUBMIT
             </button>
+            
           </form>
         </div>
       </div>
+    </div>
+
+    <div>
+      <Map/>
     </div>
 
     </>
