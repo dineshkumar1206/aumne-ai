@@ -36,15 +36,38 @@ export default function GSIPartnership() {
 
         {/* HEADING CENTER */}
         <div className="text-center mb-6">
-          <h2 className="text-4xl md:text-5xl font-semibold text-white mb-4">
-            Global Systems
-             Integrator Partners
-          </h2>
+   <h2
+  className="
+    text-2xl
+    sm:text-3xl
+    md:text-5xl
+    font-semibold
+    text-white
+    mb-3 sm:mb-4
+    text-center
+  "
+>
+  Global Systems Integrator Partners
+</h2>
 
-          <p className="mb-20 text-[#0D7EB6] text-center text-bold md:text-2xl max-w-6xl mx-auto leading-relaxed mx-auto">
-            Strategic partnerships with leading systems integrators to deliver
-            comprehensive customer service transformations worldwide.
-          </p>
+<p
+  className="
+    mb-10 sm:mb-14 md:mb-20
+    text-[#0D7EB6]
+    text-center
+    font-medium
+    text-base
+    sm:text-lg
+    md:text-2xl
+    max-w-xl sm:max-w-4xl md:max-w-6xl
+    mx-auto
+    leading-relaxed
+  "
+>
+  Strategic partnerships with leading systems integrators to deliver
+  comprehensive customer service transformations worldwide.
+</p>
+
 
           {/* Get Started Button (Commented) */}
           {/*
@@ -115,41 +138,40 @@ export default function GSIPartnership() {
       </div>
     </section>
       {/* FOOTER LINE */}
-      <p className="text-center text-2xl text-white/70 mt-16 mb-4">
-        Join enterprises worldwide who trust the Aumne + Google Cloud combination
-      </p>
+      <p
+  className="
+    text-center
+    text-base sm:text-lg md:text-2xl
+    text-white/70
+    mt-10 sm:mt-12 md:mt-16
+    mb-4
+    px-4
+  "
+>
+  Join enterprises worldwide who trust the Aumne + Google Cloud combination
+</p>
 
- {/* BADGES ROW */}
-<div className="max-w-5xl mx-auto">
-  <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+{/* BADGES ROW */}
+<div className="max-w-5xl mx-auto px-4">
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-8">
     {[
-      {
-        label: "SOC 2 Compliant",
-        img: "/image/soc-2.png",
-      },
-      {
-        label: "GDPR Ready",
-        img: "/image/gdpr.jpg",
-      },
-      {
-        label: "HIPAA Compatible",
-        img: "/image/hipaa.jpg",
-      },
-      {
-        label: "99.9% Uptime SLA",
-        img: "/image/uptime.png",
-      },
+      { label: "SOC 2 Compliant", img: "/image/soc-2.png" },
+      { label: "GDPR Ready", img: "/image/gdpr.jpg" },
+      { label: "HIPAA Compatible", img: "/image/hipaa.jpg" },
+      { label: "99.9% Uptime SLA", img: "/image/uptime.png" },
     ].map((item, index) => (
       <div
         key={index}
         className="
           group
-          flex items-center gap-8
-          px-10 py-7
+          flex items-center
+          gap-4 sm:gap-6 md:gap-8
+          px-5 sm:px-8 md:px-10
+          py-5 sm:py-6 md:py-7
           rounded-2xl
           border border-[#0D7EB6]/40
           bg-[#0D7EB6]/10
-          text-lg md:text-xl
+          text-sm sm:text-base md:text-xl
           font-semibold
           text-[#0D7EB6]
           transition-all duration-300
@@ -158,14 +180,16 @@ export default function GSIPartnership() {
           hover:shadow-lg
         "
       >
-        {/* BIG BADGE IMAGE */}
+        {/* BADGE IMAGE */}
         <div
           className="
-            w-20 h-20
-            rounded-2xl
+            w-14 h-14
+            sm:w-16 sm:h-16
+            md:w-20 md:h-20
+            rounded-xl md:rounded-2xl
             bg-white
             flex items-center justify-center
-            p-4
+            p-2 sm:p-3 md:p-4
             shadow-md
             transition-transform duration-300
             group-hover:scale-110
@@ -187,6 +211,7 @@ export default function GSIPartnership() {
     ))}
   </div>
 </div>
+
 
 
     </>

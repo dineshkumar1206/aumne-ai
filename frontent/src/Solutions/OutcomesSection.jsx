@@ -26,10 +26,11 @@ const OutcomesSection = () => {
     <section className="max-w-6xl mx-auto mt-32 px-4 mb-10">
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-semibold text-white tracking-tight text-center pb-10">
-          Outcomes That{" "}
-          Matter
-        </h2>
+       <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-white tracking-tight text-center pb-10">
+  Outcomes That{" "}
+  Matter
+</h2>
+
 
         {/* Cards grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">

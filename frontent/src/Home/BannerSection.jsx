@@ -90,46 +90,63 @@ export default function BannerSection() {
 
     {/* LEFT: TEXT */}
     <div ref={contentRef} className="lg:-ml-8">
-      <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight -mt-40">
-        Transform Legacy IVR into AI-Native Conversations
-      </h2>
+  <h2
+    className="
+      text-white
+      text-2xl sm:text-3xl md:text-4xl lg:text-5xl
+      font-extrabold
+      leading-tight
+      -mt-16 sm:-mt-24 lg:-mt-40
+      text-center lg:text-left
+    "
+  >
+    Transform Legacy IVR into AI-Native Conversations
+  </h2>
 
-      {/* <h2 className="mt-4 text-[#159ce0] text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight">
-        At 5× Speed and 3× ROI <br /> on modernization
-      </h2>
-
-      <p className="mt-4 max-w-xl text-lg md:text-xl text-white/90 leading-relaxed">
-        Aumne is an AI-native, agentic Service Lifecycle Management platform that
-        transforms legacy IVR into modern omnichannel experiences—fast,
-        governed, and built to evolve.
-      </p> */}
-
-       {/* Metrics */}
-  <div className="mt-20 grid grid-cols-1 md:grid-cols-[auto_1px_auto_1px_auto] items-center text-white gap-y-6 md:gap-x-10">
+  {/* Metrics */}
+  <div
+    className="
+      mt-12 sm:mt-16 lg:mt-20
+      grid grid-cols-1
+      md:grid-cols-[auto_1px_auto_1px_auto]
+      items-center
+      text-white
+      gap-y-6 md:gap-x-10
+    "
+  >
     <div className="text-center md:text-left">
-      <p className="text-6xl font-bold text-[#0D7EB6]">5X</p>
-      <p className="text-lg text-white/80 mt-1">Faster Transformation</p>
+      <p className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0D7EB6]">
+        5X
+      </p>
+      <p className="text-sm sm:text-base md:text-lg text-white/80 mt-1">
+        Faster Transformation
+      </p>
     </div>
 
-    <div className="hidden md:block h-15 w-[1px] bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
+    <div className="hidden md:block h-16 w-[1px] bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
 
     <div className="text-center md:text-left">
-      <p className="text-6xl font-bold text-[#0D7EB6]">70%+</p>
-      <p className="text-lg text-white/80 mt-1">
+      <p className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0D7EB6]">
+        70%+
+      </p>
+      <p className="text-sm sm:text-base md:text-lg text-white/80 mt-1">
         Automation Across the Lifecycle
       </p>
     </div>
 
-    <div className="hidden md:block h-15 w-[1px] bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
+    <div className="hidden md:block h-16 w-[1px] bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
 
     <div className="text-center md:text-left">
-      <p className="text-6xl font-bold text-[#0D7EB6]">3X</p>
-      <p className="text-lg text-white/80 mt-1">
+      <p className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0D7EB6]">
+        3X
+      </p>
+      <p className="text-sm sm:text-base md:text-lg text-white/80 mt-1">
         ROI on Modernization
       </p>
     </div>
   </div>
 </div>
+
 
           {/* Metrics */}
       {/* <div className="mt-14 flex flex-col md:flex-row gap-10 text-white">

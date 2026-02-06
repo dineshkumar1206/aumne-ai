@@ -10,11 +10,9 @@ export default function VelocityReliabilitySection() {
   const sectionRef = useRef(null);
   const imageRef = useRef(null);
 
-  // Cards-kaana refs
-  const cardsRef = useRef([]);
-
   useEffect(() => {
-    // Parallax effect for image
+    if (!sectionRef.current || !imageRef.current) return;
+
     gsap.fromTo(
       imageRef.current,
       { y: "10%" },
@@ -27,124 +25,69 @@ export default function VelocityReliabilitySection() {
           end: "bottom top",
           scrub: true,
         },
-      },
+      }
     );
   }, []);
 
-  // --- GSAP 3D TILT LOGIC ---
-  const handleMouseEnter = (index) => {
-    const card = cardsRef.current[index];
-    gsap.to(card, {
-      scale: 1.02,
-      //backgroundColor: "rgba(17, 34, 64, 0.6)", // Slightly brighter on hover
-      duration: 0.4,
-      ease: "power2.out",
-    });
-  };
-
-  const handleMouseMove = (e, index) => {
-    const card = cardsRef.current[index];
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-
-    const centerX = rect.width / 2;
-    const centerY = rect.height / 2;
-
-    // Tilt intensity (15 is a good balance)
-    const rotateX = (y - centerY) / 15;
-    const rotateY = (centerX - x) / 15;
-
-    gsap.to(card, {
-      rotateX: rotateX,
-      rotateY: rotateY,
-      duration: 0.5,
-      ease: "power2.out",
-      transformPerspective: 1000,
-    });
-  };
-
-  const handleMouseLeave = (index) => {
-    const card = cardsRef.current[index];
-    gsap.to(card, {
-      scale: 1,
-      rotateX: 0,
-      rotateY: 0,
-      //backgroundColor: "rgba(17, 34, 64, 0.4)", // Original color
-      duration: 0.6,
-      ease: "elastic.out(1, 0.5)",
-    });
-  };
+  
 
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen text-white overflow-hidden py-20"
+      className="relative min-h-screen text-white overflow-hidden py-10 md:py-20 flex items-center"
     >
-      <div className="mx-auto max-w-[1550px] px-8 md:px-14">
-        <div className="flex flex-col md:flex-row items-center gap-10  overflow-hidden">
-         {/* LEFT IMAGE BLOCK    scale-100 md:scale-132  transition-transform duration-500*/}
-<div className="relative flex-1 min-h-[500px] md:min-h-[700px] overflow-hidden group">
-  <div
-    ref={imageRef}
-    className="
-      absolute inset-0 bg-cover bg-center   
-                                                  
-      top-0 -md:top-[15%]
-      bottom-0 md:bottom-[25%]
-      
-    "
-    style={{
-      backgroundImage: "url('/image/TheCoreProblem-BG.jpg.png')",
-      height: "100%",
-    }}
-  />
-  <div className="absolute inset-0 duration-500" />
-</div>
+      <div className="mx-auto max-w-[1550px] px-6 md:px-10 lg:px-14">
+        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
 
+          {/* Image Section */}
+          <div className="flex-1 w-full overflow-hidden rounded-2xl">
+            <img
+              ref={imageRef}
+              src="/image/TheCoreProblem-BG.jpg.png"
+              alt="Core Problem"
+              className="w-full h-auto object-contain"
+            />
+          </div>
 
-          {/* RIGHT TEXT BLOCK */}
-          <div className="flex-1 flex flex-col py-10 px-5 justify-center  space-y-8 ">
-            <h2 className="text-4xl md:text-5xl font-semibold text-white mb-10">
+          {/* Text Section */}
+          <div className="flex-1 flex flex-col py-6 md:py-10 px-2 md:px-5 justify-center space-y-6 lg:space-y-8 text-center lg:text-left">
+
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-4 lg:mb-10">
               The Core Problem
             </h2>
-            {/* <div className="h-0.5 w-[53%] bg-linear-to-r from-[#036ffd] to-[#42a5f5] rounded-full" /> */}
 
-            {/* Card 1 */}
-            <div
-              ref={(el) => (cardsRef.current[0] = el)}
-              onMouseEnter={() => handleMouseEnter(0)}
-              onMouseMove={(e) => handleMouseMove(e, 0)}
-              onMouseLeave={() => handleMouseLeave(0)}
-              style={{ transformStyle: "preserve-3d" }}
-              // className="group p-8 rounded-2xl border border-[#1e3a8a] bg-[#112240]/40 backdrop-blur-sm transition-all hover:border-[#3b82f6]/50 "
-              className="group py-3 transition-all  "    // rounded-2xl  backdrop-blur-sm 
-            >
-              <h3 className="text-[#0D7EB6] text-xl md:text-3xl font-bold mb-4 leading-tight">
+            {/* Main Content */}
+            <div>
+              <h3 className="text-[#0D7EB6] text-xl md:text-2xl lg:text-3xl font-bold mb-4 leading-tight">
                 Legacy IVR Is the Bottleneck to AI-Native Customer Service
               </h3>
-              <p className="text-gray-300 text-xl leading-relaxed">
-              <b> Nearly 75% </b>of enterprises still rely on legacy, menu-driven IVR, even as customer expectations have shifted decisively toward natural, conversational experiences. <br/><br/> Voice remains the front door of customer service, yet it's the weakest link.
+
+              <p className="text-gray-300 text-lg md:text-xl leading-relaxed mx-auto lg:mx-0 max-w-2xl">
+                <b className="text-white">Nearly 75%</b> of enterprises still rely
+                on legacy, menu-driven IVR, even as customer expectations have
+                shifted decisively toward natural, conversational experiences.
+                <br />
+                <br />
+                Voice remains the front door of customer service — yet it’s the
+                weakest link.
               </p>
             </div>
 
-            {/* <div className="h-0.5 w-full bg-linear-to-r from-[#036ffd] to-[#42a5f5] rounded-full" /> */}
-
-    {/* Card 2 */}
-<div
+            {/* Stats Grid */}
+            {/* <div
   ref={(el) => (cardsRef.current[1] = el)}
   onMouseEnter={() => handleMouseEnter(1)}
   onMouseMove={(e) => handleMouseMove(e, 1)}
   onMouseLeave={() => handleMouseLeave(1)}
   style={{ transformStyle: "preserve-3d" }}
   className="group rounded-2xl"
->
+> */}
   <div className="mt-14 flex flex-col md:flex-row items-center md:items-stretch justify-between gap-8 text-white">
 
     {/* Item 1 */}
     <div className="text-center md:text-left w-full md:w-auto">
       <p className="text-xl md:text-2xl font-semibold">Slow</p>
-      <p className="text-sm md:text-18 text-white/70 mt-1">
+      <p className="text-ms md:text-18 text-white/70 mt-1">
         9–18 month timelines
       </p>
     </div>
@@ -156,7 +99,7 @@ export default function VelocityReliabilitySection() {
     {/* Item 2 */}
     <div className="text-center md:text-left w-full md:w-auto">
       <p className="text-xl md:text-2xl font-semibold">Expensive</p>
-      <p className="text-sm md:text-18 text-white/70 mt-1">
+      <p className="text-ms md:text-18 text-white/70 mt-1 pt-2">
         $1M+ per transformation
       </p>
     </div>
@@ -168,7 +111,7 @@ export default function VelocityReliabilitySection() {
     {/* Item 3 */}
     <div className="text-center md:text-left w-full md:w-auto">
       <p className="text-xl md:text-2xl font-semibold">Disconnected</p>
-      <p className="text-sm md:text-18 text-white/70 mt-1">
+      <p className="text-ms md:text-18 text-white/70 mt-1 pt-2">
         No continuous evolution
       </p>
     </div>
@@ -180,18 +123,16 @@ export default function VelocityReliabilitySection() {
     {/* Item 4 */}
     <div className="text-center md:text-left w-full md:w-auto">
       <p className="text-xl md:text-2xl font-semibold">Services-Heavy</p>
-      <p className="text-sm md:text-18 text-white/70 mt-1">
+      <p className="text-ms md:text-18 text-white/70 mt-1">
         High executive risk
       </p>
     </div>
 
   </div>
-
-   
-            </div>
+  </div>
           </div>
         </div>
-      </div>
+      
     </section>
   );
 }

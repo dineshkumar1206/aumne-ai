@@ -29,11 +29,12 @@ const TransformationWindow = () => {
       <div className="max-w-6xl mx-auto px-4">
 
         {/* Heading */}
-        <h2 className=" text-4xl md:text-5xl font-semibold text-white mb-10 tracking-tight text-center">
-          The Window for Platform-Led <br /> CX / EX 
-          Transformation{" "}
-          Is Open
-        </h2>
+       <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-white mb-10 tracking-tight text-center">
+  The Window for <br className="block md:hidden" /> 
+  Platform-Led CX / EX <br className="block md:hidden" /> 
+  Transformation Is Open
+</h2>
+
 
         {/* Boxes */}
      {/*   <div className="mt-16 space-y-6">

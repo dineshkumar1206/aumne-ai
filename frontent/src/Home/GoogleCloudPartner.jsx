@@ -9,36 +9,89 @@ const GoogleCloudPartner = () => {
   return (
     <section className="max-w-7xl mx-auto px-6 py-24">
       {/* TOP BADGE */}
-      <div className="flex justify-center mb-6">
-        <span className="px-4 py-1.5 text-xl font-medium rounded-full border border-[#0D7EB6]/40 text-[#0D7EB6] bg-[#0D7EB6]/10">
-          Validated Technology Partner
-        </span>
-      </div>
+      <div className="flex justify-center mb-4 sm:mb-6">
+  <span
+    className="
+      px-3 sm:px-4
+      py-1 sm:py-1.5
+      text-sm sm:text-base md:text-xl
+      font-medium
+      rounded-full
+      border border-[#0D7EB6]/40
+      text-[#0D7EB6]
+      bg-[#0D7EB6]/10
+      text-center
+    "
+  >
+    Validated Technology Partner
+  </span>
+</div>
 
-      {/* HEADING */}
-      <h2 className="text-4xl md:text-5xl font-semibold text-center text-white mb-4">
-        Powered by Google Cloud
-      </h2>
+{/* HEADING */}
+<h2
+  className="
+    text-2xl sm:text-3xl md:text-5xl
+    font-semibold
+    text-center
+    text-white
+    mb-3 md:mb-4
+    leading-tight
+  "
+>
+  Powered by Google Cloud
+</h2>
 
-      {/* SUBTEXT */}
-      <p className="mb-20 text-[#0D7EB6] text-center text-bold md:text-2xl max-w-6xl mx-auto leading-relaxed">
-        As an official Google Cloud Partner, Aumne AI delivers enterprise-grade
-        conversational AI transformation backed by the world's most advanced
-        cloud infrastructure and AI capabilities.
-      </p>
+{/* SUBTEXT */}
+<p
+  className="
+    mb-12 sm:mb-16 md:mb-20
+    text-[#0D7EB6]
+    text-center
+    font-medium
+    text-base sm:text-lg md:text-2xl
+    max-w-6xl
+    mx-auto
+    leading-relaxed
+    px-4 sm:px-0
+  "
+>
+  As an official Google Cloud Partner, Aumne AI delivers enterprise-grade
+  conversational AI transformation backed by the world’s most advanced cloud
+  infrastructure and AI capabilities.
+</p>
+
 
       {/* CONTENT GRID */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
         {/* LEFT COLUMN */}
         <div>
           {/* LOGO CARD */}
-          <div className="w-48 h-48 flex items-center justify-center rounded-2xl border shadow-sm mb-10 bg-white">
-            <img
-              src="/image/google-cloud-partner.png"
-              alt="Google Cloud Partner"
-              className="max-w-[140px]"
-            />
-          </div>
+         <div
+  className="
+    w-32 h-32
+    sm:w-40 sm:h-40
+    md:w-48 md:h-48
+    flex items-center justify-center
+    rounded-2xl
+    border
+    shadow-sm
+    mb-6 sm:mb-8 md:mb-10
+    bg-white
+  "
+>
+  <img
+    src="/image/google-cloud-partner.png"
+    alt="Google Cloud Partner"
+    className="
+      max-w-[100px]
+      sm:max-w-[120px]
+      md:max-w-[140px]
+      h-auto
+      object-contain
+    "
+  />
+</div>
+
 
           <h3 className="text-2xl font-semibold mb-4">
             A Validated Path to AI-Native Modernization

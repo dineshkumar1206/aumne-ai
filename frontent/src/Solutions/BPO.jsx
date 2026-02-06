@@ -607,7 +607,7 @@ const Step = ({ number, title, desc }) => (
 
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 md:gap-12 text-base sm:text-lg md:text-xl max-w-7xl mx-auto">
     {steps.map((step, idx) => (
-      <Step1 key={idx} {...step} />
+      <Step key={idx} {...step} />
     ))}
   </div>
 </section>
