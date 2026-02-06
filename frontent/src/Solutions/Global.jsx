@@ -232,18 +232,26 @@ const Global = () => {
                  {/* Section 2 */}
                   <section className="max-w-6xl mx-auto px-4 py-24 pb-10 ">
       {/* Heading */}
-      <h2 className="text-4xl md:text-5xl font-semibold text-white text-center">
-        Why Enterprises Are Struggling to{" "}
-        Modernize
-        <br />
-       at the Pace of AI
-      </h2>
+     <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white text-center leading-tight">
+  Why Enterprises Are Struggling to{" "}
+  <span className="block md:inline">Modernize</span>
+  <span className="block md:inline"> at the Pace of AI</span>
+</h2>
+
 
       {/* Sub-heading */}
-      <p className="mt-6 text-center text-xl md:text-2xl text-[#0D7EB6] leading-relaxed">
-        Customers want conversations. Enterprises still offer menus.
-        Legacy IVR is the bottleneck to AI-native customer service.
-      </p>
+     <p className="mt-4 sm:mt-5 md:mt-6 text-center text-base sm:text-lg md:text-2xl text-[#0D7EB6] leading-relaxed px-2 sm:px-4 md:px-0">
+  <span className="block md:inline">
+    Customers want conversations.
+  </span>
+  <span className="block md:inline">
+    Enterprises still offer menus.
+  </span>
+  <span className="block md:inline">
+    Legacy IVR is the bottleneck to AI-native customer service.
+  </span>
+</p>
+
 
       {/* Cards */}
       <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -346,44 +354,47 @@ const Global = () => {
     </section>
                           {/* Section3 */}
         <section className="max-w-6xl mx-auto px-4 py-24 pt-8 pb-10">
-      <div className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md px-10 py-16">
-        {/* Title */}
-        <h2 className="text-3xl font-bold text-white text-center mb-14">
-          Delivery Reality
-        </h2>
+      <div className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md px-5 sm:px-8 md:px-10 py-10 sm:py-12 md:py-16">
+  
+  {/* Title */}
+  <h2 className="text-2xl sm:text-3xl font-bold text-white text-center mb-8 sm:mb-10 md:mb-14">
+    Delivery Reality
+  </h2>
 
-        {/* Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-          {/* Stat 1 */}
-          <div>
-            <div className="text-5xl font-semibold text-[#0D7EB6] mb-3">
-             40%+
-            </div>
-            <p className="text-white/80 leading-relaxed">
-             Programs overrun estimates
-            </p>
-          </div>
+  {/* Stats */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12 text-center">
+    
+    {/* Stat 1 */}
+    <div>
+      <div className="text-3xl sm:text-4xl md:text-5xl font-semibold text-[#0D7EB6] mb-2 sm:mb-3">
+        40%+
+      </div>
+      <p className="text-sm sm:text-base md:text-base text-white/80 leading-relaxed px-2 md:px-0">
+        Programs overrun estimates
+      </p>
+    </div>
 
-          {/* Stat 2 */}
-          <div>
-            <div className="text-5xl font-semibold text-[#0D7EB6] mb-3">
-              30%+
-            </div>
-            <p className="text-white/80 leading-relaxed">
-              Margin erosion on complex deals
-            </p>
-          </div>
+    {/* Stat 2 */}
+    <div>
+      <div className="text-3xl sm:text-4xl md:text-5xl font-semibold text-[#0D7EB6] mb-2 sm:mb-3">
+        30%+
+      </div>
+      <p className="text-sm sm:text-base md:text-base text-white/80 leading-relaxed px-2 md:px-0">
+        Margin erosion on complex deals
+      </p>
+    </div>
 
-          {/* Stat 3 */}
-          <div>
-            <div className="text-5xl font-semibold text-[#0D7EB6] mb-3">
-              30%+
-            </div>
-            <p className="text-white/80 leading-relaxed">
-              Effort lost to manual discovery
-            </p>
-          </div>
-        </div>
+    {/* Stat 3 */}
+    <div>
+      <div className="text-3xl sm:text-4xl md:text-5xl font-semibold text-[#0D7EB6] mb-2 sm:mb-3">
+        30%+
+      </div>
+      <p className="text-sm sm:text-base md:text-base text-white/80 leading-relaxed px-2 md:px-0">
+        Effort lost to manual discovery
+      </p>
+    </div>
+
+  </div>
 
         {/* Impact Bar */}
         <div className="mt-16 px-6 py-5 text-center">
@@ -402,10 +413,12 @@ const Global = () => {
      <div className="max-w-5xl mx-auto px-4">
 
   {/* Heading */}
-  <h2 className="text-3xl md:text-5xl font-semibold text-white text-center leading-tight">
-    What GSIs Need to Win <br className="hidden md:block" />
-    AI-Driven CX at Scale
-  </h2>
+ <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-white text-center leading-snug md:leading-tight px-3 md:px-0">
+  What GSIs Need to Win{" "}
+  <br className="hidden md:block" />
+  AI-Driven CX at Scale
+</h2>
+
 
   {/* List */}
   <div className="mt-8 md:mt-10 space-y-4 md:space-y-6">
@@ -455,11 +468,13 @@ const Global = () => {
 
            <section className="py-24 ">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-semibold text-white text-center">
-          How Aumne Impacts{" "}
-          GSI CX / EX <br/>Transformation at Scale
-        </h2>
+  {/* Heading */}
+  <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-white text-center leading-snug md:leading-tight">
+    How Aumne Impacts{" "}
+    GSI CX / EX{" "}
+    <br className="hidden md:block" />
+    Transformation at Scale
+  </h2>
 
         {/* Cards */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -497,49 +512,61 @@ const Global = () => {
 
    {/* Delivery Impact */}
 <div className="mt-2">
-  <div className="max-w-5xl mx-auto mt-2 px-8 py-8 rounded-3xl border-white/10 bg-white/5 backdrop-blur-md shadow-sm">
-    {/* Title */}
-    <h2 className="text-3xl font-bold text-white text-center mb-14">
-      Delivery Impact
-    </h2>
+  <div className="max-w-5xl mx-auto mt-2 px-5 md:px-8 py-6 md:py-8 rounded-3xl border-white/10 bg-white/5 backdrop-blur-md shadow-sm">
+  {/* Title */}
+  <h2 className="text-2xl sm:text-3xl font-bold text-white text-center mb-8 md:mb-14">
+    Delivery Impact
+  </h2>
 
-    {/* Stats */}
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-      {/* Stat 1 */}
-      <div>
-        <p className="text-5xl font-semibold text-[#0D7EB6] mb-3">5X</p>
-        <p className="text-white/80 leading-relaxed">
-          Faster Transformation
-        </p>
-      </div>
-
-      {/* Stat 2 */}
-      <div>
-        <p className="text-5xl font-semibold text-[#0D7EB6] mb-3">70%+</p>
-        <p className="text-white/80 leading-relaxed">
-          Automation
-        </p>
-      </div>
-
-      {/* Stat 3 */}
-      <div>
-        <p className="text-5xl font-semibold text-[#0D7EB6] mb-3">3–4X</p>
-        <p className="text-white/80 leading-relaxed">
-          ROI on Delivery
-        </p>
-      </div>
+  {/* Stats */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 text-center">
+    
+    {/* Stat 1 */}
+    <div>
+      <p className="text-4xl sm:text-5xl font-semibold text-[#0D7EB6] mb-2 md:mb-3">
+        5X
+      </p>
+      <p className="text-sm sm:text-base md:text-lg text-white/80 leading-relaxed">
+        Faster Transformation
+      </p>
     </div>
+
+    {/* Stat 2 */}
+    <div>
+      <p className="text-4xl sm:text-5xl font-semibold text-[#0D7EB6] mb-2 md:mb-3">
+        70%+
+      </p>
+      <p className="text-sm sm:text-base md:text-lg text-white/80 leading-relaxed">
+        Automation
+      </p>
+    </div>
+
+    {/* Stat 3 */}
+    <div>
+      <p className="text-4xl sm:text-5xl font-semibold text-[#0D7EB6] mb-2 md:mb-3">
+        3–4X
+      </p>
+      <p className="text-sm sm:text-base md:text-lg text-white/80 leading-relaxed">
+        ROI on Delivery
+      </p>
+    </div>
+
   </div>
+</div>
+
 </div>
       {/* Section 6 */}
 
       <section className="py-24 ">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-semibold text-white text-center">
-          How GSIs Monetize{" "}Platform- <br/>Led CX / EX Transformation
-          
-        </h2>
+       <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-white text-center leading-tight">
+  How GSIs Monetize{" "}
+  <span className="block sm:inline">
+    Platform-Led CX / EX Transformation
+  </span>
+</h2>
+
 
         {/* Cards */}
    <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -630,16 +657,20 @@ const Global = () => {
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
-        <div className="text-center max-w-4xl mx-auto mb-16">
-          <h1 className="text-5xl font-bold text-white leading-tight">
-            Start Small. Prove Value. <br/>
-             Scale with Confidence.
-          </h1>
-          <p className="mt-5 text-center text-xl md:text-2xl text-[#0D7EB6] leading-relaxed">
-            Transform enterprise customer experience without massive disruption.
-            Start with focused impact, validate results, and scale intelligently.
-          </p>
-        </div>
+        <div className="text-center max-w-4xl mx-auto mb-16 px-4">
+  <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white leading-tight">
+    Start Small. Prove Value.
+    <span className="block md:inline">
+      {" "}Scale with Confidence.
+    </span>
+  </h1>
+
+  <p className="mt-4 text-base sm:text-lg md:text-2xl text-[#0D7EB6] leading-relaxed">
+    Transform enterprise customer experience without massive disruption.
+    Start with focused impact, validate results, and scale intelligently.
+  </p>
+</div>
+
 
         {/* Steps Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14 overflow-hidden">
@@ -691,28 +722,30 @@ const Global = () => {
 
      {/* Section 7 */}
 
-    <section className="py-24 px-6">
-      <div className="max-w-7xl mx-auto text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-semibold text-white">
-          Next Steps
-        </h2>
-      </div>
+    <section className="py-16 sm:py-24 px-4 sm:px-6">
+  <div className="max-w-7xl mx-auto text-center mb-8 sm:mb-12">
+    <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-white">
+      Next Steps
+    </h2>
+  </div>
 
-      <div className="grid md:grid-cols-4 gap-12 text-xl max-w-7xl mx-auto">
-        {steps.map((step, idx) => (
-          <Step1 key={idx} {...step} />
-        ))}
-      </div>
-    </section>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 md:gap-12 text-base sm:text-lg md:text-xl max-w-7xl mx-auto">
+    {steps.map((step, idx) => (
+      <Step1 key={idx} {...step} />
+    ))}
+  </div>
+</section>
+
 
   <div>
-          <div className="mt-10 text-center pt-8">
-                    <h3 className="text-2xl font-bold text-white mb-4">
-                      Ready to Modernize Now
-                    </h3>
-                    <p className="text-white/80 text-lg mb-6">
-                      Let’s build smarter, faster, and more human customer experiences.
-                    </p>
+          <div className="mt-10 text-center pt-8 px-4">
+  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 md:mb-4">
+    Ready to Modernize Now
+  </h3>
+
+  <p className="text-base sm:text-lg text-white/80 mb-5 md:mb-6 max-w-2xl mx-auto">
+    Let’s build smarter, faster, and more human customer experiences.
+  </p>
           
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                       <a

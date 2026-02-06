@@ -181,50 +181,57 @@ const Step = ({ number, title, desc }) => (
       {/* Background Gradient */}
       <div className="absolute inset-0 " />
 
-      <div className="relative max-w-6xl mx-auto px-4 py-20 text-center text-white pb-10">
+      <div className="relative max-w-6xl mx-auto px-4 py-16 md:py-20 text-center text-white pb-10">
       
-        {/* Heading */}
-        <h1 className="text-white text-7xl font-bold mb-6">
-        BPOs & CX Providers
-      </h1>
-        <h2 className="text-3xl md:text-5xl font-bold tracking-tight leading-tight">
-          <span className="text-white">Empowering Your Agents.</span>{" "}<br/>
-            Scaling Voice AI.
-          {" "}
-          <span className="text-white"> Protecting Your Margins.</span>
-        </h2>
+  {/* Heading */}
+  <h1 className="text-white text-3xl sm:text-5xl md:text-7xl font-bold mb-4 md:mb-6">
+    BPOs & CX Providers
+  </h1>
 
-        {/* Subtitle */}
-        <p className="text-center text-xl md:text-2xl text-[#0D7EB6] leading-relaxed mt-6">
-          Transform legacy IVR into AI-powered support, sales, and outreach with humans firmly in control.
-        </p>
+  <h2 className="text-xl sm:text-2xl md:text-5xl font-bold tracking-tight leading-snug md:leading-tight">
+    <span className="text-white">Empowering Your Agents.</span>{" "}
+    <br className="hidden md:block" />
+    Scaling Voice AI.
+    {" "}
+    <span className="text-white"> Protecting Your Margins.</span>
+  </h2>
 
-        {/* Stats */}
-       {/* Metrics */}
-  <div className="mt-18 grid grid-cols-1 md:grid-cols-[auto_1px_auto_1px_auto] items-center text-white gap-y-3 md:gap-x-4">
-    <div className="text-center md:text-center">
-      <p className="text-6xl font-bold text-[#0D7EB6]">30-40%</p>
-      <p className="text-lg text-white/80 mt-1">Reduction in Cost per Interaction</p>
+  {/* Subtitle */}
+  <p className="text-base sm:text-lg md:text-2xl text-[#0D7EB6] leading-relaxed mt-4 md:mt-6 max-w-4xl mx-auto">
+    Transform legacy IVR into AI-powered support, sales, and outreach with humans firmly in control.
+  </p>
+
+  {/* Metrics */}
+  <div className="mt-12 md:mt-18 grid grid-cols-1 md:grid-cols-[auto_1px_auto_1px_auto] items-center text-white gap-y-8 md:gap-x-4">
+
+    <div className="text-center">
+      <p className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0D7EB6]">30–40%</p>
+      <p className="text-sm sm:text-base md:text-lg text-white/80 mt-1">
+        Reduction in Cost per Interaction
+      </p>
     </div>
 
-    <div className="hidden md:block h-15 w-[1px] bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
+    <div className="hidden md:block h-16 w-[1px] bg-gradient-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
 
-    <div className="text-center md:text-center">
-      <p className="text-6xl font-bold text-[#0D7EB6]">2-3X</p>
-      <p className="text-lg text-white/80 mt-1">
+    <div className="text-center">
+      <p className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0D7EB6]">2–3X</p>
+      <p className="text-sm sm:text-base md:text-lg text-white/80 mt-1">
         Agent Production Improvement
       </p>
     </div>
 
-    <div className="hidden md:block h-15 w-[1px] bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
+    <div className="hidden md:block h-16 w-[1px] bg-gradient-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
 
-    <div className="text-center md:text-center">
-      <p className="text-6xl font-bold text-[#0D7EB6]">40%+</p>
-      <p className="text-lg text-white/80 mt-1">
+    <div className="text-center">
+      <p className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0D7EB6]">40%+</p>
+      <p className="text-sm sm:text-base md:text-lg text-white/80 mt-1">
         Margin Improvement per Program
       </p>
     </div>
-        </div>
+
+  </div>
+
+
 
         {/* Buttons */}
         {/* <div className="flex flex-col sm:flex-row justify-center gap-5 mt-14">
@@ -240,16 +247,20 @@ const Step = ({ number, title, desc }) => (
     </section>
                 {/* Section 2 */}
 
-         <section className="py-20 px-6">
-      <div className="max-w-7xl mx-auto text-center mb-14">
-        <h2 className="text-4xl md:text-5xl font-semibold text-white">
-          Legacy IVR Is Silently{" "} Eroding Your Margins
-        </h2>
+        <section className="py-14 md:py-20 px-4 md:px-6">
+  <div className="max-w-7xl mx-auto text-center mb-10 md:mb-14">
+    
+    <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white leading-tight">
+      Legacy IVR Is Silently{" "}
+      <span className="block sm:inline">Eroding Your Margins</span>
+    </h2>
 
-        <p className="text-center text-xl md:text-2xl text-[#0D7EB6] leading-relaxed mt-4">
-          What this is costing BPOs
-        </p>
-      </div>
+    <p className="text-lg sm:text-xl md:text-2xl text-[#0D7EB6] leading-relaxed mt-3 md:mt-4">
+      What this is costing BPOs
+    </p>
+
+  </div>
+
 
       <div className="grid md:grid-cols-2 gap-8 max-w-7xl mx-auto">
         <Card
@@ -282,16 +293,19 @@ const Step = ({ number, title, desc }) => (
       {/*Section 3  */}
 
       <section className="py-20 px-6">
-      <div className="max-w-7xl mx-auto text-center mb-14">
-        <h2 className="text-4xl md:text-5xl font-semibold text-white">
-          The Rise of{" "}Hybrid Service Models
-         
-        </h2>
+     <div className="max-w-7xl mx-auto text-center mb-10 md:mb-14 px-2 md:px-0">
+  
+  <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white leading-tight">
+    The Rise of{" "}
+    <span className="block sm:inline">Hybrid Service Models</span>
+  </h2>
 
-        <p className="text-center text-xl md:text-2xl text-[#0D7EB6] leading-relaxed mt-4">
-          Human + Voice AI: Deliver end-to-end CX outcomes
-        </p>
-      </div>
+  <p className="text-lg sm:text-xl md:text-2xl text-[#0D7EB6] leading-relaxed mt-3 md:mt-4">
+    Human + Voice AI: Deliver end-to-end CX outcomes
+  </p>
+
+</div>
+
 
       <div className="grid md:grid-cols-2 gap-8 max-w-7xl mx-auto">
         <Items
@@ -323,12 +337,13 @@ const Step = ({ number, title, desc }) => (
       {/* Section 4 */}
      
       <section className="py-20 px-6">
-      <div className="max-w-7xl mx-auto text-center mb-14">
-        <h2 className="text-4xl md:text-5xl font-semibold text-white">
-          How You Make Money{" "}
-          with Aumne
-        </h2>
-      </div>
+      <div className="max-w-7xl mx-auto text-center mb-10 md:mb-14 px-2 md:px-0">
+  <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white leading-tight">
+    How You Make Money{" "}
+    <span className="block sm:inline">with Aumne</span>
+  </h2>
+</div>
+
 
       <div className="grid md:grid-cols-2 gap-8 max-w-7xl mx-auto">
         <Coins
@@ -376,17 +391,19 @@ const Step = ({ number, title, desc }) => (
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
-        <div className="max-w-4x2 mx-auto mb-16 text-center">
-          <h2 className="text-4xl md:text-5xl font-semibold text-white">
-            Customer Experience &{" "}<br/>
-           Employee Experience{" "}
-            Are Connected
-          </h2>
-          <p className="mt-6 text-center text-xl md:text-2xl text-[#0D7EB6] leading-relaxed">
-            Customer service systems shape the daily experience of frontline teams.
-            When technology is rigid, both customers and employees suffer.
-          </p>
-        </div>
+   <div className="max-w-4xl mx-auto mb-12 md:mb-16 text-center px-2 md:px-0">
+  <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white leading-tight">
+    Customer Experience &{" "}
+    <span className="block sm:inline">Employee Experience</span>{" "}
+    <span className="block sm:inline">Are Connected</span>
+  </h2>
+
+  <p className="mt-4 md:mt-6 text-center text-lg sm:text-xl md:text-2xl text-[#0D7EB6] leading-relaxed">
+    Customer service systems shape the daily experience of frontline teams.
+    When technology is rigid, both customers and employees suffer.
+  </p>
+</div>
+
 
         {/* Grid Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
@@ -468,12 +485,13 @@ const Step = ({ number, title, desc }) => (
            {/* Section 5 */}
 
        <section className="py-20 px-6">
-      <div className="max-w-7xl mx-auto text-center mb-14">
-        <h2 className="text-4xl md:text-5xl font-semibold text-white">
-          Why This Matters{" "}
-          to You
-        </h2>
-      </div>
+     <div className="max-w-7xl mx-auto text-center mb-10 md:mb-14 px-2 md:px-0">
+  <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white leading-tight">
+    Why This Matters{" "}
+    <span className="block sm:inline">to You</span>
+  </h2>
+</div>
+
 
       <div className="grid md:grid-cols-3 gap-8 text-lg max-w-7xl mx-auto">
         <Box
@@ -517,16 +535,18 @@ const Step = ({ number, title, desc }) => (
       <div className="max-w-7xl mx-auto px-6">
 
            {/* Heading */}
-        <div className="text-center max-w-4xl mx-auto mb-16">
-          <h1 className="text-5xl font-bold text-white leading-tight">
-            Start Small. Prove Value. <br/>
-             Scale with Confidence.
-          </h1>
-          <p className="mt-5 text-center text-xl md:text-2xl text-[#0D7EB6] leading-relaxed">
-            Transform enterprise customer experience without massive disruption.
-            Start with focused impact, validate results, and scale intelligently.
-          </p>
-        </div>
+   <div className="text-center max-w-4xl mx-auto mb-10 md:mb-16 px-3 md:px-0">
+  <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
+    Start Small. Prove Value.
+    <span className="block sm:inline"> Scale with Confidence.</span>
+  </h1>
+
+  <p className="mt-4 md:mt-5 text-center text-lg sm:text-xl md:text-2xl text-[#0D7EB6] leading-relaxed">
+    Transform enterprise customer experience without massive disruption.
+    Start with focused impact, validate results, and scale intelligently.
+  </p>
+</div>
+
 
        {/* Steps Grid */}
                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14 overflow-hidden">
@@ -578,29 +598,32 @@ const Step = ({ number, title, desc }) => (
 
     {/* Section 7 */}
 
-   <section className="py-24 px-6">
-      <div className="max-w-7xl mx-auto text-center mb-12">
-        <h2 className="text-4xl md:text-5xl font-semibold text-white">
-          Next Steps
-        </h2>
-      </div>
+  <section className="py-16 sm:py-24 px-4 sm:px-6">
+  <div className="max-w-7xl mx-auto text-center mb-8 sm:mb-12">
+    <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-white">
+      Next Steps
+    </h2>
+  </div>
 
-      <div className="grid md:grid-cols-4 gap-12  text-xl max-w-7xl mx-auto">
-        {steps.map((step, idx) => (
-          <Step key={idx} {...step} />
-        ))}
-      </div>
-    </section>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 md:gap-12 text-base sm:text-lg md:text-xl max-w-7xl mx-auto">
+    {steps.map((step, idx) => (
+      <Step1 key={idx} {...step} />
+    ))}
+  </div>
+</section>
+
 
     <div>
         {/* CTA Section */}
                <div className="mt-10 text-center pt-8">
-                 <h3 className="text-2xl font-bold text-white mb-4">
-                   Ready to Modernize Now
-                 </h3>
-                 <p className="text-white/80 text-lg mb-6">
-                   Let’s build smarter, faster, and more human customer experiences.
-                 </p>
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4 text-center sm:text-center">
+  Ready to Modernize Now
+</h3>
+
+<p className="text-white/80 text-base sm:text-lg mb-5 sm:mb-6 text-center sm:text-center leading-relaxed max-w-3xl mx-auto">
+  Let’s build smarter, faster, and more human customer experiences.
+</p>
+
        
                  <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                    <a

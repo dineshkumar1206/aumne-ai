@@ -34,23 +34,25 @@ export default function WhyAumneCard() {
       ref={sectionRef}
       className="relative pt-24 pb-18 text-white overflow-hidden"
     >
-      {/* MAIN HEADING (NO CHANGE) */}
-      <div className="max-w-[1550px] mx-auto text-center mb-5">
-        <h2 className="text-4xl md:text-5xl font-semibold tracking-tight">
-          The Aumne Platform 
-        </h2>
-      </div>
+      {/* MAIN HEADING (NO CHANGE ON DESKTOP) */}
+<div className="max-w-[1550px] mx-auto text-center mb-5 px-4">
+  <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold tracking-tight">
+    The Aumne Platform
+  </h2>
+</div>
 
-      {/* SUB HEADING + PARAGRAPH (CENTERED) */}
-      <div className="max-w-5xl mx-auto text-center px-6">
-        <h3 className="text-5xl md:text-3xl font-bold text-[#0D7EB6] mb-3">
-        Automatically Transforms Legacy IVR to Conversational AI
-        </h3>
+{/* SUB HEADING + PARAGRAPH */}
+<div className="max-w-5xl mx-auto text-center px-4 sm:px-6">
 
-        <p className="text-center text-xl md:text-2xl text-white leading-relaxed mb-2">
-         Our Agentic platfrom is purpose-built to modernize what already exists, not force enterprises to start from scratch.
-        </p>
-      </div>
+  <h3 className="text-xl sm:text-3xl md:text-5xl font-bold text-[#0D7EB6] mb-3 leading-tight">
+    Automatically Transforms Legacy IVR to Conversational AI
+  </h3>
+
+  <p className="text-base sm:text-lg md:text-2xl text-white leading-relaxed mb-2">
+    Our Agentic platform is purpose-built to modernize what already exists, not force enterprises to start from scratch.
+  </p>
+
+</div>
 
       {/* CENTER CALLOUT BOX (NO STYLE CHANGE) */}
       {/* <div className=" flex justify-center px-4">
@@ -80,7 +82,7 @@ export default function WhyAumneCard() {
       </div>
       <div className="-mb-10">
          <div className="max-w-7xl mx-auto mt-20 px-8 py-8">
-  <p className="text-center text-xl md:text-2xl text-white leading-relaxed">
+  <p className="text-base sm:text-lg md:text-2xl text-white text-center leading-relaxed mb-2">
     Our Agentic platform goes beyond transformation, providing comprehensive Service Lifecycle Management (SLM) to optimize and sustain your services.
   </p>
 </div>

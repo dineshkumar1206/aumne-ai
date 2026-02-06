@@ -68,24 +68,25 @@ const GrowthCard = ({ icon, title, desc }) => {
 
       {/* CARD BODY */}
       <div
-        className="
-          h-[385px]
-          rounded-2xl
-          border border-white/10
-          bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20
-          shadow-[0_20px_60px_rgba(0,0,0,0.8)]
-          px-6 pt-20 pb-7
-          flex flex-col 
-        "
-      >
-        <h3 className="text-lg font-semibold text-[#0D7EB6] mb-4 text-center">
-          {title}
-        </h3>
+  className="
+    min-h-[320px] md:min-h-[385px]
+    rounded-2xl
+    border border-white/10
+    bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20
+    shadow-[0_20px_60px_rgba(0,0,0,0.8)]
+    px-6 pt-16 pb-7
+    flex flex-col justify-center
+  "
+>
+  <h3 className="text-lg font-semibold text-[#0D7EB6] mb-4 text-center">
+    {title}
+  </h3>
 
-        <p className="text-sm text-white/80 leading-relaxed text-center">
-          {desc}
-        </p>
-      </div>
+  <p className="text-sm text-white/80 leading-relaxed text-center">
+    {desc}
+  </p>
+</div>
+
     </div>
     </>
   );
