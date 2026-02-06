@@ -96,12 +96,12 @@ const Box = ({ Icon, title, items }) => (
     </div>
 
     {/* Title - centered like image */}
-    <h4 className="text-white font-semibold mb-4 text-center">
+    <h4 className="text-white font-semibold text-xl mb-4 text-center">
       {title}
     </h4>
 
     {/* List - keep left aligned */}
-    <ul className="space-y-3 text-white/70">
+    <ul className="space-y-3 text-white/80">
       {items.map((item, idx) => (
         <li key={idx} className="flex gap-3">
           <span className="mt-2 h-2 w-2 rounded-full bg-[#0D7EB6]" />
@@ -376,11 +376,11 @@ const Step = ({ number, title, desc }) => (
       <div className="max-w-7xl mx-auto text-center mb-14">
         <h2 className="text-4xl md:text-5xl font-semibold text-white">
           Why This Matters{" "}
-          <span className="text-[#0D7EB6]">to You</span>
+          to You
         </h2>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      <div className="grid md:grid-cols-3 gap-8 text-lg max-w-7xl mx-auto">
         <Box
           Icon={TrendingUp}
           title="The Market Shift"
@@ -419,13 +419,13 @@ const Step = ({ number, title, desc }) => (
              <section className="w-full py-20">
       <div className="max-w-7xl mx-auto px-6">
 
-        {/* Heading */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+           {/* Heading */}
+        <div className="text-center max-w-4xl mx-auto mb-16">
           <h1 className="text-5xl font-bold text-white leading-tight">
             Start Small. Prove Value. <br/>
-            <span className="text-[#0D7EB6]"> Scale with Confidence.</span>
+             Scale with Confidence.
           </h1>
-          <p className="mt-5 text-lg text-white/80">
+          <p className="mt-5 text-center text-xl md:text-2xl text-[#0D7EB6] leading-relaxed">
             Transform enterprise customer experience without massive disruption.
             Start with focused impact, validate results, and scale intelligently.
           </p>
@@ -450,26 +450,26 @@ const Step = ({ number, title, desc }) => (
                  <step.icon className="h-7 w-7 text-[#0D7EB6]" />
                </div>
        
-               {/* Title */}
-               <h3 className="text-xl font-semibold text-white min-h-[56px] flex items-center">
-                 {step.title}
-               </h3>
-       
-               {/* Description */}
-               <p className="text-gray-300 text-sm leading-relaxed min-h-[72px]">
-                 {step.desc}
-               </p>
+                {/* Title */}
+        <h3 className="text-xl font-semibold text-white min-h-[56px] flex items-center">
+          {step.title}
+        </h3>
+
+        {/* Description */}
+        <p className="text-gray-300 text-16 leading-relaxed min-h-[72px]">
+          {step.desc}
+        </p>
        
                {/* Step */}
-               <div className="text-sm font-semibold text-white opacity-70">
+               {/* <div className="text-sm font-semibold text-white opacity-70">
                  Step {index + 1}
-               </div>
+               </div> */}
              </div>
        
              {/* Arrow (not for last card) */}
              {index !== step.length - 1 && (
                <div className="hidden lg:flex absolute top-1/2 -right-12 -translate-y-1/2">
-                 <ArrowRight className="w-10 h-10 text-[#0D7EB6]" />
+                 <ArrowRight className="w-13 h-13 text-white " />
                </div>
              )}
            </div>
@@ -481,14 +481,14 @@ const Step = ({ number, title, desc }) => (
 
     {/* Section 7 */}
 
-    <section className="py-28 px-6">
-      <div className="max-w-7xl mx-auto text-center mb-16">
+   <section className="py-24 px-6">
+      <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-semibold text-white">
           Next Steps
         </h2>
       </div>
 
-      <div className="grid md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+      <div className="grid md:grid-cols-4 gap-12  text-xl max-w-7xl mx-auto">
         {steps.map((step, idx) => (
           <Step key={idx} {...step} />
         ))}
@@ -496,31 +496,31 @@ const Step = ({ number, title, desc }) => (
     </section>
 
     <div>
-       {/* CTA Section */}
-        <div className="mt-20 text-center border-t border-gray-200 pt-12">
-          <h3 className="text-2xl font-bold text-white mb-4">
-            Ready to Modernize Enterprise Customer Service?
-          </h3>
-          <p className="text-white/80 mb-6">
-            Let’s build smarter, faster, and more human customer experiences.
-          </p>
-
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href="/contact"
-              className="flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-[#0D7EB6] hover:opacity-90 transition text-white font-medium cursor-pointer"
-            >
-              Talk to and Expert <ArrowRight size={18}/>
-            </a>
-            <a
-              href="https://www.aumne.ai"
-              target="_blank"
-              className="px-6 py-3 rounded-lg border border-[#0D7EB6] text-white/80 font-semibold hover:bg-[#0D7EB6]/10 transition cursor-pointer"
-            >
-              Visit Website
-            </a>
-          </div>
-        </div>
+        {/* CTA Section */}
+               <div className="mt-10 text-center pt-8">
+                 <h3 className="text-2xl font-bold text-white mb-4">
+                   Ready to Modernize Now
+                 </h3>
+                 <p className="text-white/80 text-lg mb-6">
+                   Let’s build smarter, faster, and more human customer experiences.
+                 </p>
+       
+                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                   <a
+                     href="/contact"
+                     className="flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-[#0D7EB6] hover:opacity-90 transition text-white font-medium cursor-pointer"
+                   >
+                      Free Trail <ArrowRight size={18}/>
+                   </a>
+                   {/* <a
+                     href="https://www.aumne.ai"
+                     target="_blank"
+                     className="px-6 py-3 rounded-lg border border-[#0D7EB6] text-white/80 font-semibold hover:bg-[#0D7EB6]/10 transition cursor-pointer"
+                   >
+                     Visit Website
+                   </a> */}
+                 </div>
+               </div>
     </div>
 
     </>
