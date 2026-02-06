@@ -22,11 +22,11 @@ export default function BPO() {
         </h3>
       )}
 
-      <h4 className="text-white font-semibold mb-3">
+      <h4 className="text-white text-xl font-semibold mb-3">
         {title}
       </h4>
 
-      <p className="text-white/70 leading-relaxed">
+      <p className="text-white/80 text-lg leading-relaxed">
         {desc}
       </p>
     </div>
@@ -48,11 +48,11 @@ export default function BPO() {
 
     {/* Text Content */}
     <div className="flex flex-col">
-      <h4 className="text-white font-semibold mb-3">
+      <h4 className="text-white text-xl font-semibold mb-3">
         {title}
       </h4>
 
-      <p className="text-white/70 leading-relaxed">
+      <p className="text-white/70 text-lg leading-relaxed">
         {desc}
       </p>
     </div>
@@ -74,11 +74,11 @@ const Coins = ({ Icon, title, desc }) => (
 
     {/* Text Content */}
     <div className="flex flex-col">
-      <h4 className="text-white font-semibold mb-3">
+      <h4 className="text-white font-semibold text-xl mb-3">
         {title}
       </h4>
 
-      <p className="text-white/70 leading-relaxed">
+      <p className="text-white/80 text-lg leading-relaxed">
         {desc}
       </p>
     </div>
@@ -181,45 +181,49 @@ const Step = ({ number, title, desc }) => (
       {/* Background Gradient */}
       <div className="absolute inset-0 " />
 
-      <div className="relative max-w-6xl mx-auto px-4 py-25 text-center text-white pb-10">
+      <div className="relative max-w-6xl mx-auto px-4 py-20 text-center text-white pb-10">
       
         {/* Heading */}
         <h1 className="text-white text-7xl font-bold mb-6">
-        For BPOs & CX Providers
+        BPOs & CX Providers
       </h1>
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight leading-tight">
           <span className="text-white">Empowering Your Agents.</span>{" "}<br/>
-          <span className="text-[#0D7EB6]">
             Scaling Voice AI.
-          </span>{" "}
+          {" "}
           <span className="text-white"> Protecting Your Margins.</span>
         </h2>
 
         {/* Subtitle */}
-        <p className="mt-6 text-lg text-white/80 max-w-3xl mx-auto">
+        <p className="text-center text-xl md:text-2xl text-[#0D7EB6] leading-relaxed mt-6">
           Transform legacy IVR into AI-powered support, sales, and outreach with humans firmly in control.
         </p>
 
         {/* Stats */}
-        <div className="flex flex-col md:flex-row justify-center gap-12 mt-8">
-          <div>
-            <h3 className="text-6xl font-bold text-[#0D7EB6]">30-40%</h3>
-            <p className="text-16 text-white/80 mt-1">Reduction in Cost per Interaction</p>
-          </div>
+       {/* Metrics */}
+  <div className="mt-18 grid grid-cols-1 md:grid-cols-[auto_1px_auto_1px_auto] items-center text-white gap-y-3 md:gap-x-4">
+    <div className="text-center md:text-center">
+      <p className="text-6xl font-bold text-[#0D7EB6]">30-40%</p>
+      <p className="text-lg text-white/80 mt-1">Reduction in Cost per Interaction</p>
+    </div>
 
-          <div>
-            <h3 className="text-6xl font-bold text-[#0D7EB6]">2-3X</h3>
-            <p className="text-16 text-white/80 mt-1">
-              Agent Productivity Improvement
-            </p>
-          </div>
+    <div className="hidden md:block h-15 w-[1px] bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
 
-          <div>
-            <h3 className="text-6xl font-bold text-[#0D7EB6]">40%+</h3>
-            <p className="text-16 text-white/80 mt-1">
-              Margin Improvement per Program
-            </p>
-          </div>
+    <div className="text-center md:text-center">
+      <p className="text-6xl font-bold text-[#0D7EB6]">2-3X</p>
+      <p className="text-lg text-white/80 mt-1">
+        Agent Production Improvement
+      </p>
+    </div>
+
+    <div className="hidden md:block h-15 w-[1px] bg-linear-to-b from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]" />
+
+    <div className="text-center md:text-center">
+      <p className="text-6xl font-bold text-[#0D7EB6]">40%+</p>
+      <p className="text-lg text-white/80 mt-1">
+        Margin Improvement per Program
+      </p>
+    </div>
         </div>
 
         {/* Buttons */}
@@ -239,13 +243,10 @@ const Step = ({ number, title, desc }) => (
          <section className="py-20 px-6">
       <div className="max-w-7xl mx-auto text-center mb-14">
         <h2 className="text-4xl md:text-5xl font-semibold text-white">
-          Legacy IVR Is Silently{" "}
-          <span className="text-[#0D7EB6]">
-            Eroding Your Margins
-          </span>
+          Legacy IVR Is Silently{" "} Eroding Your Margins
         </h2>
 
-        <p className="mt-4 text-white/70 text-lg">
+        <p className="text-center text-xl md:text-2xl text-[#0D7EB6] leading-relaxed mt-4">
           What this is costing BPOs
         </p>
       </div>
@@ -283,13 +284,11 @@ const Step = ({ number, title, desc }) => (
       <section className="py-20 px-6">
       <div className="max-w-7xl mx-auto text-center mb-14">
         <h2 className="text-4xl md:text-5xl font-semibold text-white">
-          The Rise of{" "}
-          <span className="text-[#0D7EB6]">
-            Hybrid Service Models
-          </span>
+          The Rise of{" "}Hybrid Service Models
+         
         </h2>
 
-        <p className="mt-4 text-white/70 text-lg">
+        <p className="text-center text-xl md:text-2xl text-[#0D7EB6] leading-relaxed mt-4">
           Human + Voice AI: Deliver end-to-end CX outcomes
         </p>
       </div>
@@ -327,7 +326,7 @@ const Step = ({ number, title, desc }) => (
       <div className="max-w-7xl mx-auto text-center mb-14">
         <h2 className="text-4xl md:text-5xl font-semibold text-white">
           How You Make Money{" "}
-          <span className="text-[#0D7EB6]">with Aumne</span>
+          with Aumne
         </h2>
       </div>
 
@@ -365,7 +364,7 @@ const Step = ({ number, title, desc }) => (
     </span>{" "}
     and{" "}
     <span className="text-[#0D7EB6] font-bold">
-      monetize continuous CX evolution.
+      monetize continuous CX / EX evolution.
     </span>.
   </p>
 </div>
