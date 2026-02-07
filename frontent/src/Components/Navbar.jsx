@@ -1,6 +1,6 @@
  import React, { useState } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { FiMenu, FiX } from "react-icons/fi";
 import BookDemoModal from "./BookDemoModal";
 
@@ -35,10 +35,10 @@ const Navbar = () => {
     }
   };
 
-  const handleMenuAction = (action) => {
-  action?.();
-  setMenuOpen(false);
-};
+//   const handleMenuAction = (action) => {
+//   action?.();
+//   setMenuOpen(false);
+// };
 
 
  const handleScroll = (id) => {
@@ -137,7 +137,7 @@ const Navbar = () => {
              </NavLink> <br/>
               </div>
                 <div className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition cursor-pointer">
-             <NavLink to="/BPO&CX" className={activeStyle}>
+             <NavLink to="/bpo-cx" className={activeStyle}>
                BPO & CX Providers
              </NavLink>
              </div>
@@ -244,7 +244,7 @@ const Navbar = () => {
         </NavLink>
 
         <NavLink
-          to="/BPO&CX"
+          to="/bpo-cx"
           className={activeStyle}
           onClick={() => setMenuOpen(false)}
         >
@@ -264,7 +264,7 @@ const Navbar = () => {
     {/* PARTNERS */}
     <button
   onClick={() => handleScroll("cloud")}
-  className="text-left py-2 hover:text-gray-300 transition"
+  className="text-left py-2 hover:text-gray-300 cursor-pointer transition"
 >
   Partners
 </button>
