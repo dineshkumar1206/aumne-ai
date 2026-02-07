@@ -70,7 +70,6 @@ const reachOptions = [
 
 const Contact = () => {
   const formRef = useRef();
-
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState({ type: "", message: "" });
   const [formData, setFormData] = useState({
