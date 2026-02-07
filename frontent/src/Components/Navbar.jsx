@@ -1,8 +1,8 @@
  import React, { useState } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
-// import { motion } from "framer-motion";
 import { FiMenu, FiX } from "react-icons/fi";
 import BookDemoModal from "./BookDemoModal";
+import {motion} from "framer-motion"
 
 
 const Navbar = () => {
