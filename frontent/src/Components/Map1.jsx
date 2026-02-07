@@ -31,7 +31,7 @@ const locations = [
     country: "India",
     title: "AI EXCELLENCE CENTER",
     address: "Coimbatore, Tamil Nadu, India",
-    phone: "+91 422 555 0166",
+    phone: "+ 91 9739898924",
     map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250644.7683500552!2d76.80241649604788!3d11.01426149065905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971cb5%3A0x2fc1c81e183ed282!2sCoimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1770368048227!5m2!1sen!2sin",
   },
 ];
