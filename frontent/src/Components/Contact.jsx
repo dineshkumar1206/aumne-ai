@@ -263,14 +263,14 @@ const Contact = () => {
                   <option value="">Product of interest*</option>
                   <option value="General Inquiry">General Inquiry</option>
                   <option value="AI for Work">
-                    AI for Work - Improving workplace productivity
+                    Transform CX / EX with AI 
                   </option>
                   <option value="AI for Process">
-                    AI for Process - Automating business workflows/ops
+                   Automating business workflows
                   </option>
-                  <option value="AI for Service">
+                  {/* <option value="AI for Service">
                     AI for Service - Elevating CX / EX with AI solutions
-                  </option>
+                  </option> */}
                   {/* <option>Voice AI</option> */}
                 </select>
                 <ChevronDown className="absolute right-0 top-2.5 h-4 w-4 text-gray-500" />
