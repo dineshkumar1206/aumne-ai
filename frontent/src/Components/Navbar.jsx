@@ -4,11 +4,13 @@ import { motion } from "framer-motion";
 import { FiMenu, FiX } from "react-icons/fi";
 import BookDemoModal from "./BookDemoModal";
 
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
   const [openDemo, setOpenDemo] = useState(false);
+  
 
   const activeStyle = ({ isActive }) =>
     isActive
@@ -32,6 +34,26 @@ const Navbar = () => {
       }
     }
   };
+
+  const handleMenuAction = (action) => {
+  action?.();
+  setMenuOpen(false);
+};
+
+
+ const handleScroll = (id) => {
+  setMenuOpen(false);
+
+  if (location.pathname !== "/") {
+    navigate("/");
+    setTimeout(() => {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    }, 300);
+  } else {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 
   return (
     <header className="sticky top-0 z-50 w-full">
@@ -115,7 +137,7 @@ const Navbar = () => {
              </NavLink> <br/>
               </div>
                 <div className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition cursor-pointer">
-             <NavLink to="/bpo" className={activeStyle}>
+             <NavLink to="/BPO&CX" className={activeStyle}>
                BPO & CX Providers
              </NavLink>
              </div>
@@ -175,144 +197,117 @@ const Navbar = () => {
 
       {/* ================= MOBILE MENU ================= */}
       <motion.div
-        initial={{ height: 0, opacity: 0 }}
-        animate={{
-          height: menuOpen ? "auto" : 0,
-          opacity: menuOpen ? 1 : 0,
-        }}
-        transition={{ duration: 0.3, ease: "easeInOut" }}
-        className="md:hidden bg-[#0a0a0a] text-white overflow-hidden"
+  initial={{ height: 0, opacity: 0 }}
+  animate={{
+    height: menuOpen ? "auto" : 0,
+    opacity: menuOpen ? 1 : 0,
+  }}
+  transition={{ duration: 0.3, ease: "easeInOut" }}
+  className="md:hidden bg-[#0a0a0a] text-white overflow-hidden"
+>
+  <div className="flex flex-col px-6 py-4 gap-3 text-[15px]">
+
+    {/* HOME */}
+<button
+  onClick={() => handleScroll("home")}
+  className="text-left py-2 hover:text-gray-300 transition"
+>
+  Home
+</button>
+
+
+    {/* SOLUTIONS */}
+    <div>
+      <button
+        onClick={() => handleScroll("solutions")}
+        className="text-left py-2 hover:text-gray-300 transition"
       >
-        <div className="flex flex-col px-6 py-4 gap-4 text-[15px]">
-          <button
-            onClick={() => {
-              scrollToSection("home");
-            }}
-            className="text-left hover:text-gray-300 transition"
-          >
-            Home
-          </button>
+        Solutions
+      </button>
 
-          <div className="relative-group">
-            <button
-              onClick={() => {
-                scrollToSection("solutions");
-              }}
-              className="text-left hover:text-gray-300 transition"
-            >
-              Solutions
-            </button>
-            {/* Dropdown */}
-
-           < div className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition cursor-pointer">
-                  <NavLink to="/enterprise" className={activeStyle}>
-            Enterprise
-             </NavLink> <br/>
-             </div>
-             <div className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition cursor-pointer">
-             <NavLink to="/global" className={activeStyle}>
-               Global System Integration
-             </NavLink> <br/>
-              </div>
-                <div className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition cursor-pointer">
-             <NavLink to="/bpo" className={activeStyle}>
-               BPO & CX Providers
-             </NavLink>
-             </div>
-                
-             </div>
-            {/* <div className="absolute left-0 top-full mt-3 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-              <div className="bg-[#0a0a0a] border border-white/10 rounded-xl shadow-xl p-3 space-y-2">
-                <button
-                  onClick={() => scrollToSection("transformation-comparison")}
-                  className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition"
-                >
-                  Transformation Comparison
-                </button>
-
-                <button
-                  onClick={() => scrollToSection("ecosystem-audience")}
-                  className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition"
-                >
-                  Ecosystem & Audience
-                </button>
-
-                <button
-                  onClick={() => scrollToSection("outcomes")}
-                  className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition"
-                >
-                  Outcomes
-                </button>
-
-                <button
-                  onClick={() => scrollToSection("transformation-window")}
-                  className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition"
-                >
-                  Transformation Window
-                </button>
-
-                <button
-                  onClick={() => scrollToSection("lived-experience")}
-                  className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition"
-                >
-                  Lived Experience
-                </button>
-              </div>
-            </div> */}
-          </div>
-          {/* <button
-    onClick={() => {
-      scrollToSection("benefits");
-    }}
-    className="text-left hover:text-gray-300 transition"
-  >
-    Benefits
-  </button> */}
-
-          <button
-            onClick={() => {
-              scrollToSection("statistics");
-            }}
-            className="text-left hover:text-gray-300 pb-4 pl-5 transition"
-          >
-            Industry Trends
-          </button> <br/>
-
-          {/* <button
-            onClick={() => {
-              scrollToSection("roi");
-            }}
-            className="text-left hover:text-gray-300 transition"
-          >
-            ROI Calculator
-          </button> */}
-
-          <button
-            onClick={() => {
-              scrollToSection("gsi");
-            }}
-            className="text-left hover:text-gray-300 pl-5  transition"
-          >
-          Partners
-          </button>
-          <div className="block w-full text-left px-4 py-2  rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition cursor-pointer">
-             <NavLink to="/contact" className={activeStyle}>
-               Contact
-             </NavLink>
-          <div className="block w-full text-left px-3 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition cursor-pointer">
-             <NavLink to="/about" className={activeStyle}>
-               About
-             </NavLink>
-            </div>
-         <button
-          onClick={() => setOpenDemo(true)}
-          className="px-5 py-2 rounded-lg bg-[#0D7EB6] hover:bg-[#0D7EB6]/80 transition"
+      {/* Sub-menu */}
+      <div className="ml-4 mt-2 flex flex-col gap-1 border-l border-white/10 pl-4">
+        <NavLink
+          to="/enterprise"
+          className={activeStyle}
+          onClick={() => setMenuOpen(false)}
         >
-          Book a Demo
-        </button>
-        <BookDemoModal open={openDemo} onClose={() => setOpenDemo(false)} />
-        </div>
-      </motion.div>
+          Enterprise
+        </NavLink>
+
+        <NavLink
+          to="/global"
+          className={activeStyle}
+          onClick={() => setMenuOpen(false)}
+        >
+          Global System Integration
+        </NavLink>
+
+        <NavLink
+          to="/BPO&CX"
+          className={activeStyle}
+          onClick={() => setMenuOpen(false)}
+        >
+          BPO & CX Providers
+        </NavLink>
+      </div>
+    </div>
+
+    {/* INDUSTRY TRENDS */}
+    <button
+     onClick={() => handleScroll("statistics")}
+      className="text-left py-2 hover:text-gray-300 transition"
+    >
+      Industry Trends
+    </button>
+
+    {/* PARTNERS */}
+    <button
+  onClick={() => handleScroll("cloud")}
+  className="text-left py-2 hover:text-gray-300 transition"
+>
+  Partners
+</button>
+
+
+    {/* CONTACT */}
+    <NavLink
+      to="/contact"
+      className={activeStyle}
+      onClick={() => setMenuOpen(false)}
+    >
+      Contact
+    </NavLink>
+
+    {/* ABOUT */}
+    <NavLink
+      to="/about"
+      className={activeStyle}
+      onClick={() => setMenuOpen(false)}
+    >
+      About
+    </NavLink>
+
+    {/* CTA */}
+    <button
+      onClick={() => {
+        setMenuOpen(false);
+        setOpenDemo(true);
+      }}
+      className="mt-4 px-5 py-2 rounded-lg bg-[#0D7EB6] hover:bg-[#0D7EB6]/80 transition"
+    >
+      Book a Demo
+    </button>
+
+   
+  </div>
+</motion.div>
+
+ <BookDemoModal
+      open={openDemo}
+      onClose={() => setOpenDemo(false)}
+    />
+
     </header>
   );
 };

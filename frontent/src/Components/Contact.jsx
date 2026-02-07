@@ -174,9 +174,9 @@ const Contact = () => {
               <select required className="w-full appearance-none border-b border-gray-400 bg-transparent text-white focus:outline-none py-2  pl-2 text-sm [&>option]:bg-black [&>option]:text-white">
                 <option value="">Product of interest*</option>
                 <option>General Inquiry</option>
-                <option>AI for Work - Improving workPlace productivity</option>
-                <option>AI for Process -Automating business workflows/ops</option>
-                <option>AI of Service - Elevating CX / EX with AI solutions</option>
+                <option>Transform CX / EX with AI</option>
+                <option>Automating business workflows</option>
+                {/* <option>AI of Service - Elevating CX / EX with AI solutions</option> */}
                 {/* <option>Voice AI</option> */}
               </select>
               <ChevronDown className="absolute right-0 top-2.5 h-4 w-4 text-gray-500" />
