@@ -37,7 +37,7 @@ export default function WhyAumneCard() {
       {/* MAIN HEADING (NO CHANGE ON DESKTOP) */}
 <div className="max-w-[1550px] mx-auto text-center mb-5 px-4">
   <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold tracking-tight">
-    The Aumne Platform
+   Introducing Aumne ACT (Agentic Conversation Transformer) Platform
   </h2>
 </div>
 
