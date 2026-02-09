@@ -23,7 +23,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="text-white py-20 px-6 md:px-16 border-t border-white/5">
+    <footer className="text-white py-12 px-8 md:px-16 border-t border-white/5">
       <div className="max-w-[1300px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 items-start">
 
         {/* LOGO + CONTACT */}
@@ -147,7 +147,7 @@ export default function Footer() {
       </div> */}
 
         {/* COPYRIGHT */}
-<div className="mt-14 text-center text-sm text-white/60 border-t border-white/10 pt-6">
+<div className="mt-6 text-center text-sm text-white/60 border-t border-white/10 pt-6">
   © 2026 SLMX AI Pvt Ltd. All rights reserved.
 </div>
 
