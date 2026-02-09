@@ -58,7 +58,7 @@ export default function VelocityReliabilitySection() {
 
             {/* Main Content */}
             <div>
-              <h3 className="text-[#0D7EB6] text-xl md:text-2xl lg:text-3xl font-bold mb-4 leading-tight">
+              <h3 className="text-[#5CE65C] text-xl md:text-2xl lg:text-3xl font-bold mb-4 leading-tight">
                 Legacy IVR Is the Bottleneck to AI-Native Customer Service
               </h3>
 

@@ -34,6 +34,9 @@ export default function Footer() {
           >
             <img src="/logo.png" alt="AumneAI" className="h-14 md:h-16" />
           </button>
+              <a className="w-9 h-9 flex items-center justify-center rounded-full bg-white/20 hover:bg-[#0D7EB6] transition cursor-pointer">
+                <FaLinkedinIn size={16} />
+              </a>
 
           <div className="space-y-2 text-sm leading-relaxed text-white/80">
             <p>+91 9902267643</p>
@@ -108,13 +111,10 @@ export default function Footer() {
           </div>  */}
 
           {/* Social */}
-          <div className="space-y-3">
+          {/* <div className="space-y-3">
             <p className="text-lg font-medium">Follow Us On:</p>
-            <div className="flex gap-3">
-              <a className="w-9 h-9 flex items-center justify-center rounded-full bg-white/20 hover:bg-[#0D7EB6] transition cursor-pointer">
-                <FaLinkedinIn size={16} />
-              </a>
-              <a className="w-9 h-9 flex items-center justify-center rounded-full bg-white/20 hover:bg-[#0D7EB6] transition cursor-pointer">
+            <div className="flex gap-3"> */}
+              {/* <a className="w-9 h-9 flex items-center justify-center rounded-full bg-white/20 hover:bg-[#0D7EB6] transition cursor-pointer">
                 <FaFacebookF size={16} />
               </a>
               <a className="w-9 h-9 flex items-center justify-center rounded-full bg-white/20 hover:bg-[#0D7EB6] transition cursor-pointer">
@@ -122,20 +122,20 @@ export default function Footer() {
               </a>
               <a className="w-9 h-9 flex items-center justify-center rounded-full bg-white/20 hover:bg-[#0D7EB6] transition cursor-pointer">
                 <FaWhatsapp size={16} />
-              </a>
-            </div>
-          </div>
+              </a> */}
+            {/* </div> */}
+          {/* </div> */}
 
         </div>
 
       {/* Floating Chat Button */}
-      <div className="fixed bottom-6 right-6 z-50">
+      {/* <div className="fixed bottom-6 right-6 z-50">
         <button className="bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1] p-4 rounded-xl shadow-lg hover:scale-110 transition-transform">
           <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
             <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
           </svg>
         </button>
-      </div>
+      </div> */}
 
         {/* COPYRIGHT */}
 <div className="mt-14 text-center text-sm text-white/60 border-t border-white/10 pt-6">
