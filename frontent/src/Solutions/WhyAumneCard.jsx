@@ -44,7 +44,7 @@ export default function WhyAumneCard() {
 {/* SUB HEADING + PARAGRAPH */}
 <div className="max-w-5xl mx-auto text-center px-4 sm:px-6">
 
-  <h3 className="text-xl sm:text-3xl md:text-5xl font-bold text-[#0D7EB6] mb-3 leading-tight">
+  <h3 className="text-xl sm:text-3xl md:text-5xl font-bold text-[#87CEEB] mb-3 leading-tight">
     Automatically Transforms Legacy IVR to Conversational AI
   </h3>
 
