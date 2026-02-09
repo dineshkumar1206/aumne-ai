@@ -37,14 +37,14 @@ export default function WhyAumneCard() {
       {/* MAIN HEADING (NO CHANGE ON DESKTOP) */}
 <div className="max-w-[1550px] mx-auto text-center mb-5 px-4">
   <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold tracking-tight">
-   Introducing Aumne ACT (Agentic Conversation Transformer) Platform
+   Introducing Aumne ACT Platform
   </h2>
 </div>
 
 {/* SUB HEADING + PARAGRAPH */}
 <div className="max-w-5xl mx-auto text-center px-4 sm:px-6">
 
-  <h3 className="text-xl sm:text-3xl md:text-5xl font-bold text-[#87CEEB] mb-3 leading-tight">
+  <h3 className="text-xl sm:text-3xl md:text-5xl font-bold text-[#F4CF6A] mb-3 leading-tight">
     Automatically Transforms Legacy IVR to Conversational AI
   </h3>
 
