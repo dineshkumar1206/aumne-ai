@@ -536,7 +536,7 @@ const Step = ({ number, title, desc }) => (
            {/* Heading */}
    <div className="text-center max-w-4xl mx-auto mb-10 md:mb-16 px-3 md:px-0">
   <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
-    Start Small. Prove Value.<br/>
+    Start Small. Prove Value.<br/> 
     <span className="block sm:inline"> Scale with Confidence.</span>
   </h1>
 
