@@ -75,7 +75,7 @@ export default function Footer() {
             Global System Integration
           </NavLink>
 
-          <NavLink to="/bpo" className={activeStyle}>
+          <NavLink to="/bpo-cx" className={activeStyle}>
             BPO & CX Providers
           </NavLink>
 

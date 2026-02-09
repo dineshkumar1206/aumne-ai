@@ -138,7 +138,7 @@ export default function GSIPartnership() {
       </div>
     </section>
       {/* FOOTER LINE */}
-      <p
+      {/* <p
   className="
     text-center
     text-base sm:text-lg md:text-2xl
@@ -151,7 +151,7 @@ export default function GSIPartnership() {
   Join enterprises worldwide who trust the Aumne + Google Cloud combination
 </p>
 
-{/* BADGES ROW */}
+ BADGES ROW 
 <div className="max-w-5xl mx-auto px-4">
   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-8">
     {[
@@ -180,7 +180,7 @@ export default function GSIPartnership() {
           hover:shadow-lg
         "
       >
-        {/* BADGE IMAGE */}
+        BADGE IMAGE
         <div
           className="
             w-14 h-14
@@ -203,14 +203,14 @@ export default function GSIPartnership() {
           />
         </div>
 
-        {/* TEXT */}
+        TEXT
         <span className="leading-snug">
           {item.label}
         </span>
       </div>
     ))}
   </div>
-</div>
+</div> */}
 
 
 
