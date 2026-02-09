@@ -2,7 +2,7 @@ import { Building2, Users, Headphones } from "lucide-react";
 
 export default function EcosystemAudience() {
   return (
-    <section className="max-w-7xl mx-auto mt-28 px-4 pb-10">
+    <section className="max-w-7xl mx-auto mt-18 px-4 pb-10">
 
       {/* Heading */}
       <h2 className="text-3xl md:text-5xl font-semibold text-white tracking-tight text-center pb-10">

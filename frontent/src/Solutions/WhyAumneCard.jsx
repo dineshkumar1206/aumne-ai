@@ -32,7 +32,7 @@ export default function WhyAumneCard() {
   return (
     <section
       ref={sectionRef}
-      className="relative pt-24 pb-18 text-white overflow-hidden"
+      className="relative pt-10 pb-8 text-white overflow-hidden"
     >
       {/* MAIN HEADING (NO CHANGE ON DESKTOP) */}
 <div className="max-w-[1550px] mx-auto text-center mb-5 px-4">
@@ -44,8 +44,7 @@ export default function WhyAumneCard() {
 {/* SUB HEADING + PARAGRAPH */}
 <div className="max-w-5xl mx-auto text-center px-4 sm:px-6">
 
-  <h3 className="text-xl sm:text-3xl md:text-5xl font-bold mb-3 leading-tight  bg-gradient-to-br from-[#63D5FF] to-[#6C7CFF]
-  bg-clip-text text-transparent">
+  <h3 className="text-xl sm:text-3xl md:text-5xl font-bold mb-3 leading-tight  bg-gradient-to-br from-[#63D5FF] to-[#6C7CFF]  bg-clip-text text-transparent">
     Automatically Transforms Legacy IVR to Conversational AI
   </h3>
 
@@ -81,7 +80,7 @@ export default function WhyAumneCard() {
       <div className="-mb-20">
         <DataGrowthSection/>
       </div>
-      <div className="-mb-10">
+      <div className="-mb-20">
          <div className="max-w-7xl mx-auto mt-20 px-8 py-8">
   <p className="text-base sm:text-lg md:text-2xl text-white text-center leading-relaxed mb-2">
     Our Agentic platform goes beyond transformation, providing comprehensive Service Lifecycle Management (SLM) to optimize and sustain your services.

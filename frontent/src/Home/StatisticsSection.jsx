@@ -183,7 +183,7 @@ export default function StatisticsSection() {
         <h2 className="text-4xl md:text-6xl text-white font-semibold mb-6 tracking-tight">
           Industry Trends
         </h2>
-        <p className="mb-20 text-[#0D7EB6] text-bold md:text-2xl max-w-5xl mx-auto leading-relaxed">
+        <p className="mb-20 bg-gradient-to-br from-[#63D5FF] to-[#6C7CFF]  bg-clip-text text-transparent text-bold md:text-2xl max-w-5xl mx-auto leading-relaxed">
           The customer service landscape is rapidly evolving, but many
           organizations struggle with transformation challenges.
         </p>

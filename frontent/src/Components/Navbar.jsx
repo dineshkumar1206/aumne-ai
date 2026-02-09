@@ -148,13 +148,13 @@ const Navbar = () => {
           {/* <button onClick={()=>scrollToSection("benefits")} className="hover:text-gray-300 transition cursor-pointer">Benefits</button> */}
           
 
-          <button
+          {/* <button
             onClick={() => scrollToSection("statistics")}
             className="hover:text-gray-300 transition cursor-pointer"
           >
             Industry Trends
-          </button>
-          {/* <NavLink to="/industry-trends" className={activeStyle}>Industry Trends</NavLink> */}
+          </button> */}
+          <NavLink to="/industry-trends" className={activeStyle}>Industry Trends</NavLink>
 
           {/* <button
             onClick={() => scrollToSection("roi")}
@@ -254,12 +254,20 @@ const Navbar = () => {
     </div>
 
     {/* INDUSTRY TRENDS */}
-    <button
+
+       <NavLink
+          to="/industry-trends"
+          className={activeStyle}
+          onClick={() => setMenuOpen(false)}
+        >
+          Industry Trends
+        </NavLink>
+    {/* <button
      onClick={() => handleScroll("statistics")}
       className="text-left py-2 hover:text-gray-300 transition"
     >
       Industry Trends
-    </button>
+    </button> */}
 
     {/* PARTNERS */}
     <button
@@ -268,7 +276,6 @@ const Navbar = () => {
 >
   Partners
 </button>
-
 
     {/* CONTACT */}
     <NavLink

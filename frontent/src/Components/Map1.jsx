@@ -15,7 +15,7 @@ const locations = [
     country: "Switzerland",
     title: "EUROPEAN OPERATIONS",
     address: "Bern, Switzerland",
-    phone: "+41 31 555 0188",
+    phone: "+41 76 391 16 59",
     map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87147.41462409154!2d7.31253404481894!3d46.95468111984461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e39c0d43a1b77%3A0xcb555ffe0457659a!2sBern%2C%20Switzerland!5e0!3m2!1sen!2sin!4v1770367967644!5m2!1sen!2sin",
   },
   {
@@ -42,7 +42,7 @@ export default function Map1() {
   return (
     <>
       {/* Global Presence Header */}
-      <div className="text-center max-w-3xl mx-auto mb-6 mt-6">
+      <div className="text-center max-w-3xl mx-auto mb-6 mt-10">
         <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#0D7EB6]/30 text-lg font-bold text-[#0D7EB6] mb-4">
           Global Presence
         </span>
@@ -51,7 +51,7 @@ export default function Map1() {
           Where to Find Us
         </h2>
 
-        <p className="mt-5 text-lg md:text-xl text-white/80 leading-relaxed">
+        <p className="text-base sm:text-lg md:text-2xl leading-relaxed mb-2 mt-4 bg-gradient-to-br from-[#63D5FF] to-[#6C7CFF]  bg-clip-text text-transparent">
           With strategic hubs across continents, Aumne delivers localized
           expertise with global reach.
         </p>

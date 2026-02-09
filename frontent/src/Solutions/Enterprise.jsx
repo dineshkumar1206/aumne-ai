@@ -121,7 +121,7 @@ const Step1 = ({ number, title, desc }) => (
   </h2>
 
   {/* Subtitle */}
-  <p className="text-base sm:text-lg md:text-2xl text-[#0D7EB6] leading-relaxed mt-4 md:mt-6 max-w-4xl mx-auto">
+  <p className="text-base sm:text-lg md:text-2xl bg-gradient-to-br from-[#63D5FF] to-[#6C7CFF]  bg-clip-text text-transparent leading-relaxed mt-4 md:mt-6 max-w-4xl mx-auto">
     Transforming legacy IVR into intelligent conversational experiences with enterprise grade control.
   </p>
 
@@ -189,7 +189,7 @@ const Step1 = ({ number, title, desc }) => (
       </div>
     </section>
                     {/* Section2 */}
-      <section className="max-w-6xl mx-auto px-4 py-24 pb-10 ">
+      <section className="max-w-6xl mx-auto px-4 py-16 pb-10 ">
       {/* Heading */}
      <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-white text-center leading-tight">
   Why Customer Service Needs{" "}
@@ -198,7 +198,7 @@ const Step1 = ({ number, title, desc }) => (
   {/* <span className="text-[#0D7EB6]">at the Pace of AI</span> */}
 </h2>
 
-<p className="text-center text-base sm:text-lg md:text-2xl text-[#0D7EB6] leading-relaxed mt-3 sm:mt-4 max-w-4xl mx-auto px-2">
+<p className="text-center text-base sm:text-lg md:text-2xl bg-gradient-to-br from-[#63D5FF] to-[#6C7CFF]  bg-clip-text text-transparent leading-relaxed mt-3 sm:mt-4 max-w-4xl mx-auto px-2">
   Customer expectations have moved faster than enterprise customer service systems.
 </p>
 
@@ -308,7 +308,7 @@ const Step1 = ({ number, title, desc }) => (
     </section>
                          {/* Section 3 */}
  
-    <section className="max-w-6xl mx-auto px-4 py-24 pt-8 pb-10">
+    <section className="max-w-6xl mx-auto px-4 py-16 pt-8 pb-10">
       <div className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md px-10 py-16">
         {/* Title */}
         <h2 className="text-2xl sm:text-3xl font-bold text-white text-center mb-8 sm:mb-14">
@@ -354,9 +354,8 @@ const Step1 = ({ number, title, desc }) => (
         {/* Impact Bar */}
         <div className="mt-16  px-6 py-5 text-center">
        <p className="text-center text-base sm:text-lg md:text-2xl leading-relaxed px-2 max-w-4xl mx-auto">
-  <span className="font-semibold text-[#0D7EB6]">
-    Direct Impact :
-  </span>{" "}
+  
+    Direct Impact :{" "}
   NPS, churn, and revenue suffer from legacy IVR
 </p>
 
@@ -366,7 +365,7 @@ const Step1 = ({ number, title, desc }) => (
       
       {/* Section 04 */}
 
-       <section className="max-w-6xl mx-auto px-4 py-28 pb-10">
+       <section className="max-w-6xl mx-auto px-4 py-16 pb-10">
       {/* Heading */}
      <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-white text-center leading-tight">
   Why Legacy IVR{" "}
@@ -374,7 +373,7 @@ const Step1 = ({ number, title, desc }) => (
 </h2>
 
 {/* Subheading */}
-<p className="mt-3 sm:mt-4 text-center text-base sm:text-lg md:text-3xl text-[#0D7EB6] leading-relaxed max-w-4xl mx-auto px-2">
+<p className="mt-3 sm:mt-4 text-center text-base sm:text-lg md:text-3xl bg-gradient-to-br from-[#63D5FF] to-[#6C7CFF]  bg-clip-text text-transparent leading-relaxed max-w-4xl mx-auto px-2">
   The problem is not intent. It is tooling.
 </p>
 
@@ -483,14 +482,14 @@ const Step1 = ({ number, title, desc }) => (
       </div>
     </section>    
                 {/* Section 5 */}
-                 <section className="max-w-6xl mx-auto px-4 py-28 pb-10">
+                 <section className="max-w-6xl mx-auto px-4 py-16 pb-10">
       {/* Heading */}
      <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-center text-white leading-tight">
   How does Aumne solve this problem?
 </h2>
 
 {/* Subheading */}
-<p className="mt-4 sm:mt-6 text-center text-base sm:text-lg md:text-2xl leading-relaxed text-[#0D7EB6] max-w-5xl mx-auto px-2">
+<p className="mt-4 text-base sm:text-lg md:text-2xl text-center bg-gradient-to-br from-[#63D5FF] to-[#6C7CFF]  bg-clip-text text-transparent leading-relaxed mb-2 max-w-5xl mx-auto px-2">
   Aumne is an <b>AI-native Service Lifecycle Management platform</b> designed specifically for enterprise IVR modernization.
 </p>
 
@@ -586,11 +585,11 @@ const Step1 = ({ number, title, desc }) => (
       <div className="max-w-5xl mx-auto mt-12 px-8 py-8">
  <p className="text-center text-base sm:text-lg md:text-2xl text-white leading-relaxed max-w-5xl mx-auto px-2">
   We turn{" "}
-  <span className="text-[#0D7EB6] font-bold">
+  <span className="font-bold">
     decades of legacy IVR
   </span>{" "}
   into modern, conversational & omnichannel experiences with{" "}
-  <span className="text-[#0D7EB6] font-bold">
+  <span className=" font-bold">
     5× Faster GTM
   </span>.
 </p>
@@ -601,7 +600,7 @@ const Step1 = ({ number, title, desc }) => (
       
       {/* Section 6 */}
 
-       <section className="relative py-20">
+       <section className="relative py-16">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
@@ -609,7 +608,7 @@ const Step1 = ({ number, title, desc }) => (
   Continuous Evolution at AI Speed
 </h2>
 
-<p className="mt-4 sm:mt-6 text-center text-base sm:text-lg md:text-2xl text-[#0D7EB6] leading-relaxed mb-5 sm:mb-6 max-w-4xl mx-auto px-2">
+<p className="mt-4 sm:mt-6 text-center text-base sm:text-lg md:text-2xl bg-gradient-to-br from-[#63D5FF] to-[#6C7CFF]  bg-clip-text text-transparent leading-relaxed mb-5 sm:mb-6 max-w-4xl mx-auto px-2">
   Customer service should evolve as fast as your business
 </p>
 
@@ -789,8 +788,8 @@ const Step1 = ({ number, title, desc }) => (
   Proven Impact for Enterprises
 </h2>
 
-<p className="mt-4 sm:mt-6 text-center text-base sm:text-lg md:text-2xl text-[#0D7EB6] leading-relaxed max-w-4xl mx-auto px-2">
-  Aumne delivers <span className="text-[#0D7EB6] font-bold">measurable outcomes</span>, not promises.
+<p className="mt-4 sm:mt-6 text-center text-base sm:text-lg md:text-2xl  bg-gradient-to-br from-[#63D5FF] to-[#6C7CFF]  bg-clip-text text-transparent leading-relaxed max-w-4xl mx-auto px-2">
+  Aumne delivers <span className=" font-bold">measurable outcomes</span>, not promises.
 </p>
 
 </div>
@@ -855,7 +854,7 @@ const Step1 = ({ number, title, desc }) => (
     Scale with Confidence.
   </h1>
 
-  <p className="mt-4 sm:mt-5 text-base sm:text-lg md:text-2xl text-[#0D7EB6] leading-relaxed max-w-4xl mx-auto">
+  <p className="mt-4 text-base sm:text-lg md:text-2xl mb-2   bg-gradient-to-br from-[#63D5FF] to-[#6C7CFF]  bg-clip-text text-transparent leading-relaxed max-w-4xl mx-auto">
     Transform enterprise customer experience without massive disruption.
     Start with focused impact, validate results, and scale intelligently.
   </p>

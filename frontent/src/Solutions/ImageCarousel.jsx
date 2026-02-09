@@ -3,9 +3,8 @@ import { FiX, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const images = [
   "/image/img1.jpeg",
-  "/image/img2.jpeg",
-  "/image/img3.jpeg",
-  "/image/img4.jpeg",
+  "/image/image-carousel.png",
+
 ];
 
 const ImageCarousel = () => {
@@ -28,16 +27,16 @@ const ImageCarousel = () => {
   };
 
   return (
-    <div className="w-full py-12 flex justify-center -mb-6">
+    <div className="w-full py-14 flex justify-center">
       {/* Image Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-7xl w-full px-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl w-full px-6">
         {images.map((img, index) => (
           <div
             key={index}
             onClick={() => openModal(index)}
             className="cursor-pointer rounded-xl overflow-hidden shadow-lg bg-white hover:scale-105 transition-transform duration-300"
           >
-            <div className="w-full h-[250px]">
+            <div className="w-full h-[320px]">
               <img
                 src={img}
                 alt={`img-${index}`}
@@ -51,12 +50,12 @@ const ImageCarousel = () => {
       {/* Popup Modal */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
-          onClick={closeModal} // click outside to close
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+          onClick={closeModal}
         >
           <div
             className="relative w-full max-w-5xl px-4"
-            onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside
+            onClick={(e) => e.stopPropagation()}
           >
             {/* Close Button */}
             <button
@@ -90,7 +89,7 @@ const ImageCarousel = () => {
             </div>
 
             {/* Counter */}
-            <p className="text-center text-white mt-4 text-lg">
+            <p className="text-center text-white mt-4 text-base">
               {currentIndex + 1} / {images.length}
             </p>
           </div>

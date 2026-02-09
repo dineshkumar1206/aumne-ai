@@ -45,7 +45,7 @@ const GoogleCloudPartner = () => {
 <p
   className="
     mb-12 sm:mb-16 md:mb-20
-    text-[#0D7EB6]
+    bg-gradient-to-br from-[#63D5FF] to-[#6C7CFF]  bg-clip-text text-transparent
     text-center
     font-medium
     text-base sm:text-lg md:text-2xl
@@ -91,7 +91,6 @@ const GoogleCloudPartner = () => {
     "
   />
 </div>
-
 
           <h3 className="text-2xl font-semibold mb-4">
             A Validated Path to AI-Native Modernization

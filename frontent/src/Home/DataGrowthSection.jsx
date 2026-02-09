@@ -73,7 +73,7 @@ const GrowthCard = ({ icon, title, desc }) => {
           flex flex-col 
         "
         >
-          <h3 className="text-lg font-semibold text-[#0D7EB6] mb-4 text-center">
+          <h3 className="text-lg font-semibold text-white mb-4 text-center">
             {title}
           </h3>
 

@@ -34,7 +34,7 @@ export default function VelocityReliabilitySection() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen text-white overflow-hidden py-10 md:py-20 flex items-center"
+      className="relative min-h-screen -mt-30 text-white overflow-hidden py-14 md:py-20 flex items-center"
     >
       <div className="mx-auto max-w-[1550px] px-6 md:px-10 lg:px-14">
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
@@ -58,12 +58,12 @@ export default function VelocityReliabilitySection() {
 
             {/* Main Content */}
             <div>
-              <h3 className="text-[#5CE65C] text-xl md:text-2xl lg:text-3xl font-bold mb-4 leading-tight">
+              <h3 className="bg-gradient-to-br from-[#63D5FF] to-[#6C7CFF]  bg-clip-text text-transparent text-xl md:text-2xl lg:text-3xl font-bold mb-4 leading-tight">
                 Legacy IVR Is the Bottleneck to AI-Native Customer Service
               </h3>
 
               <p className="text-gray-300 text-lg md:text-xl leading-relaxed mx-auto lg:mx-0 max-w-2xl">
-                <b className="text-white">Nearly 75%</b> of enterprises still rely
+                Nearly 75% of enterprises still rely
                 on legacy, menu-driven IVR, even as customer expectations have
                 shifted decisively toward natural, conversational experiences.
                 <br />

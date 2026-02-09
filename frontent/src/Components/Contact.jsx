@@ -138,7 +138,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="w-full min-h-screen flex justify-center items-start bg-transparent py-8">
+      <div className="w-full min-h-screen flex justify-center items-start bg-transparent px-15 py-8">
         <div className="w-full max-w-4xl px-6">
           {/* Title */}
           <h1 className="text-4xl md:text-5xl font-bold text-white text-center mb-5">

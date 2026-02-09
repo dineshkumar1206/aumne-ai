@@ -53,7 +53,7 @@ export default function GSIPartnership() {
 <p
   className="
     mb-10 sm:mb-14 md:mb-20
-    text-[#0D7EB6]
+    bg-gradient-to-br from-[#63D5FF] to-[#6C7CFF]  bg-clip-text text-transparent
     text-center
     font-medium
     text-base

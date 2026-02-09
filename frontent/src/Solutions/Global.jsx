@@ -165,9 +165,10 @@ const Global = () => {
 </h2>
 
 {/* Description */}
-<p className="text-center md:text-center  text-base md:text-2xl text-[#0D7EB6] leading-relaxed mt-6 max-w-6xl">
+<p className="text-center md:text-center  text-base md:text-2xl bg-gradient-to-br from-[#63D5FF] to-[#6C7CFF]  bg-clip-text text-transparent
+  leading-relaxed mt-6 max-w-6xl">
   An AI-native platform that helps GSIs modernize legacy IVR into AI-powered
-  customer service—faster, repeatable, and at scale.
+  customer service faster, repeatable, and at scale.
 </p>
 
 {/* Metrics */}
@@ -230,7 +231,7 @@ const Global = () => {
     </section>
 
                  {/* Section 2 */}
-                  <section className="max-w-6xl mx-auto px-4 py-24 pb-10 ">
+                  <section className="max-w-6xl mx-auto px-4 py-16 pb-10 ">
       {/* Heading */}
      <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white text-center leading-tight">
   Why Enterprises Are Struggling to{" "}
@@ -240,13 +241,13 @@ const Global = () => {
 
 
       {/* Sub-heading */}
-     <p className="mt-4 sm:mt-5 md:mt-6 text-center text-base sm:text-lg md:text-2xl text-[#0D7EB6] leading-relaxed px-2 sm:px-4 md:px-0">
-  <span className="block md:inline">
+     <p className="mt-4 sm:mt-5 md:mt-6 text-center text-base sm:text-lg md:text-2xl bg-gradient-to-br from-[#63D5FF] to-[#6C7CFF]  bg-clip-text text-transparent leading-relaxed px-2 sm:px-4 md:px-0">
+  {/* <span className="block md:inline">
     Customers want conversations.
   </span>
   <span className="block md:inline">
     Enterprises still offer menus.
-  </span>
+  </span> */}
   <span className="block md:inline">
     Legacy IVR is the bottleneck to AI-native customer service.
   </span>
@@ -399,8 +400,8 @@ const Global = () => {
         {/* Impact Bar */}
         <div className="mt-16 px-6 py-5 text-center">
           <p className="text-white text-center text-xl md:text-2xl">
-            <span className="font-semibold text-[#0D7EB6]">
-             Result:
+            <span className="font-semibold">
+             Result :
             </span>{" "}
              IVR modernization takes 9–18 months, is expensive to deliver, and fails to scale profitably.
           </p>
@@ -409,7 +410,7 @@ const Global = () => {
     </section>        
 
                             {/*Section 4  */}
-            <section className="w-full py-20">
+            <section className="w-full py-16">
      <div className="max-w-5xl mx-auto px-4">
 
   {/* Heading */}
@@ -455,7 +456,7 @@ const Global = () => {
         {/* Bottom Highlight Box */}
         <div className="max-w-5xl mx-auto mt-12 px-8 py-8">
           <p className="text-white text-center text-xl md:text-2xl leading-relaxed">
-            <span className="text-[#0D7EB6] font-bold">
+            <span className="font-bold">
               The Reality today : 
             </span>{" "}
             Most GSI delivery models rely on people and process, not platforms,
@@ -466,7 +467,7 @@ const Global = () => {
     </section>
               {/* Section 5 */}
 
-           <section className="py-24 ">
+           <section className="py-16 px-8 ">
       <div className="max-w-7xl mx-auto px-6">
   {/* Heading */}
   <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-white text-center leading-snug md:leading-tight">
@@ -636,14 +637,14 @@ const Global = () => {
 
 
       </div>
-        <div className="max-w-5xl mx-auto mt-12 px-8 py-8">
+        <div className="max-w-5xl mx-auto mt-12 px-4 py-8">
   <p className="text-center text-xl md:text-2xl text-white leading-relaxed">
     Aumne enables GSIs to{" "}
-    <span className="text-[#0D7EB6] font-bold">
+    <span className=" font-bold">
       grow revenue, protect margins,
     </span>{" "}
     and{" "}
-    <span className="text-[#0D7EB6] font-bold">
+    <span className="font-bold">
       create recurring income
     </span>{" "}
     through a platform-led CX transformation model—while retaining full ownership and delivery control.
@@ -653,19 +654,19 @@ const Global = () => {
     </section>
 
      {/*section 6  */}
-             <section className="w-full py-20">
+             <section className="w-full py-10">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
         <div className="text-center max-w-4xl mx-auto mb-16 px-4">
   <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white leading-tight">
-    Start Small. Prove Value.
+    Start Small. Prove Value. <br/>
     <span className="block md:inline">
       {" "}Scale with Confidence.
     </span>
   </h1>
 
-  <p className="mt-4 text-base sm:text-lg md:text-2xl text-[#0D7EB6] leading-relaxed">
+  <p className="mt-4 text-base sm:text-lg md:text-2xl bg-gradient-to-br from-[#63D5FF] to-[#6C7CFF]  bg-clip-text text-transparent leading-relaxed">
     Transform enterprise customer experience without massive disruption.
     Start with focused impact, validate results, and scale intelligently.
   </p>

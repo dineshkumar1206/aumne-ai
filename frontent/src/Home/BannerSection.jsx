@@ -139,7 +139,7 @@ const handleMouseLeave = () => {
 
   return (
     <main>
-      <section className="relative w-full h-screen z-10">
+      <section className="relative w-full h-screen z-8">
 
   <div className="mx-auto w-full max-w-8xl px-6 md:px-16 h-full flex flex-col">
 
@@ -153,7 +153,7 @@ const handleMouseLeave = () => {
         </h2>
 
         {/* Metrics */}
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-[auto_1px_auto_1px_auto] items-center gap-y-6 md:gap-x-10 text-white">
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-[auto_1px_auto_1px_auto] items-center gap-y-6 md:gap-x-10 text-white">
           
           <div>
             <p className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0D7EB6]">5X</p>
@@ -201,12 +201,12 @@ const handleMouseLeave = () => {
 
 
     {/* BOTTOM LOGO CAROUSEL (INSIDE SAME SCREEN HEIGHT)  */}
-          <h2 className="text-white text-2xl sm:text-lg md:text-xl font-bold text-center mt-14  px-4">
+          <h2 className="text-white text-2xl sm:text-lg md:text-xl font-bold text-center mt-10  px-4">
   Integrates with leading CCaaS, contact center, and conversational AI platforms
 </h2>
 
 <div className="relative w-full pb-6 overflow-hidden py-0">
-  <div className="mx-auto px-6 max-w-[1400px]">
+  <div className="mx-auto px-6 mb-12 max-w-[1400px]">
 
     <div
   ref={containerRef}
@@ -222,7 +222,7 @@ const handleMouseLeave = () => {
         {[...logos, ...logos].map((logo, index) => (
           <div
             key={index}
-            className="flex-shrink-0 h-[240px] w-[240px] flex items-center justify-center"
+            className="flex-shrink-0 h-[220px] w-[220px] flex items-center justify-center"
           >
             <img
               src={logo}
@@ -387,9 +387,9 @@ const handleMouseLeave = () => {
         <section className="" id="outcomes">
            <OutcomesSection/>
         </section>
-        <section className="" id="transformation-window">
+        {/* <section className="" id="transformation-window">
            <TransformationWindow/>
-        </section>
+        </section> */}
         {/* <section className="" id="lived-experience">
            <LivedExperienceSection/>
         </section>  */}
@@ -399,9 +399,9 @@ const handleMouseLeave = () => {
         {/* {/* <section className="" id="benefits">
            <Benefits/>
         </section> */}
-        <section className="" id="statistics">
+        {/* <section className="" id="statistics">
            <StatisticsSection/>
-        </section>
+        </section> */}
         {/* <section className="" id="roi">
            <BookDemoModal/>
         </section> */}

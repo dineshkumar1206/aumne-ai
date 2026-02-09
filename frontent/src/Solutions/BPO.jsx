@@ -17,7 +17,7 @@ export default function BPO() {
     {/* Text Content */}
     <div className="flex flex-col">
       {highlight && (
-        <h3 className="text-[#0D7EB6] text-xl font-semibold mb-1">
+        <h3 className=" text-xl font-semibold mb-1">
           {highlight}
         </h3>
       )}
@@ -197,7 +197,7 @@ const Step = ({ number, title, desc }) => (
   </h2>
 
   {/* Subtitle */}
-  <p className="text-base sm:text-lg md:text-2xl text-[#0D7EB6] leading-relaxed mt-4 md:mt-6 max-w-4xl mx-auto">
+  <p className="text-base sm:text-lg md:text-2xl bg-gradient-to-br from-[#63D5FF] to-[#6C7CFF]  bg-clip-text text-transparent leading-relaxed mt-4 md:mt-6 max-w-4xl mx-auto">
     Transform legacy IVR into AI-powered support, sales, and outreach with humans firmly in control.
   </p>
 
@@ -247,7 +247,7 @@ const Step = ({ number, title, desc }) => (
     </section>
                 {/* Section 2 */}
 
-        <section className="py-14 md:py-20 px-4 md:px-6">
+        <section className="py-12 md:py-20 px-4 md:px-6">
   <div className="max-w-7xl mx-auto text-center mb-10 md:mb-14">
     
     <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white leading-tight">
@@ -255,7 +255,7 @@ const Step = ({ number, title, desc }) => (
       <span className="block sm:inline">Eroding Your Margins</span>
     </h2>
 
-    <p className="text-lg sm:text-xl md:text-2xl text-[#0D7EB6] leading-relaxed mt-3 md:mt-4">
+    <p className="text-lg sm:text-xl md:text-2xl bg-gradient-to-br from-[#63D5FF] to-[#6C7CFF]  bg-clip-text text-transparent leading-relaxed mt-3 md:mt-4">
       What this is costing BPOs
     </p>
 
@@ -292,7 +292,7 @@ const Step = ({ number, title, desc }) => (
 
       {/*Section 3  */}
 
-      <section className="py-20 px-6">
+      <section className="py-16 px-6">
      <div className="max-w-7xl mx-auto text-center mb-10 md:mb-14 px-2 md:px-0">
   
   <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white leading-tight">
@@ -300,7 +300,7 @@ const Step = ({ number, title, desc }) => (
     <span className="block sm:inline">Hybrid Service Models</span>
   </h2>
 
-  <p className="text-lg sm:text-xl md:text-2xl text-[#0D7EB6] leading-relaxed mt-3 md:mt-4">
+  <p className="text-lg sm:text-xl md:text-2xl bg-gradient-to-br from-[#63D5FF] to-[#6C7CFF]  bg-clip-text text-transparent leading-relaxed mt-3 md:mt-4">
     Human + Voice AI: Deliver end-to-end CX outcomes
   </p>
 
@@ -336,7 +336,7 @@ const Step = ({ number, title, desc }) => (
 
       {/* Section 4 */}
      
-      <section className="py-20 px-6">
+      <section className="py-16 px-6">
       <div className="max-w-7xl mx-auto text-center mb-10 md:mb-14 px-2 md:px-0">
   <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white leading-tight">
     How You Make Money{" "}
@@ -371,14 +371,14 @@ const Step = ({ number, title, desc }) => (
         />
       </div>
 
-        <div className="max-w-5xl mx-auto mt-20 px-8 py-8 rounded-3xl">
+        <div className="max-w-5xl mx-auto mt-18 px-6 py-8 rounded-3xl">
   <p className="text-center text-xl md:text-2xl text-white leading-relaxed">
     Aumne enables BPOs to{" "}
-    <span className="text-[#0D7EB6] font-bold">
+    <span className=" font-bold">
       grow revenue, protect margins,
     </span>{" "}
     and{" "}
-    <span className="text-[#0D7EB6] font-bold">
+    <span className="font-bold">
       monetize continuous CX / EX evolution.
     </span>.
   </p>
@@ -387,7 +387,7 @@ const Step = ({ number, title, desc }) => (
 
            {/* Section page customer experience */}
 
-            <section className="w-full py-13">
+            <section className="w-full py-12">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
@@ -398,7 +398,7 @@ const Step = ({ number, title, desc }) => (
     <span className="block sm:inline">Are Connected</span>
   </h2>
 
-  <p className="mt-4 md:mt-6 text-center text-lg sm:text-xl md:text-2xl text-[#0D7EB6] leading-relaxed">
+  <p className="mt-4 md:mt-6 text-center text-lg sm:text-xl md:text-2xl bg-gradient-to-br from-[#63D5FF] to-[#6C7CFF]  bg-clip-text text-transparent leading-relaxed">
     Customer service systems shape the daily experience of frontline teams.
     When technology is rigid, both customers and employees suffer.
   </p>
@@ -474,7 +474,7 @@ const Step = ({ number, title, desc }) => (
         <div className="mt-16 text-center">
           <p className="text-xl md:text-2xl font-semibold leading-relaxed text-white">
             Better CX starts with better EX —{" "}
-            <span className="text-[#0D7EB6]">both begin with the same platform.</span>
+            <span className="">both begin with the same platform.</span>
           </p>
         </div>
 
@@ -484,14 +484,13 @@ const Step = ({ number, title, desc }) => (
 
            {/* Section 5 */}
 
-       <section className="py-20 px-6">
+       <section className="py-16 px-6">
      <div className="max-w-7xl mx-auto text-center mb-10 md:mb-14 px-2 md:px-0">
   <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white leading-tight">
     Why This Matters{" "}
     <span className="block sm:inline">to You</span>
   </h2>
 </div>
-
 
       <div className="grid md:grid-cols-3 gap-8 text-lg max-w-7xl mx-auto">
         <Box
@@ -531,17 +530,17 @@ const Step = ({ number, title, desc }) => (
     
 
      {/*section 6  */}
-             <section className="w-full py-20">
+             <section className="w-full py-16">
       <div className="max-w-7xl mx-auto px-6">
 
            {/* Heading */}
    <div className="text-center max-w-4xl mx-auto mb-10 md:mb-16 px-3 md:px-0">
   <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
-    Start Small. Prove Value.
+    Start Small. Prove Value.<br/>
     <span className="block sm:inline"> Scale with Confidence.</span>
   </h1>
 
-  <p className="mt-4 md:mt-5 text-center text-lg sm:text-xl md:text-2xl text-[#0D7EB6] leading-relaxed">
+  <p className="mt-4 md:mt-5 text-center text-lg sm:text-xl md:text-2xl bg-gradient-to-br from-[#63D5FF] to-[#6C7CFF]  bg-clip-text text-transparent leading-relaxed">
     Transform enterprise customer experience without massive disruption.
     Start with focused impact, validate results, and scale intelligently.
   </p>

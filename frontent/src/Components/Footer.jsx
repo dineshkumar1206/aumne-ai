@@ -34,7 +34,7 @@ export default function Footer() {
           >
             <img src="/logo.png" alt="AumneAI" className="h-14 md:h-16" />
           </button>
-              <a className="w-9 h-9 flex items-center justify-center rounded-full bg-white/20 hover:bg-[#0D7EB6] transition cursor-pointer">
+              <a target="_blank" href="https://www.linkedin.com/company/aumneai/" className="w-9 h-9 flex items-center justify-center rounded-full bg-white/20 hover:bg-[#0D7EB6] transition cursor-pointer">
                 <FaLinkedinIn size={16} />
               </a>
 
@@ -49,21 +49,26 @@ export default function Footer() {
         {/* LINKS COLUMN 1 */}
         <div className="flex flex-col gap-3 text-sm md:text-base">
 
-          <button onClick={() => scrollToSection("solutions")} className="hover:text-gray-300 transition text-left">
+          <button onClick={() => scrollToSection("solutions")} className="hover:text-gray-300 transition text-left cursor-pointer">
             Solutions
           </button>
 
-          <button onClick={() => scrollToSection("statistics")} className="hover:text-gray-300 transition text-left">
+          {/* <button onClick={() => scrollToSection("statistics")} className="hover:text-gray-300 transition text-left cursor-pointer">
             Industry Trends
-          </button>
-
-          <NavLink to="/contact" className={activeStyle}>
-            Contact
+          </button> */}
+          <NavLink to="/industry-trends" className={activeStyle}>
+            Industry Trends
           </NavLink>
 
-          <button onClick={() => scrollToSection("gsi")} className="hover:text-gray-300 transition text-left">
+         
+
+          <button onClick={() => scrollToSection("gsi")} className="hover:text-gray-300 transition text-left cursor-pointer">
             GSI Partnership
           </button>
+
+           <NavLink to="/contact" className={activeStyle}>
+            Contact
+          </NavLink>
 
         </div>
 
@@ -80,6 +85,10 @@ export default function Footer() {
 
           <NavLink to="/bpo-cx" className={activeStyle}>
             BPO & CX Providers
+          </NavLink>
+
+          <NavLink to="/about" className={activeStyle}>
+          About us
           </NavLink>
 
         </div>

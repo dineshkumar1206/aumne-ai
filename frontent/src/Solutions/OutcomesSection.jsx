@@ -23,7 +23,7 @@ const OutcomesSection = () => {
 
 
   return (
-    <section className="max-w-6xl mx-auto mt-32 px-4 mb-10">
+    <section className="max-w-6xl mx-auto mt-20 px-4 mb-10">
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* Heading */}
        <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-white tracking-tight text-center pb-10">
