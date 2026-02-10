@@ -3,6 +3,8 @@ import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
 import BookDemoModal from "./BookDemoModal";
 import {motion} from "framer-motion"
+import { ArrowRight } from "lucide-react";
+
 
 
 const Navbar = () => {
@@ -225,32 +227,38 @@ const Navbar = () => {
         Solutions
       </button>
 
-      {/* Sub-menu */}
-      <div className="ml-4 mt-2 flex flex-col gap-1 border-l border-white/10 pl-4">
-        <NavLink
-          to="/enterprise"
-          className={activeStyle}
-          onClick={() => setMenuOpen(false)}
-        >
-          Enterprise
-        </NavLink>
+     {/* Sub-menu */}
+<div className="ml-4 mt-2 flex flex-col gap-1 border-l border-white/10 pl-4">
+  
+  <NavLink
+    to="/enterprise"
+    className={`${activeStyle} flex items-center gap-2`}
+    onClick={() => setMenuOpen(false)}
+  >
+    <ArrowRight size={16} className="text-[#0D7EB6]" />
+    Enterprise
+  </NavLink>
 
-        <NavLink
-          to="/global"
-          className={activeStyle}
-          onClick={() => setMenuOpen(false)}
-        >
-          Global System Integration
-        </NavLink>
+  <NavLink
+    to="/global"
+    className={`${activeStyle} flex items-center gap-2`}
+    onClick={() => setMenuOpen(false)}
+  >
+    <ArrowRight size={16} className="text-[#0D7EB6]" />
+    Global System Integration
+  </NavLink>
 
-        <NavLink
-          to="/bpo-cx"
-          className={activeStyle}
-          onClick={() => setMenuOpen(false)}
-        >
-          BPO & CX Providers
-        </NavLink>
-      </div>
+  <NavLink
+    to="/bpo-cx"
+    className={`${activeStyle} flex items-center gap-2`}
+    onClick={() => setMenuOpen(false)}
+  >
+    <ArrowRight size={16} className="text-[#0D7EB6]" />
+    BPO & CX Providers
+  </NavLink>
+
+</div>
+
     </div>
 
     {/* INDUSTRY TRENDS */}

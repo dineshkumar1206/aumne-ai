@@ -33,10 +33,11 @@ export default function EcosystemAudience() {
             Modernize complex legacy IVRs without ripping and replacing
             existing platforms.
           </p>
-
-          <button className="mt-5 text-sm font-medium text-[#0D7EB6] hover:underline">
+            <a target="_blank" href="/enterprise">
+          <button className="mt-5 text-sm font-medium text-[#0D7EB6] hover:underline cursor-pointer">
             Turn your legacy IVR into Conversational AI →
           </button>
+          </a>
         </div>
 
         {/* GSIs */}
@@ -59,10 +60,11 @@ export default function EcosystemAudience() {
             Deliver AI-driven CX / EX transformation faster, at scale,
             while protecting margins.
           </p>
-
-          <button className="mt-5 text-sm font-medium text-[#0D7EB6] hover:underline">
+             <a target="_blank" href="/global">
+          <button className="mt-5 text-sm font-medium text-[#0D7EB6] hover:underline cursor-pointer">
             Unlock faster transformation →
           </button>
+          </a>
         </div>
 
         {/* BPOs */}
@@ -85,10 +87,11 @@ export default function EcosystemAudience() {
             Enable Human + Voice AI service models that improve productivity,
             margins, and deal competitiveness.
           </p>
-
-          <button className="mt-5 text-sm font-medium text-[#0D7EB6] hover:underline">
+          <a target="_blank" href="/bop-cx">
+          <button className="mt-5 text-sm font-medium text-[#0D7EB6] hover:underline cursor-pointer">
             Explore the BPO advantage →
           </button>
+          </a>
         </div>
 
       </div>
