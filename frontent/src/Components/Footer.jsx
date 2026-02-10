@@ -60,10 +60,8 @@ export default function Footer() {
             Industry Trends
           </NavLink>
 
-         
-
-          <button onClick={() => scrollToSection("gsi")} className="hover:text-gray-300 transition text-left cursor-pointer">
-            GSI Partnership
+          <button onClick={() => scrollToSection("cloud")} className="hover:text-gray-300 transition text-left cursor-pointer">
+            Partners
           </button>
 
            <NavLink to="/contact" className={activeStyle}>
