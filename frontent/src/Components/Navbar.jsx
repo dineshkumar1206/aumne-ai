@@ -68,7 +68,7 @@ const Navbar = () => {
           onClick={() => scrollToSection("home")}
           className="flex items-center gap-3 cursor-pointer"
         >
-          <img src="/logo.png" alt="AumneAI" className="h-14 md:h-16" />
+          <img src="/image/AUMNE-AI-logo-name.png" alt="AumneAI" className="h-14 md:h-16" />
         </button>
 
         {/* Desktop Links */}

@@ -32,7 +32,7 @@ export default function Footer() {
             onClick={() => scrollToSection("home")}
             className="flex items-center gap-3 cursor-pointer"
           >
-            <img src="/logo.png" alt="AumneAI" className="h-14 md:h-16" />
+            <img src="/image/AUMNE-AI-logo-name.png" alt="AumneAI" className="h-14 md:h-16" />
           </button>
               <a target="_blank" href="https://www.linkedin.com/company/aumneai/" className="w-9 h-9 flex items-center justify-center rounded-full bg-white/20 hover:bg-[#0D7EB6] transition cursor-pointer">
                 <FaLinkedinIn size={16} />
