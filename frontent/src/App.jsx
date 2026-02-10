@@ -41,10 +41,10 @@ const App = () => {
         <Route path="/gst-partnership" element={<GSIPartnership/>} />  /bpo */}
 
         <Route path="/enterprise" element={<Enterprise/>}></Route>
-        <Route path="/global" element={<Global/>}></Route>
+        <Route path="/gsi" element={<Global/>}></Route>
         <Route path="/bpo-cx" element={<BPO/>} ></Route>
         <Route path="/contact" element={<Contact/>} ></Route>
-        <Route path="/about" element={<About/>}></Route>
+        <Route path="/about-us" element={<About/>}></Route>
         <Route path="/industry-trends" element={<StatisticsSection/>}> </Route>
         
         <Route path="/" element={<HomePage />} />

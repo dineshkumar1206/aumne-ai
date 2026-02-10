@@ -77,7 +77,7 @@ export default function Footer() {
             Enterprise
           </NavLink>
 
-          <NavLink to="/global" className={activeStyle}>
+          <NavLink to="/gsi" className={activeStyle}>
             Global System Integration
           </NavLink>
 
@@ -85,7 +85,7 @@ export default function Footer() {
             BPO & CX Providers
           </NavLink>
 
-          <NavLink to="/about" className={activeStyle}>
+          <NavLink to="/about-us" className={activeStyle}>
           About us
           </NavLink>
 

@@ -134,7 +134,7 @@ const Navbar = () => {
              </NavLink> <br/>
              </div>
              <div className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition cursor-pointer">
-             <NavLink to="/global" className={activeStyle}>
+             <NavLink to="/gsi" className={activeStyle}>
                Global System Integration
              </NavLink> <br/>
               </div>
@@ -173,7 +173,7 @@ const Navbar = () => {
           </button>
 
           <NavLink to="/contact" className={activeStyle}>Contact</NavLink>
-          <NavLink to="/about" className={activeStyle}>About us</NavLink>
+          <NavLink to="/about-us" className={activeStyle}>About us</NavLink>
 
          
 
@@ -240,7 +240,7 @@ const Navbar = () => {
   </NavLink>
 
   <NavLink
-    to="/global"
+    to="/gsi"
     className={`${activeStyle} flex items-center gap-2`}
     onClick={() => setMenuOpen(false)}
   >
@@ -296,7 +296,7 @@ const Navbar = () => {
 
     {/* ABOUT */}
     <NavLink
-      to="/about"
+      to="/about-us"
       className={activeStyle}
       onClick={() => setMenuOpen(false)}
     >
