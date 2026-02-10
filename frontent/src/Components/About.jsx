@@ -96,10 +96,10 @@ function About() {
       </section>
 
       {/* OUR STORY */}
-      <section className="py-10 bg-transparent">
-  <div className="max-w-6xl mx-auto px-6 text-center">
+      <section className="py-10 bg-transparent max-w-6xl mx-auto">
+  <div className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md px-10 py-16">
     {/* Heading */}
-    <h3 className="text-3xl md:text-4xl font-semibold text-white mb-4">
+    <h3 className="text-3xl md:text-4xl font-semibold text-center text-white mb-4">
       Our Story
     </h3>
 

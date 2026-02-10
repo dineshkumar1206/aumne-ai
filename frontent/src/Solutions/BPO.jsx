@@ -404,7 +404,6 @@ const Step = ({ number, title, desc }) => (
   </p>
 </div>
 
-
         {/* Grid Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
 
