@@ -3,7 +3,7 @@ import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
 import BookDemoModal from "./BookDemoModal";
 import {motion} from "framer-motion"
-import { ArrowRight } from "lucide-react";
+import { ArrowRight , ChevronDown } from "lucide-react";
 
 
 
@@ -84,50 +84,21 @@ const Navbar = () => {
           </button>
 
           <div className="relative group">
-            <button
-              onClick={() => scrollToSection("solutions")}
-              className="hover:text-gray-300 transition cursor-pointer"
-            >
-              Solutions
-            </button>
+          <button
+            onClick={() => scrollToSection("solutions")}
+            className="flex items-center gap-1 hover:text-gray-300 transition cursor-pointer group"
+          >
+            Solutions
+            <ChevronDown 
+              size={16} 
+              className="transition-transform duration-300 group-hover:rotate-180"
+            />
+          </button>
 
             {/* Dropdown */}
              <div className="absolute left-0 top-full mt-3 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
               <div className="bg-[#0a0a0a] border border-white/10 rounded-xl shadow-xl p-3 space-y-2">
-                {/* <button
-                  onClick={() => scrollToSection("transformation-comparison")}
-                  className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition cursor-pointer"
-                >
-                  Transformation Comparison
-                </button>
-
-                <button
-                  onClick={() => scrollToSection("ecosystem-audience")}
-                  className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition cursor-pointer"
-                >
-                  Ecosystem & Audience
-                </button>
-
-                <button
-                  onClick={() => scrollToSection("outcomes")}
-                  className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition cursor-pointer"
-                >
-                  Outcomes
-                </button>
-
-                <button
-                  onClick={() => scrollToSection("transformation-window")}
-                  className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition cursor-pointer"
-                >
-                  Transformation Window
-                </button>
-
-                <button
-                  onClick={() => scrollToSection("lived-experience")}
-                  className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition cursor-pointer"
-                >
-                  Lived Experience
-                </button> */}
+               
                  <div className="block w-full text-left px-4 py-2 rounded-md hover:bg-white/5 hover:text-[#0D7EB6] transition cursor-pointer">
                   <NavLink to="/enterprise" className={activeStyle}>
             Enterprise
