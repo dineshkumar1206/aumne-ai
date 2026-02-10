@@ -10,22 +10,22 @@ export default function Enterprise() {
 
   const impacts = [
     {
-      title: "Accelerate Time to Value",
-      highlight: "Up to 5x faster",
+      title: "Accelerate GTM",
+      highlight: "Up to 5X faster",
       desc: "Deliver results significantly faster than traditional IVR modernization programs.",
       icon: Rocket,
       points: ["Rapid deployment", "Quick ROI", "Minimal disruption"],
     },
     {
       title: "Automate Customer Service at Scale",
-      highlight: "≈ 70% automation",
+      highlight: "70% plus automation",
       desc: "Achieve large-scale automation across the entire customer service lifecycle.",
       icon: Cpu,
       points: ["End-to-end automation", "Scalable workflows", "Consistent CX"],
     },
     {
       title: "Drive Efficiency Improvements",
-      highlight: "40%+ improvement",
+      highlight: "40% plus improvement",
       desc: "Increase self-service adoption and optimize operational efficiency.",
       icon: TrendingUp,
       points: [
@@ -585,11 +585,11 @@ const Step1 = ({ number, title, desc }) => (
       <div className="max-w-5xl mx-auto mt-12 px-8 py-8">
  <p className="text-center text-base sm:text-lg md:text-2xl text-white leading-relaxed max-w-5xl mx-auto px-2">
   We turn{" "}
-  <span className="font-bold">
+  <span className="">
     decades of legacy IVR
   </span>{" "}
   into modern, conversational & omnichannel experiences with{" "}
-  <span className=" font-bold">
+  <span className="">
     5X Faster GTM
   </span>.
 </p>
@@ -609,7 +609,7 @@ const Step1 = ({ number, title, desc }) => (
 </h2>
 
 <p className="mt-4 sm:mt-6 text-center text-base sm:text-lg md:text-2xl bg-gradient-to-br from-[#63D5FF] to-[#6C7CFF]  bg-clip-text text-transparent leading-relaxed mb-5 sm:mb-6 max-w-4xl mx-auto px-2">
-  Customer service should evolve as fast as your business
+  Customer service should evolve as fast as your business.
 </p>
 
 
@@ -789,7 +789,7 @@ const Step1 = ({ number, title, desc }) => (
 </h2>
 
 <p className="mt-4 sm:mt-6 text-center text-base sm:text-lg md:text-2xl  bg-gradient-to-br from-[#63D5FF] to-[#6C7CFF]  bg-clip-text text-transparent leading-relaxed max-w-4xl mx-auto px-2">
-  Aumne delivers <span className=" font-bold">measurable outcomes</span>, not promises.
+  Aumne delivers <span className="">measurable outcomes</span>, not promises.
 </p>
 
 </div>

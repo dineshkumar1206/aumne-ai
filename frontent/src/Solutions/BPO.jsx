@@ -256,7 +256,7 @@ const Step = ({ number, title, desc }) => (
     </h2>
 
     <p className="text-lg sm:text-xl md:text-2xl bg-gradient-to-br from-[#63D5FF] to-[#6C7CFF]  bg-clip-text text-transparent leading-relaxed mt-3 md:mt-4">
-      What this is costing BPOs
+      What this is costing BPOs.
     </p>
 
   </div>
@@ -301,7 +301,7 @@ const Step = ({ number, title, desc }) => (
   </h2>
 
   <p className="text-lg sm:text-xl md:text-2xl bg-gradient-to-br from-[#63D5FF] to-[#6C7CFF]  bg-clip-text text-transparent leading-relaxed mt-3 md:mt-4">
-    Human + Voice AI: Deliver end-to-end CX outcomes
+    Human + Voice AI : Deliver end-to-end CX outcomes.
   </p>
 
 </div>
@@ -374,13 +374,13 @@ const Step = ({ number, title, desc }) => (
         <div className="max-w-5xl mx-auto mt-18 px-6 py-8 rounded-3xl">
   <p className="text-center text-xl md:text-2xl text-white leading-relaxed">
     Aumne enables BPOs to{" "}
-    <span className=" font-bold">
+    <span className="">
       grow revenue, protect margins,
     </span>{" "}
     and{" "}
-    <span className="font-bold">
+    <span className="">
       monetize continuous CX / EX evolution.
-    </span>.
+    </span>
   </p>
 </div>
     </section>
@@ -472,8 +472,8 @@ const Step = ({ number, title, desc }) => (
 
         {/* Bottom Statement */}
         <div className="mt-16 text-center">
-          <p className="text-xl md:text-2xl font-semibold leading-relaxed text-white">
-            Better CX starts with better EX —{" "}
+          <p className="text-xl md:text-2xl font-medium leading-relaxed text-white">
+            Better CX starts with better EX ,{" "}
             <span className="">both begin with the same platform.</span>
           </p>
         </div>

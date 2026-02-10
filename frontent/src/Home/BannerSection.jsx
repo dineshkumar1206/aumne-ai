@@ -202,7 +202,7 @@ const handleMouseLeave = () => {
 
     {/* BOTTOM LOGO CAROUSEL (INSIDE SAME SCREEN HEIGHT)  */}
           <h3 className="text-white text-sm sm:text-base md:text-l font-semibold text-center mt-10  px-4">
-  Integrates with leading CCaaS, contact center, and conversational AI platforms
+  Integrates with leading CCaaS, contact center, and conversational AI platforms.
 </h3>
 
 <div className="relative w-full pb-6 overflow-hidden py-0">

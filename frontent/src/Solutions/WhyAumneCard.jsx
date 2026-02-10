@@ -49,7 +49,7 @@ export default function WhyAumneCard() {
   </h3>
 
   <p className="text-base sm:text-lg md:text-2xl text-white leading-relaxed mb-2">
-    Our Agentic platform is purpose-built to modernize what already exists, not force enterprises to start from scratch.
+    Our Agentic platform is purpose, built to modernize what already exists, not force enterprises to start from scratch.
   </p>
 
 </div>

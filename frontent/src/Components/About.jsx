@@ -108,70 +108,72 @@ function About() {
 
     {/* Quote opener */}
     <p className="text-lg md:text-xl text-white italic max-w-3xl mx-auto mb-10">
-      “The future of experience is intelligent — but only if enterprises can
-      evolve what already exists.”
+      “Empowering Enterprises to Take Control of AI-Driven Customer Service.”
     </p>
 
     {/* Story Content */}
-    <div className="space-y-6 max-w-5xl mx-auto text-left">
-      <p className="text-base md:text-lg text-white leading-relaxed">
-        As we looked toward a future shaped by AI-driven customer and employee
-        experiences, we saw a fundamental disconnect. Customer behavior and
-        expectations were evolving rapidly, yet most enterprises were still
-        serving them through{" "}
-        <span className="text-white font-medium">
-          decades-old legacy systems
-        </span>
-        .
-      </p>
+<div className="space-y-6 max-w-5xl mx-auto text-left">
+  <p className="text-base md:text-lg text-white leading-relaxed">
+    As we looked to the future of customer and employee experience shaped by AI,
+    we saw a fundamental disconnect. Customer behavior and expectations are
+    evolving rapidly, yet most enterprises continue to serve them through{" "}
+    <span className="text-white font-medium">
+      decades-old legacy systems
+    </span>
+    .
+  </p>
 
-      <p className="text-base md:text-lg text-white leading-relaxed">
-        The barrier wasn’t ambition — it was infrastructure. While modern
-        platforms were designed for greenfield innovation, enterprises needed a
-        way to{" "}
-        <span className="text-white font-medium">
-          transform without replacing what already works
-        </span>
-        . True modernization demanded enterprise-grade governance, continuity,
-        and control.
-      </p>
+  <p className="text-base md:text-lg text-white leading-relaxed">
+    When we looked deeper into what was truly holding enterprises back from
+    modernizing, it was not ambition but the constraints of{" "}
+    <span className="text-white font-medium">
+      legacy infrastructure
+    </span>
+    . While many new-age platforms were built for greenfield deployments,
+    enterprises needed a way to evolve from what already exists.
+  </p>
 
-      <p className="text-base md:text-lg text-white leading-relaxed">
-        That realization led us to purpose-build a transformation platform that
-        enables enterprises to safely harness advances in AI and deliver
-        intelligent, conversational experiences {" "}
-        <span className="text-white font-medium">
-          without breaking their core systems
-        </span>
-        .
-      </p>
-    </div>
+  <p className="text-base md:text-lg text-white leading-relaxed">
+    This gap between platform assumptions and enterprise reality made it clear
+    that transformation must build on existing systems with{" "}
+    <span className="text-white font-medium">
+      enterprise-grade governance
+    </span>
+    . This realization led us to purpose-build a transformation platform that
+    puts enterprises back in control, enabling them to safely leverage advances
+    in AI to deliver intelligent conversational experiences.
+  </p>
+</div>
 
-    {/* Philosophy Block */}
-    <div className="mt-12 max-w-5xl mx-auto ">
-      <h4 className="text-3xl md:text-4xl mb-4 font-semibold text-white tracking-tight text-center">
-        Why Aumne
-      </h4>
-     <div className="space-y-6 max-w-5xl mx-auto text-left" >
-      <p className="text-base items-start md:text-lg text-white leading-relaxed">
-        <span className="text-white font-medium">Aum</span>, the first sound,
-        represents listening and understanding intent.{" "}
-        <span className="text-white font-medium">Ne</span>, meaning any, reflects
-        our belief that enterprises should respond to any customer need.
-        Together, Aumne embodies services that listen, adapt, and continuously
-        evolve.
-      </p>
+{/* Philosophy Block */}
+<div className="mt-12 max-w-5xl mx-auto">
+  <h4 className="text-3xl md:text-4xl mb-4 font-semibold text-white tracking-tight text-center">
+    Why Aumne
+  </h4>
 
-      <p className="text-base md:text-lg text-white leading-relaxed">
-        This philosophy comes to life through{" "}
-        <span className="text-white font-medium">
-          ACT — the Agentic Conversation Transformer
-        </span>
-        , enabling enterprises to understand intent and evolve customer services
-        at the pace of change.
-      </p>
-      </div>
-    </div>
+  <div className="space-y-6 max-w-5xl mx-auto text-left">
+    <p className="text-base md:text-lg text-white leading-relaxed">
+      The name{" "}
+      <span className="text-white font-medium">Aumne</span> reflects our core
+      philosophy.{" "}
+      <span className="text-white font-medium">'Aum'</span>, the first sound,
+      represents listening and understanding intent, while{" "}
+      <span className="text-white font-medium">'ne'</span>, meaning any, reflects
+      our belief that enterprises should be able to respond to any customer
+      need. Together, Aumne embodies our vision of services that listen, adapt,
+      and evolve continuously.
+    </p>
+
+    <p className="text-base md:text-lg text-white leading-relaxed">
+      This philosophy is brought to life through{" "}
+      <span className="text-white font-medium">
+        ACT our Agentic Conversation Transformer platform
+      </span>
+      , enabling enterprises to understand intent and evolve customer services
+      at the pace of change.
+    </p>
+  </div>
+</div>
   </div>
 </section>
 
