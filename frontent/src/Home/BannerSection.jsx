@@ -178,7 +178,7 @@ const handleMouseLeave = () => {
       </div>
 
       {/* RIGHT SIDE BUTTON */}
-      <div className="flex justify-center lg:justify-end items-center">
+      <div className="flex justify-center lg:justify-end items-center lg:pr-38">
         <a  target="_blank" rel="noopener noreferrer" href="https://hello-aumne-production.up.railway.app/">
           <button
             className="
@@ -201,9 +201,9 @@ const handleMouseLeave = () => {
 
 
     {/* BOTTOM LOGO CAROUSEL (INSIDE SAME SCREEN HEIGHT)  */}
-          <h2 className="text-white text-2xl sm:text-lg md:text-xl font-bold text-center mt-10  px-4">
+          <h3 className="text-white text-sm sm:text-base md:text-l font-semibold text-center mt-10  px-4">
   Integrates with leading CCaaS, contact center, and conversational AI platforms
-</h2>
+</h3>
 
 <div className="relative w-full pb-6 overflow-hidden py-0">
   <div className="mx-auto px-6 mb-12 max-w-[1400px]">

@@ -590,7 +590,7 @@ const Step1 = ({ number, title, desc }) => (
   </span>{" "}
   into modern, conversational & omnichannel experiences with{" "}
   <span className=" font-bold">
-    5× Faster GTM
+    5X Faster GTM
   </span>.
 </p>
 

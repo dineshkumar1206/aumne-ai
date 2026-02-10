@@ -34,7 +34,7 @@ export default function VelocityReliabilitySection() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen -mt-30 text-white overflow-hidden py-14 md:py-20 flex items-center"
+      className="relative min-h-screen -mt-30 text-white overflow-hidden py-25 md:py-28 flex items-center"
     >
       <div className="mx-auto max-w-[1550px] px-6 md:px-10 lg:px-14">
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
