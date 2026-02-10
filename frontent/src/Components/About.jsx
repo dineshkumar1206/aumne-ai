@@ -10,7 +10,7 @@ const founders = [
     linkedin: "https://www.linkedin.com/in/vinodh-govindan-56497ba/",
   },
   {
-    role: "Chief Executive Officer & Co-founder",
+    role: "Chief Product Officer & Co-founder",
     name: "Jagadish Kumar",
     image: "/image/founder-2.png",
     linkedin: "https://www.linkedin.com/in/jagadish-kumar-mohan-4b575b27/",
