@@ -179,7 +179,7 @@ const handleMouseLeave = () => {
 
       {/* RIGHT SIDE BUTTON */}
       <div className="flex justify-center lg:justify-end items-center lg:pr-38">
-        <a  target="_blank" rel="noopener noreferrer" href="https://hello.aumne.ai/">
+        <a  rel="noopener noreferrer" href="/contact">
           <button
             className="
               px-14 sm:px-20 py-6 sm:py-9
@@ -192,7 +192,7 @@ const handleMouseLeave = () => {
               cursor-pointer
             "
           >
-            Try Live Voice Demo
+            Learn More
           </button>
         </a>
       </div>

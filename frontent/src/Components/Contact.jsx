@@ -84,15 +84,24 @@ const Contact = () => {
     message: "",
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
+    const handleChange = (e) => {
+      const { name, value } = e.target;
+    
+      let updatedValue = value;
+    
+      // Prevent special characters in firstName & lastName
+      if (name === "firstName" || name === "lastName") {
+        updatedValue = value.replace(/[^a-zA-Z\s]/g, "");
+      }
+    
+      setFormData((prev) => ({
+        ...prev,
+        [name]: updatedValue,
+      }));
+    
+      if (status.message) setStatus({ type: "", message: "" });
+    };
 
-    if (status.message) setStatus({ type: "", message: "" });
-  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -154,6 +163,8 @@ const Contact = () => {
                   type="text"
                   name="firstName"
                   required
+                  pattern="[A-Za-z\s]+"
+                  title="Only letters are allowed"
                   value={formData.firstName}
                   onChange={handleChange}
                   placeholder="First name*"
@@ -164,6 +175,8 @@ const Contact = () => {
                   name="lastName"
                   required
                   placeholder="Last name*"
+                  pattern="[A-Za-z\s]+"
+                  title="Only letters are allowed"
                   value={formData.lastName}
                   onChange={handleChange}
                   className="w-full border-b border-gray-400 focus:outline-none py-2 text-sm"
