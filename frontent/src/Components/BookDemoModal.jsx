@@ -7,6 +7,44 @@ export default function BookDemoModal({ open, onClose }) {
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState({ type: "", message: "" });
 
+  const countryCodes = [
+  { name: "India", code: "+91" },
+  { name: "United States", code: "+1" },
+  { name: "United Kingdom", code: "+44" },
+  { name: "Canada", code: "+1" },
+  { name: "Australia", code: "+61" },
+  { name: "Germany", code: "+49" },
+  { name: "France", code: "+33" },
+  { name: "Italy", code: "+39" },
+  { name: "Spain", code: "+34" },
+  { name: "Netherlands", code: "+31" },
+  { name: "Sweden", code: "+46" },
+  { name: "Switzerland", code: "+41" },
+  { name: "Norway", code: "+47" },
+  { name: "Denmark", code: "+45" },
+  { name: "Ireland", code: "+353" },
+  { name: "Singapore", code: "+65" },
+  { name: "UAE", code: "+971" },
+  { name: "Saudi Arabia", code: "+966" },
+  { name: "Qatar", code: "+974" },
+  { name: "South Africa", code: "+27" },
+  { name: "Japan", code: "+81" },
+  { name: "China", code: "+86" },
+  { name: "South Korea", code: "+82" },
+  { name: "Brazil", code: "+55" },
+  { name: "Mexico", code: "+52" },
+  { name: "Argentina", code: "+54" },
+  { name: "Chile", code: "+56" },
+  { name: "Colombia", code: "+57" },
+  { name: "Indonesia", code: "+62" },
+  { name: "Malaysia", code: "+60" },
+  { name: "Thailand", code: "+66" },
+  { name: "Philippines", code: "+63" },
+  { name: "Vietnam", code: "+84" },
+  { name: "New Zealand", code: "+64" },
+];
+
+
   const [formData, setFormData] = useState({
     fullName: "",
     designation: "",
@@ -39,7 +77,6 @@ export default function BookDemoModal({ open, onClose }) {
 
   if (status.message) setStatus({ type: "", message: "" });
 };
-
 
   // 4. Handle Submit Logic
   const handleSubmit = async (e) => {
@@ -135,25 +172,30 @@ export default function BookDemoModal({ open, onClose }) {
 
           {/* Country + Phone */}
           <div className="flex gap-2">
-            <select
-              name="country"
-              value={formData.country}
-              onChange={handleChange}
-              className="w-1/2 px-3 py-2 rounded-lg bg-gray-100 outline-none text-black"
-            >
-              <option value="India (IN)">India (IN)</option>
-              <option value="USA (US)">USA (US)</option>
-              <option value="UK (GB)">UK (GB)</option>
-            </select>
+             <select
+               name="country"
+               value={formData.country}
+               onChange={handleChange}
+               className="w-1/2 px-3 py-2 rounded-lg bg-gray-100 outline-none text-black"
+             >
+               {countryCodes.map((item, index) => (
+                 <option key={index} value={item.code}>
+                   {item.name} ({item.code})
+                 </option>
+               ))}
+             </select>
 
             <input
               type="tel"
               name="phone"
-              placeholder="+91"
+              placeholder="Phone number"
               value={formData.phone}
               onChange={handleChange}
+              pattern="^[0-9]{6,15}$"
+              title="Enter valid phone number"
               className="w-1/2 px-4 py-2 rounded-lg bg-gray-100 outline-none focus:ring-2 focus:ring-yellow-400 text-black"
             />
+            
           </div>
 
           <input

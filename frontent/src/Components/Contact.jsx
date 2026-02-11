@@ -78,6 +78,7 @@ const Contact = () => {
     jobTitle: "",
     country: "",
     email: "",
+    phone: "",
     industry: "",
     reach: "",
     product: "",
@@ -93,6 +94,10 @@ const Contact = () => {
       if (name === "firstName" || name === "lastName") {
         updatedValue = value.replace(/[^a-zA-Z\s]/g, "");
       }
+
+      if (name === "phone") {
+       updatedValue = value.replace(/[^0-9+]/g, "");
+     }
     
       setFormData((prev) => ({
         ...prev,
@@ -127,6 +132,7 @@ const Contact = () => {
           jobTitle: "",
           country: "",
           email: "",
+          phone: "",
           industry: "",
           reach: "",
           product: "",
@@ -223,7 +229,22 @@ const Contact = () => {
                 placeholder="Business email address*"
                 value={formData.email}
                 onChange={handleChange}
+                pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$"
+                title="Enter a valid email address (example@domain.com)"
                 className="w-full border-b border-gray-400 focus:outline-none py-2 text-sm"
+              />
+
+              {/* Phone number optionial */}
+
+              <input
+               type="tel"
+               name="phone"
+               placeholder="Phone number (Optional)"
+               value={formData.phone}
+               onChange={handleChange}
+               pattern="^\+?[0-9]{7,15}$"
+               title="Enter valid phone number (7-15 digits, optional + allowed)"
+               className="w-full border-b border-gray-400 focus:outline-none py-2 text-sm"
               />
 
               {/* Industry */}
