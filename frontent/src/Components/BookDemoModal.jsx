@@ -165,6 +165,8 @@ export default function BookDemoModal({ open, onClose }) {
             name="email"
             required
             placeholder="Business email*"
+            pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$"
+            title="Enter a valid email address (example@domain.com)"
             value={formData.email}
             onChange={handleChange}
             className="w-full px-4 py-2 rounded-lg bg-gray-100 outline-none focus:ring-2 focus:ring-yellow-400 text-black"
