@@ -17,11 +17,29 @@ export default function BookDemoModal({ open, onClose }) {
     companySize: "Company Size",
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-    if (status.message) setStatus({ type: "", message: "" });
-  };
+ const handleChange = (e) => {
+  const { name, value } = e.target;
+
+  let updatedValue = value;
+
+  // Prevent special characters in fullName
+  if (name === "fullName") {
+    updatedValue = value.replace(/[^a-zA-Z\s]/g, "");
+  }
+
+  // Allow only numbers and + in phone
+  if (name === "phone") {
+    updatedValue = value.replace(/[^0-9+]/g, "");
+  }
+
+  setFormData((prev) => ({
+    ...prev,
+    [name]: updatedValue,
+  }));
+
+  if (status.message) setStatus({ type: "", message: "" });
+};
+
 
   // 4. Handle Submit Logic
   const handleSubmit = async (e) => {
@@ -88,6 +106,8 @@ export default function BookDemoModal({ open, onClose }) {
             type="text"
             name="fullName"
             required
+            pattern="[A-Za-z\s]+"
+            title="Only letters are allowed"
             placeholder="Full name*"
             value={formData.fullName}
             onChange={handleChange}
